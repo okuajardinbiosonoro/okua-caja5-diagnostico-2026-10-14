@@ -1,0 +1,312 @@
+{
+  "trial_id": "B-EC5-plant-only-01",
+  "validity": {
+    "operator_confirmed": true,
+    "valid_contact_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "complete_recovery_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+    "operator_incident_notes": "En este caso hay tres comportamientos primero, al iniciar percibí sonido sin haber tocado EC5, al tocar la primera vez no detecte sonido, al tocar por segunda vez detecte sonido pero siguió aunque deje de tocar y después sonó al volver a tocar y dejó de sonar al dejar de tocar. ",
+    "assessment": "all_contact_phases_confirmed",
+    "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons"
+  },
+  "operator_environment": {
+    "floor_material": "synthetic_grass",
+    "floor_moisture": "slightly_damp",
+    "moisture_source": "Direct operator observation; not a measured moisture value",
+    "footwear": "shoes",
+    "body_to_earth_impedance": "not_measured",
+    "electrical_isolation": "not_verified",
+    "weather_context_file": "weather_context.json",
+    "posture": "seated_on_floor_through_trousers",
+    "metadata_source": "operator_environment.json",
+    "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+    "footwear_source": "Operator selection at trial start"
+  },
+  "sensor_metric_semantics": {
+    "recorded_at_utc": "2026-10-14T19:53:36.524+00:00",
+    "verified_firmware": "1.1.13-box5-touch-pilot",
+    "applicable_nodes": [
+      "EB5",
+      "EC5"
+    ],
+    "source_files": [
+      "diagnostics/eb5_touch_pilot_20261012/pilot.patch",
+      "diagnostics/eb5_touch_pilot_20261012/adaptive_touch_pilot.h"
+    ],
+    "verified_assignments": {
+      "rms_mean": "g_pilotMean = g_pilotAcquisition.mean: arithmetic ADC-window mean",
+      "filt": "g_plantSmoothV = feature.rms: ADC-window RMS used by the detector",
+      "base": "g_plantBaselineV = g_pilotDetector.referenceRms: RMS reference",
+      "threshold": "g_pilotDetector.thresholdRms",
+      "score": "g_pilotDetector.amplitudeScore: absolute RMS-reference difference / RMS threshold",
+      "noise_p95": "g_pilotDetector.noiseRms",
+      "occupancy": "fraction of acquired ADC samples above zero",
+      "transition_resets": "Detector medium-transition recalibrations; not a board reboot counter"
+    },
+    "scale": "Nominal ADC conversion, not calibrated signed analogue voltage.",
+    "other_firmware": "Do not apply these assignments to EE5/EF5 without separately verifying their implementation.",
+    "historical_reports": "Earlier derived RMS labels referring to rms_mean describe arithmetic mean. Numerical raw readings are unchanged."
+  },
+  "per_repetition": [
+    {
+      "repetition": 1,
+      "rest": {
+        "ADC_arithmetic_mean_median": 0.23875000000000002,
+        "ADC_RMS_median": 0.39590000000000003,
+        "RMS_reference_median": 0.3976,
+        "score_median": 0.0,
+        "note_ons": 17,
+        "MIDI_held_s": 8.544,
+        "stable_activation_fraction": 0.2247191011235955,
+        "other_nodes_note_ons": {
+          "EB5": 18,
+          "ED5": 0,
+          "EE5": 6,
+          "EF5": 0
+        }
+      },
+      "contact": {
+        "ADC_arithmetic_mean_median": 0.24075000000000002,
+        "ADC_RMS_median": 0.39759999999999995,
+        "RMS_reference_median": 0.3973,
+        "score_median": 0.215,
+        "note_ons": 0,
+        "MIDI_held_s": 0,
+        "stable_activation_fraction": 0.0,
+        "other_nodes_note_ons": {
+          "EB5": 0,
+          "ED5": 0,
+          "EE5": 0,
+          "EF5": 0
+        }
+      },
+      "release": {
+        "ADC_arithmetic_mean_median": 0.2357,
+        "ADC_RMS_median": 0.39295,
+        "RMS_reference_median": 0.3911,
+        "score_median": 0.127,
+        "note_ons": 0,
+        "MIDI_held_s": 0,
+        "stable_activation_fraction": 0.0,
+        "other_nodes_note_ons": {
+          "EB5": 0,
+          "ED5": 0,
+          "EE5": 0,
+          "EF5": 0
+        }
+      }
+    },
+    {
+      "repetition": 2,
+      "rest": {
+        "ADC_arithmetic_mean_median": 0.2502,
+        "ADC_RMS_median": 0.4149,
+        "RMS_reference_median": 0.4023,
+        "score_median": 0.153,
+        "note_ons": 0,
+        "MIDI_held_s": 0,
+        "stable_activation_fraction": 0.0,
+        "other_nodes_note_ons": {
+          "EB5": 0,
+          "ED5": 0,
+          "EE5": 0,
+          "EF5": 0
+        }
+      },
+      "contact": {
+        "ADC_arithmetic_mean_median": 0.26865,
+        "ADC_RMS_median": 0.43820000000000003,
+        "RMS_reference_median": 0.4115,
+        "score_median": 0.6154999999999999,
+        "note_ons": 34,
+        "MIDI_held_s": 10.001,
+        "stable_activation_fraction": 0.5975609756097561,
+        "other_nodes_note_ons": {
+          "EB5": 0,
+          "ED5": 0,
+          "EE5": 0,
+          "EF5": 0
+        }
+      },
+      "release": {
+        "ADC_arithmetic_mean_median": 0.3115,
+        "ADC_RMS_median": 0.5054,
+        "RMS_reference_median": 0.4115,
+        "score_median": 1.003,
+        "note_ons": 79,
+        "MIDI_held_s": 29.168,
+        "stable_activation_fraction": 0.9476923076923077,
+        "other_nodes_note_ons": {
+          "EB5": 0,
+          "ED5": 0,
+          "EE5": 0,
+          "EF5": 0
+        }
+      }
+    },
+    {
+      "repetition": 3,
+      "rest": {
+        "ADC_arithmetic_mean_median": 0.3017,
+        "ADC_RMS_median": 0.4966,
+        "RMS_reference_median": 0.4932,
+        "score_median": 0.093,
+        "note_ons": 0,
+        "MIDI_held_s": 0,
+        "stable_activation_fraction": 0.0,
+        "other_nodes_note_ons": {
+          "EB5": 0,
+          "ED5": 0,
+          "EE5": 0,
+          "EF5": 0
+        }
+      },
+      "contact": {
+        "ADC_arithmetic_mean_median": 0.257,
+        "ADC_RMS_median": 0.4235,
+        "RMS_reference_median": 0.4951,
+        "score_median": 0.769,
+        "note_ons": 34,
+        "MIDI_held_s": 12.642,
+        "stable_activation_fraction": 0.8297872340425532,
+        "other_nodes_note_ons": {
+          "EB5": 0,
+          "ED5": 0,
+          "EE5": 0,
+          "EF5": 0
+        }
+      },
+      "release": {
+        "ADC_arithmetic_mean_median": 0.2423,
+        "ADC_RMS_median": 0.4007,
+        "RMS_reference_median": 0.4938,
+        "score_median": 0.72,
+        "note_ons": 0,
+        "MIDI_held_s": 0,
+        "stable_activation_fraction": 0.0,
+        "other_nodes_note_ons": {
+          "EB5": 0,
+          "ED5": 0,
+          "EE5": 0,
+          "EF5": 0
+        }
+      }
+    }
+  ],
+  "detector_recalibrations": [
+    {
+      "at_utc": "2026-10-14T19:44:18.030092+00:00",
+      "since_trial_start_s": 18.634,
+      "state": [
+        "0",
+        "16",
+        null
+      ],
+      "values": {
+        "t_ms": "18892817",
+        "raw": "0.0000",
+        "filt": "0.4100",
+        "base": "0.4100",
+        "rms_mean": "0.2549",
+        "occupancy": "0.4615",
+        "occupancy_base": "0.4615",
+        "score": "0.000",
+        "threshold": "0.0024",
+        "noise_p95": "0.0000",
+        "samples": "26",
+        "span_ms": "78"
+      }
+    },
+    {
+      "at_utc": "2026-10-14T19:46:28.868072+00:00",
+      "since_trial_start_s": 149.472,
+      "state": [
+        "0",
+        "17",
+        null
+      ],
+      "values": {
+        "t_ms": "19023656",
+        "raw": "0.4295",
+        "filt": "0.5087",
+        "base": "0.5087",
+        "rms_mean": "0.3150",
+        "occupancy": "0.4615",
+        "occupancy_base": "0.4615",
+        "score": "0.000",
+        "threshold": "0.0024",
+        "noise_p95": "0.0000",
+        "samples": "26",
+        "span_ms": "78"
+      }
+    }
+  ],
+  "operator_audio": "Before any contact operator heard spontaneous sound; first contact silent; second contact audible and sound persisted after releasing; third contact audible and stopped on release.",
+  "key_findings": [
+    "All three contact labels are confirmed. Rest activation is an observed false activation condition, not a reason to discard the trial.",
+    "Second release window has 29.168 seconds of held MIDI in EC5; no other node emits NoteOns in that window.",
+    "Two detector recalibrations are observed through transition_resets increments without CKv2 uptime decreases.",
+    "Last continuous active episode of second contact/release lasts about 30.009 seconds and ends with a detector recalibration, consistent with the 30-second safeguard in the deployed pilot source.",
+    "Initial detector reference near zero during nonzero rest signal is consistent with an outdated reference; source of the initial signal/reference transition remains unproven."
+  ],
+  "runtime": {
+    "EB5": {
+      "samples": 210,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EC5": {
+      "samples": 210,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "ED5": {
+      "samples": 210,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EE5": {
+      "samples": 210,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EF5": {
+      "samples": 210,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    }
+  },
+  "data_quality": {
+    "coverage_gap_flag_s": 1.0,
+    "operator_ack_delay_flag_s": 1.0,
+    "meaning": "Flags missing host-received telemetry, including phase boundaries; does not prove a node reboot or missing analogue response.",
+    "sensor_coverage_warnings": [],
+    "operator_ack_delay_warnings": []
+  },
+  "interpretation_limits": [
+    "Contact-state onset follows scheduled cues and operator confirmation; exact human onset/release is not instrumented.",
+    "Native scales are uncalibrated unsigned ADC-derived values.",
+    "MIDI held duration is not an audio recording.",
+    "The reset safeguard explains the recorded detector cutoff; it does not establish the original cause of the signal change or validate all plant-only responses as causally isolated touch."
+  ],
+  "next_trial": "B-EC5-black-only-01",
+  "changes_to_nodes_or_Ableton": false
+}

@@ -1,0 +1,26 @@
+{
+  "first_capture": {
+    "from_utc": "2026-10-14T17:06:37.789362+00:00",
+    "ended_between_trials": true,
+    "sensor_frames": 335104,
+    "ckv2_samples": 16500,
+    "midi_messages": 10184
+  },
+  "continued_capture": {
+    "preflight_utc": "2026-10-14T18:04:14.671888+00:00",
+    "max_duration_s": 21600,
+    "append_to_same_signals_file": true,
+    "closed_at_or_before_utc": "2026-10-14T21:12:10.347080+00:00",
+    "stopped_by_operator_request": true,
+    "exit_code": 0,
+    "sensor_frames": 1055215,
+    "ckv2_samples": 51940,
+    "midi_messages": 149416
+  },
+  "reason": "Extend finite maintenance session before its previous three-hour recording limit. Existing data retained; restart between completed trials. No commands sent to nodes or MIDI outputs.",
+  "main_recording_total_counters": {
+    "sensor_frames_from_collector_counters": 1390319,
+    "ckv2_samples_from_collector_counters": 68440,
+    "MIDI_messages_from_collector_counters": 159600
+  }
+}

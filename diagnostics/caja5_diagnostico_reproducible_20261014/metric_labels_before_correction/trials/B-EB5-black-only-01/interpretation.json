@@ -1,0 +1,11 @@
+{
+  "valid_contacts": [
+    1,
+    2,
+    3
+  ],
+  "operator_sound": "continuous in 3/3; silence after release",
+  "midi_note_duration_during_60s_scheduled_contact": 55.344887,
+  "observed_shared_effect": "All five nodes emitted MIDI during each black-only EB5 contact",
+  "no_reboots": true
+}

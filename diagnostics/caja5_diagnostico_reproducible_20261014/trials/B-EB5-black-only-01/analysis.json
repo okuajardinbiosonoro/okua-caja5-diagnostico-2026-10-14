@@ -1,0 +1,4263 @@
+{
+  "trial_id": "B-EB5-black-only-01",
+  "trial": {
+    "trial_id": "B-EB5-black-only-01",
+    "plant_node": "EB5",
+    "black_node": "EB5",
+    "condition": "black_only"
+  },
+  "start_utc": "2026-10-14T18:21:32.158000+00:00",
+  "end_utc": "2026-10-14T18:25:12.310000+00:00",
+  "actual_duration_s": 220.152,
+  "completed": true,
+  "timer_completed": true,
+  "timer_end_event": {
+    "at_utc": "2026-10-14T18:25:12.310+00:00",
+    "host_monotonic_ns": 102083344289000,
+    "kind": "trial_completed",
+    "trial": {
+      "trial_id": "B-EB5-black-only-01",
+      "plant_node": "EB5",
+      "black_node": "EB5",
+      "condition": "black_only"
+    },
+    "requires_operator_report": true
+  },
+  "operator_report": {
+    "at_utc": "2026-10-14T18:25:57.103+00:00",
+    "host_monotonic_ns": 102128137330700,
+    "kind": "operator_report",
+    "trial": {
+      "trial_id": "B-EB5-black-only-01",
+      "plant_node": "EB5",
+      "black_node": "EB5",
+      "condition": "black_only"
+    },
+    "report": {
+      "form_revision": 2,
+      "followed_cues": true,
+      "completed_repetitions": 3,
+      "audible_repetitions": "3",
+      "first_contact_audible_repetitions": "3",
+      "paired_contact_audible_repetitions": "not_applicable",
+      "second_contact_audible_change": "not_applicable",
+      "contact_sound": "continuous",
+      "paired_contact_sound": "not_applicable",
+      "after_release_silence": "yes",
+      "notes": "No tengo observaciones al respecto.",
+      "operator_id": "1791998878186-xipnlmvfei",
+      "ui_revision": 4
+    },
+    "client_address": "192.168.1.58",
+    "confirmed_physical_labels": true
+  },
+  "confirmed_labels": true,
+  "operator_display_ack_delays_ms": [
+    210.0,
+    36.0,
+    186.0,
+    181.0,
+    57.0,
+    195.0,
+    93.0,
+    75.0,
+    216.0,
+    242.0
+  ],
+  "phases": [
+    {
+      "repetition": 0,
+      "phase": "preparation",
+      "start_utc": "2026-10-14T18:21:32.158000+00:00",
+      "end_utc": "2026-10-14T18:21:42.165000+00:00",
+      "stable_start_utc": "2026-10-14T18:21:32.158000+00:00",
+      "stable_end_utc": "2026-10-14T18:21:42.165000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T18:21:32.368+00:00",
+        "host_monotonic_ns": 101863401910500,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-black-only-01",
+          "plant_node": "EB5",
+          "black_node": "EB5",
+          "condition": "black_only"
+        },
+        "phase_seq": 12,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 4,
+        "client_note": null,
+        "client_utc": "2026-10-14T18:21:27.566Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "PREPARATE SIN TOCAR",
+        "instruction": "Deja AMBAS manos libres: no toques ninguna planta ni ninguna punta negra. Mantente quieto. No sostengas el negro durante el reposo. El contacto empezara despues del reposo, cuando aparezca la indicacion de contacto.",
+        "spoken": "Preparate con ambas manos libres. Todavia no toques nada."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 237,
+          "stable_frames": 237,
+          "max_gap_s": 0.084363,
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 237,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.6455,
+              "max": 0.6697
+            },
+            "filt": {
+              "n": 237,
+              "min": 0.2644,
+              "median": 0.3084,
+              "p95": 0.3314,
+              "max": 0.3443
+            },
+            "base": {
+              "n": 237,
+              "min": 0.3079,
+              "median": 0.3087,
+              "p95": 0.3094,
+              "max": 0.3096
+            },
+            "rms_mean": {
+              "n": 237,
+              "min": 0.1464,
+              "median": 0.1835,
+              "p95": 0.2039,
+              "max": 0.2164
+            },
+            "occupancy": {
+              "n": 237,
+              "min": 0.3462,
+              "median": 0.44,
+              "p95": 0.4615,
+              "max": 0.5
+            },
+            "occupancy_base": {
+              "n": 237,
+              "min": 0.4381,
+              "median": 0.4393,
+              "p95": 0.4398,
+              "max": 0.44
+            },
+            "adc_peak": {
+              "n": 237,
+              "min": 724.0,
+              "median": 811.0,
+              "p95": 841.0,
+              "max": 851.0
+            },
+            "samples": {
+              "n": 237,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 237,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 237,
+              "min": 0.0,
+              "median": 0.162,
+              "p95": 0.521,
+              "max": 0.698
+            },
+            "threshold": {
+              "n": 237,
+              "min": 0.0623,
+              "median": 0.0642,
+              "p95": 0.0719,
+              "max": 0.0719
+            },
+            "noise_p95": {
+              "n": 237,
+              "min": 0.0208,
+              "median": 0.0214,
+              "p95": 0.024,
+              "max": 0.024
+            },
+            "transition_resets": {
+              "n": 237,
+              "min": 10.0,
+              "median": 10.0,
+              "p95": 10.0,
+              "max": 10.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 238,
+          "stable_frames": 238,
+          "max_gap_s": 0.079944,
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 238,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.0444,
+              "max": 1.0702
+            },
+            "filt": {
+              "n": 238,
+              "min": 0.4704,
+              "median": 0.5071,
+              "p95": 0.5349,
+              "max": 0.5462
+            },
+            "base": {
+              "n": 238,
+              "min": 0.5086,
+              "median": 0.5092,
+              "p95": 0.5094,
+              "max": 0.5097
+            },
+            "rms_mean": {
+              "n": 238,
+              "min": 0.2719,
+              "median": 0.3062,
+              "p95": 0.3369,
+              "max": 0.3517
+            },
+            "occupancy": {
+              "n": 238,
+              "min": 0.3846,
+              "median": 0.4615,
+              "p95": 0.5,
+              "max": 0.52
+            },
+            "occupancy_base": {
+              "n": 238,
+              "min": 0.457,
+              "median": 0.4575,
+              "p95": 0.458,
+              "max": 0.4583
+            },
+            "adc_peak": {
+              "n": 238,
+              "min": 1264.0,
+              "median": 1314.0,
+              "p95": 1325.0,
+              "max": 1330.0
+            },
+            "samples": {
+              "n": 238,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 238,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 238,
+              "min": 0.0,
+              "median": 0.1945,
+              "p95": 0.374,
+              "max": 0.431
+            },
+            "threshold": {
+              "n": 238,
+              "min": 0.0893,
+              "median": 0.0902,
+              "p95": 0.0927,
+              "max": 0.0927
+            },
+            "noise_p95": {
+              "n": 238,
+              "min": 0.0298,
+              "median": 0.0301,
+              "p95": 0.0309,
+              "max": 0.0309
+            },
+            "transition_resets": {
+              "n": 238,
+              "min": 5.0,
+              "median": 5.0,
+              "p95": 5.0,
+              "max": 5.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EE5": {
+          "frames": 247,
+          "stable_frames": 247,
+          "max_gap_s": 0.079262,
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 247,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.3627,
+              "max": 1.3845
+            },
+            "filt": {
+              "n": 247,
+              "min": 0.9525,
+              "median": 1.2926,
+              "p95": 1.3796,
+              "max": 1.3804
+            },
+            "base": {
+              "n": 247,
+              "min": 1.2601,
+              "median": 1.2616,
+              "p95": 1.2642,
+              "max": 1.2647
+            },
+            "threshold": {
+              "n": 247,
+              "min": 0.2844,
+              "median": 0.289,
+              "p95": 0.2929,
+              "max": 0.2938
+            },
+            "noise_p95": {
+              "n": 247,
+              "min": 0.1138,
+              "median": 0.1156,
+              "p95": 0.1172,
+              "max": 0.1175
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 248,
+          "stable_frames": 248,
+          "max_gap_s": 0.085008,
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 248,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4232,
+              "max": 1.4578
+            },
+            "filt": {
+              "n": 248,
+              "min": 1.121,
+              "median": 1.3571,
+              "p95": 1.4401,
+              "max": 1.457
+            },
+            "base": {
+              "n": 248,
+              "min": 1.3344,
+              "median": 1.336,
+              "p95": 1.3371,
+              "max": 1.3374
+            },
+            "threshold": {
+              "n": 248,
+              "min": 0.2863,
+              "median": 0.2879,
+              "p95": 0.29,
+              "max": 0.2979
+            },
+            "noise_p95": {
+              "n": 248,
+              "min": 0.1145,
+              "median": 0.1151,
+              "p95": 0.116,
+              "max": 0.1191
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 1,
+      "phase": "rest",
+      "start_utc": "2026-10-14T18:21:42.165000+00:00",
+      "end_utc": "2026-10-14T18:22:02.178000+00:00",
+      "stable_start_utc": "2026-10-14T18:21:47.165000+00:00",
+      "stable_end_utc": "2026-10-14T18:22:02.178000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T18:21:42.201+00:00",
+        "host_monotonic_ns": 101873235787900,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-black-only-01",
+          "plant_node": "EB5",
+          "black_node": "EB5",
+          "condition": "black_only"
+        },
+        "phase_seq": 13,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 4,
+        "client_note": null,
+        "client_utc": "2026-10-14T18:21:37.397Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "REPOSO: MANOS LIBRES",
+        "instruction": "Deja AMBAS manos libres: no toques ninguna planta ni ninguna punta negra. Mantente quieto. No sostengas el negro durante el reposo.",
+        "spoken": "Reposo. Ambas manos libres, sin tocar plantas ni puntas negras."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 476,
+          "stable_frames": 357,
+          "max_gap_s": 0.101379,
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.6165,
+              "max": 0.6399
+            },
+            "filt": {
+              "n": 357,
+              "min": 0.269,
+              "median": 0.2973,
+              "p95": 0.3117,
+              "max": 0.3244
+            },
+            "base": {
+              "n": 357,
+              "min": 0.303,
+              "median": 0.3066,
+              "p95": 0.3081,
+              "max": 0.3086
+            },
+            "rms_mean": {
+              "n": 357,
+              "min": 0.1516,
+              "median": 0.1752,
+              "p95": 0.1922,
+              "max": 0.2034
+            },
+            "occupancy": {
+              "n": 357,
+              "min": 0.3462,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.48
+            },
+            "occupancy_base": {
+              "n": 357,
+              "min": 0.4342,
+              "median": 0.437,
+              "p95": 0.4396,
+              "max": 0.4403
+            },
+            "adc_peak": {
+              "n": 357,
+              "min": 732.0,
+              "median": 780.0,
+              "p95": 797.0,
+              "max": 805.0
+            },
+            "samples": {
+              "n": 357,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 357,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.13,
+              "p95": 0.409,
+              "max": 0.552
+            },
+            "threshold": {
+              "n": 357,
+              "min": 0.0683,
+              "median": 0.0716,
+              "p95": 0.0761,
+              "max": 0.0769
+            },
+            "noise_p95": {
+              "n": 357,
+              "min": 0.0228,
+              "median": 0.0239,
+              "p95": 0.0254,
+              "max": 0.0256
+            },
+            "transition_resets": {
+              "n": 357,
+              "min": 10.0,
+              "median": 10.0,
+              "p95": 10.0,
+              "max": 10.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 476,
+          "stable_frames": 355,
+          "max_gap_s": 0.091206,
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 355,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.05,
+              "max": 1.0718
+            },
+            "filt": {
+              "n": 355,
+              "min": 0.4723,
+              "median": 0.5172,
+              "p95": 0.5454,
+              "max": 0.5537
+            },
+            "base": {
+              "n": 355,
+              "min": 0.5086,
+              "median": 0.5114,
+              "p95": 0.5124,
+              "max": 0.5129
+            },
+            "rms_mean": {
+              "n": 355,
+              "min": 0.2642,
+              "median": 0.3155,
+              "p95": 0.344,
+              "max": 0.355
+            },
+            "occupancy": {
+              "n": 355,
+              "min": 0.3846,
+              "median": 0.4615,
+              "p95": 0.5,
+              "max": 0.5385
+            },
+            "occupancy_base": {
+              "n": 355,
+              "min": 0.4561,
+              "median": 0.4577,
+              "p95": 0.4583,
+              "max": 0.4586
+            },
+            "adc_peak": {
+              "n": 355,
+              "min": 1270.0,
+              "median": 1328.0,
+              "p95": 1335.0,
+              "max": 1355.0
+            },
+            "samples": {
+              "n": 355,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 355,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 355,
+              "min": 0.0,
+              "median": 0.166,
+              "p95": 0.353,
+              "max": 0.459
+            },
+            "threshold": {
+              "n": 355,
+              "min": 0.0969,
+              "median": 0.103,
+              "p95": 0.1086,
+              "max": 0.1086
+            },
+            "noise_p95": {
+              "n": 355,
+              "min": 0.0323,
+              "median": 0.0343,
+              "p95": 0.0362,
+              "max": 0.0362
+            },
+            "transition_resets": {
+              "n": 355,
+              "min": 5.0,
+              "median": 5.0,
+              "p95": 5.0,
+              "max": 5.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EE5": {
+          "frames": 494,
+          "stable_frames": 372,
+          "max_gap_s": 0.091698,
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 372,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.3659,
+              "max": 1.3909
+            },
+            "filt": {
+              "n": 372,
+              "min": 0.9042,
+              "median": 1.2725,
+              "p95": 1.3748,
+              "max": 1.3901
+            },
+            "base": {
+              "n": 372,
+              "min": 1.2636,
+              "median": 1.2656,
+              "p95": 1.2681,
+              "max": 1.2696
+            },
+            "threshold": {
+              "n": 372,
+              "min": 0.3014,
+              "median": 0.3106,
+              "p95": 0.3225,
+              "max": 0.3225
+            },
+            "noise_p95": {
+              "n": 372,
+              "min": 0.1206,
+              "median": 0.1242,
+              "p95": 0.129,
+              "max": 0.129
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 494,
+          "stable_frames": 371,
+          "max_gap_s": 0.082957,
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 371,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.453,
+              "max": 1.4651
+            },
+            "filt": {
+              "n": 371,
+              "min": 1.0105,
+              "median": 1.3587,
+              "p95": 1.457,
+              "max": 1.461
+            },
+            "base": {
+              "n": 371,
+              "min": 1.3432,
+              "median": 1.3486,
+              "p95": 1.3498,
+              "max": 1.3504
+            },
+            "threshold": {
+              "n": 371,
+              "min": 0.2757,
+              "median": 0.2863,
+              "p95": 0.2974,
+              "max": 0.299
+            },
+            "noise_p95": {
+              "n": 371,
+              "min": 0.1103,
+              "median": 0.1145,
+              "p95": 0.119,
+              "max": 0.1196
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 1,
+      "phase": "contact",
+      "start_utc": "2026-10-14T18:22:02.178000+00:00",
+      "end_utc": "2026-10-14T18:22:22.193000+00:00",
+      "stable_start_utc": "2026-10-14T18:22:05.178000+00:00",
+      "stable_end_utc": "2026-10-14T18:22:20.193000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T18:22:02.364+00:00",
+        "host_monotonic_ns": 101893398081100,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-black-only-01",
+          "plant_node": "EB5",
+          "black_node": "EB5",
+          "condition": "black_only"
+        },
+        "phase_seq": 14,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 4,
+        "client_note": null,
+        "client_utc": "2026-10-14T18:21:57.559Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "TOCA: SOLO PUNTA NEGRA",
+        "instruction": "Toca SOLO la punta negra marcada EB5 con una mano durante los 20 segundos. Deja la otra mano libre. Ninguna mano toca ninguna planta.",
+        "spoken": "Toca ahora solo la punta negra EB5. No toques plantas."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 472,
+          "stable_frames": 356,
+          "max_gap_s": 0.082008,
+          "active_fraction": 0.9152542372881356,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 356,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.166,
+              "max": 0.1934
+            },
+            "filt": {
+              "n": 356,
+              "min": 0.0,
+              "median": 0.0691,
+              "p95": 0.088,
+              "max": 0.0932
+            },
+            "base": {
+              "n": 356,
+              "min": 0.3017,
+              "median": 0.3017,
+              "p95": 0.3017,
+              "max": 0.3017
+            },
+            "rms_mean": {
+              "n": 356,
+              "min": 0.0,
+              "median": 0.0376,
+              "p95": 0.0509,
+              "max": 0.0547
+            },
+            "occupancy": {
+              "n": 356,
+              "min": 0.0,
+              "median": 0.3462,
+              "p95": 0.4,
+              "max": 0.4615
+            },
+            "occupancy_base": {
+              "n": 356,
+              "min": 0.4325,
+              "median": 0.4325,
+              "p95": 0.4325,
+              "max": 0.4325
+            },
+            "adc_peak": {
+              "n": 356,
+              "min": 0.0,
+              "median": 198.0,
+              "p95": 240.0,
+              "max": 254.0
+            },
+            "samples": {
+              "n": 356,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 356,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 356,
+              "min": 2.683,
+              "median": 2.9935,
+              "p95": 3.282,
+              "max": 3.882
+            },
+            "threshold": {
+              "n": 356,
+              "min": 0.0777,
+              "median": 0.0777,
+              "p95": 0.0777,
+              "max": 0.0777
+            },
+            "noise_p95": {
+              "n": 356,
+              "min": 0.0259,
+              "median": 0.0259,
+              "p95": 0.0259,
+              "max": 0.0259
+            },
+            "transition_resets": {
+              "n": 356,
+              "min": 10.0,
+              "median": 10.0,
+              "p95": 10.0,
+              "max": 10.0
+            }
+          },
+          "midi_note_ons": 12,
+          "midi_note_pitches": [
+            56,
+            57,
+            59,
+            65,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 12,
+            "min": 56,
+            "median": 57.0,
+            "p95": 65,
+            "max": 71
+          },
+          "midi_note_duration_s": 18.247105,
+          "stable_midi_note_duration_s": 14.988821
+        },
+        "EC5": {
+          "frames": 481,
+          "stable_frames": 363,
+          "max_gap_s": 0.112726,
+          "active_fraction": 0.9126819126819127,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 363,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.2949,
+              "max": 0.3352
+            },
+            "filt": {
+              "n": 363,
+              "min": 0.0,
+              "median": 0.1355,
+              "p95": 0.1543,
+              "max": 0.1622
+            },
+            "base": {
+              "n": 363,
+              "min": 0.5122,
+              "median": 0.5122,
+              "p95": 0.5122,
+              "max": 0.5122
+            },
+            "rms_mean": {
+              "n": 363,
+              "min": 0.0,
+              "median": 0.0772,
+              "p95": 0.0907,
+              "max": 0.0967
+            },
+            "occupancy": {
+              "n": 363,
+              "min": 0.0,
+              "median": 0.3846,
+              "p95": 0.4615,
+              "max": 0.48
+            },
+            "occupancy_base": {
+              "n": 363,
+              "min": 0.4571,
+              "median": 0.4571,
+              "p95": 0.4571,
+              "max": 0.4571
+            },
+            "adc_peak": {
+              "n": 363,
+              "min": 0.0,
+              "median": 368.0,
+              "p95": 415.0,
+              "max": 427.0
+            },
+            "samples": {
+              "n": 363,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 363,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 363,
+              "min": 3.914,
+              "median": 4.213,
+              "p95": 4.506,
+              "max": 5.728
+            },
+            "threshold": {
+              "n": 363,
+              "min": 0.0894,
+              "median": 0.0894,
+              "p95": 0.0894,
+              "max": 0.0894
+            },
+            "noise_p95": {
+              "n": 363,
+              "min": 0.0298,
+              "median": 0.0298,
+              "p95": 0.0298,
+              "max": 0.0298
+            },
+            "transition_resets": {
+              "n": 363,
+              "min": 5.0,
+              "median": 5.0,
+              "p95": 5.0,
+              "max": 5.0
+            }
+          },
+          "midi_note_ons": 5,
+          "midi_note_pitches": [
+            55,
+            56,
+            59,
+            65,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 5,
+            "min": 55,
+            "median": 59,
+            "p95": 65,
+            "max": 71
+          },
+          "midi_note_duration_s": 18.263683,
+          "stable_midi_note_duration_s": 15.014929
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 2161,
+          "midi_note_pitches": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            78
+          ],
+          "midi_pitch_summary": {
+            "n": 2161,
+            "min": 46,
+            "median": 62,
+            "p95": 67,
+            "max": 78
+          },
+          "midi_note_duration_s": 12.219908,
+          "stable_midi_note_duration_s": 10.206827
+        },
+        "EE5": {
+          "frames": 450,
+          "stable_frames": 335,
+          "max_gap_s": 0.097224,
+          "active_fraction": 0.8933333333333333,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 335,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.4344,
+              "max": 0.4787
+            },
+            "filt": {
+              "n": 335,
+              "min": 0.0,
+              "median": 0.3997,
+              "p95": 0.4521,
+              "max": 0.4698
+            },
+            "base": {
+              "n": 335,
+              "min": 1.269,
+              "median": 1.269,
+              "p95": 1.269,
+              "max": 1.269
+            },
+            "threshold": {
+              "n": 335,
+              "min": 0.3277,
+              "median": 0.3421,
+              "p95": 0.3551,
+              "max": 0.3551
+            },
+            "noise_p95": {
+              "n": 335,
+              "min": 0.1311,
+              "median": 0.1368,
+              "p95": 0.1421,
+              "max": 0.1421
+            }
+          },
+          "midi_note_ons": 45,
+          "midi_note_pitches": [
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 45,
+            "min": 45,
+            "median": 51,
+            "p95": 66,
+            "max": 84
+          },
+          "midi_note_duration_s": 17.916382,
+          "stable_midi_note_duration_s": 14.888365
+        },
+        "EF5": {
+          "frames": 445,
+          "stable_frames": 329,
+          "max_gap_s": 0.120323,
+          "active_fraction": 0.8921348314606742,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 329,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.4336,
+              "max": 0.4642
+            },
+            "filt": {
+              "n": 329,
+              "min": 0.0,
+              "median": 0.3892,
+              "p95": 0.4473,
+              "max": 0.4585
+            },
+            "base": {
+              "n": 329,
+              "min": 1.3466,
+              "median": 1.3466,
+              "p95": 1.3466,
+              "max": 1.3466
+            },
+            "threshold": {
+              "n": 329,
+              "min": 0.3039,
+              "median": 0.3173,
+              "p95": 0.3277,
+              "max": 0.3294
+            },
+            "noise_p95": {
+              "n": 329,
+              "min": 0.1216,
+              "median": 0.1269,
+              "p95": 0.1311,
+              "max": 0.1318
+            }
+          },
+          "midi_note_ons": 51,
+          "midi_note_pitches": [
+            46,
+            52,
+            53,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            70,
+            76,
+            82,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 51,
+            "min": 46,
+            "median": 63,
+            "p95": 70,
+            "max": 84
+          },
+          "midi_note_duration_s": 17.824867,
+          "stable_midi_note_duration_s": 14.798264
+        }
+      }
+    },
+    {
+      "repetition": 1,
+      "phase": "release",
+      "start_utc": "2026-10-14T18:22:22.193000+00:00",
+      "end_utc": "2026-10-14T18:22:52.202000+00:00",
+      "stable_start_utc": "2026-10-14T18:22:37.202000+00:00",
+      "stable_end_utc": "2026-10-14T18:22:52.202000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T18:22:22.374+00:00",
+        "host_monotonic_ns": 101913408421900,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-black-only-01",
+          "plant_node": "EB5",
+          "black_node": "EB5",
+          "condition": "black_only"
+        },
+        "phase_seq": 15,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 4,
+        "client_note": null,
+        "client_utc": "2026-10-14T18:22:17.569Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "SUELTA EL NEGRO",
+        "instruction": "SUELTA LA PUNTA NEGRA EB5. Deja ambas manos libres. No toques ninguna planta ni ninguna punta negra durante los 30 segundos.",
+        "spoken": "Suelta la punta negra. Ambas manos libres."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 709,
+          "stable_frames": 359,
+          "max_gap_s": 0.088402,
+          "active_fraction": 0.08885754583921016,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 359,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.6568,
+              "max": 0.6664
+            },
+            "filt": {
+              "n": 359,
+              "min": 0.2888,
+              "median": 0.3133,
+              "p95": 0.3316,
+              "max": 0.3388
+            },
+            "base": {
+              "n": 359,
+              "min": 0.306,
+              "median": 0.3066,
+              "p95": 0.3102,
+              "max": 0.3107
+            },
+            "rms_mean": {
+              "n": 359,
+              "min": 0.1684,
+              "median": 0.1866,
+              "p95": 0.2062,
+              "max": 0.2151
+            },
+            "occupancy": {
+              "n": 359,
+              "min": 0.36,
+              "median": 0.4615,
+              "p95": 0.48,
+              "max": 0.52
+            },
+            "occupancy_base": {
+              "n": 359,
+              "min": 0.4352,
+              "median": 0.436,
+              "p95": 0.4385,
+              "max": 0.4394
+            },
+            "adc_peak": {
+              "n": 359,
+              "min": 785.0,
+              "median": 817.0,
+              "p95": 828.0,
+              "max": 834.0
+            },
+            "samples": {
+              "n": 359,
+              "min": 24.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 359,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 359,
+              "min": 0.001,
+              "median": 0.12,
+              "p95": 0.322,
+              "max": 0.401
+            },
+            "threshold": {
+              "n": 359,
+              "min": 0.0659,
+              "median": 0.0833,
+              "p95": 0.0925,
+              "max": 0.0925
+            },
+            "noise_p95": {
+              "n": 359,
+              "min": 0.022,
+              "median": 0.0278,
+              "p95": 0.0308,
+              "max": 0.0308
+            },
+            "transition_resets": {
+              "n": 359,
+              "min": 10.0,
+              "median": 10.0,
+              "p95": 10.0,
+              "max": 10.0
+            }
+          },
+          "midi_note_ons": 5,
+          "midi_note_pitches": [
+            56,
+            57,
+            58,
+            59
+          ],
+          "midi_pitch_summary": {
+            "n": 5,
+            "min": 56,
+            "median": 57,
+            "p95": 58,
+            "max": 59
+          },
+          "midi_note_duration_s": 2.8351319999999998,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 710,
+          "stable_frames": 358,
+          "max_gap_s": 0.088583,
+          "active_fraction": 0.1323943661971831,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 358,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.0589,
+              "max": 1.096
+            },
+            "filt": {
+              "n": 358,
+              "min": 0.4753,
+              "median": 0.5163,
+              "p95": 0.5527,
+              "max": 0.568
+            },
+            "base": {
+              "n": 358,
+              "min": 0.5125,
+              "median": 0.5141,
+              "p95": 0.5162,
+              "max": 0.5162
+            },
+            "rms_mean": {
+              "n": 358,
+              "min": 0.2675,
+              "median": 0.31555,
+              "p95": 0.3482,
+              "max": 0.361
+            },
+            "occupancy": {
+              "n": 358,
+              "min": 0.3846,
+              "median": 0.4615,
+              "p95": 0.5,
+              "max": 0.52
+            },
+            "occupancy_base": {
+              "n": 358,
+              "min": 0.4573,
+              "median": 0.45825,
+              "p95": 0.4589,
+              "max": 0.4593
+            },
+            "adc_peak": {
+              "n": 358,
+              "min": 1249.0,
+              "median": 1333.0,
+              "p95": 1369.0,
+              "max": 1387.0
+            },
+            "samples": {
+              "n": 358,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 358,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 358,
+              "min": 0.001,
+              "median": 0.179,
+              "p95": 0.363,
+              "max": 0.502
+            },
+            "threshold": {
+              "n": 358,
+              "min": 0.1,
+              "median": 0.1063,
+              "p95": 0.1112,
+              "max": 0.1123
+            },
+            "noise_p95": {
+              "n": 358,
+              "min": 0.0333,
+              "median": 0.0354,
+              "p95": 0.0371,
+              "max": 0.0374
+            },
+            "transition_resets": {
+              "n": 358,
+              "min": 5.0,
+              "median": 5.0,
+              "p95": 5.0,
+              "max": 5.0
+            }
+          },
+          "midi_note_ons": 8,
+          "midi_note_pitches": [
+            55,
+            56,
+            57,
+            58,
+            59,
+            60
+          ],
+          "midi_pitch_summary": {
+            "n": 8,
+            "min": 55,
+            "median": 58.0,
+            "p95": 59,
+            "max": 60
+          },
+          "midi_note_duration_s": 4.196784,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 194,
+          "midi_note_pitches": [
+            51,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            78,
+            79,
+            80,
+            83,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 194,
+            "min": 51,
+            "median": 62.0,
+            "p95": 76,
+            "max": 84
+          },
+          "midi_note_duration_s": 29.424644,
+          "stable_midi_note_duration_s": 15.0
+        },
+        "EE5": {
+          "frames": 730,
+          "stable_frames": 371,
+          "max_gap_s": 0.092752,
+          "active_fraction": 0.10547945205479452,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 371,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.3692,
+              "max": 1.4111
+            },
+            "filt": {
+              "n": 371,
+              "min": 0.9275,
+              "median": 1.3136,
+              "p95": 1.3877,
+              "max": 1.4062
+            },
+            "base": {
+              "n": 371,
+              "min": 1.2637,
+              "median": 1.268,
+              "p95": 1.275,
+              "max": 1.2759
+            },
+            "threshold": {
+              "n": 371,
+              "min": 0.3373,
+              "median": 0.3401,
+              "p95": 0.3428,
+              "max": 0.3428
+            },
+            "noise_p95": {
+              "n": 371,
+              "min": 0.1349,
+              "median": 0.136,
+              "p95": 0.1371,
+              "max": 0.1371
+            }
+          },
+          "midi_note_ons": 11,
+          "midi_note_pitches": [
+            49,
+            50,
+            51,
+            54,
+            56,
+            60,
+            66,
+            72,
+            78
+          ],
+          "midi_pitch_summary": {
+            "n": 11,
+            "min": 49,
+            "median": 54,
+            "p95": 72,
+            "max": 78
+          },
+          "midi_note_duration_s": 3.521666,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 732,
+          "stable_frames": 371,
+          "max_gap_s": 0.088651,
+          "active_fraction": 0.13387978142076504,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 371,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4304,
+              "max": 1.4965
+            },
+            "filt": {
+              "n": 371,
+              "min": 0.9743,
+              "median": 1.3619,
+              "p95": 1.4385,
+              "max": 1.4651
+            },
+            "base": {
+              "n": 371,
+              "min": 1.3398,
+              "median": 1.3421,
+              "p95": 1.3441,
+              "max": 1.3444
+            },
+            "threshold": {
+              "n": 371,
+              "min": 0.3565,
+              "median": 0.3701,
+              "p95": 0.3841,
+              "max": 0.3861
+            },
+            "noise_p95": {
+              "n": 371,
+              "min": 0.1426,
+              "median": 0.148,
+              "p95": 0.1536,
+              "max": 0.1545
+            }
+          },
+          "midi_note_ons": 9,
+          "midi_note_pitches": [
+            55,
+            57,
+            61,
+            67,
+            73,
+            79,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 9,
+            "min": 55,
+            "median": 67,
+            "p95": 79,
+            "max": 84
+          },
+          "midi_note_duration_s": 4.319211,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 2,
+      "phase": "rest",
+      "start_utc": "2026-10-14T18:22:52.202000+00:00",
+      "end_utc": "2026-10-14T18:23:12.225000+00:00",
+      "stable_start_utc": "2026-10-14T18:22:57.202000+00:00",
+      "stable_end_utc": "2026-10-14T18:23:12.225000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T18:22:52.259+00:00",
+        "host_monotonic_ns": 101943293022100,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-black-only-01",
+          "plant_node": "EB5",
+          "black_node": "EB5",
+          "condition": "black_only"
+        },
+        "phase_seq": 16,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 4,
+        "client_note": null,
+        "client_utc": "2026-10-14T18:22:47.453Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "REPOSO: MANOS LIBRES",
+        "instruction": "Deja AMBAS manos libres: no toques ninguna planta ni ninguna punta negra. Mantente quieto. No sostengas el negro durante el reposo.",
+        "spoken": "Reposo. Ambas manos libres, sin tocar plantas ni puntas negras."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 478,
+          "stable_frames": 358,
+          "max_gap_s": 0.143376,
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 358,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.6536,
+              "max": 0.6834
+            },
+            "filt": {
+              "n": 358,
+              "min": 0.2839,
+              "median": 0.31675,
+              "p95": 0.3337,
+              "max": 0.3436
+            },
+            "base": {
+              "n": 358,
+              "min": 0.3117,
+              "median": 0.3122,
+              "p95": 0.314,
+              "max": 0.3144
+            },
+            "rms_mean": {
+              "n": 358,
+              "min": 0.1633,
+              "median": 0.188,
+              "p95": 0.207,
+              "max": 0.2141
+            },
+            "occupancy": {
+              "n": 358,
+              "min": 0.36,
+              "median": 0.4615,
+              "p95": 0.48,
+              "max": 0.5
+            },
+            "occupancy_base": {
+              "n": 358,
+              "min": 0.4398,
+              "median": 0.4404,
+              "p95": 0.442,
+              "max": 0.4425
+            },
+            "adc_peak": {
+              "n": 358,
+              "min": 783.0,
+              "median": 825.5,
+              "p95": 844.0,
+              "max": 858.0
+            },
+            "samples": {
+              "n": 358,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 358,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 358,
+              "min": 0.0,
+              "median": 0.1515,
+              "p95": 0.325,
+              "max": 0.495
+            },
+            "threshold": {
+              "n": 358,
+              "min": 0.0638,
+              "median": 0.0653,
+              "p95": 0.0696,
+              "max": 0.0696
+            },
+            "noise_p95": {
+              "n": 358,
+              "min": 0.0213,
+              "median": 0.0218,
+              "p95": 0.0232,
+              "max": 0.0232
+            },
+            "transition_resets": {
+              "n": 358,
+              "min": 10.0,
+              "median": 10.0,
+              "p95": 10.0,
+              "max": 10.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 477,
+          "stable_frames": 359,
+          "max_gap_s": 0.087739,
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 359,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.0702,
+              "max": 1.0968
+            },
+            "filt": {
+              "n": 359,
+              "min": 0.4763,
+              "median": 0.5239,
+              "p95": 0.5474,
+              "max": 0.5627
+            },
+            "base": {
+              "n": 359,
+              "min": 0.5177,
+              "median": 0.5212,
+              "p95": 0.5228,
+              "max": 0.5232
+            },
+            "rms_mean": {
+              "n": 359,
+              "min": 0.2796,
+              "median": 0.3183,
+              "p95": 0.3464,
+              "max": 0.3624
+            },
+            "occupancy": {
+              "n": 359,
+              "min": 0.4231,
+              "median": 0.4615,
+              "p95": 0.5,
+              "max": 0.52
+            },
+            "occupancy_base": {
+              "n": 359,
+              "min": 0.4582,
+              "median": 0.4595,
+              "p95": 0.46,
+              "max": 0.4601
+            },
+            "adc_peak": {
+              "n": 359,
+              "min": 1279.0,
+              "median": 1339.0,
+              "p95": 1354.0,
+              "max": 1361.0
+            },
+            "samples": {
+              "n": 359,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 359,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 359,
+              "min": 0.0,
+              "median": 0.171,
+              "p95": 0.331,
+              "max": 0.502
+            },
+            "threshold": {
+              "n": 359,
+              "min": 0.0903,
+              "median": 0.0968,
+              "p95": 0.1168,
+              "max": 0.1168
+            },
+            "noise_p95": {
+              "n": 359,
+              "min": 0.0301,
+              "median": 0.0323,
+              "p95": 0.0389,
+              "max": 0.0389
+            },
+            "transition_resets": {
+              "n": 359,
+              "min": 5.0,
+              "median": 5.0,
+              "p95": 5.0,
+              "max": 5.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 20.023,
+          "stable_midi_note_duration_s": 15.023
+        },
+        "EE5": {
+          "frames": 496,
+          "stable_frames": 372,
+          "max_gap_s": 0.078207,
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 372,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.378,
+              "max": 1.4312
+            },
+            "filt": {
+              "n": 372,
+              "min": 0.9122,
+              "median": 1.2652,
+              "p95": 1.3893,
+              "max": 1.4264
+            },
+            "base": {
+              "n": 372,
+              "min": 1.2696,
+              "median": 1.2735500000000002,
+              "p95": 1.2763,
+              "max": 1.2768
+            },
+            "threshold": {
+              "n": 372,
+              "min": 0.34,
+              "median": 0.3529,
+              "p95": 0.3581,
+              "max": 0.3586
+            },
+            "noise_p95": {
+              "n": 372,
+              "min": 0.136,
+              "median": 0.1412,
+              "p95": 0.1432,
+              "max": 0.1434
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 494,
+          "stable_frames": 372,
+          "max_gap_s": 0.08441,
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 372,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4296,
+              "max": 1.4707
+            },
+            "filt": {
+              "n": 372,
+              "min": 1.0033,
+              "median": 1.3426,
+              "p95": 1.4594,
+              "max": 1.4659
+            },
+            "base": {
+              "n": 372,
+              "min": 1.3415,
+              "median": 1.3437,
+              "p95": 1.3454,
+              "max": 1.3463
+            },
+            "threshold": {
+              "n": 372,
+              "min": 0.367,
+              "median": 0.3673,
+              "p95": 0.4007,
+              "max": 0.4007
+            },
+            "noise_p95": {
+              "n": 372,
+              "min": 0.1468,
+              "median": 0.1469,
+              "p95": 0.1603,
+              "max": 0.1603
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 2,
+      "phase": "contact",
+      "start_utc": "2026-10-14T18:23:12.225000+00:00",
+      "end_utc": "2026-10-14T18:23:32.236000+00:00",
+      "stable_start_utc": "2026-10-14T18:23:15.225000+00:00",
+      "stable_end_utc": "2026-10-14T18:23:30.236000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T18:23:12.420+00:00",
+        "host_monotonic_ns": 101963454212000,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-black-only-01",
+          "plant_node": "EB5",
+          "black_node": "EB5",
+          "condition": "black_only"
+        },
+        "phase_seq": 17,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 4,
+        "client_note": null,
+        "client_utc": "2026-10-14T18:23:07.613Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "TOCA: SOLO PUNTA NEGRA",
+        "instruction": "Toca SOLO la punta negra marcada EB5 con una mano durante los 20 segundos. Deja la otra mano libre. Ninguna mano toca ninguna planta.",
+        "spoken": "Toca ahora solo la punta negra EB5. No toques plantas."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 482,
+          "stable_frames": 365,
+          "max_gap_s": 0.089879,
+          "active_fraction": 0.9315352697095436,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.033,
+              "max": 0.0467
+            },
+            "filt": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.0119,
+              "p95": 0.0174,
+              "max": 0.022
+            },
+            "base": {
+              "n": 365,
+              "min": 0.3134,
+              "median": 0.3134,
+              "p95": 0.3134,
+              "max": 0.3134
+            },
+            "rms_mean": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.005,
+              "p95": 0.0079,
+              "max": 0.0108
+            },
+            "occupancy": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.2,
+              "p95": 0.2692,
+              "max": 0.3077
+            },
+            "occupancy_base": {
+              "n": 365,
+              "min": 0.4414,
+              "median": 0.4414,
+              "p95": 0.4414,
+              "max": 0.4414
+            },
+            "adc_peak": {
+              "n": 365,
+              "min": 0.0,
+              "median": 44.0,
+              "p95": 58.0,
+              "max": 70.0
+            },
+            "samples": {
+              "n": 365,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 365,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 79.0
+            },
+            "score": {
+              "n": 365,
+              "min": 4.452,
+              "median": 4.606,
+              "p95": 4.686,
+              "max": 4.788
+            },
+            "threshold": {
+              "n": 365,
+              "min": 0.0655,
+              "median": 0.0655,
+              "p95": 0.0655,
+              "max": 0.0655
+            },
+            "noise_p95": {
+              "n": 365,
+              "min": 0.0218,
+              "median": 0.0218,
+              "p95": 0.0218,
+              "max": 0.0218
+            },
+            "transition_resets": {
+              "n": 365,
+              "min": 10.0,
+              "median": 10.0,
+              "p95": 10.0,
+              "max": 10.0
+            }
+          },
+          "midi_note_ons": 4,
+          "midi_note_pitches": [
+            56,
+            59,
+            65,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 4,
+            "min": 56,
+            "median": 62.0,
+            "p95": 65,
+            "max": 71
+          },
+          "midi_note_duration_s": 18.603419000000002,
+          "stable_midi_note_duration_s": 15.011
+        },
+        "EC5": {
+          "frames": 476,
+          "stable_frames": 363,
+          "max_gap_s": 0.088864,
+          "active_fraction": 0.930672268907563,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 363,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.108,
+              "max": 0.1249
+            },
+            "filt": {
+              "n": 363,
+              "min": 0.0,
+              "median": 0.0456,
+              "p95": 0.0516,
+              "max": 0.0532
+            },
+            "base": {
+              "n": 363,
+              "min": 0.5219,
+              "median": 0.5219,
+              "p95": 0.5219,
+              "max": 0.5219
+            },
+            "rms_mean": {
+              "n": 363,
+              "min": 0.0,
+              "median": 0.0228,
+              "p95": 0.0276,
+              "max": 0.029
+            },
+            "occupancy": {
+              "n": 363,
+              "min": 0.0,
+              "median": 0.3077,
+              "p95": 0.3846,
+              "max": 0.4
+            },
+            "occupancy_base": {
+              "n": 363,
+              "min": 0.4594,
+              "median": 0.4594,
+              "p95": 0.4594,
+              "max": 0.4594
+            },
+            "adc_peak": {
+              "n": 363,
+              "min": 0.0,
+              "median": 141.0,
+              "p95": 149.0,
+              "max": 155.0
+            },
+            "samples": {
+              "n": 363,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 363,
+              "min": 74.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 79.0
+            },
+            "score": {
+              "n": 363,
+              "min": 5.11,
+              "median": 5.193,
+              "p95": 5.415,
+              "max": 5.69
+            },
+            "threshold": {
+              "n": 363,
+              "min": 0.0917,
+              "median": 0.0917,
+              "p95": 0.0917,
+              "max": 0.0917
+            },
+            "noise_p95": {
+              "n": 363,
+              "min": 0.0306,
+              "median": 0.0306,
+              "p95": 0.0306,
+              "max": 0.0306
+            },
+            "transition_resets": {
+              "n": 363,
+              "min": 5.0,
+              "median": 5.0,
+              "p95": 5.0,
+              "max": 5.0
+            }
+          },
+          "midi_note_ons": 9,
+          "midi_note_pitches": [
+            55,
+            56,
+            59,
+            65,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 9,
+            "min": 55,
+            "median": 56,
+            "p95": 65,
+            "max": 71
+          },
+          "midi_note_duration_s": 18.601979,
+          "stable_midi_note_duration_s": 15.005230000000001
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 1878,
+          "midi_note_pitches": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            63,
+            65,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            75,
+            77,
+            78,
+            82,
+            83,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 1878,
+            "min": 46,
+            "median": 54.0,
+            "p95": 57,
+            "max": 84
+          },
+          "midi_note_duration_s": 14.750236,
+          "stable_midi_note_duration_s": 11.028741
+        },
+        "EE5": {
+          "frames": 456,
+          "stable_frames": 341,
+          "max_gap_s": 0.111378,
+          "active_fraction": 0.9100877192982456,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 341,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.2047,
+              "max": 0.2176
+            },
+            "filt": {
+              "n": 341,
+              "min": 0.0,
+              "median": 0.1829,
+              "p95": 0.2111,
+              "max": 0.2168
+            },
+            "base": {
+              "n": 341,
+              "min": 1.2704,
+              "median": 1.2704,
+              "p95": 1.2704,
+              "max": 1.2704
+            },
+            "threshold": {
+              "n": 341,
+              "min": 0.3621,
+              "median": 0.3778,
+              "p95": 0.3901,
+              "max": 0.3905
+            },
+            "noise_p95": {
+              "n": 341,
+              "min": 0.1448,
+              "median": 0.1511,
+              "p95": 0.156,
+              "max": 0.1562
+            }
+          },
+          "midi_note_ons": 39,
+          "midi_note_pitches": [
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            46,
+            52,
+            58,
+            64,
+            70,
+            76,
+            82,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 39,
+            "min": 37,
+            "median": 41,
+            "p95": 76,
+            "max": 84
+          },
+          "midi_note_duration_s": 18.212943,
+          "stable_midi_note_duration_s": 14.934610000000001
+        },
+        "EF5": {
+          "frames": 451,
+          "stable_frames": 335,
+          "max_gap_s": 0.086279,
+          "active_fraction": 0.9113082039911308,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 335,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.1982,
+              "max": 0.2176
+            },
+            "filt": {
+              "n": 335,
+              "min": 0.0,
+              "median": 0.1725,
+              "p95": 0.2055,
+              "max": 0.2111
+            },
+            "base": {
+              "n": 335,
+              "min": 1.3433,
+              "median": 1.3433,
+              "p95": 1.3433,
+              "max": 1.3433
+            },
+            "threshold": {
+              "n": 335,
+              "min": 0.3673,
+              "median": 0.3673,
+              "p95": 0.3673,
+              "max": 0.3673
+            },
+            "noise_p95": {
+              "n": 335,
+              "min": 0.1469,
+              "median": 0.1469,
+              "p95": 0.1469,
+              "max": 0.1469
+            }
+          },
+          "midi_note_ons": 45,
+          "midi_note_pitches": [
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 45,
+            "min": 42,
+            "median": 46,
+            "p95": 66,
+            "max": 84
+          },
+          "midi_note_duration_s": 18.206775,
+          "stable_midi_note_duration_s": 14.916599
+        }
+      }
+    },
+    {
+      "repetition": 2,
+      "phase": "release",
+      "start_utc": "2026-10-14T18:23:32.236000+00:00",
+      "end_utc": "2026-10-14T18:24:02.237000+00:00",
+      "stable_start_utc": "2026-10-14T18:23:47.237000+00:00",
+      "stable_end_utc": "2026-10-14T18:24:02.237000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T18:23:32.329+00:00",
+        "host_monotonic_ns": 101983363604900,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-black-only-01",
+          "plant_node": "EB5",
+          "black_node": "EB5",
+          "condition": "black_only"
+        },
+        "phase_seq": 18,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 4,
+        "client_note": null,
+        "client_utc": "2026-10-14T18:23:27.519Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "SUELTA EL NEGRO",
+        "instruction": "SUELTA LA PUNTA NEGRA EB5. Deja ambas manos libres. No toques ninguna planta ni ninguna punta negra durante los 30 segundos.",
+        "spoken": "Suelta la punta negra. Ambas manos libres."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 713,
+          "stable_frames": 358,
+          "max_gap_s": 0.113411,
+          "active_fraction": 0.09817671809256662,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 358,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.6729,
+              "max": 0.6922
+            },
+            "filt": {
+              "n": 358,
+              "min": 0.2954,
+              "median": 0.3244,
+              "p95": 0.3418,
+              "max": 0.3521
+            },
+            "base": {
+              "n": 358,
+              "min": 0.3172,
+              "median": 0.3207,
+              "p95": 0.3224,
+              "max": 0.3227
+            },
+            "rms_mean": {
+              "n": 358,
+              "min": 0.1686,
+              "median": 0.1948,
+              "p95": 0.2129,
+              "max": 0.2266
+            },
+            "occupancy": {
+              "n": 358,
+              "min": 0.36,
+              "median": 0.4615,
+              "p95": 0.48,
+              "max": 0.52
+            },
+            "occupancy_base": {
+              "n": 358,
+              "min": 0.4424,
+              "median": 0.4437,
+              "p95": 0.4452,
+              "max": 0.4455
+            },
+            "adc_peak": {
+              "n": 358,
+              "min": 789.0,
+              "median": 848.0,
+              "p95": 862.0,
+              "max": 867.0
+            },
+            "samples": {
+              "n": 358,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 358,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 358,
+              "min": 0.0,
+              "median": 0.1365,
+              "p95": 0.293,
+              "max": 0.457
+            },
+            "threshold": {
+              "n": 358,
+              "min": 0.0626,
+              "median": 0.0764,
+              "p95": 0.0812,
+              "max": 0.0812
+            },
+            "noise_p95": {
+              "n": 358,
+              "min": 0.0209,
+              "median": 0.0255,
+              "p95": 0.0271,
+              "max": 0.0271
+            },
+            "transition_resets": {
+              "n": 358,
+              "min": 10.0,
+              "median": 10.0,
+              "p95": 10.0,
+              "max": 10.0
+            }
+          },
+          "midi_note_ons": 3,
+          "midi_note_pitches": [
+            57,
+            58,
+            59
+          ],
+          "midi_pitch_summary": {
+            "n": 3,
+            "min": 57,
+            "median": 58,
+            "p95": 58,
+            "max": 59
+          },
+          "midi_note_duration_s": 3.0355190000000003,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 709,
+          "stable_frames": 358,
+          "max_gap_s": 0.105469,
+          "active_fraction": 0.10578279266572638,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 358,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.0589,
+              "max": 1.1064
+            },
+            "filt": {
+              "n": 358,
+              "min": 0.4799,
+              "median": 0.5195,
+              "p95": 0.5497,
+              "max": 0.562
+            },
+            "base": {
+              "n": 358,
+              "min": 0.5207,
+              "median": 0.5224,
+              "p95": 0.5236,
+              "max": 0.5236
+            },
+            "rms_mean": {
+              "n": 358,
+              "min": 0.2705,
+              "median": 0.3145,
+              "p95": 0.3453,
+              "max": 0.3588
+            },
+            "occupancy": {
+              "n": 358,
+              "min": 0.3846,
+              "median": 0.4615,
+              "p95": 0.5,
+              "max": 0.5385
+            },
+            "occupancy_base": {
+              "n": 358,
+              "min": 0.4594,
+              "median": 0.4602,
+              "p95": 0.4608,
+              "max": 0.4608
+            },
+            "adc_peak": {
+              "n": 358,
+              "min": 1277.0,
+              "median": 1335.0,
+              "p95": 1362.0,
+              "max": 1374.0
+            },
+            "samples": {
+              "n": 358,
+              "min": 24.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 358,
+              "min": 74.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 358,
+              "min": 0.001,
+              "median": 0.161,
+              "p95": 0.335,
+              "max": 0.395
+            },
+            "threshold": {
+              "n": 358,
+              "min": 0.1026,
+              "median": 0.1047,
+              "p95": 0.108,
+              "max": 0.108
+            },
+            "noise_p95": {
+              "n": 358,
+              "min": 0.0342,
+              "median": 0.0349,
+              "p95": 0.036,
+              "max": 0.036
+            },
+            "transition_resets": {
+              "n": 358,
+              "min": 5.0,
+              "median": 5.0,
+              "p95": 5.0,
+              "max": 5.0
+            }
+          },
+          "midi_note_ons": 6,
+          "midi_note_pitches": [
+            55,
+            56,
+            58,
+            59,
+            60
+          ],
+          "midi_pitch_summary": {
+            "n": 6,
+            "min": 55,
+            "median": 58.5,
+            "p95": 59,
+            "max": 60
+          },
+          "midi_note_duration_s": 3.365911,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 190,
+          "midi_note_pitches": [
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            63,
+            69,
+            71,
+            75,
+            77,
+            79,
+            80,
+            81,
+            82,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 190,
+            "min": 48,
+            "median": 55.0,
+            "p95": 69,
+            "max": 84
+          },
+          "midi_note_duration_s": 29.624491000000003,
+          "stable_midi_note_duration_s": 15.0
+        },
+        "EE5": {
+          "frames": 731,
+          "stable_frames": 369,
+          "max_gap_s": 0.096821,
+          "active_fraction": 0.10807113543091655,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 369,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.3627,
+              "max": 1.4078
+            },
+            "filt": {
+              "n": 369,
+              "min": 0.9783,
+              "median": 1.2684,
+              "p95": 1.3917,
+              "max": 1.399
+            },
+            "base": {
+              "n": 369,
+              "min": 1.2698,
+              "median": 1.2741,
+              "p95": 1.2773,
+              "max": 1.2782
+            },
+            "threshold": {
+              "n": 369,
+              "min": 0.3551,
+              "median": 0.3575,
+              "p95": 0.3597,
+              "max": 0.3597
+            },
+            "noise_p95": {
+              "n": 369,
+              "min": 0.142,
+              "median": 0.143,
+              "p95": 0.1439,
+              "max": 0.1439
+            }
+          },
+          "midi_note_ons": 10,
+          "midi_note_pitches": [
+            36,
+            37,
+            40,
+            41,
+            42,
+            48,
+            54,
+            60,
+            66,
+            72
+          ],
+          "midi_pitch_summary": {
+            "n": 10,
+            "min": 36,
+            "median": 45.0,
+            "p95": 66,
+            "max": 72
+          },
+          "midi_note_duration_s": 3.604602,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 732,
+          "stable_frames": 369,
+          "max_gap_s": 0.134442,
+          "active_fraction": 0.1051912568306011,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 369,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4546,
+              "max": 1.4723
+            },
+            "filt": {
+              "n": 369,
+              "min": 1.071,
+              "median": 1.3845,
+              "p95": 1.4618,
+              "max": 1.4691
+            },
+            "base": {
+              "n": 369,
+              "min": 1.339,
+              "median": 1.3438,
+              "p95": 1.3462,
+              "max": 1.3467
+            },
+            "threshold": {
+              "n": 369,
+              "min": 0.3211,
+              "median": 0.3282,
+              "p95": 0.3294,
+              "max": 0.3294
+            },
+            "noise_p95": {
+              "n": 369,
+              "min": 0.1284,
+              "median": 0.1313,
+              "p95": 0.1318,
+              "max": 0.1318
+            }
+          },
+          "midi_note_ons": 9,
+          "midi_note_pitches": [
+            42,
+            43,
+            46,
+            47,
+            48,
+            54,
+            60,
+            66
+          ],
+          "midi_pitch_summary": {
+            "n": 9,
+            "min": 42,
+            "median": 48,
+            "p95": 60,
+            "max": 66
+          },
+          "midi_note_duration_s": 3.478188,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 3,
+      "phase": "rest",
+      "start_utc": "2026-10-14T18:24:02.237000+00:00",
+      "end_utc": "2026-10-14T18:24:22.261000+00:00",
+      "stable_start_utc": "2026-10-14T18:24:07.237000+00:00",
+      "stable_end_utc": "2026-10-14T18:24:22.261000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T18:24:02.312+00:00",
+        "host_monotonic_ns": 102013346194900,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-black-only-01",
+          "plant_node": "EB5",
+          "black_node": "EB5",
+          "condition": "black_only"
+        },
+        "phase_seq": 19,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 4,
+        "client_note": null,
+        "client_utc": "2026-10-14T18:23:57.505Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "REPOSO: MANOS LIBRES",
+        "instruction": "Deja AMBAS manos libres: no toques ninguna planta ni ninguna punta negra. Mantente quieto. No sostengas el negro durante el reposo.",
+        "spoken": "Reposo. Ambas manos libres, sin tocar plantas ni puntas negras."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 475,
+          "stable_frames": 355,
+          "max_gap_s": 0.087604,
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 355,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.6656,
+              "max": 0.6955
+            },
+            "filt": {
+              "n": 355,
+              "min": 0.27,
+              "median": 0.3195,
+              "p95": 0.3379,
+              "max": 0.3484
+            },
+            "base": {
+              "n": 355,
+              "min": 0.3199,
+              "median": 0.3214,
+              "p95": 0.3231,
+              "max": 0.3234
+            },
+            "rms_mean": {
+              "n": 355,
+              "min": 0.1514,
+              "median": 0.1909,
+              "p95": 0.2101,
+              "max": 0.218
+            },
+            "occupancy": {
+              "n": 355,
+              "min": 0.3462,
+              "median": 0.4615,
+              "p95": 0.48,
+              "max": 0.5
+            },
+            "occupancy_base": {
+              "n": 355,
+              "min": 0.443,
+              "median": 0.4441,
+              "p95": 0.4462,
+              "max": 0.4467
+            },
+            "adc_peak": {
+              "n": 355,
+              "min": 761.0,
+              "median": 830.0,
+              "p95": 849.0,
+              "max": 865.0
+            },
+            "samples": {
+              "n": 355,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 355,
+              "min": 74.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 355,
+              "min": 0.0,
+              "median": 0.159,
+              "p95": 0.369,
+              "max": 0.702
+            },
+            "threshold": {
+              "n": 355,
+              "min": 0.0636,
+              "median": 0.0691,
+              "p95": 0.0728,
+              "max": 0.0733
+            },
+            "noise_p95": {
+              "n": 355,
+              "min": 0.0212,
+              "median": 0.023,
+              "p95": 0.0243,
+              "max": 0.0244
+            },
+            "transition_resets": {
+              "n": 355,
+              "min": 10.0,
+              "median": 10.0,
+              "p95": 10.0,
+              "max": 10.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 472,
+          "stable_frames": 357,
+          "max_gap_s": 0.092906,
+          "active_fraction": 0.057203389830508475,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.0613,
+              "max": 1.0839
+            },
+            "filt": {
+              "n": 357,
+              "min": 0.4833,
+              "median": 0.5226,
+              "p95": 0.549,
+              "max": 0.5635
+            },
+            "base": {
+              "n": 357,
+              "min": 0.5204,
+              "median": 0.5209,
+              "p95": 0.5221,
+              "max": 0.5225
+            },
+            "rms_mean": {
+              "n": 357,
+              "min": 0.2782,
+              "median": 0.3175,
+              "p95": 0.3472,
+              "max": 0.3639
+            },
+            "occupancy": {
+              "n": 357,
+              "min": 0.3846,
+              "median": 0.4615,
+              "p95": 0.5,
+              "max": 0.52
+            },
+            "occupancy_base": {
+              "n": 357,
+              "min": 0.4593,
+              "median": 0.46,
+              "p95": 0.4607,
+              "max": 0.4609
+            },
+            "adc_peak": {
+              "n": 357,
+              "min": 1282.0,
+              "median": 1339.0,
+              "p95": 1350.0,
+              "max": 1360.0
+            },
+            "samples": {
+              "n": 357,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 357,
+              "min": 74.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 357,
+              "min": 0.002,
+              "median": 0.163,
+              "p95": 0.311,
+              "max": 0.397
+            },
+            "threshold": {
+              "n": 357,
+              "min": 0.0935,
+              "median": 0.1069,
+              "p95": 0.1123,
+              "max": 0.1123
+            },
+            "noise_p95": {
+              "n": 357,
+              "min": 0.0312,
+              "median": 0.0356,
+              "p95": 0.0374,
+              "max": 0.0374
+            },
+            "transition_resets": {
+              "n": 357,
+              "min": 5.0,
+              "median": 5.0,
+              "p95": 5.0,
+              "max": 5.0
+            }
+          },
+          "midi_note_ons": 4,
+          "midi_note_pitches": [
+            55,
+            56,
+            57,
+            58
+          ],
+          "midi_pitch_summary": {
+            "n": 4,
+            "min": 55,
+            "median": 56.5,
+            "p95": 57,
+            "max": 58
+          },
+          "midi_note_duration_s": 1.321609,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 20.024,
+          "stable_midi_note_duration_s": 15.024
+        },
+        "EE5": {
+          "frames": 494,
+          "stable_frames": 370,
+          "max_gap_s": 0.084008,
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 370,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.3812,
+              "max": 1.4038
+            },
+            "filt": {
+              "n": 370,
+              "min": 1.1363,
+              "median": 1.295,
+              "p95": 1.3684,
+              "max": 1.3982
+            },
+            "base": {
+              "n": 370,
+              "min": 1.2654,
+              "median": 1.2708,
+              "p95": 1.2722,
+              "max": 1.273
+            },
+            "threshold": {
+              "n": 370,
+              "min": 0.3123,
+              "median": 0.3483,
+              "p95": 0.3551,
+              "max": 0.3551
+            },
+            "noise_p95": {
+              "n": 370,
+              "min": 0.1249,
+              "median": 0.1393,
+              "p95": 0.142,
+              "max": 0.142
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 496,
+          "stable_frames": 372,
+          "max_gap_s": 0.087374,
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 372,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4409,
+              "max": 1.4747
+            },
+            "filt": {
+              "n": 372,
+              "min": 0.9082,
+              "median": 1.341,
+              "p95": 1.4626,
+              "max": 1.4707
+            },
+            "base": {
+              "n": 372,
+              "min": 1.345,
+              "median": 1.3475,
+              "p95": 1.3486,
+              "max": 1.3489
+            },
+            "threshold": {
+              "n": 372,
+              "min": 0.3282,
+              "median": 0.3426,
+              "p95": 0.3537,
+              "max": 0.3556
+            },
+            "noise_p95": {
+              "n": 372,
+              "min": 0.1313,
+              "median": 0.137,
+              "p95": 0.1415,
+              "max": 0.1422
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 3,
+      "phase": "contact",
+      "start_utc": "2026-10-14T18:24:22.261000+00:00",
+      "end_utc": "2026-10-14T18:24:42.279000+00:00",
+      "stable_start_utc": "2026-10-14T18:24:25.261000+00:00",
+      "stable_end_utc": "2026-10-14T18:24:40.279000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T18:24:22.477+00:00",
+        "host_monotonic_ns": 102033511475200,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-black-only-01",
+          "plant_node": "EB5",
+          "black_node": "EB5",
+          "condition": "black_only"
+        },
+        "phase_seq": 20,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 4,
+        "client_note": null,
+        "client_utc": "2026-10-14T18:24:17.677Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "TOCA: SOLO PUNTA NEGRA",
+        "instruction": "Toca SOLO la punta negra marcada EB5 con una mano durante los 20 segundos. Deja la otra mano libre. Ninguna mano toca ninguna planta.",
+        "spoken": "Toca ahora solo la punta negra EB5. No toques plantas."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 481,
+          "stable_frames": 365,
+          "max_gap_s": 0.119437,
+          "active_fraction": 0.9251559251559252,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "base": {
+              "n": 365,
+              "min": 0.3209,
+              "median": 0.3209,
+              "p95": 0.3209,
+              "max": 0.3209
+            },
+            "rms_mean": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy_base": {
+              "n": 365,
+              "min": 0.4459,
+              "median": 0.4459,
+              "p95": 0.4459,
+              "max": 0.4459
+            },
+            "adc_peak": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "samples": {
+              "n": 365,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 365,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 79.0
+            },
+            "score": {
+              "n": 365,
+              "min": 4.359,
+              "median": 4.359,
+              "p95": 4.359,
+              "max": 4.359
+            },
+            "threshold": {
+              "n": 365,
+              "min": 0.0736,
+              "median": 0.0736,
+              "p95": 0.0736,
+              "max": 0.0736
+            },
+            "noise_p95": {
+              "n": 365,
+              "min": 0.0245,
+              "median": 0.0245,
+              "p95": 0.0245,
+              "max": 0.0245
+            },
+            "transition_resets": {
+              "n": 365,
+              "min": 10.0,
+              "median": 10.0,
+              "p95": 10.0,
+              "max": 10.0
+            }
+          },
+          "midi_note_ons": 4,
+          "midi_note_pitches": [
+            56,
+            59,
+            65,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 4,
+            "min": 56,
+            "median": 62.0,
+            "p95": 65,
+            "max": 71
+          },
+          "midi_note_duration_s": 18.494363,
+          "stable_midi_note_duration_s": 15.018
+        },
+        "EC5": {
+          "frames": 481,
+          "stable_frames": 364,
+          "max_gap_s": 0.130839,
+          "active_fraction": 0.9272349272349273,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0193,
+              "max": 0.0314
+            },
+            "filt": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.0064,
+              "p95": 0.0103,
+              "max": 0.012
+            },
+            "base": {
+              "n": 364,
+              "min": 0.5206,
+              "median": 0.5206,
+              "p95": 0.5206,
+              "max": 0.5206
+            },
+            "rms_mean": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.0024,
+              "p95": 0.0041,
+              "max": 0.005
+            },
+            "occupancy": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.1538,
+              "p95": 0.2,
+              "max": 0.2308
+            },
+            "occupancy_base": {
+              "n": 364,
+              "min": 0.4593,
+              "median": 0.4593,
+              "p95": 0.4593,
+              "max": 0.4593
+            },
+            "adc_peak": {
+              "n": 364,
+              "min": 0.0,
+              "median": 26.0,
+              "p95": 39.0,
+              "max": 48.0
+            },
+            "samples": {
+              "n": 364,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 364,
+              "min": 74.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 79.0
+            },
+            "score": {
+              "n": 364,
+              "min": 5.498,
+              "median": 5.559,
+              "p95": 5.628,
+              "max": 5.628
+            },
+            "threshold": {
+              "n": 364,
+              "min": 0.0925,
+              "median": 0.0925,
+              "p95": 0.0925,
+              "max": 0.0925
+            },
+            "noise_p95": {
+              "n": 364,
+              "min": 0.0308,
+              "median": 0.0308,
+              "p95": 0.0308,
+              "max": 0.0308
+            },
+            "transition_resets": {
+              "n": 364,
+              "min": 5.0,
+              "median": 5.0,
+              "p95": 5.0,
+              "max": 5.0
+            }
+          },
+          "midi_note_ons": 4,
+          "midi_note_pitches": [
+            55,
+            59,
+            65,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 4,
+            "min": 55,
+            "median": 62.0,
+            "p95": 65,
+            "max": 71
+          },
+          "midi_note_duration_s": 18.477781999999998,
+          "stable_midi_note_duration_s": 15.018
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 865,
+          "midi_note_pitches": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            68,
+            71,
+            75,
+            78
+          ],
+          "midi_pitch_summary": {
+            "n": 865,
+            "min": 46,
+            "median": 49,
+            "p95": 51,
+            "max": 78
+          },
+          "midi_note_duration_s": 16.713273,
+          "stable_midi_note_duration_s": 12.687613
+        },
+        "EE5": {
+          "frames": 459,
+          "stable_frames": 342,
+          "max_gap_s": 0.103478,
+          "active_fraction": 0.9019607843137255,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 342,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0903,
+              "max": 0.1128
+            },
+            "filt": {
+              "n": 342,
+              "min": 0.0,
+              "median": 0.0814,
+              "p95": 0.1007,
+              "max": 0.1112
+            },
+            "base": {
+              "n": 342,
+              "min": 1.269,
+              "median": 1.269,
+              "p95": 1.269,
+              "max": 1.269
+            },
+            "threshold": {
+              "n": 342,
+              "min": 0.3123,
+              "median": 0.3123,
+              "p95": 0.3123,
+              "max": 0.3123
+            },
+            "noise_p95": {
+              "n": 342,
+              "min": 0.1249,
+              "median": 0.1249,
+              "p95": 0.1249,
+              "max": 0.1249
+            }
+          },
+          "midi_note_ons": 37,
+          "midi_note_pitches": [
+            33,
+            34,
+            35,
+            36,
+            37,
+            40,
+            46,
+            52,
+            58,
+            64,
+            70,
+            76,
+            82,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 37,
+            "min": 33,
+            "median": 36,
+            "p95": 76,
+            "max": 84
+          },
+          "midi_note_duration_s": 18.085473,
+          "stable_midi_note_duration_s": 14.944059
+        },
+        "EF5": {
+          "frames": 453,
+          "stable_frames": 338,
+          "max_gap_s": 0.111671,
+          "active_fraction": 0.9006622516556292,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 338,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.083,
+              "max": 0.1426
+            },
+            "filt": {
+              "n": 338,
+              "min": 0.0,
+              "median": 0.0701,
+              "p95": 0.0903,
+              "max": 0.1297
+            },
+            "base": {
+              "n": 338,
+              "min": 1.3479,
+              "median": 1.3479,
+              "p95": 1.3479,
+              "max": 1.3479
+            },
+            "threshold": {
+              "n": 338,
+              "min": 0.3614,
+              "median": 0.3771,
+              "p95": 0.3893,
+              "max": 0.3914
+            },
+            "noise_p95": {
+              "n": 338,
+              "min": 0.1445,
+              "median": 0.1508,
+              "p95": 0.1557,
+              "max": 0.1565
+            }
+          },
+          "midi_note_ons": 41,
+          "midi_note_pitches": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            42,
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 41,
+            "min": 34,
+            "median": 38,
+            "p95": 72,
+            "max": 84
+          },
+          "midi_note_duration_s": 18.073477,
+          "stable_midi_note_duration_s": 14.919925
+        }
+      }
+    },
+    {
+      "repetition": 3,
+      "phase": "release",
+      "start_utc": "2026-10-14T18:24:42.279000+00:00",
+      "end_utc": "2026-10-14T18:25:12.310000+00:00",
+      "stable_start_utc": "2026-10-14T18:24:57.310000+00:00",
+      "stable_end_utc": "2026-10-14T18:25:12.310000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T18:24:42.521+00:00",
+        "host_monotonic_ns": 102053554925100,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-black-only-01",
+          "plant_node": "EB5",
+          "black_node": "EB5",
+          "condition": "black_only"
+        },
+        "phase_seq": 21,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 4,
+        "client_note": null,
+        "client_utc": "2026-10-14T18:24:37.720Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "SUELTA EL NEGRO",
+        "instruction": "SUELTA LA PUNTA NEGRA EB5. Deja ambas manos libres. No toques ninguna planta ni ninguna punta negra durante los 30 segundos.",
+        "spoken": "Suelta la punta negra. Ambas manos libres."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 710,
+          "stable_frames": 356,
+          "max_gap_s": 0.10963,
+          "active_fraction": 0.08873239436619719,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 356,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.6818,
+              "max": 0.6979
+            },
+            "filt": {
+              "n": 356,
+              "min": 0.2912,
+              "median": 0.32995,
+              "p95": 0.3435,
+              "max": 0.3504
+            },
+            "base": {
+              "n": 356,
+              "min": 0.3216,
+              "median": 0.3246,
+              "p95": 0.3258,
+              "max": 0.3261
+            },
+            "rms_mean": {
+              "n": 356,
+              "min": 0.1656,
+              "median": 0.19774999999999998,
+              "p95": 0.2151,
+              "max": 0.225
+            },
+            "occupancy": {
+              "n": 356,
+              "min": 0.36,
+              "median": 0.4615,
+              "p95": 0.48,
+              "max": 0.5
+            },
+            "occupancy_base": {
+              "n": 356,
+              "min": 0.4442,
+              "median": 0.44575,
+              "p95": 0.4479,
+              "max": 0.4486
+            },
+            "adc_peak": {
+              "n": 356,
+              "min": 801.0,
+              "median": 849.0,
+              "p95": 864.0,
+              "max": 875.0
+            },
+            "samples": {
+              "n": 356,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 356,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 356,
+              "min": 0.0,
+              "median": 0.1565,
+              "p95": 0.35,
+              "max": 0.549
+            },
+            "threshold": {
+              "n": 356,
+              "min": 0.0608,
+              "median": 0.0647,
+              "p95": 0.0841,
+              "max": 0.0841
+            },
+            "noise_p95": {
+              "n": 356,
+              "min": 0.0203,
+              "median": 0.0216,
+              "p95": 0.028,
+              "max": 0.028
+            },
+            "transition_resets": {
+              "n": 356,
+              "min": 10.0,
+              "median": 10.0,
+              "p95": 10.0,
+              "max": 10.0
+            }
+          },
+          "midi_note_ons": 3,
+          "midi_note_pitches": [
+            57,
+            58,
+            59
+          ],
+          "midi_pitch_summary": {
+            "n": 3,
+            "min": 57,
+            "median": 58,
+            "p95": 58,
+            "max": 59
+          },
+          "midi_note_duration_s": 2.750755,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 716,
+          "stable_frames": 357,
+          "max_gap_s": 0.094031,
+          "active_fraction": 0.10335195530726257,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.0597,
+              "max": 1.0863
+            },
+            "filt": {
+              "n": 357,
+              "min": 0.4799,
+              "median": 0.5222,
+              "p95": 0.5465,
+              "max": 0.5597
+            },
+            "base": {
+              "n": 357,
+              "min": 0.5183,
+              "median": 0.5193,
+              "p95": 0.5203,
+              "max": 0.5209
+            },
+            "rms_mean": {
+              "n": 357,
+              "min": 0.2795,
+              "median": 0.318,
+              "p95": 0.3462,
+              "max": 0.361
+            },
+            "occupancy": {
+              "n": 357,
+              "min": 0.4,
+              "median": 0.4615,
+              "p95": 0.5,
+              "max": 0.52
+            },
+            "occupancy_base": {
+              "n": 357,
+              "min": 0.4585,
+              "median": 0.4599,
+              "p95": 0.4609,
+              "max": 0.461
+            },
+            "adc_peak": {
+              "n": 357,
+              "min": 1275.0,
+              "median": 1331.0,
+              "p95": 1347.0,
+              "max": 1359.0
+            },
+            "samples": {
+              "n": 357,
+              "min": 24.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 357,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 357,
+              "min": 0.001,
+              "median": 0.17,
+              "p95": 0.333,
+              "max": 0.409
+            },
+            "threshold": {
+              "n": 357,
+              "min": 0.0953,
+              "median": 0.1015,
+              "p95": 0.105,
+              "max": 0.105
+            },
+            "noise_p95": {
+              "n": 357,
+              "min": 0.0318,
+              "median": 0.0338,
+              "p95": 0.035,
+              "max": 0.035
+            },
+            "transition_resets": {
+              "n": 357,
+              "min": 5.0,
+              "median": 5.0,
+              "p95": 5.0,
+              "max": 5.0
+            }
+          },
+          "midi_note_ons": 3,
+          "midi_note_pitches": [
+            56,
+            58,
+            59
+          ],
+          "midi_pitch_summary": {
+            "n": 3,
+            "min": 56,
+            "median": 58,
+            "p95": 58,
+            "max": 59
+          },
+          "midi_note_duration_s": 3.19773,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 80,
+          "midi_note_pitches": [
+            47,
+            48,
+            49,
+            51,
+            52,
+            53,
+            54,
+            60,
+            61,
+            63,
+            65,
+            67,
+            72,
+            75,
+            76,
+            78,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 80,
+            "min": 47,
+            "median": 49.0,
+            "p95": 72,
+            "max": 84
+          },
+          "midi_note_duration_s": 29.861258,
+          "stable_midi_note_duration_s": 15.0
+        },
+        "EE5": {
+          "frames": 736,
+          "stable_frames": 372,
+          "max_gap_s": 0.092976,
+          "active_fraction": 0.09782608695652174,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 372,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.3796,
+              "max": 1.4586
+            },
+            "filt": {
+              "n": 372,
+              "min": 1.0025,
+              "median": 1.2862,
+              "p95": 1.3796,
+              "max": 1.4143
+            },
+            "base": {
+              "n": 372,
+              "min": 1.2677,
+              "median": 1.2721,
+              "p95": 1.2737,
+              "max": 1.274
+            },
+            "threshold": {
+              "n": 372,
+              "min": 0.3257,
+              "median": 0.3399,
+              "p95": 0.3529,
+              "max": 0.3529
+            },
+            "noise_p95": {
+              "n": 372,
+              "min": 0.1303,
+              "median": 0.136,
+              "p95": 0.1412,
+              "max": 0.1412
+            }
+          },
+          "midi_note_ons": 8,
+          "midi_note_pitches": [
+            32,
+            33,
+            34,
+            36,
+            38,
+            44,
+            50,
+            56
+          ],
+          "midi_pitch_summary": {
+            "n": 8,
+            "min": 32,
+            "median": 37.0,
+            "p95": 50,
+            "max": 56
+          },
+          "midi_note_duration_s": 3.21232,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 734,
+          "stable_frames": 369,
+          "max_gap_s": 0.103181,
+          "active_fraction": 0.09128065395095368,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 369,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4457,
+              "max": 1.4804
+            },
+            "filt": {
+              "n": 369,
+              "min": 1.1532,
+              "median": 1.3385,
+              "p95": 1.4457,
+              "max": 1.457
+            },
+            "base": {
+              "n": 369,
+              "min": 1.3382,
+              "median": 1.3412,
+              "p95": 1.3443,
+              "max": 1.3447
+            },
+            "threshold": {
+              "n": 369,
+              "min": 0.4282,
+              "median": 0.4443,
+              "p95": 0.451,
+              "max": 0.451
+            },
+            "noise_p95": {
+              "n": 369,
+              "min": 0.1713,
+              "median": 0.1777,
+              "p95": 0.1804,
+              "max": 0.1804
+            }
+          },
+          "midi_note_ons": 7,
+          "midi_note_pitches": [
+            32,
+            35,
+            36,
+            37,
+            38,
+            44,
+            50
+          ],
+          "midi_pitch_summary": {
+            "n": 7,
+            "min": 32,
+            "median": 37,
+            "p95": 44,
+            "max": 50
+          },
+          "midi_note_duration_s": 2.965723,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    }
+  ],
+  "runtime": {
+    "EB5": {
+      "samples": 209,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EC5": {
+      "samples": 209,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "ED5": {
+      "samples": 209,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EE5": {
+      "samples": 209,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EF5": {
+      "samples": 209,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    }
+  },
+  "limitations": [
+    "Physical onset is operator-followed cue, not electronically instrumented.",
+    "Analogue scales are native firmware scales, not calibrated signed voltage.",
+    "MIDI note-duration estimate is not an audio recording.",
+    "Compare native sensor metrics within a node; installed firmware differs between nodes.",
+    "Reported floor contact and footwear are environmental labels, not a measured body-to-earth impedance or proof of electrical isolation."
+  ],
+  "validity": {
+    "operator_confirmed": true,
+    "valid_contact_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "complete_recovery_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+    "operator_incident_notes": "No tengo observaciones al respecto.",
+    "assessment": "all_contact_phases_confirmed",
+    "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons"
+  },
+  "operator_environment": {
+    "floor_material": "synthetic_grass",
+    "floor_moisture": "slightly_damp",
+    "moisture_source": "Direct operator observation; not a measured moisture value",
+    "footwear": "unknown",
+    "body_to_earth_impedance": "not_measured",
+    "electrical_isolation": "not_verified",
+    "weather_context_file": "weather_context.json",
+    "posture": "seated_on_floor_through_trousers",
+    "clothing_contact": "Trousers in contact with synthetic grass",
+    "source": "Operator retrospective report in chat",
+    "recorded_at_utc": "2026-10-14T18:53:06.869+00:00",
+    "onset_or_change_during_trial": "not_independently_instrumented"
+  },
+  "sensor_metric_semantics": {
+    "recorded_at_utc": "2026-10-14T19:53:36.524+00:00",
+    "verified_firmware": "1.1.13-box5-touch-pilot",
+    "applicable_nodes": [
+      "EB5",
+      "EC5"
+    ],
+    "source_files": [
+      "diagnostics/eb5_touch_pilot_20261012/pilot.patch",
+      "diagnostics/eb5_touch_pilot_20261012/adaptive_touch_pilot.h"
+    ],
+    "verified_assignments": {
+      "rms_mean": "g_pilotMean = g_pilotAcquisition.mean: arithmetic ADC-window mean",
+      "filt": "g_plantSmoothV = feature.rms: ADC-window RMS used by the detector",
+      "base": "g_plantBaselineV = g_pilotDetector.referenceRms: RMS reference",
+      "threshold": "g_pilotDetector.thresholdRms",
+      "score": "g_pilotDetector.amplitudeScore: absolute RMS-reference difference / RMS threshold",
+      "noise_p95": "g_pilotDetector.noiseRms",
+      "occupancy": "fraction of acquired ADC samples above zero",
+      "transition_resets": "Detector medium-transition recalibrations; not a board reboot counter"
+    },
+    "scale": "Nominal ADC conversion, not calibrated signed analogue voltage.",
+    "other_firmware": "Do not apply these assignments to EE5/EF5 without separately verifying their implementation.",
+    "historical_reports": "Earlier derived RMS labels referring to rms_mean describe arithmetic mean. Numerical raw readings are unchanged."
+  }
+}

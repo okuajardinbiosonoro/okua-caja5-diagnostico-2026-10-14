@@ -1,0 +1,15 @@
+{
+  "at_utc": "2026-10-14T19:19:37.911202+00:00",
+  "source": "Operator saved report",
+  "void_planned_trial": false,
+  "reason": "Operator reports a brief accidental touch to plant EB5 during first rest; exact onset/duration not instrumented.",
+  "original_operator_notes": "Sucede lo mismo, no hay sonido durante toque de EB5 pero si con negro de EC5, además cometí un leve error que en el primer reposo toqué EB5 pero solté rápidamente no es algo grave, solo te lo dejo en observación por si ves un leve cambio en el inicio ",
+  "phase_exclusions": [
+    {
+      "repetition": 1,
+      "phase": "rest",
+      "reason": "Accidental plant EB5 contact, exact timing unknown; exclude the complete first-rest window from clean baseline comparisons."
+    }
+  ],
+  "disposition": "Preserve all raw data. Retain observed contact phases; use repetitions 2 and 3 for clean within-trial baseline/contact comparisons."
+}

@@ -1,0 +1,375 @@
+{
+  "trial_id": "B-EB5-cross-EC5-black-first-02",
+  "trial": {
+    "trial_id": "B-EB5-cross-EC5-black-first-02",
+    "plant_node": "EB5",
+    "black_node": "EC5",
+    "condition": "cross_pair",
+    "contact_order": "black_first",
+    "operator_environment": {
+      "floor_material": "synthetic_grass",
+      "floor_moisture": "slightly_damp",
+      "moisture_source": "Direct operator observation; not a measured moisture value",
+      "footwear": "shoes",
+      "body_to_earth_impedance": "not_measured",
+      "electrical_isolation": "not_verified",
+      "weather_context_file": "weather_context.json",
+      "posture": "seated_on_floor_through_trousers",
+      "metadata_source": "operator_environment.json",
+      "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+      "footwear_source": "Operator selection at trial start"
+    }
+  },
+  "start_utc": "2026-10-14T18:56:21.931000+00:00",
+  "end_utc": "2026-10-14T18:56:21.947000+00:00",
+  "actual_duration_s": 0.016,
+  "completed": false,
+  "timer_completed": false,
+  "timer_end_event": {
+    "at_utc": "2026-10-14T18:56:21.947+00:00",
+    "host_monotonic_ns": 103952980885700,
+    "kind": "trial_aborted",
+    "trial": {
+      "trial_id": "B-EB5-cross-EC5-black-first-02",
+      "plant_node": "EB5",
+      "black_node": "EC5",
+      "condition": "cross_pair",
+      "contact_order": "black_first",
+      "operator_environment": {
+        "floor_material": "synthetic_grass",
+        "floor_moisture": "slightly_damp",
+        "moisture_source": "Direct operator observation; not a measured moisture value",
+        "footwear": "shoes",
+        "body_to_earth_impedance": "not_measured",
+        "electrical_isolation": "not_verified",
+        "weather_context_file": "weather_context.json",
+        "posture": "seated_on_floor_through_trousers",
+        "metadata_source": "operator_environment.json",
+        "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+        "footwear_source": "Operator selection at trial start"
+      }
+    },
+    "reason": "Operator timer polling failed"
+  },
+  "operator_report": {
+    "at_utc": "2026-10-14T18:59:00.479+00:00",
+    "host_monotonic_ns": 104111512951100,
+    "kind": "operator_report",
+    "trial": {
+      "trial_id": "B-EB5-cross-EC5-black-first-02",
+      "plant_node": "EB5",
+      "black_node": "EC5",
+      "condition": "cross_pair",
+      "contact_order": "black_first",
+      "operator_environment": {
+        "floor_material": "synthetic_grass",
+        "floor_moisture": "slightly_damp",
+        "moisture_source": "Direct operator observation; not a measured moisture value",
+        "footwear": "shoes",
+        "body_to_earth_impedance": "not_measured",
+        "electrical_isolation": "not_verified",
+        "weather_context_file": "weather_context.json",
+        "posture": "seated_on_floor_through_trousers",
+        "metadata_source": "operator_environment.json",
+        "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+        "footwear_source": "Operator selection at trial start"
+      }
+    },
+    "report": {
+      "paired_contact_audible_repetitions": "not_applicable",
+      "followed_cues": false,
+      "second_contact_audible_change": "not_applicable",
+      "first_contact_audible_repetitions": "not_applicable",
+      "completed_repetitions": 0,
+      "contact_sound": "not_applicable",
+      "paired_contact_sound": "not_applicable",
+      "after_release_silence": "unknown",
+      "audible_repetitions": "not_applicable",
+      "recorded_by": "local_coordinator_from_direct_user_report",
+      "notes": "Declaración directa del operador en el chat: apareció TEMPORIZADOR INTERRUMPIDO al intentar iniciar; no realizó contactos ni ninguna otra acción. Informe registrado por coordinador a partir de esa declaración."
+    },
+    "client_address": "127.0.0.1",
+    "confirmed_physical_labels": false
+  },
+  "confirmed_labels": false,
+  "operator_display_ack_delays_ms": [],
+  "phases": [
+    {
+      "repetition": 0,
+      "phase": "preparation",
+      "start_utc": "2026-10-14T18:56:21.931000+00:00",
+      "end_utc": "2026-10-14T18:56:21.947000+00:00",
+      "stable_start_utc": "2026-10-14T18:56:21.931000+00:00",
+      "stable_end_utc": "2026-10-14T18:56:21.947000+00:00",
+      "operator_display_ack": null,
+      "instruction": {
+        "title": "PREPARATE SIN TOCAR",
+        "instruction": "Deja AMBAS manos libres: no toques ninguna planta ni ninguna punta negra. Mantente quieto. No sostengas el negro durante el reposo. El contacto empezara despues del reposo, cuando aparezca la indicacion de contacto.",
+        "spoken": "Preparate con ambas manos libres. Todavia no toques nada."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 1,
+          "stable_frames": 1,
+          "max_gap_s": null,
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 1,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 1,
+              "min": 0.2687,
+              "median": 0.2687,
+              "p95": 0.2687,
+              "max": 0.2687
+            },
+            "base": {
+              "n": 1,
+              "min": 0.2898,
+              "median": 0.2898,
+              "p95": 0.2898,
+              "max": 0.2898
+            },
+            "rms_mean": {
+              "n": 1,
+              "min": 0.1498,
+              "median": 0.1498,
+              "p95": 0.1498,
+              "max": 0.1498
+            },
+            "occupancy": {
+              "n": 1,
+              "min": 0.3846,
+              "median": 0.3846,
+              "p95": 0.3846,
+              "max": 0.3846
+            },
+            "occupancy_base": {
+              "n": 1,
+              "min": 0.4351,
+              "median": 0.4351,
+              "p95": 0.4351,
+              "max": 0.4351
+            },
+            "adc_peak": {
+              "n": 1,
+              "min": 767.0,
+              "median": 767.0,
+              "p95": 767.0,
+              "max": 767.0
+            },
+            "samples": {
+              "n": 1,
+              "min": 26.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 1,
+              "min": 75.0,
+              "median": 75.0,
+              "p95": 75.0,
+              "max": 75.0
+            },
+            "score": {
+              "n": 1,
+              "min": 0.379,
+              "median": 0.379,
+              "p95": 0.379,
+              "max": 0.379
+            },
+            "threshold": {
+              "n": 1,
+              "min": 0.0557,
+              "median": 0.0557,
+              "p95": 0.0557,
+              "max": 0.0557
+            },
+            "noise_p95": {
+              "n": 1,
+              "min": 0.0186,
+              "median": 0.0186,
+              "p95": 0.0186,
+              "max": 0.0186
+            },
+            "transition_resets": {
+              "n": 1,
+              "min": 12.0,
+              "median": 12.0,
+              "p95": 12.0,
+              "max": 12.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EE5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    }
+  ],
+  "runtime": {
+    "EB5": {
+      "samples": 0,
+      "statuses": [],
+      "uptime_decreased": false
+    },
+    "EC5": {
+      "samples": 0,
+      "statuses": [],
+      "uptime_decreased": false
+    },
+    "ED5": {
+      "samples": 0,
+      "statuses": [],
+      "uptime_decreased": false
+    },
+    "EE5": {
+      "samples": 0,
+      "statuses": [],
+      "uptime_decreased": false
+    },
+    "EF5": {
+      "samples": 0,
+      "statuses": [],
+      "uptime_decreased": false
+    }
+  },
+  "limitations": [
+    "Physical onset is operator-followed cue, not electronically instrumented.",
+    "Analogue scales are native firmware scales, not calibrated signed voltage.",
+    "MIDI note-duration estimate is not an audio recording.",
+    "Compare native sensor metrics within a node; installed firmware differs between nodes.",
+    "Reported floor contact and footwear are environmental labels, not a measured body-to-earth impedance or proof of electrical isolation."
+  ],
+  "operator_environment": {
+    "floor_material": "synthetic_grass",
+    "floor_moisture": "slightly_damp",
+    "moisture_source": "Direct operator observation; not a measured moisture value",
+    "footwear": "shoes",
+    "body_to_earth_impedance": "not_measured",
+    "electrical_isolation": "not_verified",
+    "weather_context_file": "weather_context.json",
+    "posture": "seated_on_floor_through_trousers",
+    "metadata_source": "operator_environment.json",
+    "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+    "footwear_source": "Operator selection at trial start"
+  },
+  "validity": {
+    "operator_confirmed": false,
+    "valid_contact_repetitions": [],
+    "complete_recovery_repetitions": [],
+    "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+    "operator_incident_notes": "Declaración directa del operador en el chat: apareció TEMPORIZADOR INTERRUMPIDO al intentar iniciar; no realizó contactos ni ninguna otra acción. Informe registrado por coordinador a partir de esa declaración.",
+    "assessment": "excluded_no_contact_timer_startup_failure",
+    "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons",
+    "operator_original_confirmation": false,
+    "excluded_from_planned_comparisons": true,
+    "actual_reported_contacts": {
+      "plant_node": null,
+      "black_node": null,
+      "completed_repetitions": 0
+    },
+    "correction_reason": "Timer interrupted in preparation, approximately 16 ms after start. Operator confirms no physical contacts."
+  },
+  "operator_correction": {
+    "at_utc": "2026-10-14T18:59:01.082971+00:00",
+    "source": "Direct human report in current chat",
+    "user_statement": "Apareció TEMPORIZADOR INTERRUMPIDO al intentar iniciar no hice nada más",
+    "void_planned_trial": true,
+    "reason": "Timer interrupted in preparation, approximately 16 ms after start. Operator confirms no physical contacts.",
+    "actual_reported_contacts": {
+      "plant_node": null,
+      "black_node": null,
+      "completed_repetitions": 0
+    },
+    "disposition": "Preserve original recording and failed-start log; exclude from contact comparisons. Repeat using a new identifier.",
+    "assessment": "excluded_no_contact_timer_startup_failure"
+  },
+  "original_operator_declared_followed_cues": false,
+  "sensor_metric_semantics": {
+    "recorded_at_utc": "2026-10-14T19:53:36.524+00:00",
+    "verified_firmware": "1.1.13-box5-touch-pilot",
+    "applicable_nodes": [
+      "EB5",
+      "EC5"
+    ],
+    "source_files": [
+      "diagnostics/eb5_touch_pilot_20261012/pilot.patch",
+      "diagnostics/eb5_touch_pilot_20261012/adaptive_touch_pilot.h"
+    ],
+    "verified_assignments": {
+      "rms_mean": "g_pilotMean = g_pilotAcquisition.mean: arithmetic ADC-window mean",
+      "filt": "g_plantSmoothV = feature.rms: ADC-window RMS used by the detector",
+      "base": "g_plantBaselineV = g_pilotDetector.referenceRms: RMS reference",
+      "threshold": "g_pilotDetector.thresholdRms",
+      "score": "g_pilotDetector.amplitudeScore: absolute RMS-reference difference / RMS threshold",
+      "noise_p95": "g_pilotDetector.noiseRms",
+      "occupancy": "fraction of acquired ADC samples above zero",
+      "transition_resets": "Detector medium-transition recalibrations; not a board reboot counter"
+    },
+    "scale": "Nominal ADC conversion, not calibrated signed analogue voltage.",
+    "other_firmware": "Do not apply these assignments to EE5/EF5 without separately verifying their implementation.",
+    "historical_reports": "Earlier derived RMS labels referring to rms_mean describe arithmetic mean. Numerical raw readings are unchanged."
+  }
+}

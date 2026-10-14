@@ -1,0 +1,68 @@
+{
+  "comparisons": [
+    {
+      "trial_id": "B-EB5-plant-only-01",
+      "valid_contact_repetitions": [
+        1,
+        2,
+        3
+      ],
+      "contact_window_total_s": 60,
+      "estimated_eb5_midi_note_duration_s": 5.608348,
+      "estimated_midi_note_duration_fraction": 0.09347246666666667,
+      "operator_report": {
+        "form_revision": 2,
+        "followed_cues": true,
+        "completed_repetitions": 3,
+        "audible_repetitions": "2",
+        "first_contact_audible_repetitions": "2",
+        "paired_contact_audible_repetitions": "not_applicable",
+        "second_contact_audible_change": "not_applicable",
+        "contact_sound": "pulsed",
+        "paired_contact_sound": "not_applicable",
+        "after_release_silence": "yes",
+        "notes": "Esta prueba sirve se anuló al final porque se me cayó el celular y se cambió de pestaña en los último 5 segundos de finalización, con respecto a la prueba escuche sonido en la primera e última interacción nuevamente en la segunda no. Aclaro fue solo planta sin negro.",
+        "operator_id": "1791998878186-xipnlmvfei",
+        "ui_revision": 4
+      },
+      "all_nodes_emitted_midi_each_contact": false
+    },
+    {
+      "trial_id": "B-EB5-black-only-01",
+      "valid_contact_repetitions": [
+        1,
+        2,
+        3
+      ],
+      "contact_window_total_s": 60,
+      "estimated_eb5_midi_note_duration_s": 55.344887,
+      "estimated_midi_note_duration_fraction": 0.9224147833333334,
+      "operator_report": {
+        "form_revision": 2,
+        "followed_cues": true,
+        "completed_repetitions": 3,
+        "audible_repetitions": "3",
+        "first_contact_audible_repetitions": "3",
+        "paired_contact_audible_repetitions": "not_applicable",
+        "second_contact_audible_change": "not_applicable",
+        "contact_sound": "continuous",
+        "paired_contact_sound": "not_applicable",
+        "after_release_silence": "yes",
+        "notes": "No tengo observaciones al respecto.",
+        "operator_id": "1791998878186-xipnlmvfei",
+        "ui_revision": 4
+      },
+      "all_nodes_emitted_midi_each_contact": true
+    }
+  ],
+  "interpretation": "Black-only produced sustained EB5 activation in each settled contact window, and MIDI from all five nodes in all three contacts. Plant-only produced brief/intermittent EB5 activation in repetitions 1 and 3 and none in repetition 2. These are acquired MIDI/telemetry observations, not isolated audio measurements.",
+  "next_trial": "Plant EB5 with black EC5, black first, then add plant without releasing black.",
+  "firmware_and_Ableton_changes": false,
+  "metric_label_correction": {
+    "at_utc": "2026-10-14T19:53:36.524+00:00",
+    "schema": "telemetry_schema.json",
+    "arithmetic_mean_field": "rms_mean",
+    "true_RMS_field_for_EB5_EC5_pilot": "filt",
+    "original_before_correction": "metric_labels_before_correction\\trials\\eb5_single_contact_comparison.json"
+  }
+}

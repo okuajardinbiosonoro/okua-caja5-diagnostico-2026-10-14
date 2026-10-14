@@ -1,0 +1,630 @@
+--- PAGE 1 ---
+OKÚA  /  HARDWARE ACTUAL
+14 de octubre de 2026
+Fuente dual compartida por cinco nodos
+Vista completa del circuito: recorte y ampliación de la exportación nativa de Proteus. Ningún símbolo ni cable fue redibujado.
+FUENTE | Esquemas nativos y material explicativo identificado
+1 / 5
+Entrada: transformador 12-0-12 V CA, 5 A nominales indicados por José David. Salida: J2.1 +9 V, J2.2 GND y J2.3 -9 V. Las referencias de componentes de este PDF pertenecen a la fuente.
+D9-D13 y D14-D18: cinco 1N5408 en serie por rama, entre la rectificación y los condensadores de 2200 µF.
+B C D E F G H J I A
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+FILE NAME:
+BY:
+DATE:
+PAGE:
+OKUA_FUENTE_EXPORTACION.pdsprj
+14/10/2026
+@AUTHOR
+C:\Users\JOSE DAVID\Documents\ChatGPT\Caja 5\tmp\pdfs\inputs\OKUA_FUENTE_EXPORTACION.pdsprj
+PATH:
+1
+of
+1
+REV:
+@REV
+TIME:
+10:09:30 a. m.
+DESIGN TITLE:
+OKUA_FUENTE_EXPORTACION.pdsprj
+BOARD: @BOARD
+1
+2
+3
+J1
+TBLOCK-I3
+D1
+1N4004
+D2
+1N4004
+D3
+1N4004
+D4
+1N4004
+C2
+2200uF
+R1
+820
+R2
+820
+R3
+1
+R4
+1
+C1
+2200uF
+D5
+1N4004
+D6
+1N4004
+Q1
+TIP31
+Q2
+TIP32
+D7
+1N4004
+D8
+1N4004
+VI
+1
+VO
+3
+GND
+2
+U1
+7809
+VI
+2
+VO
+3
+GND
+1
+U2
+7909
+C3
+330nF
+C4
+330nF
+C5
+1uF
+C6
+1uF
+1
+2
+3
+J2
+TBLOCK-I3
+D9
+1N5408
+D10
+1N5408
+D11
+1N5408
+D12
+1N5408
+D13
+1N5408
+D14
+1N5408
+D15
+1N5408
+D16
+1N5408
+D17
+1N5408
+D18
+1N5408
+--- PAGE 2 ---
+OKÚA  /  HARDWARE ACTUAL
+14 de octubre de 2026
+Rectificación, diodos serie y reserva
+Ampliación del mismo dibujo nativo. Las ramas reguladoras completas se muestran en las páginas 3 y 4.
+FUENTE | Esquemas nativos y material explicativo identificado
+2 / 5
+Entrada del transformador
+J1.1 y J1.3 reciben los extremos del secundario. J1.2 recibe la toma central
+y fija GND. D1-D4 son el puente rectificador de 1N4004.
+Cadenas añadidas
+D9-D13: rama positiva.
+D14-D18: rama negativa.
+Cinco 1N5408 en serie por rama. Su caída de tensión y disipación
+dependen de la corriente y la temperatura.
+Ubicación de la reserva
+C1 y C2, 2200 µF cada uno, se encuentran después de esas cadenas. Los
+diodos también conducen los pulsos de recarga de los condensadores.
+El dato 5 A corresponde al transformador; no se ha medido una capacidad continua de
+5 A en cada riel regulado.
+B C D E F G H J I A
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+FILE NAME:
+BY:
+DATE:
+PAGE:
+OKUA_FUENTE_EXPORTACION.pdsprj
+14/10/2026
+@AUTHOR
+C:\Users\JOSE DAVID\Documents\ChatGPT\Caja 5\tmp\pdfs\inputs\OKUA_FUENTE_EXPORTACION.pdsprj
+PATH:
+1
+of
+1
+REV:
+@REV
+TIME:
+10:09:30 a. m.
+DESIGN TITLE:
+OKUA_FUENTE_EXPORTACION.pdsprj
+BOARD: @BOARD
+1
+2
+3
+J1
+TBLOCK-I3
+D1
+1N4004
+D2
+1N4004
+D3
+1N4004
+D4
+1N4004
+C2
+2200uF
+R1
+820
+R2
+820
+R3
+1
+R4
+1
+C1
+2200uF
+D5
+1N4004
+D6
+1N4004
+Q1
+TIP31
+Q2
+TIP32
+D7
+1N4004
+D8
+1N4004
+VI
+1
+VO
+3
+GND
+2
+U1
+7809
+VI
+2
+VO
+3
+GND
+1
+U2
+7909
+C3
+330nF
+C4
+330nF
+C5
+1uF
+C6
+1uF
+1
+2
+3
+J2
+TBLOCK-I3
+D9
+1N5408
+D10
+1N5408
+D11
+1N5408
+D12
+1N5408
+D13
+1N5408
+D14
+1N5408
+D15
+1N5408
+D16
+1N5408
+D17
+1N5408
+D18
+1N5408
+--- PAGE 3 ---
+OKÚA  /  HARDWARE ACTUAL
+14 de octubre de 2026
+Rama positiva: +9 V
+Ampliación nativa de U1=7809 y Q2=TIP32. Los trazos que cruzan el borde continúan en la vista completa.
+FUENTE | Esquemas nativos y material explicativo identificado
+3 / 5
+U1 regula nominalmente +9 V. Q2 es el TIP32 de apoyo; R3 es de 1 Ω. C3: 330 nF en la entrada del regulador. C5: 1 µF en la salida. R1: 820 Ω y D5: 1N4004
+en la derivación hacia GND.
+La salida alimenta la rama +9 V de los cinco nodos. Cada 7805 local obtiene de ella los 5 V para VIN de la ESP32; por esta conexión, el consumo de Wi-Fi carga principalmente este
+riel.
+B C D E F G H J I A
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+FILE NAME:
+BY:
+DATE:
+PAGE:
+OKUA_FUENTE_EXPORTACION.pdsprj
+14/10/2026
+@AUTHOR
+C:\Users\JOSE DAVID\Documents\ChatGPT\Caja 5\tmp\pdfs\inputs\OKUA_FUENTE_EXPORTACION.pdsprj
+PATH:
+1
+of
+1
+REV:
+@REV
+TIME:
+10:09:30 a. m.
+DESIGN TITLE:
+OKUA_FUENTE_EXPORTACION.pdsprj
+BOARD: @BOARD
+1
+2
+3
+J1
+TBLOCK-I3
+D1
+1N4004
+D2
+1N4004
+D3
+1N4004
+D4
+1N4004
+C2
+2200uF
+R1
+820
+R2
+820
+R3
+1
+R4
+1
+C1
+2200uF
+D5
+1N4004
+D6
+1N4004
+Q1
+TIP31
+Q2
+TIP32
+D7
+1N4004
+D8
+1N4004
+VI
+1
+VO
+3
+GND
+2
+U1
+7809
+VI
+2
+VO
+3
+GND
+1
+U2
+7909
+C3
+330nF
+C4
+330nF
+C5
+1uF
+C6
+1uF
+1
+2
+3
+J2
+TBLOCK-I3
+D9
+1N5408
+D10
+1N5408
+D11
+1N5408
+D12
+1N5408
+D13
+1N5408
+D14
+1N5408
+D15
+1N5408
+D16
+1N5408
+D17
+1N5408
+D18
+1N5408
+--- PAGE 4 ---
+OKÚA  /  HARDWARE ACTUAL
+14 de octubre de 2026
+Rama negativa: -9 V
+Ampliación nativa de U2=7909 y Q1=TIP31. La referencia central de ambas ramas es el mismo GND.
+FUENTE | Esquemas nativos y material explicativo identificado
+4 / 5
+U2 regula nominalmente -9 V. Q1 es el TIP31 de apoyo; R4 es de 1 Ω. C4: 330 nF en la entrada del regulador. C6: 1 µF en la salida. R2: 820 Ω y D6: 1N4004
+en la derivación hacia GND.
+El riel -9 V llega a J1.3 de cada nodo y alimenta el lado negativo de TL074/TL072. Una estructura simétrica de fuente no implica que los consumos de sus dos ramas sean iguales.
+B C D E F G H J I A
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+FILE NAME:
+BY:
+DATE:
+PAGE:
+OKUA_FUENTE_EXPORTACION.pdsprj
+14/10/2026
+@AUTHOR
+C:\Users\JOSE DAVID\Documents\ChatGPT\Caja 5\tmp\pdfs\inputs\OKUA_FUENTE_EXPORTACION.pdsprj
+PATH:
+1
+of
+1
+REV:
+@REV
+TIME:
+10:09:30 a. m.
+DESIGN TITLE:
+OKUA_FUENTE_EXPORTACION.pdsprj
+BOARD: @BOARD
+1
+2
+3
+J1
+TBLOCK-I3
+D1
+1N4004
+D2
+1N4004
+D3
+1N4004
+D4
+1N4004
+C2
+2200uF
+R1
+820
+R2
+820
+R3
+1
+R4
+1
+C1
+2200uF
+D5
+1N4004
+D6
+1N4004
+Q1
+TIP31
+Q2
+TIP32
+D7
+1N4004
+D8
+1N4004
+VI
+1
+VO
+3
+GND
+2
+U1
+7809
+VI
+2
+VO
+3
+GND
+1
+U2
+7909
+C3
+330nF
+C4
+330nF
+C5
+1uF
+C6
+1uF
+1
+2
+3
+J2
+TBLOCK-I3
+D9
+1N5408
+D10
+1N5408
+D11
+1N5408
+D12
+1N5408
+D13
+1N5408
+D14
+1N5408
+D15
+1N5408
+D16
+1N5408
+D17
+1N5408
+D18
+1N5408
+--- PAGE 5 ---
+OKÚA  /  HARDWARE ACTUAL
+14 de octubre de 2026
+Distribución y nombres de conectores
+Guía de lectura para conectar este PDF con el del nodo y con el archivo de texto.
+FUENTE | Esquemas nativos y material explicativo identificado
+5 / 5
+Punto
+Pin 1
+Pin 2
+Pin 3
+J1 de la fuente
+Extremo 12 V CA
+Toma central / GND
+Otro extremo 12 V CA
+J2 de la fuente
++9 V CC
+GND
+-9 V CC
+J1 de cada nodo
++9 V CC / rojo
+GND / verde
+-9 V CC / negro
+Cinco nodos, una referencia
+Los cinco nodos comparten los tres rieles. En cada nodo, J2.2 de medición se une a J1.2 de alimentación.
+Por ello, los cinco negros de medición de una caja son el mismo punto GND de la fuente.
+J2 tiene significados distintos
+J2 de la fuente: salida de alimentación de tres terminales.
+J2 del nodo: entrada de medición de dos terminales, rojo de señal y negro de GND.
+Adaptación incorporada al hardware actual
+José David confirmó la incorporación de las dos cadenas de cinco 1N5408 por el consumo adicional de las
+cinco ESP32 con Wi-Fi. Este documento conserva la adaptación dentro de su circuito original.
+Procedencia de las vistas
+Todas las vistas eléctricas son recortes y ampliaciones de la exportación PDF nativa de "Proteus fuente dual de nueve
+voltios". Las páginas explicativas añaden texto fuera del dibujo. Para los valores y conexiones completos, consulta la página
+1 y el TXT del paquete.

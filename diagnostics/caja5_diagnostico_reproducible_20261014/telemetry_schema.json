@@ -1,0 +1,25 @@
+{
+  "recorded_at_utc": "2026-10-14T19:53:36.524+00:00",
+  "verified_firmware": "1.1.13-box5-touch-pilot",
+  "applicable_nodes": [
+    "EB5",
+    "EC5"
+  ],
+  "source_files": [
+    "diagnostics/eb5_touch_pilot_20261012/pilot.patch",
+    "diagnostics/eb5_touch_pilot_20261012/adaptive_touch_pilot.h"
+  ],
+  "verified_assignments": {
+    "rms_mean": "g_pilotMean = g_pilotAcquisition.mean: arithmetic ADC-window mean",
+    "filt": "g_plantSmoothV = feature.rms: ADC-window RMS used by the detector",
+    "base": "g_plantBaselineV = g_pilotDetector.referenceRms: RMS reference",
+    "threshold": "g_pilotDetector.thresholdRms",
+    "score": "g_pilotDetector.amplitudeScore: absolute RMS-reference difference / RMS threshold",
+    "noise_p95": "g_pilotDetector.noiseRms",
+    "occupancy": "fraction of acquired ADC samples above zero",
+    "transition_resets": "Detector medium-transition recalibrations; not a board reboot counter"
+  },
+  "scale": "Nominal ADC conversion, not calibrated signed analogue voltage.",
+  "other_firmware": "Do not apply these assignments to EE5/EF5 without separately verifying their implementation.",
+  "historical_reports": "Earlier derived RMS labels referring to rms_mean describe arithmetic mean. Numerical raw readings are unchanged."
+}

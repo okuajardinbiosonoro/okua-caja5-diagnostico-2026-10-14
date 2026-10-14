@@ -1,0 +1,118 @@
+{
+  "trial_id": "B-EB5-cross-EC5-black-first-03",
+  "status": "three_operator_confirmed_repetitions",
+  "operator_environment": {
+    "floor_material": "synthetic_grass",
+    "floor_moisture": "slightly_damp",
+    "moisture_source": "Direct operator observation; not a measured moisture value",
+    "footwear": "shoes",
+    "body_to_earth_impedance": "not_measured",
+    "electrical_isolation": "not_verified",
+    "weather_context_file": "weather_context.json",
+    "posture": "seated_on_floor_through_trousers",
+    "metadata_source": "operator_environment.json",
+    "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+    "footwear_source": "Operator selection at trial start"
+  },
+  "findings": {
+    "operator_audio": "Sound on black-only in all three repetitions, continuous and silence after release. No perceived change on adding plant EB5; separate paired-audibility count was left unknown.",
+    "shared_effect": "All five nodes emit NoteOns during each EC5 black-only phase while no plant is touched. EB5/EC5 settled ADC/RMS/occupancy medians are zero in both black-only and paired windows.",
+    "per_repetition": [
+      {
+        "repetition": 1,
+        "rest_EB5_RMS_median": 0.1661,
+        "black_only_EB5_RMS_median": 0.0,
+        "paired_EB5_RMS_median": 0.0,
+        "black_only_EB5_MIDI_held_s": 8.626,
+        "paired_EB5_MIDI_held_s": 19.996,
+        "black_only_nodes_with_note_ons": [
+          "EB5",
+          "EC5",
+          "ED5",
+          "EE5",
+          "EF5"
+        ],
+        "recovered_EB5_activation": 0.0
+      },
+      {
+        "repetition": 2,
+        "rest_EB5_RMS_median": 0.1363,
+        "black_only_EB5_RMS_median": 0.0,
+        "paired_EB5_RMS_median": 0.0,
+        "black_only_EB5_MIDI_held_s": 8.561,
+        "paired_EB5_MIDI_held_s": 20.016,
+        "black_only_nodes_with_note_ons": [
+          "EB5",
+          "EC5",
+          "ED5",
+          "EE5",
+          "EF5"
+        ],
+        "recovered_EB5_activation": 0.0
+      },
+      {
+        "repetition": 3,
+        "rest_EB5_RMS_median": 0.1354,
+        "black_only_EB5_RMS_median": 0.0,
+        "paired_EB5_RMS_median": 0.0,
+        "black_only_EB5_MIDI_held_s": 8.467,
+        "paired_EB5_MIDI_held_s": 20.017,
+        "black_only_nodes_with_note_ons": [
+          "EB5",
+          "EC5",
+          "ED5",
+          "EE5",
+          "EF5"
+        ],
+        "recovered_EB5_activation": 0.0
+      }
+    ],
+    "EC5_communication": "CKv2 degraded/offline near startup then online before first contact. No observed uptime decrease. Preparation and first rest have incomplete EC5 detailed telemetry; flag those EC5 references, retain confirmed contact windows."
+  },
+  "data_quality": {
+    "coverage_gap_flag_s": 1.0,
+    "meaning": "Flags missing host-received telemetry, including phase boundaries; does not prove a node reboot or missing analogue response.",
+    "sensor_coverage_warnings": [
+      {
+        "node": "EC5",
+        "repetition": 0,
+        "phase": "preparation",
+        "coverage": {
+          "leading_gap_s": null,
+          "trailing_gap_s": null,
+          "max_gap_including_boundaries_s": 10.016,
+          "first_frame_utc": null,
+          "last_frame_utc": null,
+          "no_frames": true
+        }
+      },
+      {
+        "node": "EC5",
+        "repetition": 1,
+        "phase": "rest",
+        "coverage": {
+          "leading_gap_s": 11.715212,
+          "trailing_gap_s": 0.032217,
+          "max_gap_including_boundaries_s": 11.715212,
+          "first_frame_utc": "2026-10-14T19:02:30.624212+00:00",
+          "last_frame_utc": "2026-10-14T19:02:38.898783+00:00",
+          "no_frames": false
+        }
+      }
+    ]
+  },
+  "interpretation": "Shared-reference/contact effect is consistent with the common electrode GND circuit. In these settled summary features, adding plant after black did not establish a separable local touch change. This does not establish identical full analogue waveforms or zero physical voltage.",
+  "limitations": [
+    "MIDI is not measured audio.",
+    "ADC zero can include signals outside the unsigned ADC range; not proof of no analogue response.",
+    "Different firmware metrics and sequential baseline drift prevent calibrated cross-node or causal contact-order conclusions."
+  ],
+  "next_trial": {
+    "trial_id": "B-EB5-cross-EC5-plant-first-01",
+    "plant_node": "EB5",
+    "black_node": "EC5",
+    "contact_order": "plant_first",
+    "purpose": "Measure plant alone before shared black-contact effect; same posture, footwear and timing."
+  },
+  "changes_to_nodes_or_Ableton": false
+}

@@ -1,0 +1,17 @@
+{
+  "at_utc": "2026-10-14T18:44:33.095204+00:00",
+  "source": "Direct human correction in current chat",
+  "user_statement": "Me acabo de hacer la prueba mal, anula, hice toque de negro EC5 y planta EC5.",
+  "void_planned_trial": true,
+  "reason": "Wrong plant: operator touched plant EC5 instead of scheduled plant EB5.",
+  "intended_contacts": {
+    "plant_node": "EB5",
+    "black_node": "EC5"
+  },
+  "actual_reported_contacts": {
+    "plant_node": "EC5",
+    "black_node": "EC5"
+  },
+  "actual_phase_sequence_independently_verified": false,
+  "disposition": "Preserve raw recordings and original report; exclude this identifier from formal EB5 and EC5 trial comparisons. Repeat correct EB5/EC5 pairing with a new identifier."
+}

@@ -1,0 +1,3327 @@
+{
+  "trial_id": "C-EB5-soil-four-plants-01",
+  "recorded_at_utc": "2026-10-14T21:12:10.347080+00:00",
+  "operator_report_verbatim": {
+    "form_revision": 3,
+    "followed_cues": false,
+    "completed_repetitions": 4,
+    "count_meaning": "completed plant blocks, one pass each",
+    "block_reports": [
+      {
+        "node": "EB5",
+        "confirmed_contacts": true,
+        "plant_only_audible": "no",
+        "paired_audible": "not_applicable",
+        "sustained": "no",
+        "varied": "no",
+        "silence_after_release": "no",
+        "notes": "En esta planta no hubo nada de actividad mientras realicé el toque."
+      },
+      {
+        "node": "EC5",
+        "confirmed_contacts": true,
+        "plant_only_audible": "yes",
+        "paired_audible": "yes",
+        "sustained": "no",
+        "varied": "no",
+        "silence_after_release": "yes",
+        "notes": "En este caso como en las demás suena solo al iniciar el toque después no entonces lo que hice fue dejar de tocar y tocar rápidamente es soltar breve tocar breve y así se generan notas."
+      },
+      {
+        "node": "EE5",
+        "confirmed_contacts": true,
+        "plant_only_audible": "yes",
+        "paired_audible": "yes",
+        "sustained": "no",
+        "varied": "no",
+        "silence_after_release": "yes",
+        "notes": "Lo mismo que la pasada solo suena al inicio del toque "
+      },
+      {
+        "node": "EF5",
+        "confirmed_contacts": true,
+        "plant_only_audible": "no",
+        "paired_audible": "yes",
+        "sustained": "no",
+        "varied": "no",
+        "silence_after_release": "yes",
+        "notes": "Solo suena si suelto y aprieto ya que solo es al inicio del toque."
+      }
+    ],
+    "grounded_black_kept_fixed": false,
+    "notes": "Además realice la misma prueba para ED sonó con la planta pero mucho mejor tocando el negro, además pasa lo mismo no sostiene el toque solo al inicio.",
+    "operator_id": "1791998878186-xipnlmvfei",
+    "ui_revision": 8
+  },
+  "qualifications": {
+    "recorded_at_utc": "2026-10-14T21:12:10.347080+00:00",
+    "raw_reports_and_recording_preserved": true,
+    "complete_planned_continuous_contact_labels": false,
+    "original_global_fields": {
+      "followed_cues": false,
+      "grounded_black_kept_fixed": false
+    },
+    "individual_contact_blocks_confirmed": [
+      "EB5",
+      "EC5",
+      "EE5",
+      "EF5"
+    ],
+    "ground_state": {
+      "placement_confirmed": true,
+      "reported_soil": "Sustrato de maceta EB5, levemente húmedo, profundidad 3 cm",
+      "end_state_confirmed_in_chat": "El negro EB5 sigue enterrado",
+      "unchanged_throughout_run": "No confirmado por el campo global del formulario; no inferirlo del estado final"
+    },
+    "per_node": {
+      "EB5": {
+        "use": "Contacto individual confirmado; sin respuesta audible ni MIDI en la ventana prevista",
+        "release_label": "El no en silencio al soltar es ambiguo: tampoco hubo sonido inicial. No clasificarlo como nota atascada"
+      },
+      "EC5": {
+        "use": "Respuesta exploratoria a planta y planta+negro",
+        "continuous_hold": false,
+        "reason": "El operador soltó y volvió a tocar repetidamente para generar notas; instantes exactos no registrados"
+      },
+      "EE5": {
+        "use": "Respuesta exploratoria a planta y planta+negro",
+        "continuous_hold": "No demostrado",
+        "reason": "Notas describen respuesta al inicio, similar al caso anterior; no inventar tiempos de recontacto"
+      },
+      "EF5": {
+        "use": "Respuesta exploratoria, principalmente con negro+planta",
+        "continuous_hold": false,
+        "reason": "El operador informa soltar y apretar; no usar los 20 s como contacto físico continuo"
+      },
+      "ED5": {
+        "use": "Observación exploratoria del operador fuera de protocolo",
+        "exact_contact_timing": "Desconocido",
+        "reason": "No atribuir automáticamente sus notas durante bloques EE5/EF5 a activación espontánea o interferencia"
+      }
+    },
+    "comparison_limit": "Ensayos previos EB5/EC5 mayormente sentado; corrida en tierra de pie con zapatos. Las comparaciones de contacto entre ambas condiciones también cambian postura. La referencia aire/tierra dentro de esta corrida mantiene la postura prevista"
+  },
+  "findings": [
+    "Antes del enterrado, la referencia de 120 s presenta señal no nula en EB5, EC5, EE5 y EF5; ED5 emite 9924 NoteOn",
+    "Durante 120 s de estabilización y los siguientes 120 s de referencia tras el enterrado, filt es cero en todas las muestras registradas de los cuatro nodos; EB5/EC5 también registran ocupación y pico ADC cero. Los cinco canales registran cero NoteOn",
+    "Los cinco nodos siguen en línea, sin disminución de uptime; no hay huecos de telemetría mayores de un segundo en esta corrida",
+    "EB5 no responde en su bloque. EC5, EE5 y EF5 presentan respuestas breves según la modalidad y los recontactos descritos por el operador",
+    "La caída compartida de señal coincide con el cambio de referencia física común. No demuestra fallo de conectividad ni permite atribuir toda la pérdida a umbrales del firmware",
+    "Un ADC en cero no prueba voltaje analógico cero: el circuito bipolar entra a un ADC unipolar sin desplazamiento de nivel dibujado"
+  ],
+  "metric_note": "Las métricas son de la ventana estable indicada, mientras notas y tiempo MIDI abarcan la fase completa. filt de EB5/EC5 es RMS; EE5/EF5 usan otra implementación. MIDI sostenido no equivale a audio grabado",
+  "phase_summary": [
+    {
+      "phase": "preparation",
+      "plant_block": 0,
+      "planned_plant": null,
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:44:29.430000+00:00",
+      "end_utc": "2026-10-14T20:44:39.441000+00:00",
+      "stable_start_utc": "2026-10-14T20:44:29.430000+00:00",
+      "stable_end_utc": "2026-10-14T20:44:39.441000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 238,
+          "stable_frames": 238,
+          "stable_native_filt": {
+            "n": 238,
+            "min": 0.1314,
+            "median": 0.14555,
+            "p95": 0.154,
+            "max": 0.1576
+          },
+          "stable_adc_mean": {
+            "n": 238,
+            "min": 0.0709,
+            "median": 0.0831,
+            "p95": 0.0925,
+            "max": 0.0954
+          },
+          "stable_occupancy": {
+            "n": 238,
+            "min": 0.32,
+            "median": 0.3923,
+            "p95": 0.4615,
+            "max": 0.48
+          },
+          "stable_adc_peak": {
+            "n": 238,
+            "min": 373.0,
+            "median": 395.0,
+            "p95": 401.0,
+            "max": 407.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.085953
+        },
+        "EC5": {
+          "frames": 238,
+          "stable_frames": 238,
+          "stable_native_filt": {
+            "n": 238,
+            "min": 0.3574,
+            "median": 0.39144999999999996,
+            "p95": 0.4096,
+            "max": 0.4213
+          },
+          "stable_adc_mean": {
+            "n": 238,
+            "min": 0.2044,
+            "median": 0.23349999999999999,
+            "p95": 0.2569,
+            "max": 0.2664
+          },
+          "stable_occupancy": {
+            "n": 238,
+            "min": 0.3846,
+            "median": 0.4615,
+            "p95": 0.48,
+            "max": 0.52
+          },
+          "stable_adc_peak": {
+            "n": 238,
+            "min": 967.0,
+            "median": 1015.0,
+            "p95": 1023.0,
+            "max": 1035.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.088095
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 848,
+          "full_phase_midi_held_s": 7.16381,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 248,
+          "stable_frames": 248,
+          "stable_native_filt": {
+            "n": 248,
+            "min": 0.6673,
+            "median": 0.8381,
+            "p95": 0.9259,
+            "max": 0.9284
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.080211
+        },
+        "EF5": {
+          "frames": 249,
+          "stable_frames": 249,
+          "stable_native_filt": {
+            "n": 249,
+            "min": 0.7978,
+            "median": 1.0017,
+            "p95": 1.0702,
+            "max": 1.0927
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.058884
+        }
+      }
+    },
+    {
+      "phase": "air_reference",
+      "plant_block": 0,
+      "planned_plant": null,
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:44:39.441000+00:00",
+      "end_utc": "2026-10-14T20:46:39.463000+00:00",
+      "stable_start_utc": "2026-10-14T20:44:39.441000+00:00",
+      "stable_end_utc": "2026-10-14T20:46:39.463000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 2863,
+          "stable_frames": 2863,
+          "stable_native_filt": {
+            "n": 2863,
+            "min": 0.1296,
+            "median": 0.1552,
+            "p95": 0.1698,
+            "max": 0.1768
+          },
+          "stable_adc_mean": {
+            "n": 2863,
+            "min": 0.0705,
+            "median": 0.0898,
+            "p95": 0.1016,
+            "max": 0.1091
+          },
+          "stable_occupancy": {
+            "n": 2863,
+            "min": 0.3077,
+            "median": 0.4,
+            "p95": 0.4615,
+            "max": 0.48
+          },
+          "stable_adc_peak": {
+            "n": 2863,
+            "min": 377.0,
+            "median": 418.0,
+            "p95": 443.0,
+            "max": 451.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.103121
+        },
+        "EC5": {
+          "frames": 2870,
+          "stable_frames": 2870,
+          "stable_native_filt": {
+            "n": 2870,
+            "min": 0.3358,
+            "median": 0.3885,
+            "p95": 0.41,
+            "max": 0.4215
+          },
+          "stable_adc_mean": {
+            "n": 2870,
+            "min": 0.189,
+            "median": 0.2337,
+            "p95": 0.2568,
+            "max": 0.2696
+          },
+          "stable_occupancy": {
+            "n": 2870,
+            "min": 0.36,
+            "median": 0.4615,
+            "p95": 0.48,
+            "max": 0.56
+          },
+          "stable_adc_peak": {
+            "n": 2870,
+            "min": 925.0,
+            "median": 1006.0,
+            "p95": 1023.0,
+            "max": 1045.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.15686
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 9924,
+          "full_phase_midi_held_s": 91.098795,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 2966,
+          "stable_frames": 2966,
+          "stable_native_filt": {
+            "n": 2966,
+            "min": 0.5915,
+            "median": 0.8679,
+            "p95": 0.9332,
+            "max": 0.9566
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.149947
+        },
+        "EF5": {
+          "frames": 2968,
+          "stable_frames": 2968,
+          "stable_native_filt": {
+            "n": 2968,
+            "min": 0.7349,
+            "median": 1.0065,
+            "p95": 1.0919,
+            "max": 1.1137
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.117666
+        }
+      }
+    },
+    {
+      "phase": "ground_placement",
+      "plant_block": 0,
+      "planned_plant": null,
+      "planned_black": "EB5",
+      "start_utc": "2026-10-14T20:46:39.463000+00:00",
+      "end_utc": "2026-10-14T20:47:18.939000+00:00",
+      "stable_start_utc": "2026-10-14T20:46:39.463000+00:00",
+      "stable_end_utc": "2026-10-14T20:47:18.939000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 949,
+          "stable_frames": 949,
+          "stable_native_filt": {
+            "n": 949,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.1652,
+            "max": 0.9113
+          },
+          "stable_adc_mean": {
+            "n": 949,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0983,
+            "max": 0.8667
+          },
+          "stable_occupancy": {
+            "n": 949,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.4231,
+            "max": 1.0
+          },
+          "stable_adc_peak": {
+            "n": 949,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 432.0,
+            "max": 1969.0
+          },
+          "full_phase_active_fraction": 0.761854583772392,
+          "full_phase_note_ons": 5,
+          "full_phase_midi_held_s": 30.020999999999997,
+          "max_gap_including_boundaries_s": 0.085729
+        },
+        "EC5": {
+          "frames": 946,
+          "stable_frames": 946,
+          "stable_native_filt": {
+            "n": 946,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.3995,
+            "max": 3.1313
+          },
+          "stable_adc_mean": {
+            "n": 946,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.2469,
+            "max": 3.1225
+          },
+          "stable_occupancy": {
+            "n": 946,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.4615,
+            "max": 1.0
+          },
+          "stable_adc_peak": {
+            "n": 946,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 1007.0,
+            "max": 4095.0
+          },
+          "full_phase_active_fraction": 0.7610993657505285,
+          "full_phase_note_ons": 7,
+          "full_phase_midi_held_s": 30.00746,
+          "max_gap_including_boundaries_s": 0.0903
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 369,
+          "full_phase_midi_held_s": 5.964668,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 971,
+          "stable_frames": 971,
+          "stable_native_filt": {
+            "n": 971,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.93,
+            "max": 3.0744
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.7579814624098867,
+          "full_phase_note_ons": 10,
+          "full_phase_midi_held_s": 30.007740000000002,
+          "max_gap_including_boundaries_s": 0.132579
+        },
+        "EF5": {
+          "frames": 967,
+          "stable_frames": 967,
+          "stable_native_filt": {
+            "n": 967,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 1.0774,
+            "max": 3.3
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.7580144777662875,
+          "full_phase_note_ons": 10,
+          "full_phase_midi_held_s": 29.984242000000002,
+          "max_gap_including_boundaries_s": 0.126615
+        }
+      }
+    },
+    {
+      "phase": "soil_settle",
+      "plant_block": 0,
+      "planned_plant": null,
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:47:18.939000+00:00",
+      "end_utc": "2026-10-14T20:49:18.940000+00:00",
+      "stable_start_utc": "2026-10-14T20:47:18.939000+00:00",
+      "stable_end_utc": "2026-10-14T20:49:18.940000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 2911,
+          "stable_frames": 2911,
+          "stable_native_filt": {
+            "n": 2911,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 2911,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 2911,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 2911,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.162621
+        },
+        "EC5": {
+          "frames": 2909,
+          "stable_frames": 2909,
+          "stable_native_filt": {
+            "n": 2909,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 2909,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 2909,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 2909,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.170604
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 2970,
+          "stable_frames": 2970,
+          "stable_native_filt": {
+            "n": 2970,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.172386
+        },
+        "EF5": {
+          "frames": 2971,
+          "stable_frames": 2971,
+          "stable_native_filt": {
+            "n": 2971,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.184125
+        }
+      }
+    },
+    {
+      "phase": "soil_reference",
+      "plant_block": 0,
+      "planned_plant": null,
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:49:18.940000+00:00",
+      "end_utc": "2026-10-14T20:51:18.977000+00:00",
+      "stable_start_utc": "2026-10-14T20:49:18.940000+00:00",
+      "stable_end_utc": "2026-10-14T20:51:18.977000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 2911,
+          "stable_frames": 2911,
+          "stable_native_filt": {
+            "n": 2911,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 2911,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 2911,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 2911,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.12449
+        },
+        "EC5": {
+          "frames": 2910,
+          "stable_frames": 2910,
+          "stable_native_filt": {
+            "n": 2910,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 2910,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 2910,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 2910,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.107051
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 2973,
+          "stable_frames": 2973,
+          "stable_native_filt": {
+            "n": 2973,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.108136
+        },
+        "EF5": {
+          "frames": 2973,
+          "stable_frames": 2973,
+          "stable_native_filt": {
+            "n": 2973,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.098322
+        }
+      }
+    },
+    {
+      "phase": "rest",
+      "plant_block": 1,
+      "planned_plant": "EB5",
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:51:18.977000+00:00",
+      "end_utc": "2026-10-14T20:51:38.997000+00:00",
+      "stable_start_utc": "2026-10-14T20:51:23.977000+00:00",
+      "stable_end_utc": "2026-10-14T20:51:38.997000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 486,
+          "stable_frames": 365,
+          "stable_native_filt": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.105717
+        },
+        "EC5": {
+          "frames": 486,
+          "stable_frames": 365,
+          "stable_native_filt": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.107024
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 496,
+          "stable_frames": 372,
+          "stable_native_filt": {
+            "n": 372,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.118328
+        },
+        "EF5": {
+          "frames": 497,
+          "stable_frames": 373,
+          "stable_native_filt": {
+            "n": 373,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.103411
+        }
+      }
+    },
+    {
+      "phase": "contact",
+      "plant_block": 1,
+      "planned_plant": "EB5",
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:51:38.997000+00:00",
+      "end_utc": "2026-10-14T20:51:59.024000+00:00",
+      "stable_start_utc": "2026-10-14T20:51:41.997000+00:00",
+      "stable_end_utc": "2026-10-14T20:51:57.024000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 485,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.072655
+        },
+        "EC5": {
+          "frames": 485,
+          "stable_frames": 365,
+          "stable_native_filt": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.060162
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 497,
+          "stable_frames": 373,
+          "stable_native_filt": {
+            "n": 373,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.059678
+        },
+        "EF5": {
+          "frames": 496,
+          "stable_frames": 372,
+          "stable_native_filt": {
+            "n": 372,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.079519
+        }
+      }
+    },
+    {
+      "phase": "release",
+      "plant_block": 1,
+      "planned_plant": "EB5",
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:51:59.024000+00:00",
+      "end_utc": "2026-10-14T20:52:29.034000+00:00",
+      "stable_start_utc": "2026-10-14T20:52:14.034000+00:00",
+      "stable_end_utc": "2026-10-14T20:52:29.034000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 729,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.101537
+        },
+        "EC5": {
+          "frames": 728,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.111016
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 744,
+          "stable_frames": 372,
+          "stable_native_filt": {
+            "n": 372,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.091623
+        },
+        "EF5": {
+          "frames": 744,
+          "stable_frames": 372,
+          "stable_native_filt": {
+            "n": 372,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.087391
+        }
+      }
+    },
+    {
+      "phase": "change_node",
+      "plant_block": 2,
+      "planned_plant": "EC5",
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:52:29.034000+00:00",
+      "end_utc": "2026-10-14T20:52:59.063000+00:00",
+      "stable_start_utc": "2026-10-14T20:52:29.034000+00:00",
+      "stable_end_utc": "2026-10-14T20:52:59.063000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 727,
+          "stable_frames": 727,
+          "stable_native_filt": {
+            "n": 727,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 727,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 727,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 727,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.081671
+        },
+        "EC5": {
+          "frames": 729,
+          "stable_frames": 729,
+          "stable_native_filt": {
+            "n": 729,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 729,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 729,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 729,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.070539
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 744,
+          "stable_frames": 744,
+          "stable_native_filt": {
+            "n": 744,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.07864
+        },
+        "EF5": {
+          "frames": 743,
+          "stable_frames": 743,
+          "stable_native_filt": {
+            "n": 743,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.074067
+        }
+      }
+    },
+    {
+      "phase": "rest",
+      "plant_block": 2,
+      "planned_plant": "EC5",
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:52:59.063000+00:00",
+      "end_utc": "2026-10-14T20:53:19.077000+00:00",
+      "stable_start_utc": "2026-10-14T20:53:04.063000+00:00",
+      "stable_end_utc": "2026-10-14T20:53:19.077000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 485,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.068754
+        },
+        "EC5": {
+          "frames": 485,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.073728
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 1,
+          "full_phase_midi_held_s": 0.408526,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 496,
+          "stable_frames": 372,
+          "stable_native_filt": {
+            "n": 372,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.067496
+        },
+        "EF5": {
+          "frames": 495,
+          "stable_frames": 371,
+          "stable_native_filt": {
+            "n": 371,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.065853
+        }
+      }
+    },
+    {
+      "phase": "first_contact",
+      "plant_block": 2,
+      "planned_plant": "EC5",
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:53:19.077000+00:00",
+      "end_utc": "2026-10-14T20:53:39.095000+00:00",
+      "stable_start_utc": "2026-10-14T20:53:22.077000+00:00",
+      "stable_end_utc": "2026-10-14T20:53:37.095000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 486,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.116964
+        },
+        "EC5": {
+          "frames": 473,
+          "stable_frames": 351,
+          "stable_native_filt": {
+            "n": 351,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.2903,
+            "max": 1.0118
+          },
+          "stable_adc_mean": {
+            "n": 351,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.2188,
+            "max": 1.0062
+          },
+          "stable_occupancy": {
+            "n": 351,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 1.0,
+            "max": 1.0
+          },
+          "stable_adc_peak": {
+            "n": 351,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 592.0,
+            "max": 1452.0
+          },
+          "full_phase_active_fraction": 0.1226215644820296,
+          "full_phase_note_ons": 9,
+          "full_phase_midi_held_s": 2.760515,
+          "max_gap_including_boundaries_s": 0.103337
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 496,
+          "stable_frames": 372,
+          "stable_native_filt": {
+            "n": 372,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.122397
+        },
+        "EF5": {
+          "frames": 496,
+          "stable_frames": 372,
+          "stable_native_filt": {
+            "n": 372,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.101149
+        }
+      }
+    },
+    {
+      "phase": "contact",
+      "plant_block": 2,
+      "planned_plant": "EC5",
+      "planned_black": "EC5",
+      "start_utc": "2026-10-14T20:53:39.095000+00:00",
+      "end_utc": "2026-10-14T20:53:59.121000+00:00",
+      "stable_start_utc": "2026-10-14T20:53:42.095000+00:00",
+      "stable_end_utc": "2026-10-14T20:53:57.121000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 486,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.070118
+        },
+        "EC5": {
+          "frames": 469,
+          "stable_frames": 349,
+          "stable_native_filt": {
+            "n": 349,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0993,
+            "max": 0.4087
+          },
+          "stable_adc_mean": {
+            "n": 349,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0911,
+            "max": 0.4082
+          },
+          "stable_occupancy": {
+            "n": 349,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.9615,
+            "max": 1.0
+          },
+          "stable_adc_peak": {
+            "n": 349,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 176.0,
+            "max": 554.0
+          },
+          "full_phase_active_fraction": 0.14925373134328357,
+          "full_phase_note_ons": 12,
+          "full_phase_midi_held_s": 3.369789,
+          "max_gap_including_boundaries_s": 0.085634
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 497,
+          "stable_frames": 373,
+          "stable_native_filt": {
+            "n": 373,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.065027
+        },
+        "EF5": {
+          "frames": 497,
+          "stable_frames": 372,
+          "stable_native_filt": {
+            "n": 372,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.077736
+        }
+      }
+    },
+    {
+      "phase": "release",
+      "plant_block": 2,
+      "planned_plant": "EC5",
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:53:59.121000+00:00",
+      "end_utc": "2026-10-14T20:54:29.154000+00:00",
+      "stable_start_utc": "2026-10-14T20:54:14.154000+00:00",
+      "stable_end_utc": "2026-10-14T20:54:29.154000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 728,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.058574
+        },
+        "EC5": {
+          "frames": 728,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.103932
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 745,
+          "stable_frames": 372,
+          "stable_native_filt": {
+            "n": 372,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.074677
+        },
+        "EF5": {
+          "frames": 744,
+          "stable_frames": 371,
+          "stable_native_filt": {
+            "n": 371,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.067568
+        }
+      }
+    },
+    {
+      "phase": "change_node",
+      "plant_block": 3,
+      "planned_plant": "EE5",
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:54:29.154000+00:00",
+      "end_utc": "2026-10-14T20:54:59.173000+00:00",
+      "stable_start_utc": "2026-10-14T20:54:29.154000+00:00",
+      "stable_end_utc": "2026-10-14T20:54:59.173000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 729,
+          "stable_frames": 729,
+          "stable_native_filt": {
+            "n": 729,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 729,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 729,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 729,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.098833
+        },
+        "EC5": {
+          "frames": 728,
+          "stable_frames": 728,
+          "stable_native_filt": {
+            "n": 728,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 728,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 728,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 728,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.118612
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 744,
+          "stable_frames": 744,
+          "stable_native_filt": {
+            "n": 744,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.078855
+        },
+        "EF5": {
+          "frames": 744,
+          "stable_frames": 744,
+          "stable_native_filt": {
+            "n": 744,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.065022
+        }
+      }
+    },
+    {
+      "phase": "rest",
+      "plant_block": 3,
+      "planned_plant": "EE5",
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:54:59.173000+00:00",
+      "end_utc": "2026-10-14T20:55:19.190000+00:00",
+      "stable_start_utc": "2026-10-14T20:55:04.173000+00:00",
+      "stable_end_utc": "2026-10-14T20:55:19.190000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 485,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.068
+        },
+        "EC5": {
+          "frames": 486,
+          "stable_frames": 365,
+          "stable_native_filt": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.080087
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 496,
+          "stable_frames": 372,
+          "stable_native_filt": {
+            "n": 372,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.08824
+        },
+        "EF5": {
+          "frames": 496,
+          "stable_frames": 373,
+          "stable_native_filt": {
+            "n": 373,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.073585
+        }
+      }
+    },
+    {
+      "phase": "first_contact",
+      "plant_block": 3,
+      "planned_plant": "EE5",
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:55:19.190000+00:00",
+      "end_utc": "2026-10-14T20:55:39.214000+00:00",
+      "stable_start_utc": "2026-10-14T20:55:22.190000+00:00",
+      "stable_end_utc": "2026-10-14T20:55:37.214000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 485,
+          "stable_frames": 363,
+          "stable_native_filt": {
+            "n": 363,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 363,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 363,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 363,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.082605
+        },
+        "EC5": {
+          "frames": 485,
+          "stable_frames": 365,
+          "stable_native_filt": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.116083
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 497,
+          "stable_frames": 373,
+          "stable_native_filt": {
+            "n": 373,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.02012072434607646,
+          "full_phase_note_ons": 1,
+          "full_phase_midi_held_s": 0.406772,
+          "max_gap_including_boundaries_s": 0.115849
+        },
+        "EF5": {
+          "frames": 497,
+          "stable_frames": 373,
+          "stable_native_filt": {
+            "n": 373,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.082231
+        }
+      }
+    },
+    {
+      "phase": "contact",
+      "plant_block": 3,
+      "planned_plant": "EE5",
+      "planned_black": "EE5",
+      "start_utc": "2026-10-14T20:55:39.214000+00:00",
+      "end_utc": "2026-10-14T20:55:59.232000+00:00",
+      "stable_start_utc": "2026-10-14T20:55:42.214000+00:00",
+      "stable_end_utc": "2026-10-14T20:55:57.232000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 486,
+          "stable_frames": 365,
+          "stable_native_filt": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.07536
+        },
+        "EC5": {
+          "frames": 485,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.072075
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 10,
+          "full_phase_midi_held_s": 1.25403,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 492,
+          "stable_frames": 370,
+          "stable_native_filt": {
+            "n": 370,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.1064
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.04878048780487805,
+          "full_phase_note_ons": 3,
+          "full_phase_midi_held_s": 1.091866,
+          "max_gap_including_boundaries_s": 0.08257
+        },
+        "EF5": {
+          "frames": 496,
+          "stable_frames": 373,
+          "stable_native_filt": {
+            "n": 373,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.067407
+        }
+      }
+    },
+    {
+      "phase": "release",
+      "plant_block": 3,
+      "planned_plant": "EE5",
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:55:59.232000+00:00",
+      "end_utc": "2026-10-14T20:56:29.261000+00:00",
+      "stable_start_utc": "2026-10-14T20:56:14.261000+00:00",
+      "stable_end_utc": "2026-10-14T20:56:29.261000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 728,
+          "stable_frames": 363,
+          "stable_native_filt": {
+            "n": 363,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 363,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 363,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 363,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.092675
+        },
+        "EC5": {
+          "frames": 728,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.084273
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 1,
+          "full_phase_midi_held_s": 0.875046,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 744,
+          "stable_frames": 373,
+          "stable_native_filt": {
+            "n": 373,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.021505376344086023,
+          "full_phase_note_ons": 1,
+          "full_phase_midi_held_s": 0.681535,
+          "max_gap_including_boundaries_s": 0.08467
+        },
+        "EF5": {
+          "frames": 746,
+          "stable_frames": 373,
+          "stable_native_filt": {
+            "n": 373,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.096385
+        }
+      }
+    },
+    {
+      "phase": "change_node",
+      "plant_block": 4,
+      "planned_plant": "EF5",
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:56:29.261000+00:00",
+      "end_utc": "2026-10-14T20:56:59.267000+00:00",
+      "stable_start_utc": "2026-10-14T20:56:29.261000+00:00",
+      "stable_end_utc": "2026-10-14T20:56:59.267000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 728,
+          "stable_frames": 728,
+          "stable_native_filt": {
+            "n": 728,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 728,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 728,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 728,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.087297
+        },
+        "EC5": {
+          "frames": 726,
+          "stable_frames": 726,
+          "stable_native_filt": {
+            "n": 726,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 726,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 726,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 726,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.082714
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 744,
+          "stable_frames": 744,
+          "stable_native_filt": {
+            "n": 744,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.076983
+        },
+        "EF5": {
+          "frames": 744,
+          "stable_frames": 744,
+          "stable_native_filt": {
+            "n": 744,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.07737
+        }
+      }
+    },
+    {
+      "phase": "rest",
+      "plant_block": 4,
+      "planned_plant": "EF5",
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:56:59.267000+00:00",
+      "end_utc": "2026-10-14T20:57:19.275000+00:00",
+      "stable_start_utc": "2026-10-14T20:57:04.267000+00:00",
+      "stable_end_utc": "2026-10-14T20:57:19.275000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 484,
+          "stable_frames": 363,
+          "stable_native_filt": {
+            "n": 363,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 363,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 363,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 363,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.082122
+        },
+        "EC5": {
+          "frames": 485,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.085231
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 495,
+          "stable_frames": 371,
+          "stable_native_filt": {
+            "n": 371,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.076741
+        },
+        "EF5": {
+          "frames": 495,
+          "stable_frames": 372,
+          "stable_native_filt": {
+            "n": 372,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.076031
+        }
+      }
+    },
+    {
+      "phase": "first_contact",
+      "plant_block": 4,
+      "planned_plant": "EF5",
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:57:19.275000+00:00",
+      "end_utc": "2026-10-14T20:57:39.297000+00:00",
+      "stable_start_utc": "2026-10-14T20:57:22.275000+00:00",
+      "stable_end_utc": "2026-10-14T20:57:37.297000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 485,
+          "stable_frames": 365,
+          "stable_native_filt": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 365,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.101187
+        },
+        "EC5": {
+          "frames": 486,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.108839
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 497,
+          "stable_frames": 372,
+          "stable_native_filt": {
+            "n": 372,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.135838
+        },
+        "EF5": {
+          "frames": 497,
+          "stable_frames": 373,
+          "stable_native_filt": {
+            "n": 373,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0008
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.103065
+        }
+      }
+    },
+    {
+      "phase": "contact",
+      "plant_block": 4,
+      "planned_plant": "EF5",
+      "planned_black": "EF5",
+      "start_utc": "2026-10-14T20:57:39.297000+00:00",
+      "end_utc": "2026-10-14T20:57:59.320000+00:00",
+      "stable_start_utc": "2026-10-14T20:57:42.297000+00:00",
+      "stable_end_utc": "2026-10-14T20:57:57.320000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 486,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.115491
+        },
+        "EC5": {
+          "frames": 485,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.10275
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 31,
+          "full_phase_midi_held_s": 5.544058,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 498,
+          "stable_frames": 374,
+          "stable_native_filt": {
+            "n": 374,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0089,
+            "max": 0.0129
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.092938
+        },
+        "EF5": {
+          "frames": 475,
+          "stable_frames": 355,
+          "stable_native_filt": {
+            "n": 355,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.2152,
+            "max": 0.2692
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.3157894736842105,
+          "full_phase_note_ons": 17,
+          "full_phase_midi_held_s": 6.668095,
+          "max_gap_including_boundaries_s": 0.097966
+        }
+      }
+    },
+    {
+      "phase": "release",
+      "plant_block": 4,
+      "planned_plant": "EF5",
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:57:59.320000+00:00",
+      "end_utc": "2026-10-14T20:58:29.353000+00:00",
+      "stable_start_utc": "2026-10-14T20:58:14.353000+00:00",
+      "stable_end_utc": "2026-10-14T20:58:29.353000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 729,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.090504
+        },
+        "EC5": {
+          "frames": 728,
+          "stable_frames": 364,
+          "stable_native_filt": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 364,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.084181
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 747,
+          "stable_frames": 373,
+          "stable_native_filt": {
+            "n": 373,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.105969
+        },
+        "EF5": {
+          "frames": 745,
+          "stable_frames": 372,
+          "stable_native_filt": {
+            "n": 372,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0348993288590604,
+          "full_phase_note_ons": 3,
+          "full_phase_midi_held_s": 1.125542,
+          "max_gap_including_boundaries_s": 0.106645
+        }
+      }
+    },
+    {
+      "phase": "final_reference",
+      "plant_block": 0,
+      "planned_plant": null,
+      "planned_black": null,
+      "start_utc": "2026-10-14T20:58:29.353000+00:00",
+      "end_utc": "2026-10-14T20:59:29.368000+00:00",
+      "stable_start_utc": "2026-10-14T20:58:29.353000+00:00",
+      "stable_end_utc": "2026-10-14T20:59:29.368000+00:00",
+      "nodes": {
+        "EB5": {
+          "frames": 1456,
+          "stable_frames": 1456,
+          "stable_native_filt": {
+            "n": 1456,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 1456,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 1456,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 1456,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.15197
+        },
+        "EC5": {
+          "frames": 1454,
+          "stable_frames": 1454,
+          "stable_native_filt": {
+            "n": 1454,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": {
+            "n": 1454,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_occupancy": {
+            "n": 1454,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_peak": {
+            "n": 1454,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.188348
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "stable_native_filt": null,
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": null,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": null
+        },
+        "EE5": {
+          "frames": 1496,
+          "stable_frames": 1496,
+          "stable_native_filt": {
+            "n": 1496,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.182372
+        },
+        "EF5": {
+          "frames": 1489,
+          "stable_frames": 1489,
+          "stable_native_filt": {
+            "n": 1489,
+            "min": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "max": 0.0
+          },
+          "stable_adc_mean": null,
+          "stable_occupancy": null,
+          "stable_adc_peak": null,
+          "full_phase_active_fraction": 0.0,
+          "full_phase_note_ons": 0,
+          "full_phase_midi_held_s": 0,
+          "max_gap_including_boundaries_s": 0.120727
+        }
+      }
+    }
+  ],
+  "runtime": {
+    "EB5": {
+      "samples": 859,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EC5": {
+      "samples": 859,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "ED5": {
+      "samples": 859,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EE5": {
+      "samples": 859,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EF5": {
+      "samples": 859,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    }
+  },
+  "data_quality": {
+    "coverage_gap_flag_s": 1.0,
+    "operator_ack_delay_flag_s": 1.0,
+    "meaning": "Flags missing host-received telemetry, including phase boundaries; does not prove a node reboot or missing analogue response.",
+    "sensor_coverage_warnings": [],
+    "operator_ack_delay_warnings": []
+  }
+}

@@ -1,0 +1,562 @@
+﻿OKÚA - HARDWARE ACTUAL DE UNA CAJA CON CINCO NODOS
+Explicación técnica para un agente de IA sin acceso a Proteus
+Fecha de integración: 14 de octubre de 2026. Versión 1.
+
+LECTURA RECOMENDADA
+Lee primero este archivo y después los dos PDF que lo acompañan:
+  01_CIRCUITO_NODO_OKUA.pdf
+  02_FUENTE_DUAL_CINCO_NODOS_OKUA.pdf
+Los esquemas eléctricos de esos PDF proceden de la exportación nativa de
+Proteus. Las vistas ampliadas son recortes del mismo dibujo exportado;
+no son circuitos redibujados ni propuestas de modificación. Las páginas
+de lectura y las fotografías se identifican como material explicativo.
+
+MAPA DE PÁGINAS DE LOS PDF
+  Nodo, 7 páginas: 1 circuito completo; 2 entrada/pasaaltos;
+  3 pasabajos/salida; 4 ESP32/TL072/7805; 5 conectores/GND;
+  6 fotografía del contacto; 7 fotografía y construcción de la caja.
+  Fuente, 5 páginas: 1 circuito completo; 2 rectificación/diodos;
+  3 rama positiva; 4 rama negativa; 5 distribución a los cinco nodos.
+
+0. ALCANCE, PROCEDENCIA Y FORMA DE INTERPRETAR ESTA EXPLICACIÓN
+
+Esta descripción corresponde al hardware que José David utiliza actualmente.
+Él confirmó que los proyectos "Proteus integracion completa posterior" y
+"Proteus fuente dual de nueve voltios" representan su montaje actual, incluida
+la incorporación de cinco diodos 1N5408 en serie en cada rama de la fuente.
+
+Hay tres clases de información:
+  a) Hechos de montaje aportados directamente por José David: transformador,
+     cinco nodos, colores de cables, GND compartido, interacción con la planta
+     y construcción de la caja.
+  b) Conexiones y valores dibujados en los proyectos Proteus y contrastados
+     con el inventario y la caracterización anterior del nodo.
+  c) Resultados calculados con un modelo ideal de los filtros: ganancias,
+     frecuencias de corte y transitorios. Estos cálculos no son mediciones
+     de la unidad física ni una simulación SPICE validada experimentalmente.
+
+Se documenta el equipo existente. Los proyectos BioNode v2, PRE-EVT y otros
+desarrollos futuros no sustituyen esta arquitectura. Aquí la señal entra al
+ADC interno de la ESP32 a través de GPIO32; no se incorpora un ADC externo.
+Tampoco se presupone un firmware, protocolo de red o algoritmo musical que
+no haya sido aportado para esta descripción.
+
+1. VISIÓN DEL CONJUNTO
+
+Una caja OKÚA reúne una fuente dual compartida y cinco nodos. Cada nodo tiene
+su propia cadena analógica TL074/TL072, su regulador 7805 y una placa ESP32.
+La fuente entrega tres referencias de alimentación comunes:
+  +9 V, GND (0 V) y -9 V.
+
+La alimentación procede de la red eléctrica, pasa por un transformador y
+por la fuente dual, y llega al conector J1 de cada nodo. La señal de medición
+entra por J2 de cada nodo, mediante el contacto con la planta y la persona.
+La señal analógica se filtra y llega a GPIO32 para que el firmware pueda
+muestrearla con el ADC interno.
+
+Esquema funcional general:
+
+  Red 120 V CA
+       |
+  Transformador 12-0-12 V CA, capacidad nominal indicada de 5 A
+       |
+  J1 de la FUENTE -> rectificación -> diodos serie -> reserva -> regulación
+       |
+  J2 de la FUENTE: +9 V / GND / -9 V
+       |
+       +--> J1 del NODO 1
+       +--> J1 del NODO 2
+       +--> J1 del NODO 3
+       +--> J1 del NODO 4
+       +--> J1 del NODO 5
+
+En cada nodo:
+  Planta/contactos/persona -> J2 -> TL074 -> GPIO32 -> ADC de la ESP32.
+
+2. TRANSFORMADOR Y ORIGEN DE LOS TRES CONDUCTORES
+
+José David indicó un transformador conectado a 120 V de la red eléctrica,
+con secundario de tres conductores 12 V - 0 - 12 V y capacidad nominal de 5 A.
+Se interpreta esta salida como 12-0-12 V CA, con toma central:
+  - Entre un extremo y la toma central: 12 V CA nominales.
+  - Entre el otro extremo y la toma central: 12 V CA nominales.
+  - Entre los dos extremos: 24 V CA nominales.
+
+La toma central se conecta a J1.2 de la fuente y establece el GND común.
+Los extremos del secundario se conectan a J1.1 y J1.3 de la fuente, que
+alimentan los dos terminales de entrada alterna del puente rectificador.
+
+Los 12 V CA del transformador y los +9/-9 V CC de salida de la fuente son
+etapas diferentes. La capacidad de 5 A es el dato nominal del transformador;
+no constituye una medición ni una garantía de que cada salida regulada pueda
+entregar 5 A continuos. No se ha aportado la placa de características completa
+para desglosar la especificación entre devanados o fijar su potencia nominal.
+
+3. FUENTE DUAL: RECTIFICACIÓN Y ADAPTACIÓN CON 1N5408
+
+IMPORTANTE: las referencias de esta sección pertenecen al proyecto de la
+FUENTE. Un U1 o un C1 de la fuente no es el U1 o C1 del proyecto del NODO.
+
+D1, D2, D3 y D4 de la fuente son 1N4004 y forman el puente rectificador.
+La salida rectificada tiene una rama positiva y una rama negativa respecto
+a la toma central/GND.
+
+José David añadió diez diodos 1N5408:
+  - Rama positiva: D9, D10, D11, D12 y D13, conectados en serie.
+  - Rama negativa: D14, D15, D16, D17 y D18, conectados en serie.
+
+Su posición es importante: las dos cadenas están DESPUÉS del puente
+rectificador y ANTES de los condensadores de reserva de 2200 µF.
+No son cinco diodos en paralelo ni cinco rectificadores separados por nodo.
+Todos los diodos de una cadena conducen la corriente de esa cadena.
+
+Al conducir, cada diodo produce una caída de tensión y disipa potencia.
+Así se reduce la magnitud de la tensión que llega a la etapa posterior y
+parte de la disipación se distribuye en los diodos. La caída no es un valor
+fijo de 0,7 V por diodo: depende de la corriente instantánea y la temperatura.
+Por su ubicación antes de los condensadores, la corriente también contiene
+los pulsos de recarga; no debe equipararse automáticamente a una corriente
+perfectamente constante igual al consumo de los nodos.
+
+Para una aproximación con corriente constante y caída Vf representativa:
+  caída de una cadena ~ 5 * Vf
+  potencia de una cadena ~ 5 * Vf * I
+Para el funcionamiento real, la potencia media es el promedio temporal de
+la suma de v_diodo(t) * i_diodo(t). No se incluyen cifras térmicas medidas.
+
+El motivo práctico aportado por José David fue que las cinco ESP32, al usar
+Wi-Fi, exigían más corriente de la esperada y fue necesaria esta adaptación.
+Los diodos redistribuyen caída de tensión y disipación. Los transistores de
+apoyo y los reguladores cumplen la función de entrega y regulación de la
+corriente de salida; son funciones distintas dentro de la misma fuente.
+
+4. FUENTE DUAL: RESERVA, REGULACIÓN Y SALIDA
+
+Inventario colocado en el esquema de la fuente:
+  J1: conector de entrada de tres terminales.
+  J2: conector de salida de tres terminales.
+  D1-D8: 1N4004.
+  D9-D18: 1N5408.
+  C1 y C2: 2200 µF cada uno, reserva en las ramas positiva y negativa.
+  C3 y C4: 330 nF cada uno, en las entradas de los reguladores.
+  C5 y C6: 1 µF cada uno, en las salidas reguladas.
+  U1: 7809, regulador de la rama positiva.
+  U2: 7909, regulador de la rama negativa.
+  Q2: TIP32, transistor PNP de apoyo en la rama positiva.
+  Q1: TIP31, transistor NPN de apoyo en la rama negativa.
+  R1 y R2: 820 ohmios cada una.
+  R3 y R4: 1 ohmio cada una, asociadas a los transistores de apoyo.
+
+C1 y C2 se conectan entre sus respectivas ramas, después de las cadenas
+1N5408, y GND. Almacenan carga para reducir la variación entre intervalos de
+rectificación. U1/Q2 proporcionan la salida nominal +9 V; U2/Q1, la salida
+nominal -9 V. R3 y R4 forman parte de la red que vincula la corriente de
+entrada de cada regulador con la conducción de su transistor de apoyo.
+
+R1 con D5 y R2 con D6 forman derivaciones de las ramas de entrada hacia GND.
+D7 y D8 están conectados entre la entrada de potencia y la salida de sus
+respectivas ramas. Su orientación exacta se conserva en el PDF nativo.
+No deben confundirse D5/D6 con LED: están colocados como diodos 1N4004.
+Que un dispositivo aparezca en la lista de biblioteca de Proteus no demuestra
+que esté colocado en el circuito.
+
+La salida J2 de la fuente es:
+  J2.1 = +9 V nominales respecto a GND.
+  J2.2 = GND común.
+  J2.3 = -9 V nominales respecto a GND.
+Entre las salidas +9 V y -9 V hay nominalmente 18 V CC.
+
+El transformador, el puente, las cadenas de diodos y la regulación son
+compartidos por los cinco nodos. No hay una fuente independiente por planta
+en la configuración descrita.
+
+5. DISTRIBUCIÓN DE ALIMENTACIÓN A LOS CINCO NODOS
+
+Cada nodo recibe tres cables por su conector J1:
+  J1.1: rojo de ALIMENTACIÓN, +9 V.
+  J1.2: verde de ALIMENTACIÓN, GND.
+  J1.3: negro de ALIMENTACIÓN, -9 V.
+
+Desde la caja salen en total quince conductores de alimentación:
+  cinco rojos +9 V, cinco verdes GND y cinco negros -9 V.
+Los conductores atraviesan los orificios de la tapa metálica hacia los nodos.
+Los cinco verdes se unen a la misma referencia GND de la fuente. Los nodos
+comparten los rieles de alimentación y no están aislados eléctricamente entre
+sí dentro de la arquitectura representada.
+
+6. GND COMPARTIDO Y DIFERENCIA ENTRE LOS DOS CABLES NEGROS
+
+En este documento, GND designa la referencia electrónica de 0 V del secundario
+del transformador, de la fuente dual y de los cinco nodos.
+
+En cada nodo, J2.2 está unido eléctricamente a J1.2. Por tanto:
+
+  Toma central del transformador
+      = J1.2 de la fuente
+      = J2.2 de la fuente
+      = J1.2 del nodo 1 = ... = J1.2 del nodo 5
+      = J2.2 del nodo 1 = ... = J2.2 del nodo 5
+      = los cinco cables negros de MEDICIÓN.
+
+La igualdad expresa el mismo nodo eléctrico en el esquema. Los cables
+físicos pueden presentar resistencia y caída de tensión; no se han medido
+esas diferencias en esta recopilación.
+
+DISTINCIÓN ESENCIAL:
+  Negro de ALIMENTACIÓN -> J1.3 -> -9 V.
+  Negro de MEDICIÓN/electrodo -> J2.2 -> GND, 0 V.
+No se puede identificar la función únicamente por el color negro.
+También existen dos cables funcionalmente rojos:
+  Rojo de ALIMENTACIÓN -> J1.1 -> +9 V.
+  Rojo de MEDICIÓN/electrodo -> J2.1 -> entrada de señal.
+
+La relación de GND con una conexión de protección de la red o con el chasis
+metálico no se ha especificado. No debe inventarse una unión eléctrica a esos
+puntos por el hecho de que el esquema utilice un símbolo de tierra.
+
+7. ELECTRODOS, PLANTA Y PARTICIPACIÓN DE LA PERSONA
+
+Cada nodo tiene dos conductores de medición, designados rojo y negro.
+El rojo llega a J2.1 y su pinza normalmente se fija a una hoja de la planta
+que se desea biosonificar. El negro llega a J2.2 y, en el modo descrito, su
+extremo queda libre hasta que una persona lo toca.
+
+La interacción habitual es:
+  - Una mano toca la planta.
+  - La otra mano toca la punta del conductor negro de medición.
+  - La pinza del conductor rojo permanece conectada a la hoja.
+
+Recorrido conceptual del contacto:
+  GND común -> negro de medición -> mano -> cuerpo -> otra mano -> planta
+             -> contacto rojo -> J2.1 -> entrada del circuito analógico.
+
+Las flechas describen los elementos del circuito de medición y el contacto
+entre ellos; no fijan el sentido ni el valor de una corriente medida.
+La persona forma parte del montaje de medición. No se describe un segundo
+electrodo negro clavado en el suelo ni una segunda pinza negra colocada en
+otra hoja en este modo habitual.
+
+La entrada se expresa como:
+  V_entrada(t) = V(J2.1,t) - V(GND_común,t).
+Todos los nodos miden respecto a la referencia común de su caja.
+El esquema no contiene una fuente de excitación dedicada para calcular
+resistencia o conductancia de la planta. Tampoco contiene una etapa de
+medición diferencial independiente que bufferice ambos electrodos: J2.2
+es directamente GND y J2.1 entra a un seguidor de operacional.
+
+Los contactos, la planta, la persona y el entorno forman el contexto de la
+señal registrada. No hay evidencia en esta documentación para asignar cada
+variación exclusivamente a un fenómeno fisiológico concreto. Si el negro
+está libre y nadie lo toca, no se debe presuponer una lectura digital cero:
+el estado resultante depende de las condiciones eléctricas reales.
+
+La fotografía de contacto confirma visualmente una pinza sobre una hoja y
+una mano tocando la punta del otro conductor. Las designaciones rojo/negro
+y su función proceden de la explicación de José David; el color externo de
+una pinza, adaptador o tramo visible en la fotografía no redefine los pines.
+
+8. NODO: RECORRIDO PRINCIPAL DE LA SEÑAL
+
+IMPORTANTE: las referencias de las secciones 8 a 13 pertenecen al NODO.
+
+La ruta principal es:
+  J2.1 -> U4:B -> U4:A -> U4:C -> U4:D -> U5.D32 / GPIO32.
+
+U4 es un TL074 que contiene cuatro operacionales, usados así:
+  B: seguidor de entrada.
+  A: filtro pasaaltos activo de segundo orden.
+  C: filtro pasabajos activo de segundo orden.
+  D: seguidor de salida.
+El orden de recorrido es B, A, C, D; las letras de sección no indican el orden
+alfabético de la señal. Las cuatro secciones pertenecen al mismo integrado.
+
+La señal permanece analógica durante todo este recorrido. La conversión a
+muestras digitales ocurre dentro de la ESP32 cuando el firmware utiliza el
+ADC correspondiente. U3:A, TL072, es una ramificación adicional hacia GPIO2;
+no es una etapa en serie entre U4:D y GPIO32.
+
+9. SEGUIDOR DE ENTRADA U4:B
+
+Conexiones:
+  J2.1 -> entrada no inversora U4:B, pin 5 del TL074.
+  Salida U4:B, pin 7, unida a su entrada inversora, pin 6.
+  La salida pin 7 también alimenta C3 del filtro siguiente.
+
+La realimentación configura un seguidor: en régimen lineal su salida sigue
+aproximadamente la tensión de entrada, con ganancia cercana a uno. Su entrada
+presenta la alta impedancia del operacional y su salida conduce la etapa de
+filtrado posterior. No se dibuja un atenuador ni una resistencia externa en
+serie entre J2.1 y el pin 5.
+
+10. PASAALTOS ACTIVO U4:A
+
+Valores colocados:
+  C3 = 4,7 µF; C4 = 4,7 µF.
+  R5 = 47 kohmios; R6 = 100 kohmios.
+  R7 = 100 kohmios; R8 = 2,2 Mohmios.
+
+Definición de nodos y conexiones:
+  Salida U4:B -> C3 -> nodo X -> C4 -> nodo Y.
+  Nodo Y -> entrada no inversora U4:A, pin 3.
+  R5 conecta X con la salida U4:A, pin 1.
+  R6 conecta Y con GND.
+  R7 conecta salida U4:A, pin 1, con entrada inversora, pin 2.
+  R8 conecta pin 2 con GND.
+
+R5 vuelve a la salida del operacional; esta conexión forma parte del filtro
+activo. No son dos circuitos RC independientes. La ganancia no inversora
+de la etapa, en su región de paso, es:
+  K_H = 1 + R7/R8 = 1,0454545.
+
+El corte propio calculado a -3 dB respecto a la ganancia de paso es
+aproximadamente 0,4587 Hz. Su frecuencia natural calculada es 0,4939 Hz,
+que es un parámetro diferente del punto de corte a -3 dB.
+
+El pasaaltos atenúa una componente constante y las variaciones muy lentas.
+En el modelo ideal, una entrada DC constante acaba produciendo salida cero
+tras extinguirse el transitorio. Un cambio de esa entrada sí produce una
+respuesta temporal; no puede describirse como una conversión instantánea
+proporcional del nivel DC de la planta.
+
+11. PASABAJOS ACTIVO U4:C
+
+Valores colocados:
+  R9 = 220 ohmios; R10 = 220 ohmios.
+  C5 = 10 µF; C6 = 4,7 µF.
+  R11 = 10 kohmios; R12 = 2 Mohmios.
+
+Definición de nodos y conexiones:
+  Salida U4:A -> R9 -> nodo M -> R10 -> nodo P.
+  Nodo P -> entrada no inversora U4:C, pin 10.
+  C5 conecta M con la salida U4:C, pin 8.
+  C6 conecta P con GND.
+  R11 conecta salida U4:C, pin 8, con entrada inversora, pin 9.
+  R12 conecta pin 9 con GND.
+
+C5 está conectado a la SALIDA del operacional, no a GND. Esta conexión es
+esencial para la topología Sallen-Key de segundo orden del pasabajos.
+La ganancia no inversora es:
+  K_L = 1 + R11/R12 = 1,005.
+El corte propio calculado a -3 dB es aproximadamente 109,28 Hz.
+La frecuencia natural calculada es 105,52 Hz.
+
+La combinación pasaaltos-pasabajos conforma una respuesta de banda limitada.
+Estos filtros no garantizan por sí solos una adquisición sin aliasing: falta
+la frecuencia de muestreo y la configuración real del ADC.
+
+12. SEGUIDOR DE SALIDA U4:D, GPIO32 Y RAMA TL072
+
+Salida principal:
+  Salida U4:C, pin 8 -> entrada no inversora U4:D, pin 12.
+  Salida U4:D, pin 14, unida a su entrada inversora, pin 13.
+  Salida U4:D, pin 14 -> U5.D32, GPIO32 de la ESP32.
+
+U4:D vuelve a funcionar como seguidor de tensión. El esquema une su salida
+directamente al pin D32 de la placa ESP32. Para la familia ESP32 clásica,
+GPIO32 corresponde al canal ADC1_CH4. El símbolo U5 representa una placa
+genérica de 30 pines; no identifica el modelo comercial físico exacto.
+
+Ramificación adicional:
+  La misma salida U4:D llega a U3:A, entrada no inversora pin 3 del TL072.
+  U3:A une su salida pin 1 con su entrada inversora pin 2.
+  La salida U3:A llega a U5.D2, GPIO2, y a R1 = 220 ohmios hacia GND.
+
+En el ESP32 clásico, GPIO2 también puede corresponder a ADC2_CH2, pero la
+conexión dibujada no prueba que el firmware lo utilice como entrada ADC.
+No se ha aportado la función actual de esa rama en el firmware.
+R1 es una carga desde la salida del TL072 a GND; no es una resistencia
+protectora en serie entre el operacional y GPIO2. La sección B del TL072
+no está conectada en el netlist que fundamenta esta caracterización.
+
+No se dibuja una etapa de desplazamiento del nivel de señal hacia 1,65 V,
+ni un recorte a 0-3,3 V, ni una conversión de ±9 V a un rango ADC mediante
+divisor en la salida U4:D. La alimentación de un operacional y la tensión
+que produce su señal de salida son conceptos diferentes.
+
+13. ALIMENTACIÓN LOCAL DEL NODO
+
+J1 del nodo recibe +9 V, GND y -9 V.
+  TL074: pin 4 a +9 V; pin 11 a -9 V.
+  TL072: pin 8 a +9 V; pin 4 a -9 V.
+
+U1 del NODO es un 7805:
+  Pin 1 / VI -> +9 V de J1.1.
+  Pin 2 / GND -> GND de J1.2.
+  Pin 3 / VO -> 5 V nominales -> VIN de la placa ESP32 U5.
+  C1 = 0,33 µF entre entrada del 7805 y GND.
+  C2 = 0,1 µF entre salida del 7805 y GND.
+
+La regulación de 3,3 V interna a la placa ESP32 no se detalla en el símbolo
+del proyecto; su componente físico exacto no está identificado aquí.
+El hecho de suministrar 5 V a VIN no significa que GPIO32 deba recibir 5 V.
+
+El 7805 de cada nodo obtiene su energía de la rama positiva compartida.
+Por tanto, el consumo asociado al Wi-Fi de las cinco ESP32 se refleja
+principalmente en la salida +9 V de la fuente. La rama -9 V alimenta las
+etapas analógicas. No se debe suponer una carga igual en ambas ramas solo
+porque la fuente tenga una estructura positiva/negativa parecida.
+
+14. RESPUESTA IDEAL Y CÓMO EVITAR INTERPRETACIONES EQUIVOCADAS
+
+Con los valores nominales dibujados, amplificadores ideales sin saturación
+y entrada ADC sin carga, la función calculada J2.1 -> GPIO32 es:
+
+  Y(s) = H(s) X(s)
+  H(s) = 0,1090849384 * s^2 /
+         [(1 + 0,4204363636*s + 0,103823*s^2)
+          (1 + 0,002057*s + 0,0000022748*s^2)]
+
+X es la tensión de entrada respecto a GND, Y es la tensión de salida respecto
+al mismo GND y s es la variable de Laplace. Los condensadores introducen
+dependencia temporal: un valor aislado de entrada no fija por sí solo un
+valor único instantáneo de salida.
+
+Ganancia de amplitud calculada para una senoide en régimen estable:
+  0,1 Hz -> 0,04329 V/V.
+  10 Hz  -> 1,05168 V/V.
+  60 Hz  -> 1,02087 V/V.
+  100 Hz -> 0,81042 V/V.
+
+En esta topología no aparece un rechazo específico o notch de 60 Hz.
+Una componente de 60 Hz en J2 atraviesa casi íntegramente la cadena ideal.
+El filtrado de la ALIMENTACIÓN y el filtrado de la SEÑAL de J2 son rutas
+diferentes; el 7805 no constituye un notch de 60 Hz para la señal de planta.
+
+Para un escalón ideal de +1 V en la entrada, el cálculo anterior obtiene
+un pico de +1,08895 V, un rebote de -0,23900 V y retorno final a cero.
+Estas cifras describen el modelo lineal y no autorizan extrapolaciones
+de grandes amplitudes como límites reales del TL074 o de la ESP32.
+
+El modelo admite salidas con signo positivo y negativo respecto a GND.
+La compatibilidad de la forma de onda física con el ADC depende de sus
+niveles, configuración y condiciones reales. No hay registros nuevos
+de osciloscopio, consumo, temperatura, ruido o calibración en este paquete.
+
+15. INVENTARIO Y REDES PRINCIPALES DEL NODO
+
+Integrados/conectores:
+  U1: 7805. U3: TL072. U4: TL074. U5: placa ESP32 genérica de 30 pines.
+  J1: alimentación, tres pines. J2: señal, dos pines.
+Resistencias:
+  R1 220 ohmios; R5 47 k; R6 100 k; R7 100 k; R8 2,2 M;
+  R9 220 ohmios; R10 220 ohmios; R11 10 k; R12 2 M.
+Condensadores:
+  C1 0,33 µF; C2 0,1 µF; C3 4,7 µF; C4 4,7 µF;
+  C5 10 µF; C6 4,7 µF.
+
+Redes, expresadas por terminales conectados:
+  +9 V: J1.1, U1.1/VI, C1+, U3.8/V+, U4.4/V+.
+  -9 V: J1.3, U3.4/V-, U4.11/V-.
+  +5 V: U1.3/VO, C2+, U5.VIN.
+  GND: J1.2, J2.2, U1.2, C1-, C2-, ambos GND de U5,
+       R1.2, R6.2, R8.2, R12.2 y C6.1.
+  Entrada: J2.1, U4.5/B+.
+  Salida B: U4.7/B_OUT, U4.6/B-, C3.2.
+  X: C3.1, C4.2, R5.1.
+  Y: C4.1, R6.1, U4.3/A+.
+  A inversora: U4.2, R7.1, R8.1.
+  Salida A: U4.1, R5.2, R7.2, R9.1.
+  M: R9.2, R10.1, C5.2.
+  P: R10.2, C6.2, U4.10/C+.
+  C inversora: U4.9, R11.1, R12.1.
+  Salida C: U4.8, C5.1, R11.2, U4.12/D+.
+  Salida D / GPIO32: U4.14, U4.13/D-, U3.3/A+, U5.D32.
+  Salida TL072 / GPIO2: U3.1, U3.2/A-, R1.1, U5.D2.
+
+La lista anterior procede de la reconstrucción de redes del nodo contrastada
+con Proteus. Los PDF nativos son la referencia visual para las conexiones.
+Los nombres de pin del símbolo deben distinguirse del número de pad o
+posición mecánica de la placa ESP32 comercial, que no se identifica aquí.
+
+16. CONSTRUCCIÓN FÍSICA DE LA CAJA
+
+Datos aportados por José David:
+  - Cubo de vidrio de 50 x 50 x 50 cm, sin la cara inferior.
+  - Base/caja metálica de 15 cm de altura y 50 cm de largo.
+  - La fuente se aloja dentro de la base metálica.
+  - Cada fuente se coloca en una pequeña caja de madera, que evita que
+    quede directamente apoyada sobre el metal.
+  - La tapa metálica tiene orificios para sacar los quince conductores
+    de alimentación hacia los cinco nodos.
+
+La fotografía muestra el volumen de vidrio sobre la base, las cotas de
+50 cm y 15 cm, y una placa visible en el interior. No permite confirmar
+materiales de electrodos, espesor de vidrio, calibre de cables, ventilación,
+disipadores, distribución completa interior ni una conexión eléctrica del
+chasis a GND. No se asigna una profundidad independiente a la base metálica
+que no haya sido indicada explícitamente.
+
+La madera separa físicamente la fuente del metal según el montaje descrito.
+La fotografía y esta descripción no constituyen una medición de aislamiento
+eléctrico o una certificación de seguridad del conjunto.
+
+17. INFORMACIÓN QUE ESTE PAQUETE NO DEFINE
+
+No se dispone aquí de:
+  - Código de firmware, frecuencia de muestreo, atenuación/calibración ADC,
+    estado real de GPIO2 ni formato de las muestras.
+  - Protocolo o destino de Wi-Fi, software receptor o algoritmo que convierte
+    las muestras en sonido. La presencia de Wi-Fi no define esos contratos.
+  - Modelo exacto de placa ESP32 ni marcado comercial de cada integrado.
+  - Material, área, presión o impedancia de los contactos con hoja/mano.
+  - Mediciones actuales simultáneas de J2, GPIO32, rieles y 3V3.
+  - Corrientes por nodo/rama, picos de Wi-Fi, rizado, temperaturas o disipación
+    medida antes/después de la adaptación con diodos.
+  - Tolerancias, tensión nominal, ESR o fuga de los condensadores montados,
+    ni potencia nominal de las resistencias de la unidad física.
+  - Relación entre GND electrónico, chasis metálico y tierra de protección.
+
+Estos límites no impiden describir la arquitectura actual; delimitan lo que
+el otro agente puede calcular o afirmar sobre rendimiento, fisiología,
+compatibilidad ADC o capacidad térmica sin recibir evidencia adicional.
+
+18. REGLAS PARA CONSERVAR EL SIGNIFICADO DEL MONTAJE
+
+Al utilizar este contexto:
+  1) Distingue FUENTE y NODO cada vez que cites J1, J2, U1 o C1.
+  2) Conserva la misma referencia GND para los cinco nodos y los cinco negros
+     de medición de la caja; no inventes cinco referencias aisladas.
+  3) Distingue negro de alimentación (-9 V) y negro de medición (GND), y rojo
+     de alimentación (+9 V) y rojo de medición (entrada J2.1).
+  4) Conserva a la persona en la descripción del circuito de contacto.
+  5) Conserva el orden de señal U4:B -> U4:A -> U4:C -> U4:D -> GPIO32.
+  6) Conserva C5 del nodo entre el punto M y la salida U4:C.
+  7) Describe R1 del nodo como carga hacia GND de la salida TL072.
+  8) Conserva cinco 1N5408 EN SERIE por rama, antes de C1/C2 de la fuente.
+  9) Distingue tensión CA del transformador, rieles CC de alimentación,
+     tensión analógica de señal y número digital producido por el ADC.
+  10) Identifica siempre como ideales los resultados del modelo de filtros.
+
+19. FUENTES Y TRAZABILIDAD
+
+Proyectos originales utilizados para la exportación:
+  Proteus integracion completa posterior.pdsprj
+  SHA-256: 3d4f62f9aebb0e374ee78429cb5ac24499e70585f44a502d52aacaa7a1ed6264
+
+  Proteus fuente dual de nueve voltios.pdsprj
+  SHA-256: 2925f81f69a6329bb1c1faf9fe1e6b6822fd5dec8b41be3dab2d3e7085155797
+
+La exportación usa copias de trabajo inicialmente idénticas a esos originales,
+abiertas directamente en Proteus. Las ampliaciones conservan los trazos de
+la exportación. No se reconstruyeron manualmente símbolos o cables.
+
+Caracterización anterior del nodo:
+  CARACTERIZACION_DETALLADA_OKUA.md, versión 2, 26 de septiembre de 2026.
+  redes_conexiones.csv y componentes.csv del mismo análisis.
+El ROOT.CDB y el ROOT.LYT del proyecto actual se contrastaron con esa copia
+anterior; coincidían byte a byte en la revisión de esta conversación.
+
+Datos físicos y de interacción:
+  Explicaciones directas de José David en esta conversación y dos fotografías
+  aportadas por él, integradas en el PDF del nodo.
+
+Referencias oficiales de componentes, para consultar sus condiciones exactas:
+  Espressif ESP32: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+  TI TL07xx: https://www.ti.com/lit/ds/symlink/tl074.pdf
+  TI LM340/LM7805: https://www.ti.com/lit/ds/symlink/lm340.pdf
+  Vishay 1N5400-1N5408: https://www.vishay.com/docs/88516/1n5400.pdf
+  onsemi MC7800: https://www.onsemi.com/pdf/datasheet/mc7800-d.pdf
+El nombre genérico del esquema no identifica por sí solo al fabricante o
+la variante instalada. Estas referencias no reemplazan ese dato físico.
+
+FIN DE LA EXPLICACIÓN

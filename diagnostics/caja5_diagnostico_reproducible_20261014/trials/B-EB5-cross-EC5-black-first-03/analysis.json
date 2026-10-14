@@ -1,0 +1,6331 @@
+{
+  "trial_id": "B-EB5-cross-EC5-black-first-03",
+  "trial": {
+    "trial_id": "B-EB5-cross-EC5-black-first-03",
+    "plant_node": "EB5",
+    "black_node": "EC5",
+    "condition": "cross_pair",
+    "contact_order": "black_first",
+    "operator_environment": {
+      "floor_material": "synthetic_grass",
+      "floor_moisture": "slightly_damp",
+      "moisture_source": "Direct operator observation; not a measured moisture value",
+      "footwear": "shoes",
+      "body_to_earth_impedance": "not_measured",
+      "electrical_isolation": "not_verified",
+      "weather_context_file": "weather_context.json",
+      "posture": "seated_on_floor_through_trousers",
+      "metadata_source": "operator_environment.json",
+      "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+      "footwear_source": "Operator selection at trial start"
+    }
+  },
+  "start_utc": "2026-10-14T19:02:08.892000+00:00",
+  "end_utc": "2026-10-14T19:06:19.135000+00:00",
+  "actual_duration_s": 250.243,
+  "completed": true,
+  "timer_completed": true,
+  "timer_end_event": {
+    "at_utc": "2026-10-14T19:06:19.135+00:00",
+    "host_monotonic_ns": 104550169614000,
+    "kind": "trial_completed",
+    "trial": {
+      "trial_id": "B-EB5-cross-EC5-black-first-03",
+      "plant_node": "EB5",
+      "black_node": "EC5",
+      "condition": "cross_pair",
+      "contact_order": "black_first",
+      "operator_environment": {
+        "floor_material": "synthetic_grass",
+        "floor_moisture": "slightly_damp",
+        "moisture_source": "Direct operator observation; not a measured moisture value",
+        "footwear": "shoes",
+        "body_to_earth_impedance": "not_measured",
+        "electrical_isolation": "not_verified",
+        "weather_context_file": "weather_context.json",
+        "posture": "seated_on_floor_through_trousers",
+        "metadata_source": "operator_environment.json",
+        "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+        "footwear_source": "Operator selection at trial start"
+      }
+    },
+    "requires_operator_report": true
+  },
+  "operator_report": {
+    "at_utc": "2026-10-14T19:07:15.529+00:00",
+    "host_monotonic_ns": 104606563231300,
+    "kind": "operator_report",
+    "trial": {
+      "trial_id": "B-EB5-cross-EC5-black-first-03",
+      "plant_node": "EB5",
+      "black_node": "EC5",
+      "condition": "cross_pair",
+      "contact_order": "black_first",
+      "operator_environment": {
+        "floor_material": "synthetic_grass",
+        "floor_moisture": "slightly_damp",
+        "moisture_source": "Direct operator observation; not a measured moisture value",
+        "footwear": "shoes",
+        "body_to_earth_impedance": "not_measured",
+        "electrical_isolation": "not_verified",
+        "weather_context_file": "weather_context.json",
+        "posture": "seated_on_floor_through_trousers",
+        "metadata_source": "operator_environment.json",
+        "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+        "footwear_source": "Operator selection at trial start"
+      }
+    },
+    "report": {
+      "form_revision": 2,
+      "followed_cues": true,
+      "completed_repetitions": 3,
+      "audible_repetitions": "3",
+      "first_contact_audible_repetitions": "3",
+      "paired_contact_audible_repetitions": "unknown",
+      "second_contact_audible_change": "none",
+      "contact_sound": "continuous",
+      "paired_contact_sound": "continuous",
+      "after_release_silence": "yes",
+      "notes": "Sucedió al igual que el los ensayos de primero negro después rojo, suena al tocar negro pero no percibo un cambio al manipular planta diferente al previo",
+      "operator_id": "1791998878186-xipnlmvfei",
+      "ui_revision": 6
+    },
+    "client_address": "192.168.1.58",
+    "confirmed_physical_labels": true
+  },
+  "confirmed_labels": true,
+  "operator_display_ack_delays_ms": [
+    67.0,
+    136.0,
+    22.0,
+    86.0,
+    242.0,
+    217.0,
+    196.0,
+    150.0,
+    129.0,
+    106.0,
+    163.0,
+    338.0,
+    105.0
+  ],
+  "phases": [
+    {
+      "repetition": 0,
+      "phase": "preparation",
+      "start_utc": "2026-10-14T19:02:08.893000+00:00",
+      "end_utc": "2026-10-14T19:02:18.909000+00:00",
+      "stable_start_utc": "2026-10-14T19:02:08.893000+00:00",
+      "stable_end_utc": "2026-10-14T19:02:18.909000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:02:08.960+00:00",
+        "host_monotonic_ns": 104299994819600,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-cross-EC5-black-first-03",
+          "plant_node": "EB5",
+          "black_node": "EC5",
+          "condition": "cross_pair",
+          "contact_order": "black_first",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 1,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 6,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:02:04.198Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "PREPARATE SIN TOCAR",
+        "instruction": "Deja AMBAS manos libres: no toques ninguna planta ni ninguna punta negra. Mantente quieto. No sostengas el negro durante el reposo. El contacto empezara despues del reposo, cuando aparezca la indicacion de contacto.",
+        "spoken": "Preparate con ambas manos libres. Todavia no toques nada."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 263,
+          "stable_frames": 263,
+          "max_gap_s": 0.521885,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.083775,
+            "trailing_gap_s": 0.020598,
+            "max_gap_including_boundaries_s": 0.521885,
+            "first_frame_utc": "2026-10-14T19:02:08.976775+00:00",
+            "last_frame_utc": "2026-10-14T19:02:18.888402+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.083775,
+            "trailing_gap_s": 0.020598,
+            "max_gap_including_boundaries_s": 0.521885,
+            "first_frame_utc": "2026-10-14T19:02:08.976775+00:00",
+            "last_frame_utc": "2026-10-14T19:02:18.888402+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 263,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.5939,
+              "max": 0.606
+            },
+            "filt": {
+              "n": 263,
+              "min": 0.2518,
+              "median": 0.2824,
+              "p95": 0.2967,
+              "max": 0.3072
+            },
+            "base": {
+              "n": 263,
+              "min": 0.2826,
+              "median": 0.2826,
+              "p95": 0.2826,
+              "max": 0.2826
+            },
+            "rms_mean": {
+              "n": 263,
+              "min": 0.1323,
+              "median": 0.1656,
+              "p95": 0.184,
+              "max": 0.1931
+            },
+            "occupancy": {
+              "n": 263,
+              "min": 0.3462,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.48
+            },
+            "occupancy_base": {
+              "n": 263,
+              "min": 0.4338,
+              "median": 0.4338,
+              "p95": 0.4338,
+              "max": 0.4338
+            },
+            "adc_peak": {
+              "n": 263,
+              "min": 704.0,
+              "median": 743.0,
+              "p95": 752.0,
+              "max": 752.0
+            },
+            "samples": {
+              "n": 263,
+              "min": 22.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 263,
+              "min": 70.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 263,
+              "min": 0.001,
+              "median": 0.184,
+              "p95": 0.336,
+              "max": 0.558
+            },
+            "threshold": {
+              "n": 263,
+              "min": 0.0513,
+              "median": 0.0527,
+              "p95": 0.055,
+              "max": 0.055
+            },
+            "noise_p95": {
+              "n": 263,
+              "min": 0.0171,
+              "median": 0.0176,
+              "p95": 0.0183,
+              "max": 0.0183
+            },
+            "transition_resets": {
+              "n": 263,
+              "min": 12.0,
+              "median": 12.0,
+              "p95": 12.0,
+              "max": 12.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": null,
+            "trailing_gap_s": null,
+            "max_gap_including_boundaries_s": 10.016,
+            "first_frame_utc": null,
+            "last_frame_utc": null,
+            "no_frames": true
+          },
+          "stable_coverage": {
+            "leading_gap_s": null,
+            "trailing_gap_s": null,
+            "max_gap_including_boundaries_s": 10.016,
+            "first_frame_utc": null,
+            "last_frame_utc": null,
+            "no_frames": true
+          },
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EE5": {
+          "frames": 266,
+          "stable_frames": 266,
+          "max_gap_s": 0.632206,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.084812,
+            "trailing_gap_s": 0.023847,
+            "max_gap_including_boundaries_s": 0.632206,
+            "first_frame_utc": "2026-10-14T19:02:08.977812+00:00",
+            "last_frame_utc": "2026-10-14T19:02:18.885153+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.084812,
+            "trailing_gap_s": 0.023847,
+            "max_gap_including_boundaries_s": 0.632206,
+            "first_frame_utc": "2026-10-14T19:02:08.977812+00:00",
+            "last_frame_utc": "2026-10-14T19:02:18.885153+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 266,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.432,
+              "max": 1.457
+            },
+            "filt": {
+              "n": 266,
+              "min": 0.9388,
+              "median": 1.3095,
+              "p95": 1.4441,
+              "max": 1.4522
+            },
+            "base": {
+              "n": 266,
+              "min": 1.3228,
+              "median": 1.3248,
+              "p95": 1.3258,
+              "max": 1.3262
+            },
+            "threshold": {
+              "n": 266,
+              "min": 0.3319,
+              "median": 0.3428,
+              "p95": 0.3502,
+              "max": 0.3521
+            },
+            "noise_p95": {
+              "n": 266,
+              "min": 0.1328,
+              "median": 0.1371,
+              "p95": 0.1401,
+              "max": 0.1408
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 265,
+          "stable_frames": 265,
+          "max_gap_s": 0.388856,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.312231,
+            "trailing_gap_s": 0.021647,
+            "max_gap_including_boundaries_s": 0.388856,
+            "first_frame_utc": "2026-10-14T19:02:09.205231+00:00",
+            "last_frame_utc": "2026-10-14T19:02:18.887353+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.312231,
+            "trailing_gap_s": 0.021647,
+            "max_gap_including_boundaries_s": 0.388856,
+            "first_frame_utc": "2026-10-14T19:02:09.205231+00:00",
+            "last_frame_utc": "2026-10-14T19:02:18.887353+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 265,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4949,
+              "max": 1.5158
+            },
+            "filt": {
+              "n": 265,
+              "min": 0.8897,
+              "median": 1.3966,
+              "p95": 1.5086,
+              "max": 1.511
+            },
+            "base": {
+              "n": 265,
+              "min": 1.3716,
+              "median": 1.3733,
+              "p95": 1.375,
+              "max": 1.3752
+            },
+            "threshold": {
+              "n": 265,
+              "min": 0.3546,
+              "median": 0.3662,
+              "p95": 0.376,
+              "max": 0.376
+            },
+            "noise_p95": {
+              "n": 265,
+              "min": 0.1418,
+              "median": 0.1465,
+              "p95": 0.1504,
+              "max": 0.1504
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 1,
+      "phase": "rest",
+      "start_utc": "2026-10-14T19:02:18.909000+00:00",
+      "end_utc": "2026-10-14T19:02:38.931000+00:00",
+      "stable_start_utc": "2026-10-14T19:02:23.909000+00:00",
+      "stable_end_utc": "2026-10-14T19:02:38.931000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:02:19.045+00:00",
+        "host_monotonic_ns": 104310079492800,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-cross-EC5-black-first-03",
+          "plant_node": "EB5",
+          "black_node": "EC5",
+          "condition": "cross_pair",
+          "contact_order": "black_first",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 2,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 6,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:02:14.279Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "REPOSO: MANOS LIBRES",
+        "instruction": "Deja AMBAS manos libres: no toques ninguna planta ni ninguna punta negra. Mantente quieto. No sostengas el negro durante el reposo.",
+        "spoken": "Reposo. Ambas manos libres, sin tocar plantas ni puntas negras."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 480,
+          "stable_frames": 361,
+          "max_gap_s": 0.176491,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.049067,
+            "trailing_gap_s": 0.030936,
+            "max_gap_including_boundaries_s": 0.176491,
+            "first_frame_utc": "2026-10-14T19:02:18.958067+00:00",
+            "last_frame_utc": "2026-10-14T19:02:38.900064+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.002492,
+            "trailing_gap_s": 0.030936,
+            "max_gap_including_boundaries_s": 0.176491,
+            "first_frame_utc": "2026-10-14T19:02:23.911492+00:00",
+            "last_frame_utc": "2026-10-14T19:02:38.900064+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 361,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.577,
+              "max": 0.6004
+            },
+            "filt": {
+              "n": 361,
+              "min": 0.2576,
+              "median": 0.2811,
+              "p95": 0.2954,
+              "max": 0.3008
+            },
+            "base": {
+              "n": 361,
+              "min": 0.2816,
+              "median": 0.2824,
+              "p95": 0.2826,
+              "max": 0.2829
+            },
+            "rms_mean": {
+              "n": 361,
+              "min": 0.1462,
+              "median": 0.1661,
+              "p95": 0.1825,
+              "max": 0.1881
+            },
+            "occupancy": {
+              "n": 361,
+              "min": 0.3462,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.5
+            },
+            "occupancy_base": {
+              "n": 361,
+              "min": 0.4289,
+              "median": 0.4306,
+              "p95": 0.4322,
+              "max": 0.4323
+            },
+            "adc_peak": {
+              "n": 361,
+              "min": 702.0,
+              "median": 738.0,
+              "p95": 751.0,
+              "max": 759.0
+            },
+            "samples": {
+              "n": 361,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 361,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 361,
+              "min": 0.002,
+              "median": 0.168,
+              "p95": 0.359,
+              "max": 0.449
+            },
+            "threshold": {
+              "n": 361,
+              "min": 0.0527,
+              "median": 0.0559,
+              "p95": 0.0595,
+              "max": 0.0598
+            },
+            "noise_p95": {
+              "n": 361,
+              "min": 0.0176,
+              "median": 0.0186,
+              "p95": 0.0198,
+              "max": 0.0199
+            },
+            "transition_resets": {
+              "n": 361,
+              "min": 12.0,
+              "median": 12.0,
+              "p95": 12.0,
+              "max": 12.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 203,
+          "stable_frames": 203,
+          "max_gap_s": 0.101261,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 11.715212,
+            "trailing_gap_s": 0.032217,
+            "max_gap_including_boundaries_s": 11.715212,
+            "first_frame_utc": "2026-10-14T19:02:30.624212+00:00",
+            "last_frame_utc": "2026-10-14T19:02:38.898783+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 6.715212,
+            "trailing_gap_s": 0.032217,
+            "max_gap_including_boundaries_s": 6.715212,
+            "first_frame_utc": "2026-10-14T19:02:30.624212+00:00",
+            "last_frame_utc": "2026-10-14T19:02:38.898783+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 203,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0741,
+              "max": 0.1007
+            },
+            "filt": {
+              "n": 203,
+              "min": 0.0107,
+              "median": 0.0223,
+              "p95": 0.0274,
+              "max": 0.0292
+            },
+            "base": {
+              "n": 203,
+              "min": 0.0383,
+              "median": 0.0383,
+              "p95": 0.0383,
+              "max": 0.0383
+            },
+            "rms_mean": {
+              "n": 203,
+              "min": 0.0037,
+              "median": 0.0067,
+              "p95": 0.0094,
+              "max": 0.0104
+            },
+            "occupancy": {
+              "n": 203,
+              "min": 0.0769,
+              "median": 0.1154,
+              "p95": 0.1923,
+              "max": 0.2
+            },
+            "occupancy_base": {
+              "n": 203,
+              "min": 0.141,
+              "median": 0.141,
+              "p95": 0.141,
+              "max": 0.141
+            },
+            "adc_peak": {
+              "n": 203,
+              "min": 42.0,
+              "median": 109.0,
+              "p95": 121.0,
+              "max": 131.0
+            },
+            "samples": {
+              "n": 203,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 203,
+              "min": 74.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 203,
+              "min": 0.338,
+              "median": 0.575,
+              "p95": 0.802,
+              "max": 1.023
+            },
+            "threshold": {
+              "n": 203,
+              "min": 0.0267,
+              "median": 0.0278,
+              "p95": 0.0291,
+              "max": 0.0291
+            },
+            "noise_p95": {
+              "n": 203,
+              "min": 0.0089,
+              "median": 0.0093,
+              "p95": 0.0097,
+              "max": 0.0097
+            },
+            "transition_resets": {
+              "n": 203,
+              "min": 8.0,
+              "median": 8.0,
+              "p95": 8.0,
+              "max": 8.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EE5": {
+          "frames": 496,
+          "stable_frames": 371,
+          "max_gap_s": 0.180833,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.016615,
+            "trailing_gap_s": 0.012198,
+            "max_gap_including_boundaries_s": 0.180833,
+            "first_frame_utc": "2026-10-14T19:02:18.925615+00:00",
+            "last_frame_utc": "2026-10-14T19:02:38.918802+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.046974,
+            "trailing_gap_s": 0.012198,
+            "max_gap_including_boundaries_s": 0.180833,
+            "first_frame_utc": "2026-10-14T19:02:23.955974+00:00",
+            "last_frame_utc": "2026-10-14T19:02:38.918802+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 371,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4336,
+              "max": 1.457
+            },
+            "filt": {
+              "n": 371,
+              "min": 1.075,
+              "median": 1.3232,
+              "p95": 1.4425,
+              "max": 1.4441
+            },
+            "base": {
+              "n": 371,
+              "min": 1.3128,
+              "median": 1.3173,
+              "p95": 1.32,
+              "max": 1.3204
+            },
+            "threshold": {
+              "n": 371,
+              "min": 0.3616,
+              "median": 0.3753,
+              "p95": 0.3896,
+              "max": 0.3916
+            },
+            "noise_p95": {
+              "n": 371,
+              "min": 0.1446,
+              "median": 0.1501,
+              "p95": 0.1558,
+              "max": 0.1567
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 495,
+          "stable_frames": 372,
+          "max_gap_s": 0.184761,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.016412,
+            "trailing_gap_s": 0.016392,
+            "max_gap_including_boundaries_s": 0.184761,
+            "first_frame_utc": "2026-10-14T19:02:18.925412+00:00",
+            "last_frame_utc": "2026-10-14T19:02:38.914608+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.00415,
+            "trailing_gap_s": 0.016392,
+            "max_gap_including_boundaries_s": 0.184761,
+            "first_frame_utc": "2026-10-14T19:02:23.913150+00:00",
+            "last_frame_utc": "2026-10-14T19:02:38.914608+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 372,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4836,
+              "max": 1.5142
+            },
+            "filt": {
+              "n": 372,
+              "min": 1.1967,
+              "median": 1.3796,
+              "p95": 1.5086,
+              "max": 1.5126
+            },
+            "base": {
+              "n": 372,
+              "min": 1.3722,
+              "median": 1.3756,
+              "p95": 1.3776,
+              "max": 1.3779
+            },
+            "threshold": {
+              "n": 372,
+              "min": 0.3397,
+              "median": 0.3417,
+              "p95": 0.3922,
+              "max": 0.3922
+            },
+            "noise_p95": {
+              "n": 372,
+              "min": 0.1359,
+              "median": 0.1367,
+              "p95": 0.1569,
+              "max": 0.1569
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 1,
+      "phase": "first_contact",
+      "start_utc": "2026-10-14T19:02:38.931000+00:00",
+      "end_utc": "2026-10-14T19:02:48.948000+00:00",
+      "stable_start_utc": "2026-10-14T19:02:41.931000+00:00",
+      "stable_end_utc": "2026-10-14T19:02:46.948000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:02:38.953+00:00",
+        "host_monotonic_ns": 104329987264700,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-cross-EC5-black-first-03",
+          "plant_node": "EB5",
+          "black_node": "EC5",
+          "condition": "cross_pair",
+          "contact_order": "black_first",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 3,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 6,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:02:34.186Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "1. SOLO NEGRO EC5",
+        "instruction": "Toca SOLO la punta negra marcada EC5 con una mano durante 10 segundos. La otra mano queda libre y no toca ninguna planta. Manten este negro sujeto hasta que termine la fase de ambos contactos.",
+        "spoken": "Primero toca solo el negro EC5. No toques la planta."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 238,
+          "stable_frames": 121,
+          "max_gap_s": 0.081318,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.010251,
+            "trailing_gap_s": 0.020865,
+            "max_gap_including_boundaries_s": 0.081318,
+            "first_frame_utc": "2026-10-14T19:02:38.941251+00:00",
+            "last_frame_utc": "2026-10-14T19:02:48.927135+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.032943,
+            "trailing_gap_s": 0.029394,
+            "max_gap_including_boundaries_s": 0.075502,
+            "first_frame_utc": "2026-10-14T19:02:41.963943+00:00",
+            "last_frame_utc": "2026-10-14T19:02:46.918606+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.865546218487395,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "base": {
+              "n": 121,
+              "min": 0.2818,
+              "median": 0.2818,
+              "p95": 0.2818,
+              "max": 0.2818
+            },
+            "rms_mean": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy_base": {
+              "n": 121,
+              "min": 0.4314,
+              "median": 0.4314,
+              "p95": 0.4314,
+              "max": 0.4314
+            },
+            "adc_peak": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "samples": {
+              "n": 121,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 121,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 78.0
+            },
+            "score": {
+              "n": 121,
+              "min": 4.71,
+              "median": 4.71,
+              "p95": 4.71,
+              "max": 4.71
+            },
+            "threshold": {
+              "n": 121,
+              "min": 0.0598,
+              "median": 0.0598,
+              "p95": 0.0598,
+              "max": 0.0598
+            },
+            "noise_p95": {
+              "n": 121,
+              "min": 0.0199,
+              "median": 0.0199,
+              "p95": 0.0199,
+              "max": 0.0199
+            },
+            "transition_resets": {
+              "n": 121,
+              "min": 12.0,
+              "median": 12.0,
+              "p95": 12.0,
+              "max": 12.0
+            }
+          },
+          "midi_note_ons": 4,
+          "midi_note_pitches": [
+            53,
+            59,
+            65,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 4,
+            "min": 53,
+            "median": 62.0,
+            "p95": 65,
+            "max": 71
+          },
+          "midi_note_duration_s": 8.626363000000001,
+          "stable_midi_note_duration_s": 5.017
+        },
+        "EC5": {
+          "frames": 237,
+          "stable_frames": 121,
+          "max_gap_s": 0.081279,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.007011,
+            "trailing_gap_s": 0.017625,
+            "max_gap_including_boundaries_s": 0.081279,
+            "first_frame_utc": "2026-10-14T19:02:38.938011+00:00",
+            "last_frame_utc": "2026-10-14T19:02:48.930375+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.02664,
+            "trailing_gap_s": 0.036467,
+            "max_gap_including_boundaries_s": 0.067283,
+            "first_frame_utc": "2026-10-14T19:02:41.957640+00:00",
+            "last_frame_utc": "2026-10-14T19:02:46.911533+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.8649789029535865,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "base": {
+              "n": 121,
+              "min": 0.0383,
+              "median": 0.0383,
+              "p95": 0.0383,
+              "max": 0.0383
+            },
+            "rms_mean": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy_base": {
+              "n": 121,
+              "min": 0.141,
+              "median": 0.141,
+              "p95": 0.141,
+              "max": 0.141
+            },
+            "adc_peak": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "samples": {
+              "n": 121,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 121,
+              "min": 74.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 78.0
+            },
+            "score": {
+              "n": 121,
+              "min": 1.289,
+              "median": 1.289,
+              "p95": 1.289,
+              "max": 1.289
+            },
+            "threshold": {
+              "n": 121,
+              "min": 0.0297,
+              "median": 0.0297,
+              "p95": 0.0297,
+              "max": 0.0297
+            },
+            "noise_p95": {
+              "n": 121,
+              "min": 0.0099,
+              "median": 0.0099,
+              "p95": 0.0099,
+              "max": 0.0099
+            },
+            "transition_resets": {
+              "n": 121,
+              "min": 8.0,
+              "median": 8.0,
+              "p95": 8.0,
+              "max": 8.0
+            }
+          },
+          "midi_note_ons": 5,
+          "midi_note_pitches": [
+            58,
+            59,
+            62,
+            66,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 5,
+            "min": 58,
+            "median": 62,
+            "p95": 66,
+            "max": 71
+          },
+          "midi_note_duration_s": 8.63874,
+          "stable_midi_note_duration_s": 5.017
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 173,
+          "midi_note_pitches": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            62,
+            64,
+            68,
+            71,
+            74,
+            78
+          ],
+          "midi_pitch_summary": {
+            "n": 173,
+            "min": 46,
+            "median": 52,
+            "p95": 57,
+            "max": 78
+          },
+          "midi_note_duration_s": 6.999425,
+          "stable_midi_note_duration_s": 4.557336
+        },
+        "EE5": {
+          "frames": 231,
+          "stable_frames": 115,
+          "max_gap_s": 0.087899,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.026096,
+            "trailing_gap_s": 0.012984,
+            "max_gap_including_boundaries_s": 0.087899,
+            "first_frame_utc": "2026-10-14T19:02:38.957096+00:00",
+            "last_frame_utc": "2026-10-14T19:02:48.935016+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.006284,
+            "trailing_gap_s": 0.062107,
+            "max_gap_including_boundaries_s": 0.083611,
+            "first_frame_utc": "2026-10-14T19:02:41.937284+00:00",
+            "last_frame_utc": "2026-10-14T19:02:46.885893+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.8311688311688312,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 115,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0484,
+              "max": 0.1523
+            },
+            "filt": {
+              "n": 115,
+              "min": 0.0,
+              "median": 0.0097,
+              "p95": 0.1362,
+              "max": 0.1475
+            },
+            "base": {
+              "n": 115,
+              "min": 1.3199,
+              "median": 1.3199,
+              "p95": 1.3199,
+              "max": 1.3199
+            },
+            "threshold": {
+              "n": 115,
+              "min": 0.3979,
+              "median": 0.4022,
+              "p95": 0.4064,
+              "max": 0.4086
+            },
+            "noise_p95": {
+              "n": 115,
+              "min": 0.1592,
+              "median": 0.1609,
+              "p95": 0.1626,
+              "max": 0.1634
+            }
+          },
+          "midi_note_ons": 17,
+          "midi_note_pitches": [
+            32,
+            33,
+            34,
+            38,
+            43,
+            49,
+            55,
+            61,
+            67,
+            73,
+            79,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 17,
+            "min": 32,
+            "median": 38,
+            "p95": 79,
+            "max": 84
+          },
+          "midi_note_duration_s": 8.392565,
+          "stable_midi_note_duration_s": 4.994561
+        },
+        "EF5": {
+          "frames": 237,
+          "stable_frames": 117,
+          "max_gap_s": 0.086722,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.021523,
+            "trailing_gap_s": 0.024406,
+            "max_gap_including_boundaries_s": 0.086722,
+            "first_frame_utc": "2026-10-14T19:02:38.952523+00:00",
+            "last_frame_utc": "2026-10-14T19:02:48.923594+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.001717,
+            "trailing_gap_s": 0.029614,
+            "max_gap_including_boundaries_s": 0.086722,
+            "first_frame_utc": "2026-10-14T19:02:41.932717+00:00",
+            "last_frame_utc": "2026-10-14T19:02:46.918386+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.8354430379746836,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 117,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0185
+            },
+            "filt": {
+              "n": 117,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0048,
+              "max": 0.0121
+            },
+            "base": {
+              "n": 117,
+              "min": 1.3766,
+              "median": 1.3766,
+              "p95": 1.3766,
+              "max": 1.3766
+            },
+            "threshold": {
+              "n": 117,
+              "min": 0.3408,
+              "median": 0.3408,
+              "p95": 0.3408,
+              "max": 0.3408
+            },
+            "noise_p95": {
+              "n": 117,
+              "min": 0.1363,
+              "median": 0.1363,
+              "p95": 0.1363,
+              "max": 0.1363
+            }
+          },
+          "midi_note_ons": 12,
+          "midi_note_pitches": [
+            32,
+            33,
+            36,
+            42,
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 12,
+            "min": 32,
+            "median": 51.0,
+            "p95": 78,
+            "max": 84
+          },
+          "midi_note_duration_s": 8.390623999999999,
+          "stable_midi_note_duration_s": 5.004154
+        }
+      }
+    },
+    {
+      "repetition": 1,
+      "phase": "contact",
+      "start_utc": "2026-10-14T19:02:48.948000+00:00",
+      "end_utc": "2026-10-14T19:03:08.951000+00:00",
+      "stable_start_utc": "2026-10-14T19:02:51.948000+00:00",
+      "stable_end_utc": "2026-10-14T19:03:06.951000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:02:49.034+00:00",
+        "host_monotonic_ns": 104340068557600,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-cross-EC5-black-first-03",
+          "plant_node": "EB5",
+          "black_node": "EC5",
+          "condition": "cross_pair",
+          "contact_order": "black_first",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 4,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 6,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:02:44.265Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "2. AGREGA PLANTA EB5",
+        "instruction": "2. SIN SOLTAR la punta negra marcada EC5, agrega la PLANTA identificada por la etiqueta ROJA EB5 con la otra mano. Manten ambos contactos durante 20 segundos. Tu mano toca la planta; la pinza roja queda fijada. La planta con etiqueta roja EC5 queda SIN TOCAR durante todo el ensayo.",
+        "spoken": "Sin soltar el negro EC5, agrega el contacto con la planta EB5 usando la otra mano."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 476,
+          "stable_frames": 357,
+          "max_gap_s": 0.116452,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.020281,
+            "trailing_gap_s": 0.028454,
+            "max_gap_including_boundaries_s": 0.116452,
+            "first_frame_utc": "2026-10-14T19:02:48.968281+00:00",
+            "last_frame_utc": "2026-10-14T19:03:08.922546+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.074246,
+            "trailing_gap_s": 0.008759,
+            "max_gap_including_boundaries_s": 0.116452,
+            "first_frame_utc": "2026-10-14T19:02:52.022246+00:00",
+            "last_frame_utc": "2026-10-14T19:03:06.942241+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 1.0,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.5367
+            },
+            "filt": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0208,
+              "max": 0.5075
+            },
+            "base": {
+              "n": 357,
+              "min": 0.2818,
+              "median": 0.2818,
+              "p95": 0.2818,
+              "max": 0.2818
+            },
+            "rms_mean": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0116,
+              "max": 0.5046
+            },
+            "occupancy": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.3462,
+              "max": 1.0
+            },
+            "occupancy_base": {
+              "n": 357,
+              "min": 0.4314,
+              "median": 0.4314,
+              "p95": 0.4314,
+              "max": 0.4314
+            },
+            "adc_peak": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 64.0,
+              "max": 803.0
+            },
+            "samples": {
+              "n": 357,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 357,
+              "min": 72.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 357,
+              "min": 0.93,
+              "median": 4.71,
+              "p95": 4.71,
+              "max": 4.71
+            },
+            "threshold": {
+              "n": 357,
+              "min": 0.0598,
+              "median": 0.0598,
+              "p95": 0.0598,
+              "max": 0.0598
+            },
+            "noise_p95": {
+              "n": 357,
+              "min": 0.0199,
+              "median": 0.0199,
+              "p95": 0.0199,
+              "max": 0.0199
+            },
+            "transition_resets": {
+              "n": 357,
+              "min": 12.0,
+              "median": 12.0,
+              "p95": 12.0,
+              "max": 12.0
+            }
+          },
+          "midi_note_ons": 8,
+          "midi_note_pitches": [
+            53,
+            54,
+            56,
+            59
+          ],
+          "midi_pitch_summary": {
+            "n": 8,
+            "min": 53,
+            "median": 53.5,
+            "p95": 56,
+            "max": 59
+          },
+          "midi_note_duration_s": 19.995901,
+          "stable_midi_note_duration_s": 14.996476000000001
+        },
+        "EC5": {
+          "frames": 484,
+          "stable_frames": 363,
+          "max_gap_s": 0.080105,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.023634,
+            "trailing_gap_s": 0.034605,
+            "max_gap_including_boundaries_s": 0.080105,
+            "first_frame_utc": "2026-10-14T19:02:48.971634+00:00",
+            "last_frame_utc": "2026-10-14T19:03:08.916395+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.040474,
+            "trailing_gap_s": 0.016962,
+            "max_gap_including_boundaries_s": 0.080105,
+            "first_frame_utc": "2026-10-14T19:02:51.988474+00:00",
+            "last_frame_utc": "2026-10-14T19:03:06.934038+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 1.0,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 363,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 363,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "base": {
+              "n": 363,
+              "min": 0.0383,
+              "median": 0.0383,
+              "p95": 0.0383,
+              "max": 0.0383
+            },
+            "rms_mean": {
+              "n": 363,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy": {
+              "n": 363,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy_base": {
+              "n": 363,
+              "min": 0.141,
+              "median": 0.141,
+              "p95": 0.141,
+              "max": 0.141
+            },
+            "adc_peak": {
+              "n": 363,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "samples": {
+              "n": 363,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 363,
+              "min": 74.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 79.0
+            },
+            "score": {
+              "n": 363,
+              "min": 1.289,
+              "median": 1.289,
+              "p95": 1.289,
+              "max": 1.289
+            },
+            "threshold": {
+              "n": 363,
+              "min": 0.0297,
+              "median": 0.0297,
+              "p95": 0.0297,
+              "max": 0.0297
+            },
+            "noise_p95": {
+              "n": 363,
+              "min": 0.0099,
+              "median": 0.0099,
+              "p95": 0.0099,
+              "max": 0.0099
+            },
+            "transition_resets": {
+              "n": 363,
+              "min": 8.0,
+              "median": 8.0,
+              "p95": 8.0,
+              "max": 8.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 20.003,
+          "stable_midi_note_duration_s": 15.003
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 1,
+          "midi_note_pitches": [
+            46
+          ],
+          "midi_pitch_summary": {
+            "n": 1,
+            "min": 46,
+            "median": 46,
+            "p95": 46,
+            "max": 46
+          },
+          "midi_note_duration_s": 8.471181,
+          "stable_midi_note_duration_s": 5.471181
+        },
+        "EE5": {
+          "frames": 493,
+          "stable_frames": 370,
+          "max_gap_s": 0.08728,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.027089,
+            "trailing_gap_s": 0.020129,
+            "max_gap_including_boundaries_s": 0.08728,
+            "first_frame_utc": "2026-10-14T19:02:48.975089+00:00",
+            "last_frame_utc": "2026-10-14T19:03:08.930871+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.042331,
+            "trailing_gap_s": 0.016046,
+            "max_gap_including_boundaries_s": 0.08728,
+            "first_frame_utc": "2026-10-14T19:02:51.990331+00:00",
+            "last_frame_utc": "2026-10-14T19:03:06.934954+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 1.0,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 370,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0129
+            },
+            "filt": {
+              "n": 370,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0081,
+              "max": 0.0129
+            },
+            "base": {
+              "n": 370,
+              "min": 1.3199,
+              "median": 1.3199,
+              "p95": 1.3199,
+              "max": 1.3199
+            },
+            "threshold": {
+              "n": 370,
+              "min": 0.4195,
+              "median": 0.4299,
+              "p95": 0.4299,
+              "max": 0.4299
+            },
+            "noise_p95": {
+              "n": 370,
+              "min": 0.1678,
+              "median": 0.172,
+              "p95": 0.172,
+              "max": 0.172
+            }
+          },
+          "midi_note_ons": 2,
+          "midi_note_pitches": [
+            32,
+            33
+          ],
+          "midi_pitch_summary": {
+            "n": 2,
+            "min": 32,
+            "median": 32.5,
+            "p95": 32,
+            "max": 33
+          },
+          "midi_note_duration_s": 19.997856000000002,
+          "stable_midi_note_duration_s": 14.997856
+        },
+        "EF5": {
+          "frames": 498,
+          "stable_frames": 373,
+          "max_gap_s": 0.077569,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.015117,
+            "trailing_gap_s": 0.006477,
+            "max_gap_including_boundaries_s": 0.077569,
+            "first_frame_utc": "2026-10-14T19:02:48.963117+00:00",
+            "last_frame_utc": "2026-10-14T19:03:08.944523+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.030232,
+            "trailing_gap_s": 0.016226,
+            "max_gap_including_boundaries_s": 0.064332,
+            "first_frame_utc": "2026-10-14T19:02:51.978232+00:00",
+            "last_frame_utc": "2026-10-14T19:03:06.934774+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 1.0,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 373,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0089
+            },
+            "filt": {
+              "n": 373,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.004
+            },
+            "base": {
+              "n": 373,
+              "min": 1.3766,
+              "median": 1.3766,
+              "p95": 1.3766,
+              "max": 1.3766
+            },
+            "threshold": {
+              "n": 373,
+              "min": 0.3408,
+              "median": 0.3408,
+              "p95": 0.3408,
+              "max": 0.3408
+            },
+            "noise_p95": {
+              "n": 373,
+              "min": 0.1363,
+              "median": 0.1363,
+              "p95": 0.1363,
+              "max": 0.1363
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 20.003,
+          "stable_midi_note_duration_s": 15.003
+        }
+      }
+    },
+    {
+      "repetition": 1,
+      "phase": "release",
+      "start_utc": "2026-10-14T19:03:08.951000+00:00",
+      "end_utc": "2026-10-14T19:03:38.973000+00:00",
+      "stable_start_utc": "2026-10-14T19:03:23.973000+00:00",
+      "stable_end_utc": "2026-10-14T19:03:38.973000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:03:09.193+00:00",
+        "host_monotonic_ns": 104360227297700,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-cross-EC5-black-first-03",
+          "plant_node": "EB5",
+          "black_node": "EC5",
+          "condition": "cross_pair",
+          "contact_order": "black_first",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 5,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 6,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:03:04.425Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "SUELTA AMBOS",
+        "instruction": "SUELTA AMBOS: retira una mano de la planta EB5 y la otra de la punta negra EC5. Deja ambas manos libres y todo quieto durante los 30 segundos.",
+        "spoken": "Suelta ambos: planta y punta negra. Deja ambas manos libres."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 715,
+          "stable_frames": 354,
+          "max_gap_s": 0.087208,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.009389,
+            "trailing_gap_s": 0.067578,
+            "max_gap_including_boundaries_s": 0.087208,
+            "first_frame_utc": "2026-10-14T19:03:08.960389+00:00",
+            "last_frame_utc": "2026-10-14T19:03:38.905422+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.037812,
+            "trailing_gap_s": 0.067578,
+            "max_gap_including_boundaries_s": 0.085899,
+            "first_frame_utc": "2026-10-14T19:03:24.010812+00:00",
+            "last_frame_utc": "2026-10-14T19:03:38.905422+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.046153846153846156,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 354,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.4771,
+              "max": 0.4996
+            },
+            "filt": {
+              "n": 354,
+              "min": 0.2037,
+              "median": 0.2278,
+              "p95": 0.24,
+              "max": 0.245
+            },
+            "base": {
+              "n": 354,
+              "min": 0.2109,
+              "median": 0.2188,
+              "p95": 0.2232,
+              "max": 0.2234
+            },
+            "rms_mean": {
+              "n": 354,
+              "min": 0.1124,
+              "median": 0.1328,
+              "p95": 0.1462,
+              "max": 0.1505
+            },
+            "occupancy": {
+              "n": 354,
+              "min": 0.3333,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.48
+            },
+            "occupancy_base": {
+              "n": 354,
+              "min": 0.3892,
+              "median": 0.40625,
+              "p95": 0.4125,
+              "max": 0.4137
+            },
+            "adc_peak": {
+              "n": 354,
+              "min": 576.0,
+              "median": 607.0,
+              "p95": 619.0,
+              "max": 624.0
+            },
+            "samples": {
+              "n": 354,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 354,
+              "min": 72.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 354,
+              "min": 0.0,
+              "median": 0.03,
+              "p95": 0.066,
+              "max": 0.076
+            },
+            "threshold": {
+              "n": 354,
+              "min": 0.2225,
+              "median": 0.3354,
+              "p95": 0.4562,
+              "max": 0.4803
+            },
+            "noise_p95": {
+              "n": 354,
+              "min": 0.0742,
+              "median": 0.1118,
+              "p95": 0.1521,
+              "max": 0.1601
+            },
+            "transition_resets": {
+              "n": 354,
+              "min": 13.0,
+              "median": 13.0,
+              "p95": 13.0,
+              "max": 13.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 1.377745,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 719,
+          "stable_frames": 356,
+          "max_gap_s": 0.102723,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.006211,
+            "trailing_gap_s": 0.023461,
+            "max_gap_including_boundaries_s": 0.102723,
+            "first_frame_utc": "2026-10-14T19:03:08.957211+00:00",
+            "last_frame_utc": "2026-10-14T19:03:38.949539+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.023347,
+            "trailing_gap_s": 0.023461,
+            "max_gap_including_boundaries_s": 0.095136,
+            "first_frame_utc": "2026-10-14T19:03:23.996347+00:00",
+            "last_frame_utc": "2026-10-14T19:03:38.949539+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0458970792767733,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 356,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.6624,
+              "max": 0.7873
+            },
+            "filt": {
+              "n": 356,
+              "min": 0.1912,
+              "median": 0.28900000000000003,
+              "p95": 0.3369,
+              "max": 0.3605
+            },
+            "base": {
+              "n": 356,
+              "min": 0.2903,
+              "median": 0.33905,
+              "p95": 0.3677,
+              "max": 0.3707
+            },
+            "rms_mean": {
+              "n": 356,
+              "min": 0.0854,
+              "median": 0.1513,
+              "p95": 0.1875,
+              "max": 0.203
+            },
+            "occupancy": {
+              "n": 356,
+              "min": 0.2308,
+              "median": 0.3462,
+              "p95": 0.3846,
+              "max": 0.4
+            },
+            "occupancy_base": {
+              "n": 356,
+              "min": 0.3343,
+              "median": 0.3568,
+              "p95": 0.364,
+              "max": 0.3646
+            },
+            "adc_peak": {
+              "n": 356,
+              "min": 625.0,
+              "median": 848.0,
+              "p95": 954.0,
+              "max": 991.0
+            },
+            "samples": {
+              "n": 356,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 356,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 356,
+              "min": 0.004,
+              "median": 0.068,
+              "p95": 0.159,
+              "max": 0.193
+            },
+            "threshold": {
+              "n": 356,
+              "min": 0.5228,
+              "median": 0.788,
+              "p95": 1.0719,
+              "max": 1.1283
+            },
+            "noise_p95": {
+              "n": 356,
+              "min": 0.1743,
+              "median": 0.2627,
+              "p95": 0.3573,
+              "max": 0.3761
+            },
+            "transition_resets": {
+              "n": 356,
+              "min": 9.0,
+              "median": 9.0,
+              "p95": 9.0,
+              "max": 9.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 1.372684,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 23,
+          "midi_note_pitches": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            56,
+            58,
+            59,
+            60,
+            61,
+            65,
+            67,
+            69,
+            72,
+            73,
+            74,
+            78,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 23,
+            "min": 46,
+            "median": 58,
+            "p95": 74,
+            "max": 84
+          },
+          "midi_note_duration_s": 29.172349,
+          "stable_midi_note_duration_s": 15.0
+        },
+        "EE5": {
+          "frames": 744,
+          "stable_frames": 371,
+          "max_gap_s": 0.083228,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.021055,
+            "trailing_gap_s": 0.015804,
+            "max_gap_including_boundaries_s": 0.083228,
+            "first_frame_utc": "2026-10-14T19:03:08.972055+00:00",
+            "last_frame_utc": "2026-10-14T19:03:38.957196+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.011848,
+            "trailing_gap_s": 0.015804,
+            "max_gap_including_boundaries_s": 0.083228,
+            "first_frame_utc": "2026-10-14T19:03:23.984848+00:00",
+            "last_frame_utc": "2026-10-14T19:03:38.957196+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.05241935483870968,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 371,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4723,
+              "max": 1.5086
+            },
+            "filt": {
+              "n": 371,
+              "min": 1.0927,
+              "median": 1.3716,
+              "p95": 1.482,
+              "max": 1.4981
+            },
+            "base": {
+              "n": 371,
+              "min": 0.9997,
+              "median": 1.0607,
+              "p95": 1.1018,
+              "max": 1.1079
+            },
+            "threshold": {
+              "n": 371,
+              "min": 2.0618,
+              "median": 3.1079,
+              "p95": 3.5872,
+              "max": 3.6053
+            },
+            "noise_p95": {
+              "n": 371,
+              "min": 0.8247,
+              "median": 1.2431,
+              "p95": 1.4349,
+              "max": 1.4421
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 1.587432,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 744,
+          "stable_frames": 373,
+          "max_gap_s": 0.086877,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.032224,
+            "trailing_gap_s": 0.003744,
+            "max_gap_including_boundaries_s": 0.086877,
+            "first_frame_utc": "2026-10-14T19:03:08.983224+00:00",
+            "last_frame_utc": "2026-10-14T19:03:38.969256+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.014249,
+            "trailing_gap_s": 0.003744,
+            "max_gap_including_boundaries_s": 0.086877,
+            "first_frame_utc": "2026-10-14T19:03:23.987249+00:00",
+            "last_frame_utc": "2026-10-14T19:03:38.969256+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.04973118279569892,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 373,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.5577,
+              "max": 1.6069
+            },
+            "filt": {
+              "n": 373,
+              "min": 1.2563,
+              "median": 1.4707,
+              "p95": 1.569,
+              "max": 1.5803
+            },
+            "base": {
+              "n": 373,
+              "min": 1.1335,
+              "median": 1.1844,
+              "p95": 1.2252,
+              "max": 1.2304
+            },
+            "threshold": {
+              "n": 373,
+              "min": 1.755,
+              "median": 2.4587,
+              "p95": 2.4835,
+              "max": 2.489
+            },
+            "noise_p95": {
+              "n": 373,
+              "min": 0.702,
+              "median": 0.9835,
+              "p95": 0.9934,
+              "max": 0.9956
+            }
+          },
+          "midi_note_ons": 1,
+          "midi_note_pitches": [
+            38
+          ],
+          "midi_pitch_summary": {
+            "n": 1,
+            "min": 38,
+            "median": 38,
+            "p95": 38,
+            "max": 38
+          },
+          "midi_note_duration_s": 1.602922,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 2,
+      "phase": "rest",
+      "start_utc": "2026-10-14T19:03:38.973000+00:00",
+      "end_utc": "2026-10-14T19:03:59.007000+00:00",
+      "stable_start_utc": "2026-10-14T19:03:43.973000+00:00",
+      "stable_end_utc": "2026-10-14T19:03:59.007000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:03:39.190+00:00",
+        "host_monotonic_ns": 104390224373500,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-cross-EC5-black-first-03",
+          "plant_node": "EB5",
+          "black_node": "EC5",
+          "condition": "cross_pair",
+          "contact_order": "black_first",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 6,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 6,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:03:34.419Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "REPOSO: MANOS LIBRES",
+        "instruction": "Deja AMBAS manos libres: no toques ninguna planta ni ninguna punta negra. Mantente quieto. No sostengas el negro durante el reposo.",
+        "spoken": "Reposo. Ambas manos libres, sin tocar plantas ni puntas negras."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 478,
+          "stable_frames": 358,
+          "max_gap_s": 0.086854,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.012587,
+            "trailing_gap_s": 0.04061,
+            "max_gap_including_boundaries_s": 0.086854,
+            "first_frame_utc": "2026-10-14T19:03:38.985587+00:00",
+            "last_frame_utc": "2026-10-14T19:03:58.966390+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.004012,
+            "trailing_gap_s": 0.04061,
+            "max_gap_including_boundaries_s": 0.086854,
+            "first_frame_utc": "2026-10-14T19:03:43.977012+00:00",
+            "last_frame_utc": "2026-10-14T19:03:58.966390+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 358,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.4892,
+              "max": 0.4996
+            },
+            "filt": {
+              "n": 358,
+              "min": 0.2052,
+              "median": 0.2319,
+              "p95": 0.2417,
+              "max": 0.2461
+            },
+            "base": {
+              "n": 358,
+              "min": 0.2245,
+              "median": 0.2276,
+              "p95": 0.2285,
+              "max": 0.2287
+            },
+            "rms_mean": {
+              "n": 358,
+              "min": 0.1134,
+              "median": 0.1363,
+              "p95": 0.1477,
+              "max": 0.1536
+            },
+            "occupancy": {
+              "n": 358,
+              "min": 0.3462,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.4815
+            },
+            "occupancy_base": {
+              "n": 358,
+              "min": 0.4141,
+              "median": 0.4198,
+              "p95": 0.4209,
+              "max": 0.4213
+            },
+            "adc_peak": {
+              "n": 358,
+              "min": 585.0,
+              "median": 610.0,
+              "p95": 618.0,
+              "max": 623.0
+            },
+            "samples": {
+              "n": 358,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 358,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 358,
+              "min": 0.0,
+              "median": 0.071,
+              "p95": 0.129,
+              "max": 0.234
+            },
+            "threshold": {
+              "n": 358,
+              "min": 0.084,
+              "median": 0.1202,
+              "p95": 0.1722,
+              "max": 0.1812
+            },
+            "noise_p95": {
+              "n": 358,
+              "min": 0.028,
+              "median": 0.0401,
+              "p95": 0.0574,
+              "max": 0.0604
+            },
+            "transition_resets": {
+              "n": 358,
+              "min": 13.0,
+              "median": 13.0,
+              "p95": 13.0,
+              "max": 13.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 474,
+          "stable_frames": 357,
+          "max_gap_s": 0.090215,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.019833,
+            "trailing_gap_s": 0.040142,
+            "max_gap_including_boundaries_s": 0.090215,
+            "first_frame_utc": "2026-10-14T19:03:38.992833+00:00",
+            "last_frame_utc": "2026-10-14T19:03:58.966858+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.00958,
+            "trailing_gap_s": 0.040142,
+            "max_gap_including_boundaries_s": 0.088197,
+            "first_frame_utc": "2026-10-14T19:03:43.982580+00:00",
+            "last_frame_utc": "2026-10-14T19:03:58.966858+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.3119,
+              "max": 0.3957
+            },
+            "filt": {
+              "n": 357,
+              "min": 0.0803,
+              "median": 0.1114,
+              "p95": 0.1488,
+              "max": 0.1585
+            },
+            "base": {
+              "n": 357,
+              "min": 0.1393,
+              "median": 0.1828,
+              "p95": 0.2374,
+              "max": 0.2441
+            },
+            "rms_mean": {
+              "n": 357,
+              "min": 0.0315,
+              "median": 0.0491,
+              "p95": 0.07,
+              "max": 0.0753
+            },
+            "occupancy": {
+              "n": 357,
+              "min": 0.1538,
+              "median": 0.2308,
+              "p95": 0.28,
+              "max": 0.32
+            },
+            "occupancy_base": {
+              "n": 357,
+              "min": 0.2439,
+              "median": 0.2755,
+              "p95": 0.307,
+              "max": 0.3099
+            },
+            "adc_peak": {
+              "n": 357,
+              "min": 302.0,
+              "median": 387.0,
+              "p95": 481.0,
+              "max": 502.0
+            },
+            "samples": {
+              "n": 357,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 357,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 357,
+              "min": 0.145,
+              "median": 0.218,
+              "p95": 0.276,
+              "max": 0.318
+            },
+            "threshold": {
+              "n": 357,
+              "min": 0.2673,
+              "median": 0.3266,
+              "p95": 0.4045,
+              "max": 0.4258
+            },
+            "noise_p95": {
+              "n": 357,
+              "min": 0.0891,
+              "median": 0.1089,
+              "p95": 0.1348,
+              "max": 0.1419
+            },
+            "transition_resets": {
+              "n": 357,
+              "min": 9.0,
+              "median": 9.0,
+              "p95": 9.0,
+              "max": 9.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 20.034,
+          "stable_midi_note_duration_s": 15.034
+        },
+        "EE5": {
+          "frames": 497,
+          "stable_frames": 373,
+          "max_gap_s": 0.073775,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.027884,
+            "trailing_gap_s": 0.036982,
+            "max_gap_including_boundaries_s": 0.073775,
+            "first_frame_utc": "2026-10-14T19:03:39.000884+00:00",
+            "last_frame_utc": "2026-10-14T19:03:58.970018+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.016697,
+            "trailing_gap_s": 0.036982,
+            "max_gap_including_boundaries_s": 0.073775,
+            "first_frame_utc": "2026-10-14T19:03:43.989697+00:00",
+            "last_frame_utc": "2026-10-14T19:03:58.970018+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 373,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4699,
+              "max": 1.4973
+            },
+            "filt": {
+              "n": 373,
+              "min": 0.9888,
+              "median": 1.3764,
+              "p95": 1.4779,
+              "max": 1.4949
+            },
+            "base": {
+              "n": 373,
+              "min": 1.1365,
+              "median": 1.1741,
+              "p95": 1.2016,
+              "max": 1.205
+            },
+            "threshold": {
+              "n": 373,
+              "min": 0.8612,
+              "median": 1.1141,
+              "p95": 1.5156,
+              "max": 1.5954
+            },
+            "noise_p95": {
+              "n": 373,
+              "min": 0.3445,
+              "median": 0.4456,
+              "p95": 0.6062,
+              "max": 0.6382
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 493,
+          "stable_frames": 370,
+          "max_gap_s": 0.093608,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.037649,
+            "trailing_gap_s": 0.028246,
+            "max_gap_including_boundaries_s": 0.093608,
+            "first_frame_utc": "2026-10-14T19:03:39.010649+00:00",
+            "last_frame_utc": "2026-10-14T19:03:58.978754+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.033994,
+            "trailing_gap_s": 0.028246,
+            "max_gap_including_boundaries_s": 0.079896,
+            "first_frame_utc": "2026-10-14T19:03:44.006994+00:00",
+            "last_frame_utc": "2026-10-14T19:03:58.978754+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 370,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.5456,
+              "max": 1.5875
+            },
+            "filt": {
+              "n": 370,
+              "min": 1.133,
+              "median": 1.4908,
+              "p95": 1.5561,
+              "max": 1.569
+            },
+            "base": {
+              "n": 370,
+              "min": 1.2597,
+              "median": 1.29635,
+              "p95": 1.3188,
+              "max": 1.3204
+            },
+            "threshold": {
+              "n": 370,
+              "min": 0.7673,
+              "median": 0.9483,
+              "p95": 1.2901,
+              "max": 1.358
+            },
+            "noise_p95": {
+              "n": 370,
+              "min": 0.3069,
+              "median": 0.3793,
+              "p95": 0.516,
+              "max": 0.5432
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 2,
+      "phase": "first_contact",
+      "start_utc": "2026-10-14T19:03:59.007000+00:00",
+      "end_utc": "2026-10-14T19:04:09.016000+00:00",
+      "stable_start_utc": "2026-10-14T19:04:02.007000+00:00",
+      "stable_end_utc": "2026-10-14T19:04:07.016000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:03:59.203+00:00",
+        "host_monotonic_ns": 104410237143300,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-cross-EC5-black-first-03",
+          "plant_node": "EB5",
+          "black_node": "EC5",
+          "condition": "cross_pair",
+          "contact_order": "black_first",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 7,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 6,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:03:54.324Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "1. SOLO NEGRO EC5",
+        "instruction": "Toca SOLO la punta negra marcada EC5 con una mano durante 10 segundos. La otra mano queda libre y no toca ninguna planta. Manten este negro sujeto hasta que termine la fase de ambos contactos.",
+        "spoken": "Primero toca solo el negro EC5. No toques la planta."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 239,
+          "stable_frames": 122,
+          "max_gap_s": 0.083977,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.001728,
+            "trailing_gap_s": 0.027023,
+            "max_gap_including_boundaries_s": 0.083977,
+            "first_frame_utc": "2026-10-14T19:03:59.008728+00:00",
+            "last_frame_utc": "2026-10-14T19:04:08.988977+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.012678,
+            "trailing_gap_s": 0.002912,
+            "max_gap_including_boundaries_s": 0.053321,
+            "first_frame_utc": "2026-10-14T19:04:02.019678+00:00",
+            "last_frame_utc": "2026-10-14T19:04:07.013088+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.8535564853556485,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 122,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 122,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "base": {
+              "n": 122,
+              "min": 0.2285,
+              "median": 0.2285,
+              "p95": 0.2285,
+              "max": 0.2285
+            },
+            "rms_mean": {
+              "n": 122,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy": {
+              "n": 122,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy_base": {
+              "n": 122,
+              "min": 0.4207,
+              "median": 0.4207,
+              "p95": 0.4207,
+              "max": 0.4207
+            },
+            "adc_peak": {
+              "n": 122,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "samples": {
+              "n": 122,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 122,
+              "min": 74.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 122,
+              "min": 2.864,
+              "median": 2.864,
+              "p95": 2.864,
+              "max": 2.864
+            },
+            "threshold": {
+              "n": 122,
+              "min": 0.0798,
+              "median": 0.0798,
+              "p95": 0.0798,
+              "max": 0.0798
+            },
+            "noise_p95": {
+              "n": 122,
+              "min": 0.0266,
+              "median": 0.0266,
+              "p95": 0.0266,
+              "max": 0.0266
+            },
+            "transition_resets": {
+              "n": 122,
+              "min": 13.0,
+              "median": 13.0,
+              "p95": 13.0,
+              "max": 13.0
+            }
+          },
+          "midi_note_ons": 4,
+          "midi_note_pitches": [
+            54,
+            59,
+            65,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 4,
+            "min": 54,
+            "median": 62.0,
+            "p95": 65,
+            "max": 71
+          },
+          "midi_note_duration_s": 8.560722,
+          "stable_midi_note_duration_s": 5.009
+        },
+        "EC5": {
+          "frames": 238,
+          "stable_frames": 121,
+          "max_gap_s": 0.089527,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.002316,
+            "trailing_gap_s": 0.011485,
+            "max_gap_including_boundaries_s": 0.089527,
+            "first_frame_utc": "2026-10-14T19:03:59.009316+00:00",
+            "last_frame_utc": "2026-10-14T19:04:09.004515+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.019597,
+            "trailing_gap_s": 0.037169,
+            "max_gap_including_boundaries_s": 0.057612,
+            "first_frame_utc": "2026-10-14T19:04:02.026597+00:00",
+            "last_frame_utc": "2026-10-14T19:04:06.978831+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.8529411764705882,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "base": {
+              "n": 121,
+              "min": 0.1334,
+              "median": 0.1334,
+              "p95": 0.1334,
+              "max": 0.1334
+            },
+            "rms_mean": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy_base": {
+              "n": 121,
+              "min": 0.2382,
+              "median": 0.2382,
+              "p95": 0.2382,
+              "max": 0.2382
+            },
+            "adc_peak": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "samples": {
+              "n": 121,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 121,
+              "min": 74.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 79.0
+            },
+            "score": {
+              "n": 121,
+              "min": 0.525,
+              "median": 0.525,
+              "p95": 0.525,
+              "max": 0.525
+            },
+            "threshold": {
+              "n": 121,
+              "min": 0.2539,
+              "median": 0.2539,
+              "p95": 0.2539,
+              "max": 0.2539
+            },
+            "noise_p95": {
+              "n": 121,
+              "min": 0.0846,
+              "median": 0.0846,
+              "p95": 0.0846,
+              "max": 0.0846
+            },
+            "transition_resets": {
+              "n": 121,
+              "min": 9.0,
+              "median": 9.0,
+              "p95": 9.0,
+              "max": 9.0
+            }
+          },
+          "midi_note_ons": 5,
+          "midi_note_pitches": [
+            57,
+            58,
+            59,
+            65,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 5,
+            "min": 57,
+            "median": 59,
+            "p95": 65,
+            "max": 71
+          },
+          "midi_note_duration_s": 8.55573,
+          "stable_midi_note_duration_s": 5.009
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 124,
+          "midi_note_pitches": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            71,
+            74,
+            80
+          ],
+          "midi_pitch_summary": {
+            "n": 124,
+            "min": 46,
+            "median": 49.0,
+            "p95": 52,
+            "max": 80
+          },
+          "midi_note_duration_s": 8.878573,
+          "stable_midi_note_duration_s": 4.727652
+        },
+        "EE5": {
+          "frames": 233,
+          "stable_frames": 114,
+          "max_gap_s": 0.086131,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.002441,
+            "trailing_gap_s": 0.037486,
+            "max_gap_including_boundaries_s": 0.086131,
+            "first_frame_utc": "2026-10-14T19:03:59.009441+00:00",
+            "last_frame_utc": "2026-10-14T19:04:08.978514+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.064882,
+            "trailing_gap_s": 0.009273,
+            "max_gap_including_boundaries_s": 0.084266,
+            "first_frame_utc": "2026-10-14T19:04:02.071882+00:00",
+            "last_frame_utc": "2026-10-14T19:04:07.006727+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.8197424892703863,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 114,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0387,
+              "max": 0.0475
+            },
+            "filt": {
+              "n": 114,
+              "min": 0.0,
+              "median": 0.033,
+              "p95": 0.0411,
+              "max": 0.0411
+            },
+            "base": {
+              "n": 114,
+              "min": 1.2101,
+              "median": 1.2101,
+              "p95": 1.2101,
+              "max": 1.2101
+            },
+            "threshold": {
+              "n": 114,
+              "min": 0.8115,
+              "median": 0.8115,
+              "p95": 0.8115,
+              "max": 0.8115
+            },
+            "noise_p95": {
+              "n": 114,
+              "min": 0.3246,
+              "median": 0.3246,
+              "p95": 0.3246,
+              "max": 0.3246
+            }
+          },
+          "midi_note_ons": 16,
+          "midi_note_pitches": [
+            33,
+            34,
+            36,
+            42,
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 16,
+            "min": 33,
+            "median": 39.0,
+            "p95": 78,
+            "max": 84
+          },
+          "midi_note_duration_s": 8.273744,
+          "stable_midi_note_duration_s": 4.979356
+        },
+        "EF5": {
+          "frames": 228,
+          "stable_frames": 112,
+          "max_gap_s": 0.090651,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.009156,
+            "trailing_gap_s": 0.016385,
+            "max_gap_including_boundaries_s": 0.090651,
+            "first_frame_utc": "2026-10-14T19:03:59.016156+00:00",
+            "last_frame_utc": "2026-10-14T19:04:08.999615+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.02639,
+            "trailing_gap_s": 0.035918,
+            "max_gap_including_boundaries_s": 0.086892,
+            "first_frame_utc": "2026-10-14T19:04:02.033390+00:00",
+            "last_frame_utc": "2026-10-14T19:04:06.980082+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.8157894736842105,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 112,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0298,
+              "max": 0.0403
+            },
+            "filt": {
+              "n": 112,
+              "min": 0.0,
+              "median": 0.0234,
+              "p95": 0.0403,
+              "max": 0.0403
+            },
+            "base": {
+              "n": 112,
+              "min": 1.3236,
+              "median": 1.3236,
+              "p95": 1.3236,
+              "max": 1.3236
+            },
+            "threshold": {
+              "n": 112,
+              "min": 0.7175,
+              "median": 0.7175,
+              "p95": 0.7175,
+              "max": 0.7175
+            },
+            "noise_p95": {
+              "n": 112,
+              "min": 0.287,
+              "median": 0.287,
+              "p95": 0.287,
+              "max": 0.287
+            }
+          },
+          "midi_note_ons": 22,
+          "midi_note_pitches": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            42,
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 22,
+            "min": 32,
+            "median": 35.0,
+            "p95": 72,
+            "max": 84
+          },
+          "midi_note_duration_s": 8.252182,
+          "stable_midi_note_duration_s": 4.976059
+        }
+      }
+    },
+    {
+      "repetition": 2,
+      "phase": "contact",
+      "start_utc": "2026-10-14T19:04:09.016000+00:00",
+      "end_utc": "2026-10-14T19:04:29.032000+00:00",
+      "stable_start_utc": "2026-10-14T19:04:12.016000+00:00",
+      "stable_end_utc": "2026-10-14T19:04:27.032000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:04:09.166+00:00",
+        "host_monotonic_ns": 104420200764600,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-cross-EC5-black-first-03",
+          "plant_node": "EB5",
+          "black_node": "EC5",
+          "condition": "cross_pair",
+          "contact_order": "black_first",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 8,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 6,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:04:04.400Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "2. AGREGA PLANTA EB5",
+        "instruction": "2. SIN SOLTAR la punta negra marcada EC5, agrega la PLANTA identificada por la etiqueta ROJA EB5 con la otra mano. Manten ambos contactos durante 20 segundos. Tu mano toca la planta; la pinza roja queda fijada. La planta con etiqueta roja EC5 queda SIN TOCAR durante todo el ensayo.",
+        "spoken": "Sin soltar el negro EC5, agrega el contacto con la planta EB5 usando la otra mano."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 485,
+          "stable_frames": 366,
+          "max_gap_s": 0.104453,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.0149,
+            "trailing_gap_s": 0.032879,
+            "max_gap_including_boundaries_s": 0.104453,
+            "first_frame_utc": "2026-10-14T19:04:09.030900+00:00",
+            "last_frame_utc": "2026-10-14T19:04:28.999121+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.001811,
+            "trailing_gap_s": 0.004255,
+            "max_gap_including_boundaries_s": 0.05454,
+            "first_frame_utc": "2026-10-14T19:04:12.017811+00:00",
+            "last_frame_utc": "2026-10-14T19:04:27.027745+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 1.0,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 366,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 366,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "base": {
+              "n": 366,
+              "min": 0.2285,
+              "median": 0.2285,
+              "p95": 0.2285,
+              "max": 0.2285
+            },
+            "rms_mean": {
+              "n": 366,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy": {
+              "n": 366,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy_base": {
+              "n": 366,
+              "min": 0.4207,
+              "median": 0.4207,
+              "p95": 0.4207,
+              "max": 0.4207
+            },
+            "adc_peak": {
+              "n": 366,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "samples": {
+              "n": 366,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 366,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 79.0
+            },
+            "score": {
+              "n": 366,
+              "min": 2.864,
+              "median": 2.864,
+              "p95": 2.864,
+              "max": 2.864
+            },
+            "threshold": {
+              "n": 366,
+              "min": 0.0798,
+              "median": 0.0798,
+              "p95": 0.0798,
+              "max": 0.0798
+            },
+            "noise_p95": {
+              "n": 366,
+              "min": 0.0266,
+              "median": 0.0266,
+              "p95": 0.0266,
+              "max": 0.0266
+            },
+            "transition_resets": {
+              "n": 366,
+              "min": 13.0,
+              "median": 13.0,
+              "p95": 13.0,
+              "max": 13.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 20.016,
+          "stable_midi_note_duration_s": 15.016
+        },
+        "EC5": {
+          "frames": 484,
+          "stable_frames": 366,
+          "max_gap_s": 0.121647,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.02981,
+            "trailing_gap_s": 0.028182,
+            "max_gap_including_boundaries_s": 0.121647,
+            "first_frame_utc": "2026-10-14T19:04:09.045810+00:00",
+            "last_frame_utc": "2026-10-14T19:04:29.003818+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.004211,
+            "trailing_gap_s": 0.01273,
+            "max_gap_including_boundaries_s": 0.062975,
+            "first_frame_utc": "2026-10-14T19:04:12.020211+00:00",
+            "last_frame_utc": "2026-10-14T19:04:27.019270+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 1.0,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 366,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 366,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "base": {
+              "n": 366,
+              "min": 0.1334,
+              "median": 0.1334,
+              "p95": 0.1334,
+              "max": 0.1334
+            },
+            "rms_mean": {
+              "n": 366,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy": {
+              "n": 366,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy_base": {
+              "n": 366,
+              "min": 0.2382,
+              "median": 0.2382,
+              "p95": 0.2382,
+              "max": 0.2382
+            },
+            "adc_peak": {
+              "n": 366,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "samples": {
+              "n": 366,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 366,
+              "min": 74.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 79.0
+            },
+            "score": {
+              "n": 366,
+              "min": 0.525,
+              "median": 0.525,
+              "p95": 0.525,
+              "max": 0.525
+            },
+            "threshold": {
+              "n": 366,
+              "min": 0.2539,
+              "median": 0.2539,
+              "p95": 0.2539,
+              "max": 0.2539
+            },
+            "noise_p95": {
+              "n": 366,
+              "min": 0.0846,
+              "median": 0.0846,
+              "p95": 0.0846,
+              "max": 0.0846
+            },
+            "transition_resets": {
+              "n": 366,
+              "min": 9.0,
+              "median": 9.0,
+              "p95": 9.0,
+              "max": 9.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 20.016,
+          "stable_midi_note_duration_s": 15.016
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 180,
+          "midi_note_pitches": [
+            46,
+            47,
+            48
+          ],
+          "midi_pitch_summary": {
+            "n": 180,
+            "min": 46,
+            "median": 47.0,
+            "p95": 48,
+            "max": 48
+          },
+          "midi_note_duration_s": 19.542535,
+          "stable_midi_note_duration_s": 14.74146
+        },
+        "EE5": {
+          "frames": 469,
+          "stable_frames": 349,
+          "max_gap_s": 0.087888,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.00049,
+            "trailing_gap_s": 0.014584,
+            "max_gap_including_boundaries_s": 0.087888,
+            "first_frame_utc": "2026-10-14T19:04:09.016490+00:00",
+            "last_frame_utc": "2026-10-14T19:04:29.017416+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.001586,
+            "trailing_gap_s": 0.017083,
+            "max_gap_including_boundaries_s": 0.081124,
+            "first_frame_utc": "2026-10-14T19:04:12.017586+00:00",
+            "last_frame_utc": "2026-10-14T19:04:27.014917+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 1.0,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 349,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0387,
+              "max": 0.0516
+            },
+            "filt": {
+              "n": 349,
+              "min": 0.0056,
+              "median": 0.029,
+              "p95": 0.0395,
+              "max": 0.0492
+            },
+            "base": {
+              "n": 349,
+              "min": 1.2101,
+              "median": 1.2101,
+              "p95": 1.2101,
+              "max": 1.2101
+            },
+            "threshold": {
+              "n": 349,
+              "min": 0.8115,
+              "median": 0.8115,
+              "p95": 0.8115,
+              "max": 0.8115
+            },
+            "noise_p95": {
+              "n": 349,
+              "min": 0.3246,
+              "median": 0.3246,
+              "p95": 0.3246,
+              "max": 0.3246
+            }
+          },
+          "midi_note_ons": 27,
+          "midi_note_pitches": [
+            32,
+            33,
+            34
+          ],
+          "midi_pitch_summary": {
+            "n": 27,
+            "min": 32,
+            "median": 33,
+            "p95": 34,
+            "max": 34
+          },
+          "midi_note_duration_s": 19.957038,
+          "stable_midi_note_duration_s": 14.962409
+        },
+        "EF5": {
+          "frames": 458,
+          "stable_frames": 346,
+          "max_gap_s": 0.104563,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.020399,
+            "trailing_gap_s": 0.025706,
+            "max_gap_including_boundaries_s": 0.104563,
+            "first_frame_utc": "2026-10-14T19:04:09.036399+00:00",
+            "last_frame_utc": "2026-10-14T19:04:29.006294+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.016606,
+            "trailing_gap_s": 0.034353,
+            "max_gap_including_boundaries_s": 0.091755,
+            "first_frame_utc": "2026-10-14T19:04:12.032606+00:00",
+            "last_frame_utc": "2026-10-14T19:04:26.997647+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 1.0,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 346,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0282,
+              "max": 0.0395
+            },
+            "filt": {
+              "n": 346,
+              "min": 0.0,
+              "median": 0.0145,
+              "p95": 0.0306,
+              "max": 0.0363
+            },
+            "base": {
+              "n": 346,
+              "min": 1.3236,
+              "median": 1.3236,
+              "p95": 1.3236,
+              "max": 1.3236
+            },
+            "threshold": {
+              "n": 346,
+              "min": 0.7175,
+              "median": 0.7175,
+              "p95": 0.7175,
+              "max": 0.7175
+            },
+            "noise_p95": {
+              "n": 346,
+              "min": 0.287,
+              "median": 0.287,
+              "p95": 0.287,
+              "max": 0.287
+            }
+          },
+          "midi_note_ons": 39,
+          "midi_note_pitches": [
+            32,
+            33,
+            34,
+            35
+          ],
+          "midi_pitch_summary": {
+            "n": 39,
+            "min": 32,
+            "median": 33,
+            "p95": 34,
+            "max": 35
+          },
+          "midi_note_duration_s": 19.878686000000002,
+          "stable_midi_note_duration_s": 14.9313
+        }
+      }
+    },
+    {
+      "repetition": 2,
+      "phase": "release",
+      "start_utc": "2026-10-14T19:04:29.032000+00:00",
+      "end_utc": "2026-10-14T19:04:59.062000+00:00",
+      "stable_start_utc": "2026-10-14T19:04:44.062000+00:00",
+      "stable_end_utc": "2026-10-14T19:04:59.062000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:04:29.161+00:00",
+        "host_monotonic_ns": 104440195010700,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-cross-EC5-black-first-03",
+          "plant_node": "EB5",
+          "black_node": "EC5",
+          "condition": "cross_pair",
+          "contact_order": "black_first",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 9,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 6,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:04:24.335Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "SUELTA AMBOS",
+        "instruction": "SUELTA AMBOS: retira una mano de la planta EB5 y la otra de la punta negra EC5. Deja ambas manos libres y todo quieto durante los 30 segundos.",
+        "spoken": "Suelta ambos: planta y punta negra. Deja ambas manos libres."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 720,
+          "stable_frames": 358,
+          "max_gap_s": 0.111982,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.006197,
+            "trailing_gap_s": 0.020823,
+            "max_gap_including_boundaries_s": 0.111982,
+            "first_frame_utc": "2026-10-14T19:04:29.038197+00:00",
+            "last_frame_utc": "2026-10-14T19:04:59.041177+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.003376,
+            "trailing_gap_s": 0.020823,
+            "max_gap_including_boundaries_s": 0.111982,
+            "first_frame_utc": "2026-10-14T19:04:44.065376+00:00",
+            "last_frame_utc": "2026-10-14T19:04:59.041177+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.05138888888888889,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 358,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.4908,
+              "max": 0.5045
+            },
+            "filt": {
+              "n": 358,
+              "min": 0.2117,
+              "median": 0.23349999999999999,
+              "p95": 0.2455,
+              "max": 0.2518
+            },
+            "base": {
+              "n": 358,
+              "min": 0.2256,
+              "median": 0.2285,
+              "p95": 0.2312,
+              "max": 0.2314
+            },
+            "rms_mean": {
+              "n": 358,
+              "min": 0.1178,
+              "median": 0.1368,
+              "p95": 0.1496,
+              "max": 0.1559
+            },
+            "occupancy": {
+              "n": 358,
+              "min": 0.32,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.48
+            },
+            "occupancy_base": {
+              "n": 358,
+              "min": 0.4104,
+              "median": 0.4158,
+              "p95": 0.4233,
+              "max": 0.4239
+            },
+            "adc_peak": {
+              "n": 358,
+              "min": 589.0,
+              "median": 620.5,
+              "p95": 625.0,
+              "max": 627.0
+            },
+            "samples": {
+              "n": 358,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 358,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 358,
+              "min": 0.001,
+              "median": 0.035,
+              "p95": 0.079,
+              "max": 0.102
+            },
+            "threshold": {
+              "n": 358,
+              "min": 0.1575,
+              "median": 0.2374,
+              "p95": 0.3229,
+              "max": 0.3399
+            },
+            "noise_p95": {
+              "n": 358,
+              "min": 0.0525,
+              "median": 0.0791,
+              "p95": 0.1076,
+              "max": 0.1133
+            },
+            "transition_resets": {
+              "n": 358,
+              "min": 14.0,
+              "median": 14.0,
+              "p95": 14.0,
+              "max": 14.0
+            }
+          },
+          "midi_note_ons": 1,
+          "midi_note_pitches": [
+            55
+          ],
+          "midi_pitch_summary": {
+            "n": 1,
+            "min": 55,
+            "median": 55,
+            "p95": 55,
+            "max": 55
+          },
+          "midi_note_duration_s": 1.580654,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 716,
+          "stable_frames": 356,
+          "max_gap_s": 0.103611,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.012524,
+            "trailing_gap_s": 0.023851,
+            "max_gap_including_boundaries_s": 0.103611,
+            "first_frame_utc": "2026-10-14T19:04:29.044524+00:00",
+            "last_frame_utc": "2026-10-14T19:04:59.038149+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.024781,
+            "trailing_gap_s": 0.023851,
+            "max_gap_including_boundaries_s": 0.103611,
+            "first_frame_utc": "2026-10-14T19:04:44.086781+00:00",
+            "last_frame_utc": "2026-10-14T19:04:59.038149+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.046089385474860335,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 356,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.9912,
+              "max": 1.0887
+            },
+            "filt": {
+              "n": 356,
+              "min": 0.425,
+              "median": 0.47565,
+              "p95": 0.5301,
+              "max": 0.5507
+            },
+            "base": {
+              "n": 356,
+              "min": 0.5459,
+              "median": 0.5459,
+              "p95": 0.5459,
+              "max": 0.5459
+            },
+            "rms_mean": {
+              "n": 356,
+              "min": 0.2348,
+              "median": 0.28385,
+              "p95": 0.3283,
+              "max": 0.3404
+            },
+            "occupancy": {
+              "n": 356,
+              "min": 0.3077,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.52
+            },
+            "occupancy_base": {
+              "n": 356,
+              "min": 0.4569,
+              "median": 0.4569,
+              "p95": 0.4569,
+              "max": 0.4569
+            },
+            "adc_peak": {
+              "n": 356,
+              "min": 1153.0,
+              "median": 1267.0,
+              "p95": 1356.0,
+              "max": 1412.0
+            },
+            "samples": {
+              "n": 356,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 356,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 356,
+              "min": 0.025,
+              "median": 0.396,
+              "p95": 0.602,
+              "max": 0.678
+            },
+            "threshold": {
+              "n": 356,
+              "min": 0.1671,
+              "median": 0.1776,
+              "p95": 0.1886,
+              "max": 0.1886
+            },
+            "noise_p95": {
+              "n": 356,
+              "min": 0.0557,
+              "median": 0.0592,
+              "p95": 0.0629,
+              "max": 0.0629
+            },
+            "transition_resets": {
+              "n": 356,
+              "min": 10.0,
+              "median": 10.0,
+              "p95": 10.0,
+              "max": 10.0
+            }
+          },
+          "midi_note_ons": 3,
+          "midi_note_pitches": [
+            57,
+            58,
+            59
+          ],
+          "midi_pitch_summary": {
+            "n": 3,
+            "min": 57,
+            "median": 58,
+            "p95": 58,
+            "max": 59
+          },
+          "midi_note_duration_s": 1.498166,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 46,
+          "midi_note_pitches": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            53,
+            54,
+            55,
+            56,
+            59,
+            63,
+            69,
+            71,
+            72,
+            73,
+            75,
+            76,
+            78,
+            80,
+            81,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 46,
+            "min": 46,
+            "median": 51.0,
+            "p95": 80,
+            "max": 84
+          },
+          "midi_note_duration_s": 29.924749,
+          "stable_midi_note_duration_s": 15.0
+        },
+        "EE5": {
+          "frames": 739,
+          "stable_frames": 371,
+          "max_gap_s": 0.114501,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.02725,
+            "trailing_gap_s": 0.044604,
+            "max_gap_including_boundaries_s": 0.114501,
+            "first_frame_utc": "2026-10-14T19:04:29.059250+00:00",
+            "last_frame_utc": "2026-10-14T19:04:59.017396+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.01478,
+            "trailing_gap_s": 0.044604,
+            "max_gap_including_boundaries_s": 0.114501,
+            "first_frame_utc": "2026-10-14T19:04:44.076780+00:00",
+            "last_frame_utc": "2026-10-14T19:04:59.017396+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.04871447902571042,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 371,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4868,
+              "max": 1.5134
+            },
+            "filt": {
+              "n": 371,
+              "min": 1.1008,
+              "median": 1.3901,
+              "p95": 1.4788,
+              "max": 1.5086
+            },
+            "base": {
+              "n": 371,
+              "min": 1.4783,
+              "median": 1.4952,
+              "p95": 1.5226,
+              "max": 1.5256
+            },
+            "threshold": {
+              "n": 371,
+              "min": 1.1543,
+              "median": 1.6536,
+              "p95": 1.7119,
+              "max": 1.7205
+            },
+            "noise_p95": {
+              "n": 371,
+              "min": 0.4617,
+              "median": 0.6614,
+              "p95": 0.6848,
+              "max": 0.6882
+            }
+          },
+          "midi_note_ons": 5,
+          "midi_note_pitches": [
+            32,
+            33,
+            38,
+            44
+          ],
+          "midi_pitch_summary": {
+            "n": 5,
+            "min": 32,
+            "median": 33,
+            "p95": 38,
+            "max": 44
+          },
+          "midi_note_duration_s": 1.657804,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 742,
+          "stable_frames": 370,
+          "max_gap_s": 0.100869,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.009421,
+            "trailing_gap_s": 0.028528,
+            "max_gap_including_boundaries_s": 0.100869,
+            "first_frame_utc": "2026-10-14T19:04:29.041421+00:00",
+            "last_frame_utc": "2026-10-14T19:04:59.033472+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.030065,
+            "trailing_gap_s": 0.028528,
+            "max_gap_including_boundaries_s": 0.100869,
+            "first_frame_utc": "2026-10-14T19:04:44.092065+00:00",
+            "last_frame_utc": "2026-10-14T19:04:59.033472+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.05390835579514825,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 370,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.5311,
+              "max": 1.6141
+            },
+            "filt": {
+              "n": 370,
+              "min": 1.1475,
+              "median": 1.4288,
+              "p95": 1.5634,
+              "max": 1.5851
+            },
+            "base": {
+              "n": 370,
+              "min": 1.502,
+              "median": 1.5217,
+              "p95": 1.5393,
+              "max": 1.5428
+            },
+            "threshold": {
+              "n": 370,
+              "min": 0.6909,
+              "median": 1.0415,
+              "p95": 1.4168,
+              "max": 1.4914
+            },
+            "noise_p95": {
+              "n": 370,
+              "min": 0.2764,
+              "median": 0.4166,
+              "p95": 0.5667,
+              "max": 0.5965
+            }
+          },
+          "midi_note_ons": 2,
+          "midi_note_pitches": [
+            37,
+            43
+          ],
+          "midi_pitch_summary": {
+            "n": 2,
+            "min": 37,
+            "median": 40.0,
+            "p95": 37,
+            "max": 43
+          },
+          "midi_note_duration_s": 1.687404,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 3,
+      "phase": "rest",
+      "start_utc": "2026-10-14T19:04:59.062000+00:00",
+      "end_utc": "2026-10-14T19:05:19.072000+00:00",
+      "stable_start_utc": "2026-10-14T19:05:04.062000+00:00",
+      "stable_end_utc": "2026-10-14T19:05:19.072000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:04:59.168+00:00",
+        "host_monotonic_ns": 104470202776700,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-cross-EC5-black-first-03",
+          "plant_node": "EB5",
+          "black_node": "EC5",
+          "condition": "cross_pair",
+          "contact_order": "black_first",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 10,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 6,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:04:54.403Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "REPOSO: MANOS LIBRES",
+        "instruction": "Deja AMBAS manos libres: no toques ninguna planta ni ninguna punta negra. Mantente quieto. No sostengas el negro durante el reposo.",
+        "spoken": "Reposo. Ambas manos libres, sin tocar plantas ni puntas negras."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 476,
+          "stable_frames": 357,
+          "max_gap_s": 0.08908,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.019667,
+            "trailing_gap_s": 0.007069,
+            "max_gap_including_boundaries_s": 0.08908,
+            "first_frame_utc": "2026-10-14T19:04:59.081667+00:00",
+            "last_frame_utc": "2026-10-14T19:05:19.064931+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.017296,
+            "trailing_gap_s": 0.007069,
+            "max_gap_including_boundaries_s": 0.08908,
+            "first_frame_utc": "2026-10-14T19:05:04.079296+00:00",
+            "last_frame_utc": "2026-10-14T19:05:19.064931+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.4884,
+              "max": 0.5045
+            },
+            "filt": {
+              "n": 357,
+              "min": 0.1965,
+              "median": 0.2328,
+              "p95": 0.2441,
+              "max": 0.2507
+            },
+            "base": {
+              "n": 357,
+              "min": 0.2309,
+              "median": 0.2315,
+              "p95": 0.2322,
+              "max": 0.2323
+            },
+            "rms_mean": {
+              "n": 357,
+              "min": 0.1075,
+              "median": 0.1354,
+              "p95": 0.1492,
+              "max": 0.1542
+            },
+            "occupancy": {
+              "n": 357,
+              "min": 0.3462,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.5
+            },
+            "occupancy_base": {
+              "n": 357,
+              "min": 0.4198,
+              "median": 0.4218,
+              "p95": 0.4235,
+              "max": 0.424
+            },
+            "adc_peak": {
+              "n": 357,
+              "min": 584.0,
+              "median": 621.0,
+              "p95": 624.0,
+              "max": 627.0
+            },
+            "samples": {
+              "n": 357,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 357,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.096,
+              "p95": 0.18,
+              "max": 0.433
+            },
+            "threshold": {
+              "n": 357,
+              "min": 0.0594,
+              "median": 0.0851,
+              "p95": 0.1218,
+              "max": 0.1283
+            },
+            "noise_p95": {
+              "n": 357,
+              "min": 0.0198,
+              "median": 0.0284,
+              "p95": 0.0406,
+              "max": 0.0428
+            },
+            "transition_resets": {
+              "n": 357,
+              "min": 14.0,
+              "median": 14.0,
+              "p95": 14.0,
+              "max": 14.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 475,
+          "stable_frames": 356,
+          "max_gap_s": 0.085613,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.019443,
+            "trailing_gap_s": 0.02532,
+            "max_gap_including_boundaries_s": 0.085613,
+            "first_frame_utc": "2026-10-14T19:04:59.081443+00:00",
+            "last_frame_utc": "2026-10-14T19:05:19.046680+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.017538,
+            "trailing_gap_s": 0.02532,
+            "max_gap_including_boundaries_s": 0.085563,
+            "first_frame_utc": "2026-10-14T19:05:04.079538+00:00",
+            "last_frame_utc": "2026-10-14T19:05:19.046680+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 356,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.8574,
+              "max": 0.9614
+            },
+            "filt": {
+              "n": 356,
+              "min": 0.3418,
+              "median": 0.3977,
+              "p95": 0.4485,
+              "max": 0.4756
+            },
+            "base": {
+              "n": 356,
+              "min": 0.5459,
+              "median": 0.5459,
+              "p95": 0.5459,
+              "max": 0.5459
+            },
+            "rms_mean": {
+              "n": 356,
+              "min": 0.1796,
+              "median": 0.22625,
+              "p95": 0.2641,
+              "max": 0.2866
+            },
+            "occupancy": {
+              "n": 356,
+              "min": 0.32,
+              "median": 0.3846,
+              "p95": 0.4615,
+              "max": 0.48
+            },
+            "occupancy_base": {
+              "n": 356,
+              "min": 0.4569,
+              "median": 0.4569,
+              "p95": 0.4569,
+              "max": 0.4569
+            },
+            "adc_peak": {
+              "n": 356,
+              "min": 963.0,
+              "median": 1105.5,
+              "p95": 1195.0,
+              "max": 1277.0
+            },
+            "samples": {
+              "n": 356,
+              "min": 24.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 356,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 356,
+              "min": 0.34,
+              "median": 0.683,
+              "p95": 0.884,
+              "max": 0.921
+            },
+            "threshold": {
+              "n": 356,
+              "min": 0.1984,
+              "median": 0.215,
+              "p95": 0.2284,
+              "max": 0.2307
+            },
+            "noise_p95": {
+              "n": 356,
+              "min": 0.0661,
+              "median": 0.0717,
+              "p95": 0.0761,
+              "max": 0.0769
+            },
+            "transition_resets": {
+              "n": 356,
+              "min": 10.0,
+              "median": 10.0,
+              "p95": 10.0,
+              "max": 10.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 20.01,
+          "stable_midi_note_duration_s": 15.01
+        },
+        "EE5": {
+          "frames": 495,
+          "stable_frames": 370,
+          "max_gap_s": 0.08391,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.003098,
+            "trailing_gap_s": 0.038663,
+            "max_gap_including_boundaries_s": 0.08391,
+            "first_frame_utc": "2026-10-14T19:04:59.065098+00:00",
+            "last_frame_utc": "2026-10-14T19:05:19.033337+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.027684,
+            "trailing_gap_s": 0.038663,
+            "max_gap_including_boundaries_s": 0.08391,
+            "first_frame_utc": "2026-10-14T19:05:04.089684+00:00",
+            "last_frame_utc": "2026-10-14T19:05:19.033337+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 370,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4796,
+              "max": 1.5134
+            },
+            "filt": {
+              "n": 370,
+              "min": 1.1137,
+              "median": 1.3651,
+              "p95": 1.4828,
+              "max": 1.5045
+            },
+            "base": {
+              "n": 370,
+              "min": 1.4243,
+              "median": 1.4396499999999999,
+              "p95": 1.4633,
+              "max": 1.4646
+            },
+            "threshold": {
+              "n": 370,
+              "min": 0.6514,
+              "median": 0.6567,
+              "p95": 0.8932,
+              "max": 0.8932
+            },
+            "noise_p95": {
+              "n": 370,
+              "min": 0.2606,
+              "median": 0.2627,
+              "p95": 0.3573,
+              "max": 0.3573
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 495,
+          "stable_frames": 372,
+          "max_gap_s": 0.089786,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.009549,
+            "trailing_gap_s": 0.031454,
+            "max_gap_including_boundaries_s": 0.089786,
+            "first_frame_utc": "2026-10-14T19:04:59.071549+00:00",
+            "last_frame_utc": "2026-10-14T19:05:19.040546+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.000519,
+            "trailing_gap_s": 0.031454,
+            "max_gap_including_boundaries_s": 0.089786,
+            "first_frame_utc": "2026-10-14T19:05:04.062519+00:00",
+            "last_frame_utc": "2026-10-14T19:05:19.040546+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 372,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.5432,
+              "max": 1.598
+            },
+            "filt": {
+              "n": 372,
+              "min": 1.2692,
+              "median": 1.4618,
+              "p95": 1.5561,
+              "max": 1.5779
+            },
+            "base": {
+              "n": 372,
+              "min": 1.4779,
+              "median": 1.4885,
+              "p95": 1.4935,
+              "max": 1.494
+            },
+            "threshold": {
+              "n": 372,
+              "min": 0.4535,
+              "median": 0.5315,
+              "p95": 0.6081,
+              "max": 0.6081
+            },
+            "noise_p95": {
+              "n": 372,
+              "min": 0.1814,
+              "median": 0.2126,
+              "p95": 0.2432,
+              "max": 0.2432
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 3,
+      "phase": "first_contact",
+      "start_utc": "2026-10-14T19:05:19.072000+00:00",
+      "end_utc": "2026-10-14T19:05:29.082000+00:00",
+      "stable_start_utc": "2026-10-14T19:05:22.072000+00:00",
+      "stable_end_utc": "2026-10-14T19:05:27.082000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:05:19.235+00:00",
+        "host_monotonic_ns": 104490269287300,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-cross-EC5-black-first-03",
+          "plant_node": "EB5",
+          "black_node": "EC5",
+          "condition": "cross_pair",
+          "contact_order": "black_first",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 11,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 6,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:05:14.466Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "1. SOLO NEGRO EC5",
+        "instruction": "Toca SOLO la punta negra marcada EC5 con una mano durante 10 segundos. La otra mano queda libre y no toca ninguna planta. Manten este negro sujeto hasta que termine la fase de ambos contactos.",
+        "spoken": "Primero toca solo el negro EC5. No toques la planta."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 237,
+          "stable_frames": 121,
+          "max_gap_s": 0.100836,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.0336,
+            "trailing_gap_s": 0.016515,
+            "max_gap_including_boundaries_s": 0.100836,
+            "first_frame_utc": "2026-10-14T19:05:19.105600+00:00",
+            "last_frame_utc": "2026-10-14T19:05:29.065485+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.012642,
+            "trailing_gap_s": 0.036804,
+            "max_gap_including_boundaries_s": 0.100836,
+            "first_frame_utc": "2026-10-14T19:05:22.084642+00:00",
+            "last_frame_utc": "2026-10-14T19:05:27.045196+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.8481012658227848,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "base": {
+              "n": 121,
+              "min": 0.2323,
+              "median": 0.2323,
+              "p95": 0.2323,
+              "max": 0.2323
+            },
+            "rms_mean": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy_base": {
+              "n": 121,
+              "min": 0.4224,
+              "median": 0.4224,
+              "p95": 0.4224,
+              "max": 0.4224
+            },
+            "adc_peak": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "samples": {
+              "n": 121,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 121,
+              "min": 74.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 79.0
+            },
+            "score": {
+              "n": 121,
+              "min": 4.116,
+              "median": 4.116,
+              "p95": 4.116,
+              "max": 4.116
+            },
+            "threshold": {
+              "n": 121,
+              "min": 0.0564,
+              "median": 0.0564,
+              "p95": 0.0564,
+              "max": 0.0564
+            },
+            "noise_p95": {
+              "n": 121,
+              "min": 0.0188,
+              "median": 0.0188,
+              "p95": 0.0188,
+              "max": 0.0188
+            },
+            "transition_resets": {
+              "n": 121,
+              "min": 14.0,
+              "median": 14.0,
+              "p95": 14.0,
+              "max": 14.0
+            }
+          },
+          "midi_note_ons": 5,
+          "midi_note_pitches": [
+            52,
+            53,
+            59,
+            65,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 5,
+            "min": 52,
+            "median": 59,
+            "p95": 65,
+            "max": 71
+          },
+          "midi_note_duration_s": 8.46716,
+          "stable_midi_note_duration_s": 5.01
+        },
+        "EC5": {
+          "frames": 237,
+          "stable_frames": 121,
+          "max_gap_s": 0.084286,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.016005,
+            "trailing_gap_s": 0.040228,
+            "max_gap_including_boundaries_s": 0.084286,
+            "first_frame_utc": "2026-10-14T19:05:19.088005+00:00",
+            "last_frame_utc": "2026-10-14T19:05:29.041772+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.034266,
+            "trailing_gap_s": 0.014643,
+            "max_gap_including_boundaries_s": 0.084286,
+            "first_frame_utc": "2026-10-14T19:05:22.106266+00:00",
+            "last_frame_utc": "2026-10-14T19:05:27.067357+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.8523206751054853,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "base": {
+              "n": 121,
+              "min": 0.5459,
+              "median": 0.5459,
+              "p95": 0.5459,
+              "max": 0.5459
+            },
+            "rms_mean": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy_base": {
+              "n": 121,
+              "min": 0.4569,
+              "median": 0.4569,
+              "p95": 0.4569,
+              "max": 0.4569
+            },
+            "adc_peak": {
+              "n": 121,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "samples": {
+              "n": 121,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 121,
+              "min": 74.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 78.0
+            },
+            "score": {
+              "n": 121,
+              "min": 2.343,
+              "median": 2.343,
+              "p95": 2.343,
+              "max": 2.343
+            },
+            "threshold": {
+              "n": 121,
+              "min": 0.233,
+              "median": 0.233,
+              "p95": 0.233,
+              "max": 0.233
+            },
+            "noise_p95": {
+              "n": 121,
+              "min": 0.0777,
+              "median": 0.0777,
+              "p95": 0.0777,
+              "max": 0.0777
+            },
+            "transition_resets": {
+              "n": 121,
+              "min": 10.0,
+              "median": 10.0,
+              "p95": 10.0,
+              "max": 10.0
+            }
+          },
+          "midi_note_ons": 4,
+          "midi_note_pitches": [
+            55,
+            59,
+            65,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 4,
+            "min": 55,
+            "median": 62.0,
+            "p95": 65,
+            "max": 71
+          },
+          "midi_note_duration_s": 8.503926,
+          "stable_midi_note_duration_s": 5.01
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 12,
+          "midi_note_pitches": [
+            46,
+            47,
+            79
+          ],
+          "midi_pitch_summary": {
+            "n": 12,
+            "min": 46,
+            "median": 46.5,
+            "p95": 47,
+            "max": 79
+          },
+          "midi_note_duration_s": 3.298949,
+          "stable_midi_note_duration_s": 1.176796
+        },
+        "EE5": {
+          "frames": 239,
+          "stable_frames": 119,
+          "max_gap_s": 0.126373,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.000117,
+            "trailing_gap_s": 0.005274,
+            "max_gap_including_boundaries_s": 0.126373,
+            "first_frame_utc": "2026-10-14T19:05:19.072117+00:00",
+            "last_frame_utc": "2026-10-14T19:05:29.076726+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.058661,
+            "trailing_gap_s": 0.012779,
+            "max_gap_including_boundaries_s": 0.126373,
+            "first_frame_utc": "2026-10-14T19:05:22.130661+00:00",
+            "last_frame_utc": "2026-10-14T19:05:27.069221+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.8200836820083682,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 119,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 119,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "base": {
+              "n": 119,
+              "min": 1.4224,
+              "median": 1.4224,
+              "p95": 1.4224,
+              "max": 1.4224
+            },
+            "threshold": {
+              "n": 119,
+              "min": 0.6337,
+              "median": 0.6337,
+              "p95": 0.6337,
+              "max": 0.6337
+            },
+            "noise_p95": {
+              "n": 119,
+              "min": 0.2535,
+              "median": 0.2535,
+              "p95": 0.2535,
+              "max": 0.2535
+            }
+          },
+          "midi_note_ons": 10,
+          "midi_note_pitches": [
+            32,
+            36,
+            42,
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 10,
+            "min": 32,
+            "median": 57.0,
+            "p95": 78,
+            "max": 84
+          },
+          "midi_note_duration_s": 8.264679,
+          "stable_midi_note_duration_s": 5.004164
+        },
+        "EF5": {
+          "frames": 238,
+          "stable_frames": 119,
+          "max_gap_s": 0.112059,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.008355,
+            "trailing_gap_s": 0.046261,
+            "max_gap_including_boundaries_s": 0.112059,
+            "first_frame_utc": "2026-10-14T19:05:19.080355+00:00",
+            "last_frame_utc": "2026-10-14T19:05:29.035739+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.043855,
+            "trailing_gap_s": 0.007894,
+            "max_gap_including_boundaries_s": 0.112059,
+            "first_frame_utc": "2026-10-14T19:05:22.115855+00:00",
+            "last_frame_utc": "2026-10-14T19:05:27.074106+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.819327731092437,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 119,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0266
+            },
+            "filt": {
+              "n": 119,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0113
+            },
+            "base": {
+              "n": 119,
+              "min": 1.4782,
+              "median": 1.4782,
+              "p95": 1.4782,
+              "max": 1.4782
+            },
+            "threshold": {
+              "n": 119,
+              "min": 0.4631,
+              "median": 0.468,
+              "p95": 0.4729,
+              "max": 0.4754
+            },
+            "noise_p95": {
+              "n": 119,
+              "min": 0.1852,
+              "median": 0.1872,
+              "p95": 0.1892,
+              "max": 0.1902
+            }
+          },
+          "midi_note_ons": 10,
+          "midi_note_pitches": [
+            32,
+            36,
+            42,
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 10,
+            "min": 32,
+            "median": 57.0,
+            "p95": 78,
+            "max": 84
+          },
+          "midi_note_duration_s": 8.198466,
+          "stable_midi_note_duration_s": 4.949254
+        }
+      }
+    },
+    {
+      "repetition": 3,
+      "phase": "contact",
+      "start_utc": "2026-10-14T19:05:29.082000+00:00",
+      "end_utc": "2026-10-14T19:05:49.106000+00:00",
+      "stable_start_utc": "2026-10-14T19:05:32.082000+00:00",
+      "stable_end_utc": "2026-10-14T19:05:47.106000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:05:29.420+00:00",
+        "host_monotonic_ns": 104500454492300,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-cross-EC5-black-first-03",
+          "plant_node": "EB5",
+          "black_node": "EC5",
+          "condition": "cross_pair",
+          "contact_order": "black_first",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 12,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 6,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:05:24.537Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "2. AGREGA PLANTA EB5",
+        "instruction": "2. SIN SOLTAR la punta negra marcada EC5, agrega la PLANTA identificada por la etiqueta ROJA EB5 con la otra mano. Manten ambos contactos durante 20 segundos. Tu mano toca la planta; la pinza roja queda fijada. La planta con etiqueta roja EC5 queda SIN TOCAR durante todo el ensayo.",
+        "spoken": "Sin soltar el negro EC5, agrega el contacto con la planta EB5 usando la otra mano."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 481,
+          "stable_frames": 360,
+          "max_gap_s": 0.104676,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.025821,
+            "trailing_gap_s": 0.026456,
+            "max_gap_including_boundaries_s": 0.104676,
+            "first_frame_utc": "2026-10-14T19:05:29.107821+00:00",
+            "last_frame_utc": "2026-10-14T19:05:49.079544+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.034513,
+            "trailing_gap_s": 0.002397,
+            "max_gap_including_boundaries_s": 0.104676,
+            "first_frame_utc": "2026-10-14T19:05:32.116513+00:00",
+            "last_frame_utc": "2026-10-14T19:05:47.103603+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 1.0,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 360,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 1.1081
+            },
+            "filt": {
+              "n": 360,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 1.6645
+            },
+            "base": {
+              "n": 360,
+              "min": 0.2323,
+              "median": 0.2323,
+              "p95": 0.2323,
+              "max": 0.2323
+            },
+            "rms_mean": {
+              "n": 360,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 1.6329
+            },
+            "occupancy": {
+              "n": 360,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 1.0
+            },
+            "occupancy_base": {
+              "n": 360,
+              "min": 0.4224,
+              "median": 0.4224,
+              "p95": 0.4224,
+              "max": 0.4224
+            },
+            "adc_peak": {
+              "n": 360,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 2590.0
+            },
+            "samples": {
+              "n": 360,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 360,
+              "min": 74.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 360,
+              "min": 0.635,
+              "median": 4.116,
+              "p95": 4.116,
+              "max": 25.37
+            },
+            "threshold": {
+              "n": 360,
+              "min": 0.0564,
+              "median": 0.0564,
+              "p95": 0.0564,
+              "max": 0.0564
+            },
+            "noise_p95": {
+              "n": 360,
+              "min": 0.0188,
+              "median": 0.0188,
+              "p95": 0.0188,
+              "max": 0.0188
+            },
+            "transition_resets": {
+              "n": 360,
+              "min": 14.0,
+              "median": 14.0,
+              "p95": 14.0,
+              "max": 14.0
+            }
+          },
+          "midi_note_ons": 4,
+          "midi_note_pitches": [
+            52,
+            53,
+            54
+          ],
+          "midi_pitch_summary": {
+            "n": 4,
+            "min": 52,
+            "median": 53.0,
+            "p95": 53,
+            "max": 54
+          },
+          "midi_note_duration_s": 20.017495,
+          "stable_midi_note_duration_s": 15.017495
+        },
+        "EC5": {
+          "frames": 486,
+          "stable_frames": 365,
+          "max_gap_s": 0.11856,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.002454,
+            "trailing_gap_s": 0.017755,
+            "max_gap_including_boundaries_s": 0.11856,
+            "first_frame_utc": "2026-10-14T19:05:29.084454+00:00",
+            "last_frame_utc": "2026-10-14T19:05:49.088245+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.012061,
+            "trailing_gap_s": 0.000966,
+            "max_gap_including_boundaries_s": 0.11856,
+            "first_frame_utc": "2026-10-14T19:05:32.094061+00:00",
+            "last_frame_utc": "2026-10-14T19:05:47.105034+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 1.0,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "base": {
+              "n": 365,
+              "min": 0.5459,
+              "median": 0.5459,
+              "p95": 0.5459,
+              "max": 0.5459
+            },
+            "rms_mean": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy_base": {
+              "n": 365,
+              "min": 0.4569,
+              "median": 0.4569,
+              "p95": 0.4569,
+              "max": 0.4569
+            },
+            "adc_peak": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "samples": {
+              "n": 365,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 365,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 365,
+              "min": 2.343,
+              "median": 2.343,
+              "p95": 2.343,
+              "max": 2.343
+            },
+            "threshold": {
+              "n": 365,
+              "min": 0.233,
+              "median": 0.233,
+              "p95": 0.233,
+              "max": 0.233
+            },
+            "noise_p95": {
+              "n": 365,
+              "min": 0.0777,
+              "median": 0.0777,
+              "p95": 0.0777,
+              "max": 0.0777
+            },
+            "transition_resets": {
+              "n": 365,
+              "min": 10.0,
+              "median": 10.0,
+              "p95": 10.0,
+              "max": 10.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 20.024,
+          "stable_midi_note_duration_s": 15.024
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 1,
+          "midi_note_pitches": [
+            46
+          ],
+          "midi_pitch_summary": {
+            "n": 1,
+            "min": 46,
+            "median": 46,
+            "p95": 46,
+            "max": 46
+          },
+          "midi_note_duration_s": 1.303607,
+          "stable_midi_note_duration_s": 1.027846
+        },
+        "EE5": {
+          "frames": 499,
+          "stable_frames": 375,
+          "max_gap_s": 0.122283,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.034092,
+            "trailing_gap_s": 0.004353,
+            "max_gap_including_boundaries_s": 0.122283,
+            "first_frame_utc": "2026-10-14T19:05:29.116092+00:00",
+            "last_frame_utc": "2026-10-14T19:05:49.101647+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.002153,
+            "trailing_gap_s": 0.007369,
+            "max_gap_including_boundaries_s": 0.122283,
+            "first_frame_utc": "2026-10-14T19:05:32.084153+00:00",
+            "last_frame_utc": "2026-10-14T19:05:47.098631+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 1.0,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 375,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0129
+            },
+            "filt": {
+              "n": 375,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0073
+            },
+            "base": {
+              "n": 375,
+              "min": 1.4224,
+              "median": 1.4224,
+              "p95": 1.4224,
+              "max": 1.4224
+            },
+            "threshold": {
+              "n": 375,
+              "min": 0.6337,
+              "median": 0.6337,
+              "p95": 0.6337,
+              "max": 0.6337
+            },
+            "noise_p95": {
+              "n": 375,
+              "min": 0.2535,
+              "median": 0.2535,
+              "p95": 0.2535,
+              "max": 0.2535
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 20.024,
+          "stable_midi_note_duration_s": 15.024
+        },
+        "EF5": {
+          "frames": 500,
+          "stable_frames": 375,
+          "max_gap_s": 0.103304,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.002116,
+            "trailing_gap_s": 0.007122,
+            "max_gap_including_boundaries_s": 0.103304,
+            "first_frame_utc": "2026-10-14T19:05:29.084116+00:00",
+            "last_frame_utc": "2026-10-14T19:05:49.098878+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.001954,
+            "trailing_gap_s": 0.008198,
+            "max_gap_including_boundaries_s": 0.103304,
+            "first_frame_utc": "2026-10-14T19:05:32.083954+00:00",
+            "last_frame_utc": "2026-10-14T19:05:47.097802+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 1.0,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 375,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 375,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "base": {
+              "n": 375,
+              "min": 1.4782,
+              "median": 1.4782,
+              "p95": 1.4782,
+              "max": 1.4782
+            },
+            "threshold": {
+              "n": 375,
+              "min": 0.4881,
+              "median": 0.5063,
+              "p95": 0.5199,
+              "max": 0.5199
+            },
+            "noise_p95": {
+              "n": 375,
+              "min": 0.1952,
+              "median": 0.2025,
+              "p95": 0.208,
+              "max": 0.208
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 20.024,
+          "stable_midi_note_duration_s": 15.024
+        }
+      }
+    },
+    {
+      "repetition": 3,
+      "phase": "release",
+      "start_utc": "2026-10-14T19:05:49.106000+00:00",
+      "end_utc": "2026-10-14T19:06:19.135000+00:00",
+      "stable_start_utc": "2026-10-14T19:06:04.135000+00:00",
+      "stable_end_utc": "2026-10-14T19:06:19.135000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:05:49.211+00:00",
+        "host_monotonic_ns": 104520245179500,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EB5-cross-EC5-black-first-03",
+          "plant_node": "EB5",
+          "black_node": "EC5",
+          "condition": "cross_pair",
+          "contact_order": "black_first",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 13,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 6,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:05:44.445Z",
+        "visibility": "visible"
+      },
+      "instruction": {
+        "title": "SUELTA AMBOS",
+        "instruction": "SUELTA AMBOS: retira una mano de la planta EB5 y la otra de la punta negra EC5. Deja ambas manos libres y todo quieto durante los 30 segundos.",
+        "spoken": "Suelta ambos: planta y punta negra. Deja ambas manos libres."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 719,
+          "stable_frames": 360,
+          "max_gap_s": 0.086615,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.018548,
+            "trailing_gap_s": 0.020627,
+            "max_gap_including_boundaries_s": 0.086615,
+            "first_frame_utc": "2026-10-14T19:05:49.124548+00:00",
+            "last_frame_utc": "2026-10-14T19:06:19.114373+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.005186,
+            "trailing_gap_s": 0.020627,
+            "max_gap_including_boundaries_s": 0.086615,
+            "first_frame_utc": "2026-10-14T19:06:04.140186+00:00",
+            "last_frame_utc": "2026-10-14T19:06:19.114373+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.048678720445062586,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 360,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.494,
+              "max": 0.5029
+            },
+            "filt": {
+              "n": 360,
+              "min": 0.2129,
+              "median": 0.2304,
+              "p95": 0.2434,
+              "max": 0.2495
+            },
+            "base": {
+              "n": 360,
+              "min": 0.2202,
+              "median": 0.226,
+              "p95": 0.2279,
+              "max": 0.2282
+            },
+            "rms_mean": {
+              "n": 360,
+              "min": 0.1183,
+              "median": 0.13340000000000002,
+              "p95": 0.1485,
+              "max": 0.1556
+            },
+            "occupancy": {
+              "n": 360,
+              "min": 0.32,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.48
+            },
+            "occupancy_base": {
+              "n": 360,
+              "min": 0.4134,
+              "median": 0.417,
+              "p95": 0.4197,
+              "max": 0.42
+            },
+            "adc_peak": {
+              "n": 360,
+              "min": 585.0,
+              "median": 621.0,
+              "p95": 624.0,
+              "max": 627.0
+            },
+            "samples": {
+              "n": 360,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 360,
+              "min": 74.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 360,
+              "min": 0.0,
+              "median": 0.029,
+              "p95": 0.063,
+              "max": 0.093
+            },
+            "threshold": {
+              "n": 360,
+              "min": 0.2054,
+              "median": 0.2942,
+              "p95": 0.4002,
+              "max": 0.4212
+            },
+            "noise_p95": {
+              "n": 360,
+              "min": 0.0685,
+              "median": 0.0981,
+              "p95": 0.1334,
+              "max": 0.1404
+            },
+            "transition_resets": {
+              "n": 360,
+              "min": 15.0,
+              "median": 15.0,
+              "p95": 15.0,
+              "max": 15.0
+            }
+          },
+          "midi_note_ons": 2,
+          "midi_note_pitches": [
+            53,
+            54
+          ],
+          "midi_pitch_summary": {
+            "n": 2,
+            "min": 53,
+            "median": 53.5,
+            "p95": 53,
+            "max": 54
+          },
+          "midi_note_duration_s": 1.552682,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 715,
+          "stable_frames": 357,
+          "max_gap_s": 0.094673,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.032978,
+            "trailing_gap_s": 0.048192,
+            "max_gap_including_boundaries_s": 0.094673,
+            "first_frame_utc": "2026-10-14T19:05:49.138978+00:00",
+            "last_frame_utc": "2026-10-14T19:06:19.086808+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.014228,
+            "trailing_gap_s": 0.048192,
+            "max_gap_including_boundaries_s": 0.094673,
+            "first_frame_utc": "2026-10-14T19:06:04.149228+00:00",
+            "last_frame_utc": "2026-10-14T19:06:19.086808+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.04895104895104895,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.1451,
+              "max": 1.1991
+            },
+            "filt": {
+              "n": 357,
+              "min": 0.5165,
+              "median": 0.5617,
+              "p95": 0.5882,
+              "max": 0.6133
+            },
+            "base": {
+              "n": 357,
+              "min": 0.5362,
+              "median": 0.5488,
+              "p95": 0.554,
+              "max": 0.5546
+            },
+            "rms_mean": {
+              "n": 357,
+              "min": 0.2993,
+              "median": 0.3423,
+              "p95": 0.3727,
+              "max": 0.3935
+            },
+            "occupancy": {
+              "n": 357,
+              "min": 0.4,
+              "median": 0.4615,
+              "p95": 0.5,
+              "max": 0.5385
+            },
+            "occupancy_base": {
+              "n": 357,
+              "min": 0.4506,
+              "median": 0.4574,
+              "p95": 0.4588,
+              "max": 0.459
+            },
+            "adc_peak": {
+              "n": 357,
+              "min": 1365.0,
+              "median": 1439.0,
+              "p95": 1469.0,
+              "max": 1490.0
+            },
+            "samples": {
+              "n": 357,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 357,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.029,
+              "p95": 0.068,
+              "max": 0.122
+            },
+            "threshold": {
+              "n": 357,
+              "min": 0.4362,
+              "median": 0.6247,
+              "p95": 0.8498,
+              "max": 0.8945
+            },
+            "noise_p95": {
+              "n": 357,
+              "min": 0.1454,
+              "median": 0.2082,
+              "p95": 0.2833,
+              "max": 0.2982
+            },
+            "transition_resets": {
+              "n": 357,
+              "min": 11.0,
+              "median": 11.0,
+              "p95": 11.0,
+              "max": 11.0
+            }
+          },
+          "midi_note_ons": 2,
+          "midi_note_pitches": [
+            55,
+            56
+          ],
+          "midi_pitch_summary": {
+            "n": 2,
+            "min": 55,
+            "median": 55.5,
+            "p95": 55,
+            "max": 56
+          },
+          "midi_note_duration_s": 1.55423,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 23,
+          "midi_note_pitches": [
+            46,
+            47,
+            49,
+            50,
+            51,
+            52,
+            53,
+            57,
+            60,
+            65,
+            66,
+            71,
+            73,
+            79,
+            81,
+            83,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 23,
+            "min": 46,
+            "median": 60,
+            "p95": 84,
+            "max": 84
+          },
+          "midi_note_duration_s": 29.02919,
+          "stable_midi_note_duration_s": 15.0
+        },
+        "EE5": {
+          "frames": 744,
+          "stable_frames": 371,
+          "max_gap_s": 0.077942,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.038511,
+            "trailing_gap_s": 0.045558,
+            "max_gap_including_boundaries_s": 0.077942,
+            "first_frame_utc": "2026-10-14T19:05:49.144511+00:00",
+            "last_frame_utc": "2026-10-14T19:06:19.089442+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.01863,
+            "trailing_gap_s": 0.045558,
+            "max_gap_including_boundaries_s": 0.077295,
+            "first_frame_utc": "2026-10-14T19:06:04.153630+00:00",
+            "last_frame_utc": "2026-10-14T19:06:19.089442+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.05510752688172043,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 371,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.457,
+              "max": 1.5239
+            },
+            "filt": {
+              "n": 371,
+              "min": 1.1774,
+              "median": 1.3772,
+              "p95": 1.5013,
+              "max": 1.5158
+            },
+            "base": {
+              "n": 371,
+              "min": 1.4345,
+              "median": 1.4504,
+              "p95": 1.4695,
+              "max": 1.47
+            },
+            "threshold": {
+              "n": 371,
+              "min": 0.7025,
+              "median": 0.7298,
+              "p95": 0.7359,
+              "max": 0.7363
+            },
+            "noise_p95": {
+              "n": 371,
+              "min": 0.281,
+              "median": 0.2919,
+              "p95": 0.2944,
+              "max": 0.2945
+            }
+          },
+          "midi_note_ons": 1,
+          "midi_note_pitches": [
+            38
+          ],
+          "midi_pitch_summary": {
+            "n": 1,
+            "min": 38,
+            "median": 38,
+            "p95": 38,
+            "max": 38
+          },
+          "midi_note_duration_s": 1.73648,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 744,
+          "stable_frames": 372,
+          "max_gap_s": 0.086857,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.038274,
+            "trailing_gap_s": 0.031556,
+            "max_gap_including_boundaries_s": 0.086857,
+            "first_frame_utc": "2026-10-14T19:05:49.144274+00:00",
+            "last_frame_utc": "2026-10-14T19:06:19.103444+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.009045,
+            "trailing_gap_s": 0.031556,
+            "max_gap_including_boundaries_s": 0.085085,
+            "first_frame_utc": "2026-10-14T19:06:04.144045+00:00",
+            "last_frame_utc": "2026-10-14T19:06:19.103444+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.05510752688172043,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 372,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.5593,
+              "max": 1.5859
+            },
+            "filt": {
+              "n": 372,
+              "min": 0.8784,
+              "median": 1.4425,
+              "p95": 1.5771,
+              "max": 1.5819
+            },
+            "base": {
+              "n": 372,
+              "min": 1.5585,
+              "median": 1.58465,
+              "p95": 1.6106,
+              "max": 1.6138
+            },
+            "threshold": {
+              "n": 372,
+              "min": 1.1934,
+              "median": 1.7331,
+              "p95": 2.251,
+              "max": 2.2623
+            },
+            "noise_p95": {
+              "n": 372,
+              "min": 0.4773,
+              "median": 0.6932,
+              "p95": 0.9004,
+              "max": 0.9049
+            }
+          },
+          "midi_note_ons": 2,
+          "midi_note_pitches": [
+            38,
+            44
+          ],
+          "midi_pitch_summary": {
+            "n": 2,
+            "min": 38,
+            "median": 41.0,
+            "p95": 38,
+            "max": 44
+          },
+          "midi_note_duration_s": 1.714844,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    }
+  ],
+  "runtime": {
+    "EB5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EC5": {
+      "samples": 238,
+      "statuses": [
+        "degraded",
+        "offline",
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "ED5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EE5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EF5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    }
+  },
+  "limitations": [
+    "Physical onset is operator-followed cue, not electronically instrumented.",
+    "Analogue scales are native firmware scales, not calibrated signed voltage.",
+    "MIDI note-duration estimate is not an audio recording.",
+    "Compare native sensor metrics within a node; installed firmware differs between nodes.",
+    "Reported floor contact and footwear are environmental labels, not a measured body-to-earth impedance or proof of electrical isolation."
+  ],
+  "operator_environment": {
+    "floor_material": "synthetic_grass",
+    "floor_moisture": "slightly_damp",
+    "moisture_source": "Direct operator observation; not a measured moisture value",
+    "footwear": "shoes",
+    "body_to_earth_impedance": "not_measured",
+    "electrical_isolation": "not_verified",
+    "weather_context_file": "weather_context.json",
+    "posture": "seated_on_floor_through_trousers",
+    "metadata_source": "operator_environment.json",
+    "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+    "footwear_source": "Operator selection at trial start"
+  },
+  "validity": {
+    "operator_confirmed": true,
+    "valid_contact_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "complete_recovery_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+    "operator_incident_notes": "Sucedió al igual que el los ensayos de primero negro después rojo, suena al tocar negro pero no percibo un cambio al manipular planta diferente al previo",
+    "assessment": "all_contact_phases_confirmed",
+    "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons"
+  },
+  "data_quality": {
+    "coverage_gap_flag_s": 1.0,
+    "meaning": "Flags missing host-received telemetry, including phase boundaries; does not prove a node reboot or missing analogue response.",
+    "sensor_coverage_warnings": [
+      {
+        "node": "EC5",
+        "repetition": 0,
+        "phase": "preparation",
+        "coverage": {
+          "leading_gap_s": null,
+          "trailing_gap_s": null,
+          "max_gap_including_boundaries_s": 10.016,
+          "first_frame_utc": null,
+          "last_frame_utc": null,
+          "no_frames": true
+        }
+      },
+      {
+        "node": "EC5",
+        "repetition": 1,
+        "phase": "rest",
+        "coverage": {
+          "leading_gap_s": 11.715212,
+          "trailing_gap_s": 0.032217,
+          "max_gap_including_boundaries_s": 11.715212,
+          "first_frame_utc": "2026-10-14T19:02:30.624212+00:00",
+          "last_frame_utc": "2026-10-14T19:02:38.898783+00:00",
+          "no_frames": false
+        }
+      }
+    ]
+  },
+  "sensor_metric_semantics": {
+    "recorded_at_utc": "2026-10-14T19:53:36.524+00:00",
+    "verified_firmware": "1.1.13-box5-touch-pilot",
+    "applicable_nodes": [
+      "EB5",
+      "EC5"
+    ],
+    "source_files": [
+      "diagnostics/eb5_touch_pilot_20261012/pilot.patch",
+      "diagnostics/eb5_touch_pilot_20261012/adaptive_touch_pilot.h"
+    ],
+    "verified_assignments": {
+      "rms_mean": "g_pilotMean = g_pilotAcquisition.mean: arithmetic ADC-window mean",
+      "filt": "g_plantSmoothV = feature.rms: ADC-window RMS used by the detector",
+      "base": "g_plantBaselineV = g_pilotDetector.referenceRms: RMS reference",
+      "threshold": "g_pilotDetector.thresholdRms",
+      "score": "g_pilotDetector.amplitudeScore: absolute RMS-reference difference / RMS threshold",
+      "noise_p95": "g_pilotDetector.noiseRms",
+      "occupancy": "fraction of acquired ADC samples above zero",
+      "transition_resets": "Detector medium-transition recalibrations; not a board reboot counter"
+    },
+    "scale": "Nominal ADC conversion, not calibrated signed analogue voltage.",
+    "other_firmware": "Do not apply these assignments to EE5/EF5 without separately verifying their implementation.",
+    "historical_reports": "Earlier derived RMS labels referring to rms_mean describe arithmetic mean. Numerical raw readings are unchanged."
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "trial_id": "B-EC5-cross-EB5-black-first-01",
+  "recorded_at_utc": "2026-10-14T20:10:04.001959+00:00",
+  "validity": {
+    "operator_confirmed": true,
+    "valid_contact_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "complete_recovery_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+    "operator_incident_notes": "Lo mismo que en ocasiones pasadas al tocar planta no se detecta cambio perceptible ",
+    "assessment": "all_contact_phases_confirmed",
+    "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons"
+  },
+  "operator_environment": {
+    "floor_material": "synthetic_grass",
+    "floor_moisture": "slightly_damp",
+    "moisture_source": "Direct operator observation; not a measured moisture value",
+    "footwear": "shoes",
+    "body_to_earth_impedance": "not_measured",
+    "electrical_isolation": "not_verified",
+    "weather_context_file": "weather_context.json",
+    "posture": "seated_on_floor_through_trousers",
+    "metadata_source": "operator_environment.json",
+    "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+    "footwear_source": "Operator selection at trial start"
+  },
+  "sensor_metric_semantics": {
+    "recorded_at_utc": "2026-10-14T19:53:36.524+00:00",
+    "verified_firmware": "1.1.13-box5-touch-pilot",
+    "applicable_nodes": [
+      "EB5",
+      "EC5"
+    ],
+    "source_files": [
+      "diagnostics/eb5_touch_pilot_20261012/pilot.patch",
+      "diagnostics/eb5_touch_pilot_20261012/adaptive_touch_pilot.h"
+    ],
+    "verified_assignments": {
+      "rms_mean": "g_pilotMean = g_pilotAcquisition.mean: arithmetic ADC-window mean",
+      "filt": "g_plantSmoothV = feature.rms: ADC-window RMS used by the detector",
+      "base": "g_plantBaselineV = g_pilotDetector.referenceRms: RMS reference",
+      "threshold": "g_pilotDetector.thresholdRms",
+      "score": "g_pilotDetector.amplitudeScore: absolute RMS-reference difference / RMS threshold",
+      "noise_p95": "g_pilotDetector.noiseRms",
+      "occupancy": "fraction of acquired ADC samples above zero",
+      "transition_resets": "Detector medium-transition recalibrations; not a board reboot counter"
+    },
+    "scale": "Nominal ADC conversion, not calibrated signed analogue voltage.",
+    "other_firmware": "Do not apply these assignments to EE5/EF5 without separately verifying their implementation.",
+    "historical_reports": "Earlier derived RMS labels referring to rms_mean describe arithmetic mean. Numerical raw readings are unchanged."
+  },
+  "per_repetition": [
+    {
+      "repetition": 1,
+      "EC5_rest_ADC_RMS_median": 0.286,
+      "EC5_black_only_ADC_RMS_median": 0.0,
+      "black_only_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "EC5_paired_ADC_RMS_median": 0.0,
+      "EC5_paired_note_ons": 0,
+      "EC5_paired_MIDI_held_s": 20.012,
+      "EC5_release_MIDI_held_s": 1.45,
+      "EC5_recovered_activation": 0.0
+    },
+    {
+      "repetition": 2,
+      "EC5_rest_ADC_RMS_median": 0.313,
+      "EC5_black_only_ADC_RMS_median": 0.0,
+      "black_only_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "EC5_paired_ADC_RMS_median": 0.0,
+      "EC5_paired_note_ons": 0,
+      "EC5_paired_MIDI_held_s": 20.031,
+      "EC5_release_MIDI_held_s": 1.93,
+      "EC5_recovered_activation": 0.0
+    },
+    {
+      "repetition": 3,
+      "EC5_rest_ADC_RMS_median": 0.3349,
+      "EC5_black_only_ADC_RMS_median": 0.0,
+      "black_only_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "EC5_paired_ADC_RMS_median": 0.0,
+      "EC5_paired_note_ons": 0,
+      "EC5_paired_MIDI_held_s": 20.023,
+      "EC5_release_MIDI_held_s": 2.012,
+      "EC5_recovered_activation": 0.0
+    }
+  ],
+  "operator_audio": "Black EB5 alone audible in all three repetitions; adding plant EC5 remains audible but no perceptible extra change; continuous sound and silence after releasing; no incidents reported.",
+  "runtime": {
+    "EB5": {
+      "samples": 239,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EC5": {
+      "samples": 239,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "ED5": {
+      "samples": 239,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EE5": {
+      "samples": 239,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EF5": {
+      "samples": 239,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    }
+  },
+  "data_quality": {
+    "coverage_gap_flag_s": 1.0,
+    "operator_ack_delay_flag_s": 1.0,
+    "meaning": "Flags missing host-received telemetry, including phase boundaries; does not prove a node reboot or missing analogue response.",
+    "sensor_coverage_warnings": [],
+    "operator_ack_delay_warnings": []
+  },
+  "interpretation": "Contact with black EB5 causes NoteOns in all five nodes before plant EC5 contact. EC5 RMS/occupancy medians are zero in settled black-only and paired windows. EC5 keeps a MIDI note held throughout each paired window with zero additional EC5 NoteOns; sustained sound is not evidence of new local plant variation.",
+  "comparison_to_own_black": "Same qualitative pattern as EC5 own-black-first trial: initial shared activation at black contact and no clear added plant effect. Baselines differ and trials are sequential; do not claim electrical equivalence or a causal difference between black cables.",
+  "limitations": [
+    "Scheduled MIDI durations are not exact physical contact or audio durations.",
+    "Zero unsigned ADC summaries are not proof of zero signed analogue voltage or identical waveforms.",
+    "Contact with only two of five labelled black electrodes has been tested directly so far."
+  ],
+  "next_trial": {
+    "trial_id": "B-EC5-cross-EB5-plant-first-01",
+    "plant_node": "EC5",
+    "black_node": "EB5",
+    "contact_order": "plant_first"
+  },
+  "changes_to_nodes_or_Ableton": false
+}

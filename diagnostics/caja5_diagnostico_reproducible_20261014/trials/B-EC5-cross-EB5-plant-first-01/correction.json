@@ -1,0 +1,14 @@
+{
+  "at_utc": "2026-10-14T20:23:33.025911+00:00",
+  "source": "Direct operator clarification in current chat",
+  "user_statement": "Sí, sentado y con los mismos zapatos",
+  "void_planned_trial": false,
+  "reason": "Footwear selection was left unknown in the timer. Operator retrospectively confirms same shoes and seated posture.",
+  "operator_environment_correction": {
+    "footwear": "shoes",
+    "posture": "seated_on_floor_through_trousers",
+    "original_selector_footwear": "unknown",
+    "footwear_source": "Direct operator confirmation in chat after trial",
+    "clarified_at_utc": "2026-10-14T20:23:33.025911+00:00"
+  }
+}

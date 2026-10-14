@@ -1,0 +1,5157 @@
+{
+  "trial_id": "B-EC5-black-only-01",
+  "trial": {
+    "trial_id": "B-EC5-black-only-01",
+    "plant_node": "EC5",
+    "black_node": "EC5",
+    "condition": "black_only",
+    "operator_environment": {
+      "floor_material": "synthetic_grass",
+      "floor_moisture": "slightly_damp",
+      "moisture_source": "Direct operator observation; not a measured moisture value",
+      "footwear": "shoes",
+      "body_to_earth_impedance": "not_measured",
+      "electrical_isolation": "not_verified",
+      "weather_context_file": "weather_context.json",
+      "posture": "seated_on_floor_through_trousers",
+      "metadata_source": "operator_environment.json",
+      "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+      "footwear_source": "Operator selection at trial start"
+    }
+  },
+  "start_utc": "2026-10-14T19:55:26.781000+00:00",
+  "end_utc": "2026-10-14T19:59:06.931000+00:00",
+  "actual_duration_s": 220.15,
+  "completed": true,
+  "timer_completed": true,
+  "timer_end_event": {
+    "at_utc": "2026-10-14T19:59:06.931+00:00",
+    "host_monotonic_ns": 107717965773900,
+    "kind": "trial_completed",
+    "trial": {
+      "trial_id": "B-EC5-black-only-01",
+      "plant_node": "EC5",
+      "black_node": "EC5",
+      "condition": "black_only",
+      "operator_environment": {
+        "floor_material": "synthetic_grass",
+        "floor_moisture": "slightly_damp",
+        "moisture_source": "Direct operator observation; not a measured moisture value",
+        "footwear": "shoes",
+        "body_to_earth_impedance": "not_measured",
+        "electrical_isolation": "not_verified",
+        "weather_context_file": "weather_context.json",
+        "posture": "seated_on_floor_through_trousers",
+        "metadata_source": "operator_environment.json",
+        "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+        "footwear_source": "Operator selection at trial start"
+      }
+    },
+    "requires_operator_report": true
+  },
+  "operator_report": {
+    "at_utc": "2026-10-14T19:59:28.943+00:00",
+    "host_monotonic_ns": 107739977777600,
+    "kind": "operator_report",
+    "trial": {
+      "trial_id": "B-EC5-black-only-01",
+      "plant_node": "EC5",
+      "black_node": "EC5",
+      "condition": "black_only",
+      "operator_environment": {
+        "floor_material": "synthetic_grass",
+        "floor_moisture": "slightly_damp",
+        "moisture_source": "Direct operator observation; not a measured moisture value",
+        "footwear": "shoes",
+        "body_to_earth_impedance": "not_measured",
+        "electrical_isolation": "not_verified",
+        "weather_context_file": "weather_context.json",
+        "posture": "seated_on_floor_through_trousers",
+        "metadata_source": "operator_environment.json",
+        "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+        "footwear_source": "Operator selection at trial start"
+      }
+    },
+    "report": {
+      "form_revision": 2,
+      "followed_cues": true,
+      "completed_repetitions": 3,
+      "audible_repetitions": "3",
+      "first_contact_audible_repetitions": "3",
+      "paired_contact_audible_repetitions": "not_applicable",
+      "second_contact_audible_change": "not_applicable",
+      "contact_sound": "continuous",
+      "paired_contact_sound": "not_applicable",
+      "after_release_silence": "yes",
+      "notes": "Sin observaciones.",
+      "operator_id": "1791998878186-xipnlmvfei",
+      "ui_revision": 7
+    },
+    "client_address": "192.168.1.58",
+    "confirmed_physical_labels": true
+  },
+  "confirmed_labels": true,
+  "operator_display_ack_delays_ms": [
+    120.0,
+    224.0,
+    63.0,
+    260.0,
+    246.0,
+    50.0,
+    256.0,
+    174.0,
+    174.0,
+    231.0
+  ],
+  "phases": [
+    {
+      "repetition": 0,
+      "phase": "preparation",
+      "start_utc": "2026-10-14T19:55:26.781000+00:00",
+      "end_utc": "2026-10-14T19:55:36.789000+00:00",
+      "stable_start_utc": "2026-10-14T19:55:26.781000+00:00",
+      "stable_end_utc": "2026-10-14T19:55:36.789000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:55:26.901+00:00",
+        "host_monotonic_ns": 107497935584600,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EC5-black-only-01",
+          "plant_node": "EC5",
+          "black_node": "EC5",
+          "condition": "black_only",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 12,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 7,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:55:22.209Z",
+        "visibility": "visible",
+        "client_render_utc": "2026-10-14T19:55:22.155Z",
+        "cue_dispatch_utc": "2026-10-14T19:55:22.209Z"
+      },
+      "instruction": {
+        "title": "PREPARATE SIN TOCAR",
+        "instruction": "Deja AMBAS manos libres: no toques ninguna planta ni ninguna punta negra. Mantente quieto. No sostengas el negro durante el reposo. El contacto empezara despues del reposo, cuando aparezca la indicacion de contacto.",
+        "spoken": "Preparate con ambas manos libres. Todavia no toques nada."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 238,
+          "stable_frames": 238,
+          "max_gap_s": 0.093019,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.014516,
+            "trailing_gap_s": 0.042878,
+            "max_gap_including_boundaries_s": 0.093019,
+            "first_frame_utc": "2026-10-14T19:55:26.795516+00:00",
+            "last_frame_utc": "2026-10-14T19:55:36.746122+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.014516,
+            "trailing_gap_s": 0.042878,
+            "max_gap_including_boundaries_s": 0.093019,
+            "first_frame_utc": "2026-10-14T19:55:26.795516+00:00",
+            "last_frame_utc": "2026-10-14T19:55:36.746122+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 238,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.4626,
+              "max": 0.4747
+            },
+            "filt": {
+              "n": 238,
+              "min": 0.201,
+              "median": 0.2199,
+              "p95": 0.2309,
+              "max": 0.2357
+            },
+            "base": {
+              "n": 238,
+              "min": 0.2208,
+              "median": 0.2209,
+              "p95": 0.2209,
+              "max": 0.2211
+            },
+            "rms_mean": {
+              "n": 238,
+              "min": 0.111,
+              "median": 0.12695,
+              "p95": 0.141,
+              "max": 0.147
+            },
+            "occupancy": {
+              "n": 238,
+              "min": 0.32,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.48
+            },
+            "occupancy_base": {
+              "n": 238,
+              "min": 0.4247,
+              "median": 0.425,
+              "p95": 0.425,
+              "max": 0.4251
+            },
+            "adc_peak": {
+              "n": 238,
+              "min": 560.0,
+              "median": 582.0,
+              "p95": 589.0,
+              "max": 592.0
+            },
+            "samples": {
+              "n": 238,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 238,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 79.0
+            },
+            "score": {
+              "n": 238,
+              "min": 0.001,
+              "median": 0.152,
+              "p95": 0.361,
+              "max": 0.442
+            },
+            "threshold": {
+              "n": 238,
+              "min": 0.0449,
+              "median": 0.0453,
+              "p95": 0.047,
+              "max": 0.047
+            },
+            "noise_p95": {
+              "n": 238,
+              "min": 0.015,
+              "median": 0.0151,
+              "p95": 0.0157,
+              "max": 0.0157
+            },
+            "transition_resets": {
+              "n": 238,
+              "min": 19.0,
+              "median": 19.0,
+              "p95": 19.0,
+              "max": 19.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 237,
+          "stable_frames": 237,
+          "max_gap_s": 0.107214,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.00601,
+            "trailing_gap_s": 0.042667,
+            "max_gap_including_boundaries_s": 0.107214,
+            "first_frame_utc": "2026-10-14T19:55:26.787010+00:00",
+            "last_frame_utc": "2026-10-14T19:55:36.746333+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.00601,
+            "trailing_gap_s": 0.042667,
+            "max_gap_including_boundaries_s": 0.107214,
+            "first_frame_utc": "2026-10-14T19:55:26.787010+00:00",
+            "last_frame_utc": "2026-10-14T19:55:36.746333+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 237,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.656,
+              "max": 0.693
+            },
+            "filt": {
+              "n": 237,
+              "min": 0.2836,
+              "median": 0.3174,
+              "p95": 0.3375,
+              "max": 0.3444
+            },
+            "base": {
+              "n": 237,
+              "min": 0.3179,
+              "median": 0.3188,
+              "p95": 0.3199,
+              "max": 0.3201
+            },
+            "rms_mean": {
+              "n": 237,
+              "min": 0.1623,
+              "median": 0.19,
+              "p95": 0.2102,
+              "max": 0.2169
+            },
+            "occupancy": {
+              "n": 237,
+              "min": 0.3704,
+              "median": 0.44,
+              "p95": 0.48,
+              "max": 0.52
+            },
+            "occupancy_base": {
+              "n": 237,
+              "min": 0.4416,
+              "median": 0.4425,
+              "p95": 0.4437,
+              "max": 0.4442
+            },
+            "adc_peak": {
+              "n": 237,
+              "min": 781.0,
+              "median": 829.0,
+              "p95": 848.0,
+              "max": 864.0
+            },
+            "samples": {
+              "n": 237,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 237,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 237,
+              "min": 0.002,
+              "median": 0.158,
+              "p95": 0.372,
+              "max": 0.522
+            },
+            "threshold": {
+              "n": 237,
+              "min": 0.0675,
+              "median": 0.0711,
+              "p95": 0.0741,
+              "max": 0.0741
+            },
+            "noise_p95": {
+              "n": 237,
+              "min": 0.0225,
+              "median": 0.0237,
+              "p95": 0.0247,
+              "max": 0.0247
+            },
+            "transition_resets": {
+              "n": 237,
+              "min": 18.0,
+              "median": 18.0,
+              "p95": 18.0,
+              "max": 18.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EE5": {
+          "frames": 247,
+          "stable_frames": 247,
+          "max_gap_s": 0.113717,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.029172,
+            "trailing_gap_s": 0.02212,
+            "max_gap_including_boundaries_s": 0.113717,
+            "first_frame_utc": "2026-10-14T19:55:26.810172+00:00",
+            "last_frame_utc": "2026-10-14T19:55:36.766880+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.029172,
+            "trailing_gap_s": 0.02212,
+            "max_gap_including_boundaries_s": 0.113717,
+            "first_frame_utc": "2026-10-14T19:55:26.810172+00:00",
+            "last_frame_utc": "2026-10-14T19:55:36.766880+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 247,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.2185,
+              "max": 1.2547
+            },
+            "filt": {
+              "n": 247,
+              "min": 0.7922,
+              "median": 1.1218,
+              "p95": 1.237,
+              "max": 1.237
+            },
+            "base": {
+              "n": 247,
+              "min": 1.1452,
+              "median": 1.1476,
+              "p95": 1.1522,
+              "max": 1.1523
+            },
+            "threshold": {
+              "n": 247,
+              "min": 0.3104,
+              "median": 0.3154,
+              "p95": 0.3223,
+              "max": 0.3223
+            },
+            "noise_p95": {
+              "n": 247,
+              "min": 0.1241,
+              "median": 0.1262,
+              "p95": 0.1289,
+              "max": 0.1289
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 247,
+          "stable_frames": 247,
+          "max_gap_s": 0.078728,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.034215,
+            "trailing_gap_s": 0.019916,
+            "max_gap_including_boundaries_s": 0.078728,
+            "first_frame_utc": "2026-10-14T19:55:26.815215+00:00",
+            "last_frame_utc": "2026-10-14T19:55:36.769084+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.034215,
+            "trailing_gap_s": 0.019916,
+            "max_gap_including_boundaries_s": 0.078728,
+            "first_frame_utc": "2026-10-14T19:55:26.815215+00:00",
+            "last_frame_utc": "2026-10-14T19:55:36.769084+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 247,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4175,
+              "max": 1.4328
+            },
+            "filt": {
+              "n": 247,
+              "min": 1.0001,
+              "median": 1.3538,
+              "p95": 1.4272,
+              "max": 1.4312
+            },
+            "base": {
+              "n": 247,
+              "min": 1.3163,
+              "median": 1.3189,
+              "p95": 1.3208,
+              "max": 1.3214
+            },
+            "threshold": {
+              "n": 247,
+              "min": 0.3592,
+              "median": 0.3631,
+              "p95": 0.3807,
+              "max": 0.3815
+            },
+            "noise_p95": {
+              "n": 247,
+              "min": 0.1437,
+              "median": 0.1452,
+              "p95": 0.1523,
+              "max": 0.1526
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 1,
+      "phase": "rest",
+      "start_utc": "2026-10-14T19:55:36.789000+00:00",
+      "end_utc": "2026-10-14T19:55:56.802000+00:00",
+      "stable_start_utc": "2026-10-14T19:55:41.789000+00:00",
+      "stable_end_utc": "2026-10-14T19:55:56.802000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:55:37.013+00:00",
+        "host_monotonic_ns": 107508047038000,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EC5-black-only-01",
+          "plant_node": "EC5",
+          "black_node": "EC5",
+          "condition": "black_only",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 13,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 7,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:55:32.311Z",
+        "visibility": "visible",
+        "client_render_utc": "2026-10-14T19:55:32.246Z",
+        "cue_dispatch_utc": "2026-10-14T19:55:32.311Z"
+      },
+      "instruction": {
+        "title": "REPOSO: MANOS LIBRES",
+        "instruction": "Deja AMBAS manos libres: no toques ninguna planta ni ninguna punta negra. Mantente quieto. No sostengas el negro durante el reposo.",
+        "spoken": "Reposo. Ambas manos libres, sin tocar plantas ni puntas negras."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 473,
+          "stable_frames": 355,
+          "max_gap_s": 0.094843,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.000754,
+            "trailing_gap_s": 0.042578,
+            "max_gap_including_boundaries_s": 0.094843,
+            "first_frame_utc": "2026-10-14T19:55:36.789754+00:00",
+            "last_frame_utc": "2026-10-14T19:55:56.759422+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.024882,
+            "trailing_gap_s": 0.042578,
+            "max_gap_including_boundaries_s": 0.094843,
+            "first_frame_utc": "2026-10-14T19:55:41.813882+00:00",
+            "last_frame_utc": "2026-10-14T19:55:56.759422+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 355,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.4601,
+              "max": 0.4738
+            },
+            "filt": {
+              "n": 355,
+              "min": 0.1913,
+              "median": 0.2188,
+              "p95": 0.2312,
+              "max": 0.2359
+            },
+            "base": {
+              "n": 355,
+              "min": 0.2207,
+              "median": 0.2207,
+              "p95": 0.2207,
+              "max": 0.2207
+            },
+            "rms_mean": {
+              "n": 355,
+              "min": 0.1035,
+              "median": 0.1275,
+              "p95": 0.1415,
+              "max": 0.1473
+            },
+            "occupancy": {
+              "n": 355,
+              "min": 0.32,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.48
+            },
+            "occupancy_base": {
+              "n": 355,
+              "min": 0.4247,
+              "median": 0.4247,
+              "p95": 0.4247,
+              "max": 0.4247
+            },
+            "adc_peak": {
+              "n": 355,
+              "min": 551.0,
+              "median": 580.0,
+              "p95": 588.0,
+              "max": 590.0
+            },
+            "samples": {
+              "n": 355,
+              "min": 24.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 355,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 355,
+              "min": 0.0,
+              "median": 0.161,
+              "p95": 0.316,
+              "max": 0.582
+            },
+            "threshold": {
+              "n": 355,
+              "min": 0.0442,
+              "median": 0.0484,
+              "p95": 0.0506,
+              "max": 0.0506
+            },
+            "noise_p95": {
+              "n": 355,
+              "min": 0.0147,
+              "median": 0.0161,
+              "p95": 0.0169,
+              "max": 0.0169
+            },
+            "transition_resets": {
+              "n": 355,
+              "min": 19.0,
+              "median": 19.0,
+              "p95": 19.0,
+              "max": 19.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 478,
+          "stable_frames": 358,
+          "max_gap_s": 0.103616,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.002033,
+            "trailing_gap_s": 0.002323,
+            "max_gap_including_boundaries_s": 0.103616,
+            "first_frame_utc": "2026-10-14T19:55:36.791033+00:00",
+            "last_frame_utc": "2026-10-14T19:55:56.799677+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.00105,
+            "trailing_gap_s": 0.002323,
+            "max_gap_including_boundaries_s": 0.084758,
+            "first_frame_utc": "2026-10-14T19:55:41.790050+00:00",
+            "last_frame_utc": "2026-10-14T19:55:56.799677+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 358,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.6584,
+              "max": 0.6753
+            },
+            "filt": {
+              "n": 358,
+              "min": 0.2902,
+              "median": 0.31495,
+              "p95": 0.3326,
+              "max": 0.3442
+            },
+            "base": {
+              "n": 358,
+              "min": 0.3149,
+              "median": 0.3178,
+              "p95": 0.3191,
+              "max": 0.3195
+            },
+            "rms_mean": {
+              "n": 358,
+              "min": 0.1651,
+              "median": 0.18705,
+              "p95": 0.2073,
+              "max": 0.2179
+            },
+            "occupancy": {
+              "n": 358,
+              "min": 0.36,
+              "median": 0.44,
+              "p95": 0.48,
+              "max": 0.5
+            },
+            "occupancy_base": {
+              "n": 358,
+              "min": 0.4387,
+              "median": 0.4403,
+              "p95": 0.4425,
+              "max": 0.4433
+            },
+            "adc_peak": {
+              "n": 358,
+              "min": 785.0,
+              "median": 825.0,
+              "p95": 839.0,
+              "max": 845.0
+            },
+            "samples": {
+              "n": 358,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 358,
+              "min": 74.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 358,
+              "min": 0.002,
+              "median": 0.166,
+              "p95": 0.362,
+              "max": 0.468
+            },
+            "threshold": {
+              "n": 358,
+              "min": 0.0597,
+              "median": 0.0608,
+              "p95": 0.0643,
+              "max": 0.0649
+            },
+            "noise_p95": {
+              "n": 358,
+              "min": 0.0199,
+              "median": 0.0203,
+              "p95": 0.0214,
+              "max": 0.0216
+            },
+            "transition_resets": {
+              "n": 358,
+              "min": 18.0,
+              "median": 18.0,
+              "p95": 18.0,
+              "max": 18.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EE5": {
+          "frames": 494,
+          "stable_frames": 371,
+          "max_gap_s": 0.090825,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.021971,
+            "trailing_gap_s": 0.036389,
+            "max_gap_including_boundaries_s": 0.090825,
+            "first_frame_utc": "2026-10-14T19:55:36.810971+00:00",
+            "last_frame_utc": "2026-10-14T19:55:56.765611+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.023028,
+            "trailing_gap_s": 0.036389,
+            "max_gap_including_boundaries_s": 0.076548,
+            "first_frame_utc": "2026-10-14T19:55:41.812028+00:00",
+            "last_frame_utc": "2026-10-14T19:55:56.765611+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 371,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.2249,
+              "max": 1.2515
+            },
+            "filt": {
+              "n": 371,
+              "min": 0.8687,
+              "median": 1.1588,
+              "p95": 1.2249,
+              "max": 1.237
+            },
+            "base": {
+              "n": 371,
+              "min": 1.1435,
+              "median": 1.1444,
+              "p95": 1.1457,
+              "max": 1.1462
+            },
+            "threshold": {
+              "n": 371,
+              "min": 0.3127,
+              "median": 0.325,
+              "p95": 0.331,
+              "max": 0.331
+            },
+            "noise_p95": {
+              "n": 371,
+              "min": 0.1251,
+              "median": 0.13,
+              "p95": 0.1324,
+              "max": 0.1324
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 494,
+          "stable_frames": 370,
+          "max_gap_s": 0.091884,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.02113,
+            "trailing_gap_s": 0.014079,
+            "max_gap_including_boundaries_s": 0.091884,
+            "first_frame_utc": "2026-10-14T19:55:36.810130+00:00",
+            "last_frame_utc": "2026-10-14T19:55:56.787921+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.023265,
+            "trailing_gap_s": 0.014079,
+            "max_gap_including_boundaries_s": 0.079852,
+            "first_frame_utc": "2026-10-14T19:55:41.812265+00:00",
+            "last_frame_utc": "2026-10-14T19:55:56.787921+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 370,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4046,
+              "max": 1.432
+            },
+            "filt": {
+              "n": 370,
+              "min": 0.996,
+              "median": 1.316,
+              "p95": 1.4175,
+              "max": 1.424
+            },
+            "base": {
+              "n": 370,
+              "min": 1.3168,
+              "median": 1.3190499999999998,
+              "p95": 1.3207,
+              "max": 1.321
+            },
+            "threshold": {
+              "n": 370,
+              "min": 0.3446,
+              "median": 0.3606,
+              "p95": 0.3628,
+              "max": 0.3628
+            },
+            "noise_p95": {
+              "n": 370,
+              "min": 0.1378,
+              "median": 0.1442,
+              "p95": 0.1451,
+              "max": 0.1451
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 1,
+      "phase": "contact",
+      "start_utc": "2026-10-14T19:55:56.802000+00:00",
+      "end_utc": "2026-10-14T19:56:16.820000+00:00",
+      "stable_start_utc": "2026-10-14T19:55:59.802000+00:00",
+      "stable_end_utc": "2026-10-14T19:56:14.820000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:55:56.865+00:00",
+        "host_monotonic_ns": 107527898878200,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EC5-black-only-01",
+          "plant_node": "EC5",
+          "black_node": "EC5",
+          "condition": "black_only",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 14,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 7,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:55:52.348Z",
+        "visibility": "visible",
+        "client_render_utc": "2026-10-14T19:55:52.337Z",
+        "cue_dispatch_utc": "2026-10-14T19:55:52.348Z"
+      },
+      "instruction": {
+        "title": "TOCA: SOLO PUNTA NEGRA",
+        "instruction": "Toca SOLO la punta negra marcada EC5 con una mano durante los 20 segundos. Deja la otra mano libre. Ninguna mano toca ninguna planta.",
+        "spoken": "Toca ahora solo la punta negra EC5. No toques plantas."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 482,
+          "stable_frames": 364,
+          "max_gap_s": 0.079817,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.037492,
+            "trailing_gap_s": 0.022319,
+            "max_gap_including_boundaries_s": 0.079817,
+            "first_frame_utc": "2026-10-14T19:55:56.839492+00:00",
+            "last_frame_utc": "2026-10-14T19:56:16.797681+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.012138,
+            "trailing_gap_s": 0.036033,
+            "max_gap_including_boundaries_s": 0.048553,
+            "first_frame_utc": "2026-10-14T19:55:59.814138+00:00",
+            "last_frame_utc": "2026-10-14T19:56:14.783967+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.9066390041493776,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0242
+            },
+            "filt": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.0002,
+              "p95": 0.0037,
+              "max": 0.0091
+            },
+            "base": {
+              "n": 364,
+              "min": 0.2205,
+              "median": 0.2205,
+              "p95": 0.2205,
+              "max": 0.2205
+            },
+            "rms_mean": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0012,
+              "max": 0.0039
+            },
+            "occupancy": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.12,
+              "max": 0.2
+            },
+            "occupancy_base": {
+              "n": 364,
+              "min": 0.4245,
+              "median": 0.4245,
+              "p95": 0.4245,
+              "max": 0.4245
+            },
+            "adc_peak": {
+              "n": 364,
+              "min": 0.0,
+              "median": 1.0,
+              "p95": 16.0,
+              "max": 34.0
+            },
+            "samples": {
+              "n": 364,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 364,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 79.0
+            },
+            "score": {
+              "n": 364,
+              "min": 4.783,
+              "median": 4.986,
+              "p95": 4.99,
+              "max": 4.99
+            },
+            "threshold": {
+              "n": 364,
+              "min": 0.0442,
+              "median": 0.0442,
+              "p95": 0.0442,
+              "max": 0.0442
+            },
+            "noise_p95": {
+              "n": 364,
+              "min": 0.0147,
+              "median": 0.0147,
+              "p95": 0.0147,
+              "max": 0.0147
+            },
+            "transition_resets": {
+              "n": 364,
+              "min": 19.0,
+              "median": 19.0,
+              "p95": 19.0,
+              "max": 19.0
+            }
+          },
+          "midi_note_ons": 4,
+          "midi_note_pitches": [
+            53,
+            59,
+            65,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 4,
+            "min": 53,
+            "median": 62.0,
+            "p95": 65,
+            "max": 71
+          },
+          "midi_note_duration_s": 18.117294,
+          "stable_midi_note_duration_s": 15.018
+        },
+        "EC5": {
+          "frames": 469,
+          "stable_frames": 355,
+          "max_gap_s": 0.087027,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.0476,
+            "trailing_gap_s": 0.004075,
+            "max_gap_including_boundaries_s": 0.087027,
+            "first_frame_utc": "2026-10-14T19:55:56.849600+00:00",
+            "last_frame_utc": "2026-10-14T19:56:16.815925+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.007246,
+            "trailing_gap_s": 0.027161,
+            "max_gap_including_boundaries_s": 0.083903,
+            "first_frame_utc": "2026-10-14T19:55:59.809246+00:00",
+            "last_frame_utc": "2026-10-14T19:56:14.792839+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.9040511727078892,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 355,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0363,
+              "max": 0.0524
+            },
+            "filt": {
+              "n": 355,
+              "min": 0.0,
+              "median": 0.0142,
+              "p95": 0.0205,
+              "max": 0.0298
+            },
+            "base": {
+              "n": 355,
+              "min": 0.3149,
+              "median": 0.3149,
+              "p95": 0.3149,
+              "max": 0.3149
+            },
+            "rms_mean": {
+              "n": 355,
+              "min": 0.0,
+              "median": 0.006,
+              "p95": 0.0092,
+              "max": 0.0151
+            },
+            "occupancy": {
+              "n": 355,
+              "min": 0.0,
+              "median": 0.1923,
+              "p95": 0.2692,
+              "max": 0.3077
+            },
+            "occupancy_base": {
+              "n": 355,
+              "min": 0.4397,
+              "median": 0.4397,
+              "p95": 0.4397,
+              "max": 0.4397
+            },
+            "adc_peak": {
+              "n": 355,
+              "min": 0.0,
+              "median": 50.0,
+              "p95": 65.0,
+              "max": 90.0
+            },
+            "samples": {
+              "n": 355,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 355,
+              "min": 72.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 355,
+              "min": 4.311,
+              "median": 4.547,
+              "p95": 4.762,
+              "max": 4.762
+            },
+            "threshold": {
+              "n": 355,
+              "min": 0.0661,
+              "median": 0.0661,
+              "p95": 0.0661,
+              "max": 0.0661
+            },
+            "noise_p95": {
+              "n": 355,
+              "min": 0.022,
+              "median": 0.022,
+              "p95": 0.022,
+              "max": 0.022
+            },
+            "transition_resets": {
+              "n": 355,
+              "min": 18.0,
+              "median": 18.0,
+              "p95": 18.0,
+              "max": 18.0
+            }
+          },
+          "midi_note_ons": 17,
+          "midi_note_pitches": [
+            56,
+            57,
+            59,
+            65,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 17,
+            "min": 56,
+            "median": 57,
+            "p95": 65,
+            "max": 71
+          },
+          "midi_note_duration_s": 18.082945,
+          "stable_midi_note_duration_s": 14.985009
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 1558,
+          "midi_note_pitches": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            69,
+            72,
+            73,
+            76,
+            78
+          ],
+          "midi_pitch_summary": {
+            "n": 1558,
+            "min": 46,
+            "median": 56.0,
+            "p95": 59,
+            "max": 78
+          },
+          "midi_note_duration_s": 11.593844,
+          "stable_midi_note_duration_s": 9.710171
+        },
+        "EE5": {
+          "frames": 458,
+          "stable_frames": 342,
+          "max_gap_s": 0.090066,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 2.3e-05,
+            "trailing_gap_s": 0.015104,
+            "max_gap_including_boundaries_s": 0.090066,
+            "first_frame_utc": "2026-10-14T19:55:56.802023+00:00",
+            "last_frame_utc": "2026-10-14T19:56:16.804896+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.023935,
+            "trailing_gap_s": 0.019841,
+            "max_gap_including_boundaries_s": 0.090066,
+            "first_frame_utc": "2026-10-14T19:55:59.825935+00:00",
+            "last_frame_utc": "2026-10-14T19:56:14.800159+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.8842794759825328,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 342,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.2176,
+              "max": 0.2667
+            },
+            "filt": {
+              "n": 342,
+              "min": 0.0,
+              "median": 0.1918,
+              "p95": 0.2273,
+              "max": 0.2353
+            },
+            "base": {
+              "n": 342,
+              "min": 1.1447,
+              "median": 1.1447,
+              "p95": 1.1447,
+              "max": 1.1447
+            },
+            "threshold": {
+              "n": 342,
+              "min": 0.313,
+              "median": 0.313,
+              "p95": 0.313,
+              "max": 0.313
+            },
+            "noise_p95": {
+              "n": 342,
+              "min": 0.1252,
+              "median": 0.1252,
+              "p95": 0.1252,
+              "max": 0.1252
+            }
+          },
+          "midi_note_ons": 37,
+          "midi_note_pitches": [
+            32,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 37,
+            "min": 32,
+            "median": 42,
+            "p95": 72,
+            "max": 84
+          },
+          "midi_note_duration_s": 17.75242,
+          "stable_midi_note_duration_s": 14.944712
+        },
+        "EF5": {
+          "frames": 452,
+          "stable_frames": 336,
+          "max_gap_s": 0.08442,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.026602,
+            "trailing_gap_s": 0.011008,
+            "max_gap_including_boundaries_s": 0.08442,
+            "first_frame_utc": "2026-10-14T19:55:56.828602+00:00",
+            "last_frame_utc": "2026-10-14T19:56:16.808992+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.013951,
+            "trailing_gap_s": 0.017403,
+            "max_gap_including_boundaries_s": 0.08442,
+            "first_frame_utc": "2026-10-14T19:55:59.815951+00:00",
+            "last_frame_utc": "2026-10-14T19:56:14.802597+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.8849557522123894,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 336,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.245,
+              "max": 0.2708
+            },
+            "filt": {
+              "n": 336,
+              "min": 0.0,
+              "median": 0.1958,
+              "p95": 0.2595,
+              "max": 0.2708
+            },
+            "base": {
+              "n": 336,
+              "min": 1.3175,
+              "median": 1.3175,
+              "p95": 1.3175,
+              "max": 1.3175
+            },
+            "threshold": {
+              "n": 336,
+              "min": 0.3578,
+              "median": 0.3713,
+              "p95": 0.3854,
+              "max": 0.3875
+            },
+            "noise_p95": {
+              "n": 336,
+              "min": 0.1431,
+              "median": 0.1485,
+              "p95": 0.1542,
+              "max": 0.155
+            }
+          },
+          "midi_note_ons": 46,
+          "midi_note_pitches": [
+            32,
+            36,
+            38,
+            42,
+            44,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 46,
+            "min": 32,
+            "median": 50.5,
+            "p95": 66,
+            "max": 84
+          },
+          "midi_note_duration_s": 17.788548,
+          "stable_midi_note_duration_s": 14.946116
+        }
+      }
+    },
+    {
+      "repetition": 1,
+      "phase": "release",
+      "start_utc": "2026-10-14T19:56:16.820000+00:00",
+      "end_utc": "2026-10-14T19:56:46.843000+00:00",
+      "stable_start_utc": "2026-10-14T19:56:31.843000+00:00",
+      "stable_end_utc": "2026-10-14T19:56:46.843000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:56:17.080+00:00",
+        "host_monotonic_ns": 107548114562100,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EC5-black-only-01",
+          "plant_node": "EC5",
+          "black_node": "EC5",
+          "condition": "black_only",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 15,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 7,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:56:12.567Z",
+        "visibility": "visible",
+        "client_render_utc": "2026-10-14T19:56:12.495Z",
+        "cue_dispatch_utc": "2026-10-14T19:56:12.567Z"
+      },
+      "instruction": {
+        "title": "SUELTA EL NEGRO",
+        "instruction": "SUELTA LA PUNTA NEGRA EC5. Deja ambas manos libres. No toques ninguna planta ni ninguna punta negra durante los 30 segundos.",
+        "spoken": "Suelta la punta negra. Ambas manos libres."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 710,
+          "stable_frames": 356,
+          "max_gap_s": 0.086024,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.018374,
+            "trailing_gap_s": 0.005859,
+            "max_gap_including_boundaries_s": 0.086024,
+            "first_frame_utc": "2026-10-14T19:56:16.838374+00:00",
+            "last_frame_utc": "2026-10-14T19:56:46.837141+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.008821,
+            "trailing_gap_s": 0.005859,
+            "max_gap_including_boundaries_s": 0.084822,
+            "first_frame_utc": "2026-10-14T19:56:31.851821+00:00",
+            "last_frame_utc": "2026-10-14T19:56:46.837141+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.059154929577464786,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 356,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.4553,
+              "max": 0.4642
+            },
+            "filt": {
+              "n": 356,
+              "min": 0.1972,
+              "median": 0.21434999999999998,
+              "p95": 0.226,
+              "max": 0.23
+            },
+            "base": {
+              "n": 356,
+              "min": 0.2181,
+              "median": 0.2187,
+              "p95": 0.2196,
+              "max": 0.2197
+            },
+            "rms_mean": {
+              "n": 356,
+              "min": 0.1074,
+              "median": 0.1257,
+              "p95": 0.1375,
+              "max": 0.1433
+            },
+            "occupancy": {
+              "n": 356,
+              "min": 0.3462,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.48
+            },
+            "occupancy_base": {
+              "n": 356,
+              "min": 0.4242,
+              "median": 0.4246,
+              "p95": 0.4257,
+              "max": 0.4258
+            },
+            "adc_peak": {
+              "n": 356,
+              "min": 536.0,
+              "median": 569.5,
+              "p95": 576.0,
+              "max": 580.0
+            },
+            "samples": {
+              "n": 356,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 356,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 356,
+              "min": 0.0,
+              "median": 0.12,
+              "p95": 0.334,
+              "max": 0.392
+            },
+            "threshold": {
+              "n": 356,
+              "min": 0.0506,
+              "median": 0.0539,
+              "p95": 0.0556,
+              "max": 0.0556
+            },
+            "noise_p95": {
+              "n": 356,
+              "min": 0.0169,
+              "median": 0.018,
+              "p95": 0.0185,
+              "max": 0.0185
+            },
+            "transition_resets": {
+              "n": 356,
+              "min": 19.0,
+              "median": 19.0,
+              "p95": 19.0,
+              "max": 19.0
+            }
+          },
+          "midi_note_ons": 3,
+          "midi_note_pitches": [
+            54,
+            55,
+            58
+          ],
+          "midi_pitch_summary": {
+            "n": 3,
+            "min": 54,
+            "median": 55,
+            "p95": 55,
+            "max": 58
+          },
+          "midi_note_duration_s": 1.884718,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 710,
+          "stable_frames": 358,
+          "max_gap_s": 0.094457,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.079988,
+            "trailing_gap_s": 0.025995,
+            "max_gap_including_boundaries_s": 0.094457,
+            "first_frame_utc": "2026-10-14T19:56:16.899988+00:00",
+            "last_frame_utc": "2026-10-14T19:56:46.817005+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.016944,
+            "trailing_gap_s": 0.025995,
+            "max_gap_including_boundaries_s": 0.094457,
+            "first_frame_utc": "2026-10-14T19:56:31.859944+00:00",
+            "last_frame_utc": "2026-10-14T19:56:46.817005+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.11408450704225352,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 358,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.6213,
+              "max": 0.631
+            },
+            "filt": {
+              "n": 358,
+              "min": 0.2658,
+              "median": 0.29835,
+              "p95": 0.3109,
+              "max": 0.3184
+            },
+            "base": {
+              "n": 358,
+              "min": 0.3024,
+              "median": 0.3034,
+              "p95": 0.3088,
+              "max": 0.3096
+            },
+            "rms_mean": {
+              "n": 358,
+              "min": 0.1501,
+              "median": 0.17875,
+              "p95": 0.1923,
+              "max": 0.2005
+            },
+            "occupancy": {
+              "n": 358,
+              "min": 0.32,
+              "median": 0.44,
+              "p95": 0.48,
+              "max": 0.52
+            },
+            "occupancy_base": {
+              "n": 358,
+              "min": 0.4374,
+              "median": 0.4377,
+              "p95": 0.439,
+              "max": 0.4394
+            },
+            "adc_peak": {
+              "n": 358,
+              "min": 733.0,
+              "median": 775.0,
+              "p95": 784.0,
+              "max": 795.0
+            },
+            "samples": {
+              "n": 358,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 358,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 358,
+              "min": 0.001,
+              "median": 0.1065,
+              "p95": 0.375,
+              "max": 0.473
+            },
+            "threshold": {
+              "n": 358,
+              "min": 0.0693,
+              "median": 0.0745,
+              "p95": 0.0792,
+              "max": 0.08
+            },
+            "noise_p95": {
+              "n": 358,
+              "min": 0.0231,
+              "median": 0.0248,
+              "p95": 0.0264,
+              "max": 0.0267
+            },
+            "transition_resets": {
+              "n": 358,
+              "min": 18.0,
+              "median": 18.0,
+              "p95": 18.0,
+              "max": 18.0
+            }
+          },
+          "midi_note_ons": 4,
+          "midi_note_pitches": [
+            56,
+            57,
+            58,
+            59
+          ],
+          "midi_pitch_summary": {
+            "n": 4,
+            "min": 56,
+            "median": 57.5,
+            "p95": 58,
+            "max": 59
+          },
+          "midi_note_duration_s": 3.581943,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 151,
+          "midi_note_pitches": [
+            47,
+            48,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            63,
+            66,
+            67,
+            71,
+            72,
+            75,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 151,
+            "min": 47,
+            "median": 56,
+            "p95": 81,
+            "max": 84
+          },
+          "midi_note_duration_s": 29.761199,
+          "stable_midi_note_duration_s": 14.999880999999998
+        },
+        "EE5": {
+          "frames": 736,
+          "stable_frames": 373,
+          "max_gap_s": 0.086227,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.030743,
+            "trailing_gap_s": 0.019769,
+            "max_gap_including_boundaries_s": 0.086227,
+            "first_frame_utc": "2026-10-14T19:56:16.850743+00:00",
+            "last_frame_utc": "2026-10-14T19:56:46.823231+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.006688,
+            "trailing_gap_s": 0.019769,
+            "max_gap_including_boundaries_s": 0.052771,
+            "first_frame_utc": "2026-10-14T19:56:31.849688+00:00",
+            "last_frame_utc": "2026-10-14T19:56:46.823231+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.08423913043478261,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 373,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.2225,
+              "max": 1.237
+            },
+            "filt": {
+              "n": 373,
+              "min": 0.8316,
+              "median": 1.1475,
+              "p95": 1.2289,
+              "max": 1.237
+            },
+            "base": {
+              "n": 373,
+              "min": 1.1378,
+              "median": 1.1392,
+              "p95": 1.1412,
+              "max": 1.1415
+            },
+            "threshold": {
+              "n": 373,
+              "min": 0.33,
+              "median": 0.3389,
+              "p95": 0.3463,
+              "max": 0.3463
+            },
+            "noise_p95": {
+              "n": 373,
+              "min": 0.132,
+              "median": 0.1356,
+              "p95": 0.1385,
+              "max": 0.1385
+            }
+          },
+          "midi_note_ons": 8,
+          "midi_note_pitches": [
+            32,
+            37,
+            38,
+            40,
+            41,
+            42,
+            44,
+            50
+          ],
+          "midi_pitch_summary": {
+            "n": 8,
+            "min": 32,
+            "median": 40.5,
+            "p95": 44,
+            "max": 50
+          },
+          "midi_note_duration_s": 2.836672,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 731,
+          "stable_frames": 368,
+          "max_gap_s": 0.086686,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.029329,
+            "trailing_gap_s": 0.010718,
+            "max_gap_including_boundaries_s": 0.086686,
+            "first_frame_utc": "2026-10-14T19:56:16.849329+00:00",
+            "last_frame_utc": "2026-10-14T19:56:46.832282+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.01741,
+            "trailing_gap_s": 0.010718,
+            "max_gap_including_boundaries_s": 0.086686,
+            "first_frame_utc": "2026-10-14T19:56:31.860410+00:00",
+            "last_frame_utc": "2026-10-14T19:56:46.832282+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.07250341997264022,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 368,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4078,
+              "max": 1.4312
+            },
+            "filt": {
+              "n": 368,
+              "min": 0.988,
+              "median": 1.2982,
+              "p95": 1.4183,
+              "max": 1.4312
+            },
+            "base": {
+              "n": 368,
+              "min": 1.3099,
+              "median": 1.3121,
+              "p95": 1.3151,
+              "max": 1.3152
+            },
+            "threshold": {
+              "n": 368,
+              "min": 0.3882,
+              "median": 0.3986,
+              "p95": 0.4158,
+              "max": 0.4158
+            },
+            "noise_p95": {
+              "n": 368,
+              "min": 0.1553,
+              "median": 0.1594,
+              "p95": 0.1663,
+              "max": 0.1663
+            }
+          },
+          "midi_note_ons": 7,
+          "midi_note_pitches": [
+            42,
+            48,
+            49,
+            54
+          ],
+          "midi_pitch_summary": {
+            "n": 7,
+            "min": 42,
+            "median": 48,
+            "p95": 54,
+            "max": 54
+          },
+          "midi_note_duration_s": 2.423133,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 2,
+      "phase": "rest",
+      "start_utc": "2026-10-14T19:56:46.843000+00:00",
+      "end_utc": "2026-10-14T19:57:06.866000+00:00",
+      "stable_start_utc": "2026-10-14T19:56:51.843000+00:00",
+      "stable_end_utc": "2026-10-14T19:57:06.866000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:56:47.089+00:00",
+        "host_monotonic_ns": 107578123584100,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EC5-black-only-01",
+          "plant_node": "EC5",
+          "black_node": "EC5",
+          "condition": "black_only",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 16,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 7,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:56:42.574Z",
+        "visibility": "visible",
+        "client_render_utc": "2026-10-14T19:56:42.487Z",
+        "cue_dispatch_utc": "2026-10-14T19:56:42.574Z"
+      },
+      "instruction": {
+        "title": "REPOSO: MANOS LIBRES",
+        "instruction": "Deja AMBAS manos libres: no toques ninguna planta ni ninguna punta negra. Mantente quieto. No sostengas el negro durante el reposo.",
+        "spoken": "Reposo. Ambas manos libres, sin tocar plantas ni puntas negras."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 477,
+          "stable_frames": 357,
+          "max_gap_s": 0.089281,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.03514,
+            "trailing_gap_s": 0.044176,
+            "max_gap_including_boundaries_s": 0.089281,
+            "first_frame_utc": "2026-10-14T19:56:46.878140+00:00",
+            "last_frame_utc": "2026-10-14T19:57:06.821824+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.036,
+            "trailing_gap_s": 0.044176,
+            "max_gap_including_boundaries_s": 0.089281,
+            "first_frame_utc": "2026-10-14T19:56:51.879000+00:00",
+            "last_frame_utc": "2026-10-14T19:57:06.821824+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.4553,
+              "max": 0.4682
+            },
+            "filt": {
+              "n": 357,
+              "min": 0.1917,
+              "median": 0.2171,
+              "p95": 0.2275,
+              "max": 0.234
+            },
+            "base": {
+              "n": 357,
+              "min": 0.2179,
+              "median": 0.218,
+              "p95": 0.2181,
+              "max": 0.2181
+            },
+            "rms_mean": {
+              "n": 357,
+              "min": 0.1021,
+              "median": 0.1272,
+              "p95": 0.1398,
+              "max": 0.147
+            },
+            "occupancy": {
+              "n": 357,
+              "min": 0.32,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.48
+            },
+            "occupancy_base": {
+              "n": 357,
+              "min": 0.4257,
+              "median": 0.4259,
+              "p95": 0.4259,
+              "max": 0.4261
+            },
+            "adc_peak": {
+              "n": 357,
+              "min": 549.0,
+              "median": 576.0,
+              "p95": 580.0,
+              "max": 589.0
+            },
+            "samples": {
+              "n": 357,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 357,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 357,
+              "min": 0.001,
+              "median": 0.143,
+              "p95": 0.339,
+              "max": 0.552
+            },
+            "threshold": {
+              "n": 357,
+              "min": 0.0465,
+              "median": 0.0477,
+              "p95": 0.0492,
+              "max": 0.0492
+            },
+            "noise_p95": {
+              "n": 357,
+              "min": 0.0155,
+              "median": 0.0159,
+              "p95": 0.0164,
+              "max": 0.0164
+            },
+            "transition_resets": {
+              "n": 357,
+              "min": 19.0,
+              "median": 19.0,
+              "p95": 19.0,
+              "max": 19.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 477,
+          "stable_frames": 357,
+          "max_gap_s": 0.095241,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.015204,
+            "trailing_gap_s": 0.014399,
+            "max_gap_including_boundaries_s": 0.095241,
+            "first_frame_utc": "2026-10-14T19:56:46.858204+00:00",
+            "last_frame_utc": "2026-10-14T19:57:06.851601+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.02113,
+            "trailing_gap_s": 0.014399,
+            "max_gap_including_boundaries_s": 0.095241,
+            "first_frame_utc": "2026-10-14T19:56:51.864130+00:00",
+            "last_frame_utc": "2026-10-14T19:57:06.851601+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.6149,
+              "max": 0.6262
+            },
+            "filt": {
+              "n": 357,
+              "min": 0.2688,
+              "median": 0.2893,
+              "p95": 0.3071,
+              "max": 0.3143
+            },
+            "base": {
+              "n": 357,
+              "min": 0.2977,
+              "median": 0.2987,
+              "p95": 0.3004,
+              "max": 0.3004
+            },
+            "rms_mean": {
+              "n": 357,
+              "min": 0.1529,
+              "median": 0.1707,
+              "p95": 0.1903,
+              "max": 0.198
+            },
+            "occupancy": {
+              "n": 357,
+              "min": 0.3462,
+              "median": 0.44,
+              "p95": 0.48,
+              "max": 0.52
+            },
+            "occupancy_base": {
+              "n": 357,
+              "min": 0.4357,
+              "median": 0.4364,
+              "p95": 0.4369,
+              "max": 0.4371
+            },
+            "adc_peak": {
+              "n": 357,
+              "min": 729.0,
+              "median": 769.0,
+              "p95": 777.0,
+              "max": 780.0
+            },
+            "samples": {
+              "n": 357,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 357,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 357,
+              "min": 0.001,
+              "median": 0.144,
+              "p95": 0.329,
+              "max": 0.408
+            },
+            "threshold": {
+              "n": 357,
+              "min": 0.0715,
+              "median": 0.0738,
+              "p95": 0.076,
+              "max": 0.0775
+            },
+            "noise_p95": {
+              "n": 357,
+              "min": 0.0238,
+              "median": 0.0246,
+              "p95": 0.0253,
+              "max": 0.0258
+            },
+            "transition_resets": {
+              "n": 357,
+              "min": 18.0,
+              "median": 18.0,
+              "p95": 18.0,
+              "max": 18.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 20.023,
+          "stable_midi_note_duration_s": 15.023
+        },
+        "EE5": {
+          "frames": 496,
+          "stable_frames": 372,
+          "max_gap_s": 0.07508,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.019812,
+            "trailing_gap_s": 0.014608,
+            "max_gap_including_boundaries_s": 0.07508,
+            "first_frame_utc": "2026-10-14T19:56:46.862812+00:00",
+            "last_frame_utc": "2026-10-14T19:57:06.851392+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.019237,
+            "trailing_gap_s": 0.014608,
+            "max_gap_including_boundaries_s": 0.07508,
+            "first_frame_utc": "2026-10-14T19:56:51.862237+00:00",
+            "last_frame_utc": "2026-10-14T19:57:06.851392+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 372,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.2233,
+              "max": 1.2362
+            },
+            "filt": {
+              "n": 372,
+              "min": 0.8623,
+              "median": 1.1556,
+              "p95": 1.2289,
+              "max": 1.2297
+            },
+            "base": {
+              "n": 372,
+              "min": 1.1357,
+              "median": 1.1383,
+              "p95": 1.1391,
+              "max": 1.1394
+            },
+            "threshold": {
+              "n": 372,
+              "min": 0.3232,
+              "median": 0.3554,
+              "p95": 0.365,
+              "max": 0.365
+            },
+            "noise_p95": {
+              "n": 372,
+              "min": 0.1293,
+              "median": 0.1422,
+              "p95": 0.146,
+              "max": 0.146
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 496,
+          "stable_frames": 372,
+          "max_gap_s": 0.083077,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.023951,
+            "trailing_gap_s": 0.024512,
+            "max_gap_including_boundaries_s": 0.083077,
+            "first_frame_utc": "2026-10-14T19:56:46.866951+00:00",
+            "last_frame_utc": "2026-10-14T19:57:06.841488+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.017069,
+            "trailing_gap_s": 0.024512,
+            "max_gap_including_boundaries_s": 0.083077,
+            "first_frame_utc": "2026-10-14T19:56:51.860069+00:00",
+            "last_frame_utc": "2026-10-14T19:57:06.841488+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 372,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.3974,
+              "max": 1.4312
+            },
+            "filt": {
+              "n": 372,
+              "min": 0.9412,
+              "median": 1.3281,
+              "p95": 1.3901,
+              "max": 1.4264
+            },
+            "base": {
+              "n": 372,
+              "min": 1.306,
+              "median": 1.3083,
+              "p95": 1.3097,
+              "max": 1.3107
+            },
+            "threshold": {
+              "n": 372,
+              "min": 0.3682,
+              "median": 0.3834,
+              "p95": 0.4101,
+              "max": 0.4101
+            },
+            "noise_p95": {
+              "n": 372,
+              "min": 0.1473,
+              "median": 0.1534,
+              "p95": 0.164,
+              "max": 0.164
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 2,
+      "phase": "contact",
+      "start_utc": "2026-10-14T19:57:06.866000+00:00",
+      "end_utc": "2026-10-14T19:57:26.883000+00:00",
+      "stable_start_utc": "2026-10-14T19:57:09.866000+00:00",
+      "stable_end_utc": "2026-10-14T19:57:24.883000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:57:06.916+00:00",
+        "host_monotonic_ns": 107597949979900,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EC5-black-only-01",
+          "plant_node": "EC5",
+          "black_node": "EC5",
+          "condition": "black_only",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 17,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 7,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:57:02.406Z",
+        "visibility": "visible",
+        "client_render_utc": "2026-10-14T19:57:02.394Z",
+        "cue_dispatch_utc": "2026-10-14T19:57:02.406Z"
+      },
+      "instruction": {
+        "title": "TOCA: SOLO PUNTA NEGRA",
+        "instruction": "Toca SOLO la punta negra marcada EC5 con una mano durante los 20 segundos. Deja la otra mano libre. Ninguna mano toca ninguna planta.",
+        "spoken": "Toca ahora solo la punta negra EC5. No toques plantas."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 481,
+          "stable_frames": 364,
+          "max_gap_s": 0.091804,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.004094,
+            "trailing_gap_s": 0.002665,
+            "max_gap_including_boundaries_s": 0.091804,
+            "first_frame_utc": "2026-10-14T19:57:06.870094+00:00",
+            "last_frame_utc": "2026-10-14T19:57:26.880335+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.013594,
+            "trailing_gap_s": 0.030924,
+            "max_gap_including_boundaries_s": 0.091804,
+            "first_frame_utc": "2026-10-14T19:57:09.879594+00:00",
+            "last_frame_utc": "2026-10-14T19:57:24.852076+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.9168399168399168,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "base": {
+              "n": 364,
+              "min": 0.2179,
+              "median": 0.2179,
+              "p95": 0.2179,
+              "max": 0.2179
+            },
+            "rms_mean": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy_base": {
+              "n": 364,
+              "min": 0.4257,
+              "median": 0.4257,
+              "p95": 0.4257,
+              "max": 0.4257
+            },
+            "adc_peak": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "samples": {
+              "n": 364,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 364,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 364,
+              "min": 4.848,
+              "median": 4.848,
+              "p95": 4.848,
+              "max": 4.848
+            },
+            "threshold": {
+              "n": 364,
+              "min": 0.045,
+              "median": 0.045,
+              "p95": 0.045,
+              "max": 0.045
+            },
+            "noise_p95": {
+              "n": 364,
+              "min": 0.015,
+              "median": 0.015,
+              "p95": 0.015,
+              "max": 0.015
+            },
+            "transition_resets": {
+              "n": 364,
+              "min": 19.0,
+              "median": 19.0,
+              "p95": 19.0,
+              "max": 19.0
+            }
+          },
+          "midi_note_ons": 6,
+          "midi_note_pitches": [
+            45,
+            47,
+            53,
+            59,
+            65,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 6,
+            "min": 45,
+            "median": 56.0,
+            "p95": 65,
+            "max": 71
+          },
+          "midi_note_duration_s": 18.368772,
+          "stable_midi_note_duration_s": 15.016872
+        },
+        "EC5": {
+          "frames": 481,
+          "stable_frames": 365,
+          "max_gap_s": 0.083927,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.027289,
+            "trailing_gap_s": 0.002954,
+            "max_gap_including_boundaries_s": 0.083927,
+            "first_frame_utc": "2026-10-14T19:57:06.893289+00:00",
+            "last_frame_utc": "2026-10-14T19:57:26.880046+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.015332,
+            "trailing_gap_s": 0.015162,
+            "max_gap_including_boundaries_s": 0.083927,
+            "first_frame_utc": "2026-10-14T19:57:09.881332+00:00",
+            "last_frame_utc": "2026-10-14T19:57:24.867838+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.918918918918919,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "base": {
+              "n": 365,
+              "min": 0.2977,
+              "median": 0.2977,
+              "p95": 0.2977,
+              "max": 0.2977
+            },
+            "rms_mean": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy_base": {
+              "n": 365,
+              "min": 0.4365,
+              "median": 0.4365,
+              "p95": 0.4365,
+              "max": 0.4365
+            },
+            "adc_peak": {
+              "n": 365,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "samples": {
+              "n": 365,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 365,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 79.0
+            },
+            "score": {
+              "n": 365,
+              "min": 4.149,
+              "median": 4.149,
+              "p95": 4.149,
+              "max": 4.149
+            },
+            "threshold": {
+              "n": 365,
+              "min": 0.0717,
+              "median": 0.0717,
+              "p95": 0.0717,
+              "max": 0.0717
+            },
+            "noise_p95": {
+              "n": 365,
+              "min": 0.0239,
+              "median": 0.0239,
+              "p95": 0.0239,
+              "max": 0.0239
+            },
+            "transition_resets": {
+              "n": 365,
+              "min": 18.0,
+              "median": 18.0,
+              "p95": 18.0,
+              "max": 18.0
+            }
+          },
+          "midi_note_ons": 4,
+          "midi_note_pitches": [
+            56,
+            59,
+            65,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 4,
+            "min": 56,
+            "median": 62.0,
+            "p95": 65,
+            "max": 71
+          },
+          "midi_note_duration_s": 18.374127,
+          "stable_midi_note_duration_s": 15.017
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 1614,
+          "midi_note_pitches": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            62,
+            63,
+            69,
+            71,
+            73,
+            78
+          ],
+          "midi_pitch_summary": {
+            "n": 1614,
+            "min": 46,
+            "median": 52.0,
+            "p95": 55,
+            "max": 78
+          },
+          "midi_note_duration_s": 15.804176,
+          "stable_midi_note_duration_s": 11.803084
+        },
+        "EE5": {
+          "frames": 458,
+          "stable_frames": 341,
+          "max_gap_s": 0.08213,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.027086,
+            "trailing_gap_s": 0.063207,
+            "max_gap_including_boundaries_s": 0.08213,
+            "first_frame_utc": "2026-10-14T19:57:06.893086+00:00",
+            "last_frame_utc": "2026-10-14T19:57:26.819793+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.008462,
+            "trailing_gap_s": 0.034759,
+            "max_gap_including_boundaries_s": 0.080874,
+            "first_frame_utc": "2026-10-14T19:57:09.874462+00:00",
+            "last_frame_utc": "2026-10-14T19:57:24.848241+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.8995633187772926,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 341,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.1418,
+              "max": 0.1805
+            },
+            "filt": {
+              "n": 341,
+              "min": 0.0,
+              "median": 0.1193,
+              "p95": 0.1426,
+              "max": 0.1555
+            },
+            "base": {
+              "n": 341,
+              "min": 1.1363,
+              "median": 1.1363,
+              "p95": 1.1363,
+              "max": 1.1363
+            },
+            "threshold": {
+              "n": 341,
+              "min": 0.3247,
+              "median": 0.3371,
+              "p95": 0.35,
+              "max": 0.3518
+            },
+            "noise_p95": {
+              "n": 341,
+              "min": 0.1299,
+              "median": 0.1348,
+              "p95": 0.14,
+              "max": 0.1407
+            }
+          },
+          "midi_note_ons": 38,
+          "midi_note_pitches": [
+            36,
+            37,
+            38,
+            39,
+            42,
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 38,
+            "min": 36,
+            "median": 38.0,
+            "p95": 72,
+            "max": 84
+          },
+          "midi_note_duration_s": 18.047611,
+          "stable_midi_note_duration_s": 14.950873
+        },
+        "EF5": {
+          "frames": 456,
+          "stable_frames": 340,
+          "max_gap_s": 0.087815,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.017579,
+            "trailing_gap_s": 0.044,
+            "max_gap_including_boundaries_s": 0.087815,
+            "first_frame_utc": "2026-10-14T19:57:06.883579+00:00",
+            "last_frame_utc": "2026-10-14T19:57:26.839000+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.033806,
+            "trailing_gap_s": 0.017975,
+            "max_gap_including_boundaries_s": 0.087815,
+            "first_frame_utc": "2026-10-14T19:57:09.899806+00:00",
+            "last_frame_utc": "2026-10-14T19:57:24.865025+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.8991228070175439,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 340,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.1676,
+              "max": 0.2305
+            },
+            "filt": {
+              "n": 340,
+              "min": 0.0,
+              "median": 0.1531,
+              "p95": 0.1829,
+              "max": 0.2071
+            },
+            "base": {
+              "n": 340,
+              "min": 1.3069,
+              "median": 1.3069,
+              "p95": 1.3069,
+              "max": 1.3069
+            },
+            "threshold": {
+              "n": 340,
+              "min": 0.3842,
+              "median": 0.3842,
+              "p95": 0.3842,
+              "max": 0.3842
+            },
+            "noise_p95": {
+              "n": 340,
+              "min": 0.1537,
+              "median": 0.1537,
+              "p95": 0.1537,
+              "max": 0.1537
+            }
+          },
+          "midi_note_ons": 40,
+          "midi_note_pitches": [
+            38,
+            39,
+            40,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 40,
+            "min": 38,
+            "median": 44.0,
+            "p95": 72,
+            "max": 84
+          },
+          "midi_note_duration_s": 18.073163,
+          "stable_midi_note_duration_s": 14.967513
+        }
+      }
+    },
+    {
+      "repetition": 2,
+      "phase": "release",
+      "start_utc": "2026-10-14T19:57:26.883000+00:00",
+      "end_utc": "2026-10-14T19:57:56.890000+00:00",
+      "stable_start_utc": "2026-10-14T19:57:41.890000+00:00",
+      "stable_end_utc": "2026-10-14T19:57:56.890000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:57:27.139+00:00",
+        "host_monotonic_ns": 107618173540000,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EC5-black-only-01",
+          "plant_node": "EC5",
+          "black_node": "EC5",
+          "condition": "black_only",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 18,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 7,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:57:22.626Z",
+        "visibility": "visible",
+        "client_render_utc": "2026-10-14T19:57:22.557Z",
+        "cue_dispatch_utc": "2026-10-14T19:57:22.626Z"
+      },
+      "instruction": {
+        "title": "SUELTA EL NEGRO",
+        "instruction": "SUELTA LA PUNTA NEGRA EC5. Deja ambas manos libres. No toques ninguna planta ni ninguna punta negra durante los 30 segundos.",
+        "spoken": "Suelta la punta negra. Ambas manos libres."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 710,
+          "stable_frames": 360,
+          "max_gap_s": 0.086445,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.032347,
+            "trailing_gap_s": 0.017012,
+            "max_gap_including_boundaries_s": 0.086445,
+            "first_frame_utc": "2026-10-14T19:57:26.915347+00:00",
+            "last_frame_utc": "2026-10-14T19:57:56.872988+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.025152,
+            "trailing_gap_s": 0.017012,
+            "max_gap_including_boundaries_s": 0.08606,
+            "first_frame_utc": "2026-10-14T19:57:41.915152+00:00",
+            "last_frame_utc": "2026-10-14T19:57:56.872988+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.12816901408450704,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 360,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.4473,
+              "max": 0.461
+            },
+            "filt": {
+              "n": 360,
+              "min": 0.1924,
+              "median": 0.21115,
+              "p95": 0.2232,
+              "max": 0.2276
+            },
+            "base": {
+              "n": 360,
+              "min": 0.2178,
+              "median": 0.2178,
+              "p95": 0.2178,
+              "max": 0.2178
+            },
+            "rms_mean": {
+              "n": 360,
+              "min": 0.1068,
+              "median": 0.12285,
+              "p95": 0.1364,
+              "max": 0.1427
+            },
+            "occupancy": {
+              "n": 360,
+              "min": 0.32,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.48
+            },
+            "occupancy_base": {
+              "n": 360,
+              "min": 0.4257,
+              "median": 0.4257,
+              "p95": 0.4257,
+              "max": 0.4257
+            },
+            "adc_peak": {
+              "n": 360,
+              "min": 535.0,
+              "median": 561.0,
+              "p95": 571.0,
+              "max": 573.0
+            },
+            "samples": {
+              "n": 360,
+              "min": 24.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 360,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 360,
+              "min": 0.0,
+              "median": 0.169,
+              "p95": 0.479,
+              "max": 0.571
+            },
+            "threshold": {
+              "n": 360,
+              "min": 0.0405,
+              "median": 0.0436,
+              "p95": 0.0469,
+              "max": 0.0474
+            },
+            "noise_p95": {
+              "n": 360,
+              "min": 0.0135,
+              "median": 0.0145,
+              "p95": 0.0156,
+              "max": 0.0158
+            },
+            "transition_resets": {
+              "n": 360,
+              "min": 19.0,
+              "median": 19.0,
+              "p95": 19.0,
+              "max": 19.0
+            }
+          },
+          "midi_note_ons": 10,
+          "midi_note_pitches": [
+            48,
+            51,
+            57,
+            58,
+            59,
+            60,
+            61
+          ],
+          "midi_pitch_summary": {
+            "n": 10,
+            "min": 48,
+            "median": 59.5,
+            "p95": 61,
+            "max": 61
+          },
+          "midi_note_duration_s": 4.23472,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 710,
+          "stable_frames": 358,
+          "max_gap_s": 0.094041,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.012783,
+            "trailing_gap_s": 0.010088,
+            "max_gap_including_boundaries_s": 0.094041,
+            "first_frame_utc": "2026-10-14T19:57:26.895783+00:00",
+            "last_frame_utc": "2026-10-14T19:57:56.879912+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.019994,
+            "trailing_gap_s": 0.010088,
+            "max_gap_including_boundaries_s": 0.090779,
+            "first_frame_utc": "2026-10-14T19:57:41.909994+00:00",
+            "last_frame_utc": "2026-10-14T19:57:56.879912+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.10140845070422536,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 358,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.5851,
+              "max": 0.6068
+            },
+            "filt": {
+              "n": 358,
+              "min": 0.2565,
+              "median": 0.2803,
+              "p95": 0.2947,
+              "max": 0.3013
+            },
+            "base": {
+              "n": 358,
+              "min": 0.2851,
+              "median": 0.2878,
+              "p95": 0.2917,
+              "max": 0.2927
+            },
+            "rms_mean": {
+              "n": 358,
+              "min": 0.1437,
+              "median": 0.1654,
+              "p95": 0.1828,
+              "max": 0.1898
+            },
+            "occupancy": {
+              "n": 358,
+              "min": 0.32,
+              "median": 0.44,
+              "p95": 0.48,
+              "max": 0.5
+            },
+            "occupancy_base": {
+              "n": 358,
+              "min": 0.4356,
+              "median": 0.438,
+              "p95": 0.4388,
+              "max": 0.4391
+            },
+            "adc_peak": {
+              "n": 358,
+              "min": 698.0,
+              "median": 739.0,
+              "p95": 750.0,
+              "max": 753.0
+            },
+            "samples": {
+              "n": 358,
+              "min": 24.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 358,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 358,
+              "min": 0.001,
+              "median": 0.1105,
+              "p95": 0.317,
+              "max": 0.42
+            },
+            "threshold": {
+              "n": 358,
+              "min": 0.0716,
+              "median": 0.0789,
+              "p95": 0.0834,
+              "max": 0.0834
+            },
+            "noise_p95": {
+              "n": 358,
+              "min": 0.0239,
+              "median": 0.0263,
+              "p95": 0.0278,
+              "max": 0.0278
+            },
+            "transition_resets": {
+              "n": 358,
+              "min": 18.0,
+              "median": 18.0,
+              "p95": 18.0,
+              "max": 18.0
+            }
+          },
+          "midi_note_ons": 4,
+          "midi_note_pitches": [
+            57,
+            58,
+            59,
+            60
+          ],
+          "midi_pitch_summary": {
+            "n": 4,
+            "min": 57,
+            "median": 58.5,
+            "p95": 59,
+            "max": 60
+          },
+          "midi_note_duration_s": 3.154101,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 99,
+          "midi_note_pitches": [
+            48,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            59,
+            62,
+            63,
+            69,
+            71,
+            72,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            82,
+            83,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 99,
+            "min": 48,
+            "median": 53,
+            "p95": 78,
+            "max": 84
+          },
+          "midi_note_duration_s": 29.828378,
+          "stable_midi_note_duration_s": 15.0
+        },
+        "EE5": {
+          "frames": 734,
+          "stable_frames": 370,
+          "max_gap_s": 0.08446,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.015261,
+            "trailing_gap_s": 0.025706,
+            "max_gap_including_boundaries_s": 0.08446,
+            "first_frame_utc": "2026-10-14T19:57:26.898261+00:00",
+            "last_frame_utc": "2026-10-14T19:57:56.864294+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.032152,
+            "trailing_gap_s": 0.025706,
+            "max_gap_including_boundaries_s": 0.079022,
+            "first_frame_utc": "2026-10-14T19:57:41.922152+00:00",
+            "last_frame_utc": "2026-10-14T19:57:56.864294+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.09128065395095368,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 370,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.1967,
+              "max": 1.2249
+            },
+            "filt": {
+              "n": 370,
+              "min": 0.884,
+              "median": 1.1145,
+              "p95": 1.1967,
+              "max": 1.2112
+            },
+            "base": {
+              "n": 370,
+              "min": 1.1262,
+              "median": 1.1307,
+              "p95": 1.1339,
+              "max": 1.1342
+            },
+            "threshold": {
+              "n": 370,
+              "min": 0.3092,
+              "median": 0.3666,
+              "p95": 0.368,
+              "max": 0.368
+            },
+            "noise_p95": {
+              "n": 370,
+              "min": 0.1237,
+              "median": 0.1466,
+              "p95": 0.1472,
+              "max": 0.1472
+            }
+          },
+          "midi_note_ons": 6,
+          "midi_note_pitches": [
+            32,
+            38,
+            44,
+            50,
+            56,
+            62
+          ],
+          "midi_pitch_summary": {
+            "n": 6,
+            "min": 32,
+            "median": 47.0,
+            "p95": 56,
+            "max": 62
+          },
+          "midi_note_duration_s": 2.940348,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 733,
+          "stable_frames": 369,
+          "max_gap_s": 0.096009,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.028722,
+            "trailing_gap_s": 0.038894,
+            "max_gap_including_boundaries_s": 0.096009,
+            "first_frame_utc": "2026-10-14T19:57:26.911722+00:00",
+            "last_frame_utc": "2026-10-14T19:57:56.851106+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.009125,
+            "trailing_gap_s": 0.038894,
+            "max_gap_including_boundaries_s": 0.086577,
+            "first_frame_utc": "2026-10-14T19:57:41.899125+00:00",
+            "last_frame_utc": "2026-10-14T19:57:56.851106+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.06684856753069578,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 369,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4054,
+              "max": 1.4264
+            },
+            "filt": {
+              "n": 369,
+              "min": 0.9904,
+              "median": 1.2902,
+              "p95": 1.4054,
+              "max": 1.4223
+            },
+            "base": {
+              "n": 369,
+              "min": 1.2939,
+              "median": 1.2968,
+              "p95": 1.3004,
+              "max": 1.3006
+            },
+            "threshold": {
+              "n": 369,
+              "min": 0.3825,
+              "median": 0.3991,
+              "p95": 0.4142,
+              "max": 0.4142
+            },
+            "noise_p95": {
+              "n": 369,
+              "min": 0.153,
+              "median": 0.1596,
+              "p95": 0.1657,
+              "max": 0.1657
+            }
+          },
+          "midi_note_ons": 5,
+          "midi_note_pitches": [
+            36,
+            42,
+            48,
+            54
+          ],
+          "midi_pitch_summary": {
+            "n": 5,
+            "min": 36,
+            "median": 42,
+            "p95": 48,
+            "max": 54
+          },
+          "midi_note_duration_s": 2.19276,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 3,
+      "phase": "rest",
+      "start_utc": "2026-10-14T19:57:56.890000+00:00",
+      "end_utc": "2026-10-14T19:58:16.915000+00:00",
+      "stable_start_utc": "2026-10-14T19:58:01.890000+00:00",
+      "stable_end_utc": "2026-10-14T19:58:16.915000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:57:57.064+00:00",
+        "host_monotonic_ns": 107648098819300,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EC5-black-only-01",
+          "plant_node": "EC5",
+          "black_node": "EC5",
+          "condition": "black_only",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 19,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 7,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:57:52.557Z",
+        "visibility": "visible",
+        "client_render_utc": "2026-10-14T19:57:52.544Z",
+        "cue_dispatch_utc": "2026-10-14T19:57:52.557Z"
+      },
+      "instruction": {
+        "title": "REPOSO: MANOS LIBRES",
+        "instruction": "Deja AMBAS manos libres: no toques ninguna planta ni ninguna punta negra. Mantente quieto. No sostengas el negro durante el reposo.",
+        "spoken": "Reposo. Ambas manos libres, sin tocar plantas ni puntas negras."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 477,
+          "stable_frames": 358,
+          "max_gap_s": 0.085623,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.021524,
+            "trailing_gap_s": 0.003075,
+            "max_gap_including_boundaries_s": 0.085623,
+            "first_frame_utc": "2026-10-14T19:57:56.911524+00:00",
+            "last_frame_utc": "2026-10-14T19:58:16.911925+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.014457,
+            "trailing_gap_s": 0.003075,
+            "max_gap_including_boundaries_s": 0.082027,
+            "first_frame_utc": "2026-10-14T19:58:01.904457+00:00",
+            "last_frame_utc": "2026-10-14T19:58:16.911925+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 358,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.4553,
+              "max": 0.4763
+            },
+            "filt": {
+              "n": 358,
+              "min": 0.1959,
+              "median": 0.21525,
+              "p95": 0.2288,
+              "max": 0.2357
+            },
+            "base": {
+              "n": 358,
+              "min": 0.2169,
+              "median": 0.2169,
+              "p95": 0.2178,
+              "max": 0.2178
+            },
+            "rms_mean": {
+              "n": 358,
+              "min": 0.1079,
+              "median": 0.1258,
+              "p95": 0.1397,
+              "max": 0.147
+            },
+            "occupancy": {
+              "n": 358,
+              "min": 0.32,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.48
+            },
+            "occupancy_base": {
+              "n": 358,
+              "min": 0.4255,
+              "median": 0.426,
+              "p95": 0.4263,
+              "max": 0.4264
+            },
+            "adc_peak": {
+              "n": 358,
+              "min": 542.0,
+              "median": 573.0,
+              "p95": 589.0,
+              "max": 592.0
+            },
+            "samples": {
+              "n": 358,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 358,
+              "min": 74.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 358,
+              "min": 0.001,
+              "median": 0.14,
+              "p95": 0.333,
+              "max": 0.439
+            },
+            "threshold": {
+              "n": 358,
+              "min": 0.0452,
+              "median": 0.0496,
+              "p95": 0.0514,
+              "max": 0.0514
+            },
+            "noise_p95": {
+              "n": 358,
+              "min": 0.0151,
+              "median": 0.0165,
+              "p95": 0.0171,
+              "max": 0.0171
+            },
+            "transition_resets": {
+              "n": 358,
+              "min": 19.0,
+              "median": 19.0,
+              "p95": 19.0,
+              "max": 19.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 477,
+          "stable_frames": 359,
+          "max_gap_s": 0.08395,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.069156,
+            "trailing_gap_s": 0.001804,
+            "max_gap_including_boundaries_s": 0.08395,
+            "first_frame_utc": "2026-10-14T19:57:56.959156+00:00",
+            "last_frame_utc": "2026-10-14T19:58:16.913196+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.030026,
+            "trailing_gap_s": 0.001804,
+            "max_gap_including_boundaries_s": 0.08395,
+            "first_frame_utc": "2026-10-14T19:58:01.920026+00:00",
+            "last_frame_utc": "2026-10-14T19:58:16.913196+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 359,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.5842,
+              "max": 0.6012
+            },
+            "filt": {
+              "n": 359,
+              "min": 0.2562,
+              "median": 0.281,
+              "p95": 0.2967,
+              "max": 0.305
+            },
+            "base": {
+              "n": 359,
+              "min": 0.282,
+              "median": 0.2834,
+              "p95": 0.2846,
+              "max": 0.285
+            },
+            "rms_mean": {
+              "n": 359,
+              "min": 0.136,
+              "median": 0.1654,
+              "p95": 0.1838,
+              "max": 0.191
+            },
+            "occupancy": {
+              "n": 359,
+              "min": 0.3462,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.5
+            },
+            "occupancy_base": {
+              "n": 359,
+              "min": 0.4346,
+              "median": 0.4356,
+              "p95": 0.4369,
+              "max": 0.4371
+            },
+            "adc_peak": {
+              "n": 359,
+              "min": 706.0,
+              "median": 737.0,
+              "p95": 752.0,
+              "max": 758.0
+            },
+            "samples": {
+              "n": 359,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 359,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 359,
+              "min": 0.001,
+              "median": 0.149,
+              "p95": 0.326,
+              "max": 0.45
+            },
+            "threshold": {
+              "n": 359,
+              "min": 0.0545,
+              "median": 0.0575,
+              "p95": 0.0645,
+              "max": 0.0645
+            },
+            "noise_p95": {
+              "n": 359,
+              "min": 0.0182,
+              "median": 0.0192,
+              "p95": 0.0215,
+              "max": 0.0215
+            },
+            "transition_resets": {
+              "n": 359,
+              "min": 18.0,
+              "median": 18.0,
+              "p95": 18.0,
+              "max": 18.0
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 6,
+          "midi_note_pitches": [
+            80,
+            82,
+            83,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 6,
+            "min": 80,
+            "median": 83.5,
+            "p95": 84,
+            "max": 84
+          },
+          "midi_note_duration_s": 20.00924,
+          "stable_midi_note_duration_s": 15.025
+        },
+        "EE5": {
+          "frames": 495,
+          "stable_frames": 371,
+          "max_gap_s": 0.08452,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.015091,
+            "trailing_gap_s": 0.023504,
+            "max_gap_including_boundaries_s": 0.08452,
+            "first_frame_utc": "2026-10-14T19:57:56.905091+00:00",
+            "last_frame_utc": "2026-10-14T19:58:16.891496+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.017935,
+            "trailing_gap_s": 0.023504,
+            "max_gap_including_boundaries_s": 0.08452,
+            "first_frame_utc": "2026-10-14T19:58:01.907935+00:00",
+            "last_frame_utc": "2026-10-14T19:58:16.891496+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 371,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.1846,
+              "max": 1.2209
+            },
+            "filt": {
+              "n": 371,
+              "min": 0.9227,
+              "median": 1.096,
+              "p95": 1.1903,
+              "max": 1.2201
+            },
+            "base": {
+              "n": 371,
+              "min": 1.1168,
+              "median": 1.1195,
+              "p95": 1.1288,
+              "max": 1.1297
+            },
+            "threshold": {
+              "n": 371,
+              "min": 0.3194,
+              "median": 0.3334,
+              "p95": 0.3443,
+              "max": 0.3461
+            },
+            "noise_p95": {
+              "n": 371,
+              "min": 0.1277,
+              "median": 0.1334,
+              "p95": 0.1377,
+              "max": 0.1384
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 496,
+          "stable_frames": 373,
+          "max_gap_s": 0.077805,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.005802,
+            "trailing_gap_s": 0.003563,
+            "max_gap_including_boundaries_s": 0.077805,
+            "first_frame_utc": "2026-10-14T19:57:56.895802+00:00",
+            "last_frame_utc": "2026-10-14T19:58:16.911437+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.002697,
+            "trailing_gap_s": 0.003563,
+            "max_gap_including_boundaries_s": 0.072857,
+            "first_frame_utc": "2026-10-14T19:58:01.892697+00:00",
+            "last_frame_utc": "2026-10-14T19:58:16.911437+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.0,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 373,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.4143,
+              "max": 1.432
+            },
+            "filt": {
+              "n": 373,
+              "min": 1.0581,
+              "median": 1.3063,
+              "p95": 1.424,
+              "max": 1.4272
+            },
+            "base": {
+              "n": 373,
+              "min": 1.3007,
+              "median": 1.3025,
+              "p95": 1.3051,
+              "max": 1.306
+            },
+            "threshold": {
+              "n": 373,
+              "min": 0.319,
+              "median": 0.3277,
+              "p95": 0.4164,
+              "max": 0.4253
+            },
+            "noise_p95": {
+              "n": 373,
+              "min": 0.1276,
+              "median": 0.1311,
+              "p95": 0.1666,
+              "max": 0.1701
+            }
+          },
+          "midi_note_ons": 0,
+          "midi_note_pitches": [],
+          "midi_pitch_summary": null,
+          "midi_note_duration_s": 0,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    },
+    {
+      "repetition": 3,
+      "phase": "contact",
+      "start_utc": "2026-10-14T19:58:16.915000+00:00",
+      "end_utc": "2026-10-14T19:58:36.927000+00:00",
+      "stable_start_utc": "2026-10-14T19:58:19.915000+00:00",
+      "stable_end_utc": "2026-10-14T19:58:34.927000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:58:17.089+00:00",
+        "host_monotonic_ns": 107668123287700,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EC5-black-only-01",
+          "plant_node": "EC5",
+          "black_node": "EC5",
+          "condition": "black_only",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 20,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 7,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:58:12.579Z",
+        "visibility": "visible",
+        "client_render_utc": "2026-10-14T19:58:12.567Z",
+        "cue_dispatch_utc": "2026-10-14T19:58:12.579Z"
+      },
+      "instruction": {
+        "title": "TOCA: SOLO PUNTA NEGRA",
+        "instruction": "Toca SOLO la punta negra marcada EC5 con una mano durante los 20 segundos. Deja la otra mano libre. Ninguna mano toca ninguna planta.",
+        "spoken": "Toca ahora solo la punta negra EC5. No toques plantas."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 478,
+          "stable_frames": 361,
+          "max_gap_s": 0.082943,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.032039,
+            "trailing_gap_s": 0.027726,
+            "max_gap_including_boundaries_s": 0.082943,
+            "first_frame_utc": "2026-10-14T19:58:16.947039+00:00",
+            "last_frame_utc": "2026-10-14T19:58:36.899274+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.001678,
+            "trailing_gap_s": 0.038734,
+            "max_gap_including_boundaries_s": 0.082294,
+            "first_frame_utc": "2026-10-14T19:58:19.916678+00:00",
+            "last_frame_utc": "2026-10-14T19:58:34.888266+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.895397489539749,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 361,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 361,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "base": {
+              "n": 361,
+              "min": 0.217,
+              "median": 0.217,
+              "p95": 0.217,
+              "max": 0.217
+            },
+            "rms_mean": {
+              "n": 361,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy": {
+              "n": 361,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy_base": {
+              "n": 361,
+              "min": 0.4263,
+              "median": 0.4263,
+              "p95": 0.4263,
+              "max": 0.4263
+            },
+            "adc_peak": {
+              "n": 361,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "samples": {
+              "n": 361,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 361,
+              "min": 72.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 361,
+              "min": 4.952,
+              "median": 4.952,
+              "p95": 4.952,
+              "max": 4.952
+            },
+            "threshold": {
+              "n": 361,
+              "min": 0.0438,
+              "median": 0.0438,
+              "p95": 0.0438,
+              "max": 0.0438
+            },
+            "noise_p95": {
+              "n": 361,
+              "min": 0.0146,
+              "median": 0.0146,
+              "p95": 0.0146,
+              "max": 0.0146
+            },
+            "transition_resets": {
+              "n": 361,
+              "min": 19.0,
+              "median": 19.0,
+              "p95": 19.0,
+              "max": 19.0
+            }
+          },
+          "midi_note_ons": 7,
+          "midi_note_pitches": [
+            44,
+            45,
+            47,
+            53,
+            59,
+            65,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 7,
+            "min": 44,
+            "median": 53,
+            "p95": 65,
+            "max": 71
+          },
+          "midi_note_duration_s": 17.917237,
+          "stable_midi_note_duration_s": 15.011486999999999
+        },
+        "EC5": {
+          "frames": 479,
+          "stable_frames": 364,
+          "max_gap_s": 0.088634,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.038801,
+            "trailing_gap_s": 0.008358,
+            "max_gap_including_boundaries_s": 0.088634,
+            "first_frame_utc": "2026-10-14T19:58:16.953801+00:00",
+            "last_frame_utc": "2026-10-14T19:58:36.918642+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.016758,
+            "trailing_gap_s": 0.023138,
+            "max_gap_including_boundaries_s": 0.088634,
+            "first_frame_utc": "2026-10-14T19:58:19.931758+00:00",
+            "last_frame_utc": "2026-10-14T19:58:34.903862+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.9018789144050104,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "filt": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "base": {
+              "n": 364,
+              "min": 0.282,
+              "median": 0.282,
+              "p95": 0.282,
+              "max": 0.282
+            },
+            "rms_mean": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "occupancy_base": {
+              "n": 364,
+              "min": 0.4346,
+              "median": 0.4346,
+              "p95": 0.4346,
+              "max": 0.4346
+            },
+            "adc_peak": {
+              "n": 364,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.0,
+              "max": 0.0
+            },
+            "samples": {
+              "n": 364,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 26.0
+            },
+            "span_ms": {
+              "n": 364,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 364,
+              "min": 5.052,
+              "median": 5.052,
+              "p95": 5.052,
+              "max": 5.052
+            },
+            "threshold": {
+              "n": 364,
+              "min": 0.0558,
+              "median": 0.0558,
+              "p95": 0.0558,
+              "max": 0.0558
+            },
+            "noise_p95": {
+              "n": 364,
+              "min": 0.0186,
+              "median": 0.0186,
+              "p95": 0.0186,
+              "max": 0.0186
+            },
+            "transition_resets": {
+              "n": 364,
+              "min": 18.0,
+              "median": 18.0,
+              "p95": 18.0,
+              "max": 18.0
+            }
+          },
+          "midi_note_ons": 4,
+          "midi_note_pitches": [
+            56,
+            59,
+            65,
+            71
+          ],
+          "midi_pitch_summary": {
+            "n": 4,
+            "min": 56,
+            "median": 62.0,
+            "p95": 65,
+            "max": 71
+          },
+          "midi_note_duration_s": 17.938877,
+          "stable_midi_note_duration_s": 15.012
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 1291,
+          "midi_note_pitches": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            60,
+            62,
+            67,
+            69,
+            73,
+            78
+          ],
+          "midi_pitch_summary": {
+            "n": 1291,
+            "min": 46,
+            "median": 51,
+            "p95": 54,
+            "max": 78
+          },
+          "midi_note_duration_s": 16.458632,
+          "stable_midi_note_duration_s": 11.995004
+        },
+        "EE5": {
+          "frames": 461,
+          "stable_frames": 343,
+          "max_gap_s": 0.104225,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.011665,
+            "trailing_gap_s": 0.028839,
+            "max_gap_including_boundaries_s": 0.104225,
+            "first_frame_utc": "2026-10-14T19:58:16.926665+00:00",
+            "last_frame_utc": "2026-10-14T19:58:36.898161+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.032865,
+            "trailing_gap_s": 0.003491,
+            "max_gap_including_boundaries_s": 0.104225,
+            "first_frame_utc": "2026-10-14T19:58:19.947865+00:00",
+            "last_frame_utc": "2026-10-14T19:58:34.923509+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.8763557483731019,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 343,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.1072,
+              "max": 0.1434
+            },
+            "filt": {
+              "n": 343,
+              "min": 0.0,
+              "median": 0.0927,
+              "p95": 0.116,
+              "max": 0.1273
+            },
+            "base": {
+              "n": 343,
+              "min": 1.1173,
+              "median": 1.1173,
+              "p95": 1.1173,
+              "max": 1.1173
+            },
+            "threshold": {
+              "n": 343,
+              "min": 0.3517,
+              "median": 0.367,
+              "p95": 0.379,
+              "max": 0.381
+            },
+            "noise_p95": {
+              "n": 343,
+              "min": 0.1407,
+              "median": 0.1468,
+              "p95": 0.1516,
+              "max": 0.1524
+            }
+          },
+          "midi_note_ons": 36,
+          "midi_note_pitches": [
+            35,
+            36,
+            37,
+            38,
+            42,
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 36,
+            "min": 35,
+            "median": 37.0,
+            "p95": 72,
+            "max": 84
+          },
+          "midi_note_duration_s": 17.608867,
+          "stable_midi_note_duration_s": 14.93347
+        },
+        "EF5": {
+          "frames": 455,
+          "stable_frames": 337,
+          "max_gap_s": 0.08573,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.034861,
+            "trailing_gap_s": 0.013781,
+            "max_gap_including_boundaries_s": 0.08573,
+            "first_frame_utc": "2026-10-14T19:58:16.949861+00:00",
+            "last_frame_utc": "2026-10-14T19:58:36.913219+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.017593,
+            "trailing_gap_s": 0.034763,
+            "max_gap_including_boundaries_s": 0.08573,
+            "first_frame_utc": "2026-10-14T19:58:19.932593+00:00",
+            "last_frame_utc": "2026-10-14T19:58:34.892237+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.8769230769230769,
+          "stable_active_fraction": 1.0,
+          "metrics": {
+            "raw": {
+              "n": 337,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.1314,
+              "max": 0.1692
+            },
+            "filt": {
+              "n": 337,
+              "min": 0.0,
+              "median": 0.1209,
+              "p95": 0.1507,
+              "max": 0.1652
+            },
+            "base": {
+              "n": 337,
+              "min": 1.3048,
+              "median": 1.3048,
+              "p95": 1.3048,
+              "max": 1.3048
+            },
+            "threshold": {
+              "n": 337,
+              "min": 0.333,
+              "median": 0.3425,
+              "p95": 0.3425,
+              "max": 0.3425
+            },
+            "noise_p95": {
+              "n": 337,
+              "min": 0.1332,
+              "median": 0.137,
+              "p95": 0.137,
+              "max": 0.137
+            }
+          },
+          "midi_note_ons": 42,
+          "midi_note_pitches": [
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 42,
+            "min": 37,
+            "median": 42.0,
+            "p95": 66,
+            "max": 84
+          },
+          "midi_note_duration_s": 17.614917000000002,
+          "stable_midi_note_duration_s": 14.923507
+        }
+      }
+    },
+    {
+      "repetition": 3,
+      "phase": "release",
+      "start_utc": "2026-10-14T19:58:36.927000+00:00",
+      "end_utc": "2026-10-14T19:59:06.931000+00:00",
+      "stable_start_utc": "2026-10-14T19:58:51.931000+00:00",
+      "stable_end_utc": "2026-10-14T19:59:06.931000+00:00",
+      "operator_display_ack": {
+        "at_utc": "2026-10-14T19:58:37.158+00:00",
+        "host_monotonic_ns": 107688192688000,
+        "kind": "display_ack",
+        "trial": {
+          "trial_id": "B-EC5-black-only-01",
+          "plant_node": "EC5",
+          "black_node": "EC5",
+          "condition": "black_only",
+          "operator_environment": {
+            "floor_material": "synthetic_grass",
+            "floor_moisture": "slightly_damp",
+            "moisture_source": "Direct operator observation; not a measured moisture value",
+            "footwear": "shoes",
+            "body_to_earth_impedance": "not_measured",
+            "electrical_isolation": "not_verified",
+            "weather_context_file": "weather_context.json",
+            "posture": "seated_on_floor_through_trousers",
+            "metadata_source": "operator_environment.json",
+            "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+            "footwear_source": "Operator selection at trial start"
+          }
+        },
+        "phase_seq": 21,
+        "operator_id": "1791998878186-xipnlmvfei",
+        "client_address": "192.168.1.58",
+        "client_ui_revision": 7,
+        "client_note": null,
+        "client_utc": "2026-10-14T19:58:32.649Z",
+        "visibility": "visible",
+        "client_render_utc": "2026-10-14T19:58:32.612Z",
+        "cue_dispatch_utc": "2026-10-14T19:58:32.649Z"
+      },
+      "instruction": {
+        "title": "SUELTA EL NEGRO",
+        "instruction": "SUELTA LA PUNTA NEGRA EC5. Deja ambas manos libres. No toques ninguna planta ni ninguna punta negra durante los 30 segundos.",
+        "spoken": "Suelta la punta negra. Ambas manos libres."
+      },
+      "nodes": {
+        "EB5": {
+          "frames": 705,
+          "stable_frames": 357,
+          "max_gap_s": 0.118455,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.013593,
+            "trailing_gap_s": 0.034988,
+            "max_gap_including_boundaries_s": 0.118455,
+            "first_frame_utc": "2026-10-14T19:58:36.940593+00:00",
+            "last_frame_utc": "2026-10-14T19:59:06.896012+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.03595,
+            "trailing_gap_s": 0.034988,
+            "max_gap_including_boundaries_s": 0.09222,
+            "first_frame_utc": "2026-10-14T19:58:51.966950+00:00",
+            "last_frame_utc": "2026-10-14T19:59:06.896012+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.16312056737588654,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.4618,
+              "max": 0.469
+            },
+            "filt": {
+              "n": 357,
+              "min": 0.1982,
+              "median": 0.217,
+              "p95": 0.2266,
+              "max": 0.233
+            },
+            "base": {
+              "n": 357,
+              "min": 0.2168,
+              "median": 0.2168,
+              "p95": 0.217,
+              "max": 0.217
+            },
+            "rms_mean": {
+              "n": 357,
+              "min": 0.1093,
+              "median": 0.1268,
+              "p95": 0.138,
+              "max": 0.1462
+            },
+            "occupancy": {
+              "n": 357,
+              "min": 0.3462,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.5
+            },
+            "occupancy_base": {
+              "n": 357,
+              "min": 0.4261,
+              "median": 0.4262,
+              "p95": 0.4262,
+              "max": 0.4264
+            },
+            "adc_peak": {
+              "n": 357,
+              "min": 545.0,
+              "median": 574.0,
+              "p95": 580.0,
+              "max": 586.0
+            },
+            "samples": {
+              "n": 357,
+              "min": 24.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 357,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.175,
+              "p95": 0.339,
+              "max": 0.446
+            },
+            "threshold": {
+              "n": 357,
+              "min": 0.0413,
+              "median": 0.0421,
+              "p95": 0.044,
+              "max": 0.044
+            },
+            "noise_p95": {
+              "n": 357,
+              "min": 0.0138,
+              "median": 0.014,
+              "p95": 0.0147,
+              "max": 0.0147
+            },
+            "transition_resets": {
+              "n": 357,
+              "min": 19.0,
+              "median": 19.0,
+              "p95": 19.0,
+              "max": 19.0
+            }
+          },
+          "midi_note_ons": 10,
+          "midi_note_pitches": [
+            46,
+            52,
+            58,
+            59,
+            60,
+            61
+          ],
+          "midi_pitch_summary": {
+            "n": 10,
+            "min": 46,
+            "median": 59.0,
+            "p95": 60,
+            "max": 61
+          },
+          "midi_note_duration_s": 5.165578,
+          "stable_midi_note_duration_s": 0
+        },
+        "EC5": {
+          "frames": 709,
+          "stable_frames": 357,
+          "max_gap_s": 0.104327,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.029933,
+            "trailing_gap_s": 0.008654,
+            "max_gap_including_boundaries_s": 0.104327,
+            "first_frame_utc": "2026-10-14T19:58:36.956933+00:00",
+            "last_frame_utc": "2026-10-14T19:59:06.922346+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.018324,
+            "trailing_gap_s": 0.008654,
+            "max_gap_including_boundaries_s": 0.093422,
+            "first_frame_utc": "2026-10-14T19:58:51.949324+00:00",
+            "last_frame_utc": "2026-10-14T19:59:06.922346+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.1071932299012694,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 357,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 0.5754,
+              "max": 0.6044
+            },
+            "filt": {
+              "n": 357,
+              "min": 0.2533,
+              "median": 0.2796,
+              "p95": 0.2952,
+              "max": 0.301
+            },
+            "base": {
+              "n": 357,
+              "min": 0.2794,
+              "median": 0.2809,
+              "p95": 0.2813,
+              "max": 0.2816
+            },
+            "rms_mean": {
+              "n": 357,
+              "min": 0.1408,
+              "median": 0.1651,
+              "p95": 0.1829,
+              "max": 0.1891
+            },
+            "occupancy": {
+              "n": 357,
+              "min": 0.3462,
+              "median": 0.4231,
+              "p95": 0.4615,
+              "max": 0.48
+            },
+            "occupancy_base": {
+              "n": 357,
+              "min": 0.432,
+              "median": 0.4346,
+              "p95": 0.4353,
+              "max": 0.4355
+            },
+            "adc_peak": {
+              "n": 357,
+              "min": 704.0,
+              "median": 735.0,
+              "p95": 747.0,
+              "max": 751.0
+            },
+            "samples": {
+              "n": 357,
+              "min": 25.0,
+              "median": 26.0,
+              "p95": 26.0,
+              "max": 27.0
+            },
+            "span_ms": {
+              "n": 357,
+              "min": 73.0,
+              "median": 77.0,
+              "p95": 78.0,
+              "max": 80.0
+            },
+            "score": {
+              "n": 357,
+              "min": 0.001,
+              "median": 0.175,
+              "p95": 0.374,
+              "max": 0.472
+            },
+            "threshold": {
+              "n": 357,
+              "min": 0.0543,
+              "median": 0.0564,
+              "p95": 0.0619,
+              "max": 0.0619
+            },
+            "noise_p95": {
+              "n": 357,
+              "min": 0.0181,
+              "median": 0.0188,
+              "p95": 0.0206,
+              "max": 0.0206
+            },
+            "transition_resets": {
+              "n": 357,
+              "min": 18.0,
+              "median": 18.0,
+              "p95": 18.0,
+              "max": 18.0
+            }
+          },
+          "midi_note_ons": 4,
+          "midi_note_pitches": [
+            57,
+            58,
+            59,
+            60
+          ],
+          "midi_pitch_summary": {
+            "n": 4,
+            "min": 57,
+            "median": 58.5,
+            "p95": 59,
+            "max": 60
+          },
+          "midi_note_duration_s": 3.273935,
+          "stable_midi_note_duration_s": 0
+        },
+        "ED5": {
+          "frames": 0,
+          "stable_frames": 0,
+          "max_gap_s": null,
+          "detailed_sensor_available": false,
+          "coverage": null,
+          "stable_coverage": null,
+          "active_fraction": null,
+          "stable_active_fraction": null,
+          "metrics": {},
+          "midi_note_ons": 76,
+          "midi_note_pitches": [
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            56,
+            57,
+            61,
+            62,
+            63,
+            65,
+            66,
+            67,
+            69,
+            70,
+            74,
+            75,
+            76,
+            77,
+            80,
+            84
+          ],
+          "midi_pitch_summary": {
+            "n": 76,
+            "min": 47,
+            "median": 51.0,
+            "p95": 75,
+            "max": 84
+          },
+          "midi_note_duration_s": 29.834515,
+          "stable_midi_note_duration_s": 15.0
+        },
+        "EE5": {
+          "frames": 735,
+          "stable_frames": 371,
+          "max_gap_s": 0.091551,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.011147,
+            "trailing_gap_s": 0.027295,
+            "max_gap_including_boundaries_s": 0.091551,
+            "first_frame_utc": "2026-10-14T19:58:36.938147+00:00",
+            "last_frame_utc": "2026-10-14T19:59:06.903705+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.022547,
+            "trailing_gap_s": 0.027295,
+            "max_gap_including_boundaries_s": 0.070247,
+            "first_frame_utc": "2026-10-14T19:58:51.953547+00:00",
+            "last_frame_utc": "2026-10-14T19:59:06.903705+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.08979591836734693,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 371,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.1862,
+              "max": 1.2136
+            },
+            "filt": {
+              "n": 371,
+              "min": 0.9533,
+              "median": 1.1145,
+              "p95": 1.1862,
+              "max": 1.204
+            },
+            "base": {
+              "n": 371,
+              "min": 1.1102,
+              "median": 1.1135,
+              "p95": 1.115,
+              "max": 1.1159
+            },
+            "threshold": {
+              "n": 371,
+              "min": 0.3376,
+              "median": 0.3498,
+              "p95": 0.3505,
+              "max": 0.3505
+            },
+            "noise_p95": {
+              "n": 371,
+              "min": 0.1351,
+              "median": 0.1399,
+              "p95": 0.1402,
+              "max": 0.1402
+            }
+          },
+          "midi_note_ons": 7,
+          "midi_note_pitches": [
+            33,
+            34,
+            36,
+            40,
+            46,
+            52,
+            58
+          ],
+          "midi_pitch_summary": {
+            "n": 7,
+            "min": 33,
+            "median": 40,
+            "p95": 52,
+            "max": 58
+          },
+          "midi_note_duration_s": 2.93013,
+          "stable_midi_note_duration_s": 0
+        },
+        "EF5": {
+          "frames": 734,
+          "stable_frames": 370,
+          "max_gap_s": 0.104359,
+          "detailed_sensor_available": true,
+          "coverage": {
+            "leading_gap_s": 0.066695,
+            "trailing_gap_s": 0.030153,
+            "max_gap_including_boundaries_s": 0.104359,
+            "first_frame_utc": "2026-10-14T19:58:36.993695+00:00",
+            "last_frame_utc": "2026-10-14T19:59:06.900847+00:00",
+            "no_frames": false
+          },
+          "stable_coverage": {
+            "leading_gap_s": 0.025782,
+            "trailing_gap_s": 0.030153,
+            "max_gap_including_boundaries_s": 0.08004,
+            "first_frame_utc": "2026-10-14T19:58:51.956782+00:00",
+            "last_frame_utc": "2026-10-14T19:59:06.900847+00:00",
+            "no_frames": false
+          },
+          "active_fraction": 0.07493188010899182,
+          "stable_active_fraction": 0.0,
+          "metrics": {
+            "raw": {
+              "n": 370,
+              "min": 0.0,
+              "median": 0.0,
+              "p95": 1.3949,
+              "max": 1.4199
+            },
+            "filt": {
+              "n": 370,
+              "min": 1.0291,
+              "median": 1.31395,
+              "p95": 1.4078,
+              "max": 1.4143
+            },
+            "base": {
+              "n": 370,
+              "min": 1.3044,
+              "median": 1.308,
+              "p95": 1.3103,
+              "max": 1.3112
+            },
+            "threshold": {
+              "n": 370,
+              "min": 0.3463,
+              "median": 0.365,
+              "p95": 0.3789,
+              "max": 0.3789
+            },
+            "noise_p95": {
+              "n": 370,
+              "min": 0.1385,
+              "median": 0.146,
+              "p95": 0.1515,
+              "max": 0.1515
+            }
+          },
+          "midi_note_ons": 6,
+          "midi_note_pitches": [
+            39,
+            41,
+            45,
+            51,
+            57,
+            63
+          ],
+          "midi_pitch_summary": {
+            "n": 6,
+            "min": 39,
+            "median": 48.0,
+            "p95": 57,
+            "max": 63
+          },
+          "midi_note_duration_s": 2.513626,
+          "stable_midi_note_duration_s": 0
+        }
+      }
+    }
+  ],
+  "runtime": {
+    "EB5": {
+      "samples": 210,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EC5": {
+      "samples": 210,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "ED5": {
+      "samples": 210,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EE5": {
+      "samples": 210,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EF5": {
+      "samples": 210,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    }
+  },
+  "limitations": [
+    "Physical onset is operator-followed cue, not electronically instrumented.",
+    "Analogue scales are native firmware scales, not calibrated signed voltage.",
+    "MIDI note-duration estimate is not an audio recording.",
+    "Compare native sensor metrics within a node; installed firmware differs between nodes.",
+    "Reported floor contact and footwear are environmental labels, not a measured body-to-earth impedance or proof of electrical isolation."
+  ],
+  "operator_environment": {
+    "floor_material": "synthetic_grass",
+    "floor_moisture": "slightly_damp",
+    "moisture_source": "Direct operator observation; not a measured moisture value",
+    "footwear": "shoes",
+    "body_to_earth_impedance": "not_measured",
+    "electrical_isolation": "not_verified",
+    "weather_context_file": "weather_context.json",
+    "posture": "seated_on_floor_through_trousers",
+    "metadata_source": "operator_environment.json",
+    "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+    "footwear_source": "Operator selection at trial start"
+  },
+  "sensor_metric_semantics": {
+    "recorded_at_utc": "2026-10-14T19:53:36.524+00:00",
+    "verified_firmware": "1.1.13-box5-touch-pilot",
+    "applicable_nodes": [
+      "EB5",
+      "EC5"
+    ],
+    "source_files": [
+      "diagnostics/eb5_touch_pilot_20261012/pilot.patch",
+      "diagnostics/eb5_touch_pilot_20261012/adaptive_touch_pilot.h"
+    ],
+    "verified_assignments": {
+      "rms_mean": "g_pilotMean = g_pilotAcquisition.mean: arithmetic ADC-window mean",
+      "filt": "g_plantSmoothV = feature.rms: ADC-window RMS used by the detector",
+      "base": "g_plantBaselineV = g_pilotDetector.referenceRms: RMS reference",
+      "threshold": "g_pilotDetector.thresholdRms",
+      "score": "g_pilotDetector.amplitudeScore: absolute RMS-reference difference / RMS threshold",
+      "noise_p95": "g_pilotDetector.noiseRms",
+      "occupancy": "fraction of acquired ADC samples above zero",
+      "transition_resets": "Detector medium-transition recalibrations; not a board reboot counter"
+    },
+    "scale": "Nominal ADC conversion, not calibrated signed analogue voltage.",
+    "other_firmware": "Do not apply these assignments to EE5/EF5 without separately verifying their implementation.",
+    "historical_reports": "Earlier derived RMS labels referring to rms_mean describe arithmetic mean. Numerical raw readings are unchanged."
+  },
+  "validity": {
+    "operator_confirmed": true,
+    "valid_contact_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "complete_recovery_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+    "operator_incident_notes": "Sin observaciones.",
+    "assessment": "all_contact_phases_confirmed",
+    "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons"
+  },
+  "data_quality": {
+    "coverage_gap_flag_s": 1.0,
+    "operator_ack_delay_flag_s": 1.0,
+    "meaning": "Flags missing host-received telemetry, including phase boundaries; does not prove a node reboot or missing analogue response.",
+    "sensor_coverage_warnings": [],
+    "operator_ack_delay_warnings": []
+  }
+}

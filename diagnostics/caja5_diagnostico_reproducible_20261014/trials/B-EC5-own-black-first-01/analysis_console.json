@@ -1,0 +1,413 @@
+{
+  "trial_id": "B-EC5-own-black-first-01",
+  "completed": true,
+  "confirmed_labels": true,
+  "validity": {
+    "operator_confirmed": true,
+    "valid_contact_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "complete_recovery_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+    "operator_incident_notes": "Sucede lo mismo al tocar planta no se detecta cambio perceptible.",
+    "assessment": "contact_phases_confirmed_with_documented_delayed_cue",
+    "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons",
+    "timing_adjustments": [
+      {
+        "repetition": 3,
+        "phase": "first_contact",
+        "operator_followed_delayed_cue": true,
+        "cue_receipt_delay_s": 4.347,
+        "scope": "Preserve confirmed physical condition and raw full phase. Do not treat scheduled pre-cue interval as actual contact. Adjust settled window conservatively to three seconds after host cue receipt; its duration is shorter than the other repetitions.",
+        "physical_onset_instrumented": false
+      }
+    ],
+    "repetitions_without_recorded_cue_delay": [
+      1,
+      2
+    ]
+  },
+  "display_delays_ms": {
+    "n": 13,
+    "min": 53.0,
+    "median": 142.0,
+    "p95": 261.0,
+    "max": 4347.0
+  },
+  "phases": [
+    {
+      "rep": 1,
+      "phase": "rest",
+      "frames": 476,
+      "rms_median": 0.4081,
+      "occupancy_median": 0.4615,
+      "active_pct": 0.0,
+      "stable_active_pct": 0.0,
+      "notes": 0,
+      "pitches": [],
+      "note_duration": 0,
+      "other_notes": {
+        "EB5": 0,
+        "ED5": 0,
+        "EE5": 0,
+        "EF5": 0
+      },
+      "other_rms": {
+        "EB5": 0.15525,
+        "ED5": null,
+        "EE5": null,
+        "EF5": null
+      },
+      "max_gap_s": 0.0932
+    },
+    {
+      "rep": 1,
+      "phase": "first_contact",
+      "frames": 239,
+      "rms_median": 0.0002,
+      "occupancy_median": 0.0385,
+      "active_pct": 84.5,
+      "stable_active_pct": 100.0,
+      "notes": 5,
+      "pitches": [
+        54,
+        55,
+        59,
+        65,
+        71
+      ],
+      "note_duration": 8.44,
+      "other_notes": {
+        "EB5": 4,
+        "ED5": 170,
+        "EE5": 15,
+        "EF5": 17
+      },
+      "other_rms": {
+        "EB5": 0.0,
+        "ED5": null,
+        "EE5": null,
+        "EF5": null
+      },
+      "max_gap_s": 0.091502
+    },
+    {
+      "rep": 1,
+      "phase": "contact",
+      "frames": 485,
+      "rms_median": 0.0,
+      "occupancy_median": 0.0,
+      "active_pct": 100.0,
+      "stable_active_pct": 100.0,
+      "notes": 0,
+      "pitches": [],
+      "note_duration": 20.01,
+      "other_notes": {
+        "EB5": 0,
+        "ED5": 0,
+        "EE5": 0,
+        "EF5": 0
+      },
+      "other_rms": {
+        "EB5": 0.0,
+        "ED5": null,
+        "EE5": null,
+        "EF5": null
+      },
+      "max_gap_s": 0.10785
+    },
+    {
+      "rep": 1,
+      "phase": "release",
+      "frames": 717,
+      "rms_median": 0.438,
+      "occupancy_median": 0.4615,
+      "active_pct": 4.7,
+      "stable_active_pct": 0.0,
+      "notes": 3,
+      "pitches": [
+        54,
+        55,
+        56
+      ],
+      "note_duration": 1.52,
+      "other_notes": {
+        "EB5": 2,
+        "ED5": 29,
+        "EE5": 3,
+        "EF5": 3
+      },
+      "other_rms": {
+        "EB5": 0.1558,
+        "ED5": null,
+        "EE5": null,
+        "EF5": null
+      },
+      "max_gap_s": 0.150262
+    },
+    {
+      "rep": 2,
+      "phase": "rest",
+      "frames": 476,
+      "rms_median": 0.4326,
+      "occupancy_median": 0.4615,
+      "active_pct": 0.0,
+      "stable_active_pct": 0.0,
+      "notes": 0,
+      "pitches": [],
+      "note_duration": 0,
+      "other_notes": {
+        "EB5": 0,
+        "ED5": 0,
+        "EE5": 0,
+        "EF5": 0
+      },
+      "other_rms": {
+        "EB5": 0.1478,
+        "ED5": null,
+        "EE5": null,
+        "EF5": null
+      },
+      "max_gap_s": 0.093163
+    },
+    {
+      "rep": 2,
+      "phase": "first_contact",
+      "frames": 238,
+      "rms_median": 0.0,
+      "occupancy_median": 0.0,
+      "active_pct": 84.0,
+      "stable_active_pct": 100.0,
+      "notes": 4,
+      "pitches": [
+        54,
+        59,
+        65,
+        71
+      ],
+      "note_duration": 8.42,
+      "other_notes": {
+        "EB5": 5,
+        "ED5": 96,
+        "EE5": 15,
+        "EF5": 14
+      },
+      "other_rms": {
+        "EB5": 0.0,
+        "ED5": null,
+        "EE5": null,
+        "EF5": null
+      },
+      "max_gap_s": 0.091378
+    },
+    {
+      "rep": 2,
+      "phase": "contact",
+      "frames": 486,
+      "rms_median": 0.0,
+      "occupancy_median": 0.0,
+      "active_pct": 100.0,
+      "stable_active_pct": 100.0,
+      "notes": 0,
+      "pitches": [],
+      "note_duration": 20.01,
+      "other_notes": {
+        "EB5": 0,
+        "ED5": 1,
+        "EE5": 1,
+        "EF5": 0
+      },
+      "other_rms": {
+        "EB5": 0.0,
+        "ED5": null,
+        "EE5": null,
+        "EF5": null
+      },
+      "max_gap_s": 0.081799
+    },
+    {
+      "rep": 2,
+      "phase": "release",
+      "frames": 717,
+      "rms_median": 0.4321,
+      "occupancy_median": 0.4615,
+      "active_pct": 5.0,
+      "stable_active_pct": 0.0,
+      "notes": 2,
+      "pitches": [
+        54,
+        55
+      ],
+      "note_duration": 1.59,
+      "other_notes": {
+        "EB5": 2,
+        "ED5": 30,
+        "EE5": 2,
+        "EF5": 1
+      },
+      "other_rms": {
+        "EB5": 0.15585,
+        "ED5": null,
+        "EE5": null,
+        "EF5": null
+      },
+      "max_gap_s": 0.09903
+    },
+    {
+      "rep": 3,
+      "phase": "rest",
+      "frames": 474,
+      "rms_median": 0.439,
+      "occupancy_median": 0.4615,
+      "active_pct": 0.0,
+      "stable_active_pct": 0.0,
+      "notes": 0,
+      "pitches": [],
+      "note_duration": 0,
+      "other_notes": {
+        "EB5": 0,
+        "ED5": 0,
+        "EE5": 0,
+        "EF5": 0
+      },
+      "other_rms": {
+        "EB5": 0.1551,
+        "ED5": null,
+        "EE5": null,
+        "EF5": null
+      },
+      "max_gap_s": 0.08458
+    },
+    {
+      "rep": 3,
+      "phase": "first_contact",
+      "frames": 239,
+      "rms_median": 0.0,
+      "occupancy_median": 0.0,
+      "active_pct": 41.4,
+      "stable_active_pct": 100.0,
+      "notes": 4,
+      "pitches": [
+        54,
+        59,
+        65,
+        71
+      ],
+      "note_duration": 4.23,
+      "other_notes": {
+        "EB5": 4,
+        "ED5": 27,
+        "EE5": 10,
+        "EF5": 10
+      },
+      "other_rms": {
+        "EB5": 0.0,
+        "ED5": null,
+        "EE5": null,
+        "EF5": null
+      },
+      "max_gap_s": 0.084604
+    },
+    {
+      "rep": 3,
+      "phase": "contact",
+      "frames": 482,
+      "rms_median": 0.0,
+      "occupancy_median": 0.0,
+      "active_pct": 100.0,
+      "stable_active_pct": 100.0,
+      "notes": 4,
+      "pitches": [
+        54,
+        55
+      ],
+      "note_duration": 20.03,
+      "other_notes": {
+        "EB5": 0,
+        "ED5": 29,
+        "EE5": 8,
+        "EF5": 4
+      },
+      "other_rms": {
+        "EB5": 0.0,
+        "ED5": null,
+        "EE5": null,
+        "EF5": null
+      },
+      "max_gap_s": 0.081009
+    },
+    {
+      "rep": 3,
+      "phase": "release",
+      "frames": 710,
+      "rms_median": 0.4311,
+      "occupancy_median": 0.4615,
+      "active_pct": 6.2,
+      "stable_active_pct": 0.0,
+      "notes": 4,
+      "pitches": [
+        54,
+        55,
+        56,
+        58
+      ],
+      "note_duration": 2.0,
+      "other_notes": {
+        "EB5": 9,
+        "ED5": 31,
+        "EE5": 5,
+        "EF5": 4
+      },
+      "other_rms": {
+        "EB5": 0.1506,
+        "ED5": null,
+        "EE5": null,
+        "EF5": null
+      },
+      "max_gap_s": 0.109473
+    }
+  ],
+  "runtime": {
+    "EB5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EC5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "ED5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EE5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EF5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "trial_id": "B-EB5-cross-EC5-plant-first-01",
+  "recorded_at_utc": "2026-10-14T19:20:44.960173+00:00",
+  "validity": {
+    "operator_confirmed": true,
+    "valid_contact_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "complete_recovery_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+    "operator_incident_notes": "Sucede lo mismo, no hay sonido durante toque de EB5 pero si con negro de EC5, además cometí un leve error que en el primer reposo toqué EB5 pero solté rápidamente no es algo grave, solo te lo dejo en observación por si ves un leve cambio en el inicio ",
+    "assessment": "contact_phases_confirmed_with_reference_phase_exclusions",
+    "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons",
+    "phase_exclusions": [
+      {
+        "repetition": 1,
+        "phase": "rest",
+        "reason": "Accidental plant EB5 contact, exact timing unknown; exclude the complete first-rest window from clean baseline comparisons."
+      }
+    ],
+    "clean_rest_contact_comparison_repetitions": [
+      2,
+      3
+    ],
+    "exclusion_scope": "Excluded reference phases are preserved; do not use them as uncontaminated baseline for quantitative comparisons."
+  },
+  "operator_environment": {
+    "floor_material": "synthetic_grass",
+    "floor_moisture": "slightly_damp",
+    "moisture_source": "Direct operator observation; not a measured moisture value",
+    "footwear": "shoes",
+    "body_to_earth_impedance": "not_measured",
+    "electrical_isolation": "not_verified",
+    "weather_context_file": "weather_context.json",
+    "posture": "seated_on_floor_through_trousers",
+    "metadata_source": "operator_environment.json",
+    "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+    "footwear_source": "Operator selection at trial start"
+  },
+  "findings": [
+    {
+      "repetition": 1,
+      "rest_clean_for_comparison": false,
+      "EB5_rest_RMS_median": 0.129,
+      "EB5_plant_only_RMS_median": 0.1343,
+      "within_trial_RMS_change_pct": null,
+      "plant_only_note_ons_all_nodes": {
+        "EB5": 0,
+        "EC5": 0,
+        "ED5": 0,
+        "EE5": 0,
+        "EF5": 0
+      },
+      "paired_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "EB5_paired_RMS_median": 0.0,
+      "EB5_paired_MIDI_held_s": 17.86,
+      "EB5_recovered_activation": 0.0
+    },
+    {
+      "repetition": 2,
+      "rest_clean_for_comparison": true,
+      "EB5_rest_RMS_median": 0.1404,
+      "EB5_plant_only_RMS_median": 0.1366,
+      "within_trial_RMS_change_pct": -2.71,
+      "plant_only_note_ons_all_nodes": {
+        "EB5": 0,
+        "EC5": 0,
+        "ED5": 0,
+        "EE5": 0,
+        "EF5": 0
+      },
+      "paired_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "EB5_paired_RMS_median": 0.0,
+      "EB5_paired_MIDI_held_s": 17.078,
+      "EB5_recovered_activation": 0.0
+    },
+    {
+      "repetition": 3,
+      "rest_clean_for_comparison": true,
+      "EB5_rest_RMS_median": 0.14285,
+      "EB5_plant_only_RMS_median": 0.1535,
+      "within_trial_RMS_change_pct": 7.46,
+      "plant_only_note_ons_all_nodes": {
+        "EB5": 0,
+        "EC5": 0,
+        "ED5": 0,
+        "EE5": 0,
+        "EF5": 0
+      },
+      "paired_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "EB5_paired_RMS_median": 0.0,
+      "EB5_paired_MIDI_held_s": 18.491,
+      "EB5_recovered_activation": 0.0
+    }
+  ],
+  "operator_audio": "Plant-only audible 0 of 3; adding black EC5 audible 3 of 3 with clear onset/change; continuous while held and silence after release.",
+  "runtime": {
+    "EB5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EC5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "ED5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EE5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EF5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    }
+  },
+  "data_quality": {
+    "coverage_gap_flag_s": 1.0,
+    "meaning": "Flags missing host-received telemetry, including phase boundaries; does not prove a node reboot or missing analogue response.",
+    "sensor_coverage_warnings": []
+  },
+  "interpretation": "Both sequential contact orders produce activation when black EC5 is contacted. In this trial plant EB5 alone produced no MIDI in any node. Shared-reference effect is consistent with hardware; actual analogue waveform and causal posture/order effects remain unmeasured.",
+  "changes_to_nodes_or_Ableton": false
+}

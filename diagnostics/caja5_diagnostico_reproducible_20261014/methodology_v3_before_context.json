@@ -1,0 +1,162 @@
+{
+  "protocol": "caja5-contactos-v3",
+  "date": "2026-10-14",
+  "physical_conditions": {
+    "glass": "Installed for the entire session",
+    "enclosure_and_internal_wiring": "Do not open, reseat boards, unplug electrodes or move internal wiring",
+    "operator": "Same operator, same plant contact point and similar contact pressure/posture in each repetition",
+    "electrodes": "Use unequivocal external red/black labels; red clips remain in their original position",
+    "initial_ground_state": "All black measurement tips free of soil, plants and people",
+    "public": "Closed for maintenance, confirmed by user",
+    "exceptions": "Unexpected touch, moving a cable, hidden timer, missed cue, clock/network issue or environmental change must be recorded; do not silently keep the affected trial as clean"
+  },
+  "observation": {
+    "simultaneous_nodes": [
+      "EB5",
+      "EC5",
+      "ED5",
+      "EE5",
+      "EF5"
+    ],
+    "detailed_telemetry": [
+      "EB5",
+      "EC5",
+      "EE5",
+      "EF5"
+    ],
+    "ED5_limit": "Currently reports firmware 1.0, without detailed PLANTDIAG stream or OTA firmware version independently verified for this session. CKv2 and raw MIDI channel 8 are available; do not claim ADC data for ED5",
+    "MIDI": "Read-only additional input on loopMIDI Port 2, channels 6-10; never create a MIDI output",
+    "audio": "Operator report; MIDI is not proof of actual audio playback",
+    "ADC": "Unipolar codes or nominal code-derived scales, not calibrated signed analogue voltage. Metrics depend on existing firmware; compare within-node before and during each condition",
+    "connections": "Resolved current CKv2 IPs before capture, not historical DHCP addresses",
+    "timestamps": "UTC host capture timestamps, node t_ms when available; experiment controller also records host monotonic clock and scheduled/displayed cue timestamps",
+    "raw_waveform_limit": "Existing PLANTDIAG contains summaries and selected readings, not a complete waveform from every acquisition. Unified deeper telemetry, if needed, is a separate OTA version with matching processing and exact rollback"
+  },
+  "stages": [
+    {
+      "stage": "A",
+      "name": "Untouched reference",
+      "duration_s": 300,
+      "start_utc": "2026-10-14T17:06:37.789362+00:00",
+      "expected_end_utc": "2026-10-14T17:11:37.789362+00:00",
+      "condition": "Glass on, all black tips free, no touching",
+      "initial_excluded_recording": "captura_1700Z has data for only 3 detailed nodes because EB5 changed DHCP address; preserve it but do not use it as the complete five-node reference"
+    },
+    {
+      "stage": "B",
+      "name": "Characterize contacts node by node",
+      "node_order": [
+        "EB5",
+        "EC5",
+        "EE5",
+        "EF5",
+        "ED5"
+      ],
+      "conditions_per_node": [
+        "own_pair_black_first",
+        "own_pair_plant_first",
+        "plant_only",
+        "black_only",
+        "cross_pair_black_first",
+        "cross_pair_plant_first"
+      ],
+      "condition_meaning": {
+        "own_pair": "One hand on target plant, other hand on its marked black electrode",
+        "plant_only": "One hand on target plant; no contact with any black",
+        "black_only": "One hand on marked black; no plant contact",
+        "cross_pair": "One hand on target plant, other hand on a different node's marked black",
+        "sham": "Approach plant without touching; optional movement control"
+      },
+      "initial_cross_black_map": {
+        "EB5": "EC5",
+        "EC5": "EE5",
+        "EE5": "EF5",
+        "EF5": "EB5",
+        "ED5": "EB5"
+      },
+      "black_matrix_extension": "If response depends on which black is used, extend the affected targets across all five black electrodes. Initial cyclic comparison is not an exhaustive 5x5 matrix",
+      "contact_cue": "The controller publishes the actual condition, contact order and exact action for every phase, not a generic TOCA instruction.",
+      "report": "After all three repetitions, record cue compliance, actual repetition count, audibility count, held-note variation/release behavior and incidents",
+      "separation_of_contact_and_sound": "Physical condition is labelled independently of firmware activation and whether sound was heard",
+      "baseline_recheck": "Two-minute untouched reference between node blocks; compare to initial reference before interpreting slow changes",
+      "paired_contact_orders": [
+        "black_first",
+        "plant_first"
+      ],
+      "paired_trial_timing": {
+        "preparation_s": 10,
+        "repetitions": 3,
+        "rest_s": 20,
+        "first_contact_only_s": 10,
+        "both_contacts_s": 20,
+        "release_both_s": 30,
+        "total_s": 250
+      },
+      "order_control": "Compare two separate trials: black first then add plant without releasing black; plant first then add black without releasing plant. Keep rest and release-to-no-contact unchanged. Counterbalance which order is first between node blocks and validate again in reverse trial order.",
+      "explicit_rest": "Both hands free. No hand touches any plant or any black tip, including the preparatory phase.",
+      "explicit_release": "Paired trials: release both plant and black. Plant-only trials: release plant, both hands free. Black-only trials: release black, both hands free. No condition holds black throughout rest.",
+      "single_contact_trial_timing": {
+        "preparation_s": 10,
+        "repetitions": 3,
+        "rest_before_contact_s": 20,
+        "contact_s": 20,
+        "release_recovery_s": 30,
+        "total_s": 220
+      }
+    },
+    {
+      "stage": "C",
+      "name": "One black in soil and shared-reference effects",
+      "eligibility": "Only if external black tip can be placed without removing glass or disturbing internal wiring",
+      "ground_location": "Record which black and exact external soil/contact point; electronic GND must not be equated with protective earth",
+      "sequence": [
+        "Untouched reference before placement",
+        "Record placement as manipulation transient",
+        "Leave one black fixed, other four free, allow two minutes to settle",
+        "Record two-minute untouched reference",
+        "Repeat selected plant-only and paired-contact conditions",
+        "Record removal transient",
+        "Return black to original free state, settle and repeat reference"
+      ],
+      "scope": "Observe all five nodes; compare within-node before, during and after. Do not assume physically identical effects from shared schematic GND"
+    },
+    {
+      "stage": "D",
+      "name": "Firmware design and independent validation",
+      "design": "Use distinguishable features demonstrated in recordings: amplitude/occupancy or energy change relative to local rest, persistence, edge/release and shared-node changes. Learn baseline/noise continuously only in reliable rest; freeze during suspected contact; use hysteresis and time evidence. Keep physical ADC limitations explicit",
+      "role": {
+        "EB5_EC5_EE5_EF5": "Silent in rest, sustained changing notes during supported contact modes and release to silence",
+        "ED5": "Continuous musical base with bounded variation; contact modulates base rather than silencing it"
+      },
+      "deployment": "Preserve exact installed binaries/settings for rollback, version all changes, deploy on OTA-confirmed nodes in stages. Do not modify Ableton or change other boxes",
+      "evaluation": "Use repetitions/time blocks held out from calibration, short visitor-like contacts and long untouched periods. Record missed contacts, unintended activations, retention/release behavior and effects on untouched nodes",
+      "cross_day_claim": "Today's success cannot establish daily robustness; repeat a fixed subset on later days and at different times before declaring the firmware validated across those conditions"
+    }
+  ],
+  "analysis_windows": {
+    "rest": "Use the last 15 s of each 20 s rest, preserving the earlier 5 s for settling checks",
+    "stable_contact": "Scheduled contact seconds 3-18, only when operator confirms following cues; keep edges separately",
+    "release": "Analyze immediate release separately and final 15 s as recovered rest",
+    "latency_limit": "Server cue and display acknowledgement are measured. Human physical onset is not instrumented; never report precise touch-to-note latency from these scheduled labels",
+    "metrics": [
+      "Native ADC/RMS/occupancy/rail fractions when available",
+      "Within-node change relative to neighboring rest",
+      "Firmware activation and thresholds",
+      "MIDI NoteOn/NoteOff rate, pitch/range and open notes",
+      "Behavior of all untouched nodes",
+      "Communication gaps and resets",
+      "Operator audible assessment"
+    ],
+    "first_contact_only": "Preserve the 10 s first-contact phase separately from the combined-contact phase; assess settled seconds 3-8 and preserve transitions with onset uncertainty."
+  },
+  "artifacts": [
+    "preflight.json",
+    "captura_completa/signals.jsonl",
+    "captura_completa/markers.jsonl",
+    "methodology.json",
+    "controller.py",
+    "temporizador.html"
+  ],
+  "estimated_first_contact_block_minutes": 120,
+  "changes_to_nodes_or_Ableton_during_reference": false
+}

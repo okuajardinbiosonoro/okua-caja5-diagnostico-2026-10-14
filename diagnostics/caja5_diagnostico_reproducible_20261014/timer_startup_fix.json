@@ -1,0 +1,20 @@
+{
+  "recorded_at_utc": "2026-10-14T19:01:08.876+00:00",
+  "failed_trial_id": "B-EB5-cross-EC5-black-first-02",
+  "observed_interruption_ms": 16,
+  "operator_contacts": 0,
+  "observed_reason": "Operator timer polling failed",
+  "diagnostic_limit": "Previous UI did not retain the underlying JavaScript or request error, so the exact cause of this occurrence cannot be proven retrospectively.",
+  "code_issue_found": "Running state was published before the worker set trial and preparation phase; UI assumed any running state had a valid phase and could throw and abort.",
+  "fix": "Initialize trial and preparation synchronously under lock before publishing running; guard transitional state; classify/log client errors; unavailable speech does not abort.",
+  "ui_revision": 6,
+  "verification": {
+    "isolated_http_startups": 25,
+    "preparation_always_available": true,
+    "page_transitional_state_does_not_abort": true,
+    "page_preparation_does_not_abort": true,
+    "unavailable_speech_does_not_abort": true,
+    "phone_validation": "pending user retry"
+  },
+  "capture_and_firmware": "No firmware, MIDI or Ableton changes; live sensor capture continues."
+}

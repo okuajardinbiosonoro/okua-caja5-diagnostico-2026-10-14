@@ -1,0 +1,397 @@
+{
+  "start_utc": "2026-10-14T17:06:37.789362+00:00",
+  "end_utc": "2026-10-14T17:11:37.789362+00:00",
+  "duration_s": 300,
+  "nodes": {
+    "EB5": {
+      "sensor_frames": 7151,
+      "firmware_strings": [
+        "1.1.13-box5-touch-pilot"
+      ],
+      "midi_note_ons": 0,
+      "midi_note_offs": 0,
+      "midi_pitches": [],
+      "runtime_samples": 287,
+      "runtime_last": {
+        "status": "online",
+        "health_summary": "healthy traffic",
+        "status_reason": "healthy traffic",
+        "last_seen_age_s": 0.006780800002161413,
+        "last_stat_age_s": 0.006780800002161413,
+        "status_age_s": 9711.348908200001,
+        "pps_evt": 0.0,
+        "pps_stat": 1.0,
+        "loss_evt_pct": 0.0,
+        "loss_stat_pct": 0.0,
+        "rssi_dbm": -65,
+        "vbat_mv": 0,
+        "free_heap": 232084,
+        "last_uptime_s": 9732,
+        "reset_reason": 3,
+        "fw_major": 1,
+        "fw_minor": 1
+      },
+      "metrics": {
+        "raw": {
+          "min": 0.0,
+          "median": 0.0,
+          "p95": 0.4408,
+          "max": 0.4763
+        },
+        "filt": {
+          "min": 0.1776,
+          "median": 0.2078,
+          "p95": 0.2236,
+          "max": 0.2346
+        },
+        "base": {
+          "min": 0.205,
+          "median": 0.2058,
+          "p95": 0.2069,
+          "max": 0.2072
+        },
+        "threshold": {
+          "min": 0.0391,
+          "median": 0.0466,
+          "p95": 0.0726,
+          "max": 0.0806
+        },
+        "noise_p95": {
+          "min": 0.013,
+          "median": 0.0155,
+          "p95": 0.0242,
+          "max": 0.0269
+        },
+        "rms_mean": {
+          "min": 0.0925,
+          "median": 0.1218,
+          "p95": 0.1359,
+          "max": 0.1467
+        },
+        "occupancy": {
+          "min": 0.32,
+          "median": 0.4231,
+          "p95": 0.4615,
+          "max": 0.52
+        },
+        "occupancy_base": {
+          "min": 0.4245,
+          "median": 0.4269,
+          "p95": 0.4282,
+          "max": 0.4289
+        },
+        "score": {
+          "min": 0.0,
+          "median": 0.156,
+          "p95": 0.378,
+          "max": 0.597
+        },
+        "samples": {
+          "min": 24.0,
+          "median": 26.0,
+          "p95": 26.0,
+          "max": 27.0
+        },
+        "span_ms": {
+          "min": 73.0,
+          "median": 77.0,
+          "p95": 78.0,
+          "max": 80.0
+        },
+        "adc_peak": {
+          "min": 498.0,
+          "median": 554.0,
+          "p95": 579.0,
+          "max": 592.0
+        },
+        "transition_resets": {
+          "min": 5.0,
+          "median": 5.0,
+          "p95": 5.0,
+          "max": 5.0
+        }
+      },
+      "activation_windows": [],
+      "active_frame_fraction": 0.0,
+      "zero_raw_frame_fraction": 0.5727870227940148
+    },
+    "EC5": {
+      "sensor_frames": 7173,
+      "firmware_strings": [
+        "1.1.13-box5-touch-pilot"
+      ],
+      "midi_note_ons": 0,
+      "midi_note_offs": 0,
+      "midi_pitches": [],
+      "runtime_samples": 287,
+      "runtime_last": {
+        "status": "online",
+        "health_summary": "healthy traffic",
+        "status_reason": "healthy traffic",
+        "last_seen_age_s": 0.8972447999985889,
+        "last_stat_age_s": 0.8972447999985889,
+        "status_age_s": 9710.328681900006,
+        "pps_evt": 0.0,
+        "pps_stat": 1.0,
+        "loss_evt_pct": 0.0,
+        "loss_stat_pct": 0.6645537266128207,
+        "rssi_dbm": -64,
+        "vbat_mv": 0,
+        "free_heap": 232080,
+        "last_uptime_s": 9730,
+        "reset_reason": 3,
+        "fw_major": 1,
+        "fw_minor": 1
+      },
+      "metrics": {
+        "raw": {
+          "min": 0.0,
+          "median": 0.0,
+          "p95": 0.9138,
+          "max": 0.9727
+        },
+        "filt": {
+          "min": 0.3599,
+          "median": 0.426,
+          "p95": 0.4544,
+          "max": 0.4783
+        },
+        "base": {
+          "min": 0.4957,
+          "median": 0.4957,
+          "p95": 0.4957,
+          "max": 0.4957
+        },
+        "threshold": {
+          "min": 0.24,
+          "median": 0.295,
+          "p95": 0.3226,
+          "max": 0.3268
+        },
+        "noise_p95": {
+          "min": 0.08,
+          "median": 0.0983,
+          "p95": 0.1075,
+          "max": 0.1089
+        },
+        "rms_mean": {
+          "min": 0.1902,
+          "median": 0.2455,
+          "p95": 0.2727,
+          "max": 0.3008
+        },
+        "occupancy": {
+          "min": 0.28,
+          "median": 0.4231,
+          "p95": 0.4615,
+          "max": 0.5
+        },
+        "occupancy_base": {
+          "min": 0.4544,
+          "median": 0.4544,
+          "p95": 0.4544,
+          "max": 0.4544
+        },
+        "score": {
+          "min": 0.067,
+          "median": 0.236,
+          "p95": 0.343,
+          "max": 0.445
+        },
+        "samples": {
+          "min": 25.0,
+          "median": 26.0,
+          "p95": 26.0,
+          "max": 27.0
+        },
+        "span_ms": {
+          "min": 73.0,
+          "median": 77.0,
+          "p95": 78.0,
+          "max": 80.0
+        },
+        "adc_peak": {
+          "min": 1046.0,
+          "median": 1146.0,
+          "p95": 1186.0,
+          "max": 1209.0
+        },
+        "transition_resets": {
+          "min": 2.0,
+          "median": 2.0,
+          "p95": 2.0,
+          "max": 2.0
+        }
+      },
+      "activation_windows": [],
+      "active_frame_fraction": 0.0,
+      "zero_raw_frame_fraction": 0.5837167154607557
+    },
+    "ED5": {
+      "sensor_frames": 0,
+      "firmware_strings": [],
+      "midi_note_ons": 0,
+      "midi_note_offs": 0,
+      "midi_pitches": [],
+      "runtime_samples": 287,
+      "runtime_last": {
+        "status": "online",
+        "health_summary": "healthy traffic",
+        "status_reason": "healthy traffic",
+        "last_seen_age_s": 0.3066251000127522,
+        "last_stat_age_s": 0.3066251000127522,
+        "status_age_s": 9707.631438700002,
+        "pps_evt": 0.0,
+        "pps_stat": 1.0,
+        "loss_evt_pct": 0.833537708856063,
+        "loss_stat_pct": 0.020485506504148314,
+        "rssi_dbm": -70,
+        "vbat_mv": 0,
+        "free_heap": 245452,
+        "last_uptime_s": 9730,
+        "reset_reason": 3,
+        "fw_major": 1,
+        "fw_minor": 0
+      },
+      "metrics": {},
+      "activation_windows": [],
+      "active_frame_fraction": null,
+      "zero_raw_frame_fraction": null
+    },
+    "EE5": {
+      "sensor_frames": 7419,
+      "firmware_strings": [
+        "1.1.7-box5-touch-two-tier"
+      ],
+      "midi_note_ons": 0,
+      "midi_note_offs": 0,
+      "midi_pitches": [],
+      "runtime_samples": 287,
+      "runtime_last": {
+        "status": "online",
+        "health_summary": "healthy traffic",
+        "status_reason": "healthy traffic",
+        "last_seen_age_s": 0.4515460999973584,
+        "last_stat_age_s": 0.4515460999973584,
+        "status_age_s": 9708.2416486,
+        "pps_evt": 0.0,
+        "pps_stat": 1.0,
+        "loss_evt_pct": 0.0,
+        "loss_stat_pct": 1.4707373973019575,
+        "rssi_dbm": -64,
+        "vbat_mv": 0,
+        "free_heap": 231604,
+        "last_uptime_s": 9729,
+        "reset_reason": 3,
+        "fw_major": 1,
+        "fw_minor": 1
+      },
+      "metrics": {
+        "raw": {
+          "min": 0.0,
+          "median": 0.0,
+          "p95": 1.3684,
+          "max": 1.4006
+        },
+        "filt": {
+          "min": 0.7349,
+          "median": 1.2773,
+          "p95": 1.3796,
+          "max": 1.3949
+        },
+        "base": {
+          "min": 1.252,
+          "median": 1.2685,
+          "p95": 1.276,
+          "max": 1.2777
+        },
+        "threshold": {
+          "min": 0.294,
+          "median": 0.3368,
+          "p95": 0.3795,
+          "max": 0.3868
+        },
+        "noise_p95": {
+          "min": 0.1176,
+          "median": 0.1347,
+          "p95": 0.1518,
+          "max": 0.1547
+        }
+      },
+      "activation_windows": [],
+      "active_frame_fraction": 0.0,
+      "zero_raw_frame_fraction": 0.52904704138024
+    },
+    "EF5": {
+      "sensor_frames": 7426,
+      "firmware_strings": [
+        "1.1.11-box5-touch-two-tier"
+      ],
+      "midi_note_ons": 0,
+      "midi_note_offs": 0,
+      "midi_pitches": [],
+      "runtime_samples": 287,
+      "runtime_last": {
+        "status": "online",
+        "health_summary": "healthy traffic",
+        "status_reason": "healthy traffic",
+        "last_seen_age_s": 0.5321523999882629,
+        "last_stat_age_s": 0.5321523999882629,
+        "status_age_s": 9706.845415699994,
+        "pps_evt": 0.0,
+        "pps_stat": 1.0,
+        "loss_evt_pct": 0.0,
+        "loss_stat_pct": 0.7662443808745403,
+        "rssi_dbm": -61,
+        "vbat_mv": 0,
+        "free_heap": 231596,
+        "last_uptime_s": 9727,
+        "reset_reason": 3,
+        "fw_major": 1,
+        "fw_minor": 1
+      },
+      "metrics": {
+        "raw": {
+          "min": 0.0,
+          "median": 0.0,
+          "p95": 1.4183,
+          "max": 1.4546
+        },
+        "filt": {
+          "min": 0.9163,
+          "median": 1.3305,
+          "p95": 1.4304,
+          "max": 1.4481
+        },
+        "base": {
+          "min": 1.2952,
+          "median": 1.3222,
+          "p95": 1.3291,
+          "max": 1.332
+        },
+        "threshold": {
+          "min": 0.2969,
+          "median": 0.3666,
+          "p95": 0.4256,
+          "max": 0.4446
+        },
+        "noise_p95": {
+          "min": 0.1188,
+          "median": 0.1466,
+          "p95": 0.1702,
+          "max": 0.1778
+        }
+      },
+      "activation_windows": [],
+      "active_frame_fraction": 0.0,
+      "zero_raw_frame_fraction": 0.5403985995152168
+    }
+  },
+  "label": "Untouched baseline declared by operator; glass installed, black tips free",
+  "limitations": [
+    "Native scales differ by firmware; no cross-node calibrated voltage comparison.",
+    "ADC code zero is not proof of exactly zero signed analogue voltage.",
+    "MIDI is not independently verified audible output.",
+    "ED5 has runtime and MIDI only, no detailed sensor telemetry."
+  ]
+}

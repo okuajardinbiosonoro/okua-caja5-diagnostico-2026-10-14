@@ -1,0 +1,103 @@
+{
+  "recorded_at_utc": "2026-10-14T18:53:06.869+00:00",
+  "source": "Direct human clarification in current chat",
+  "reported_statements": [
+    "Todos los ensayos los he realizado estando sentado en el piso, a través del pantalón.",
+    "Esto lo puedo hacer para las plantas EB5 y EC5 pero para las otras obligado debo estar de pie. El piso es un pasto sintético, levemente húmedo."
+  ],
+  "current_environment": {
+    "floor_material": "synthetic_grass",
+    "floor_moisture": "slightly_damp",
+    "moisture_source": "Direct operator observation; not a measured moisture value",
+    "footwear": "unknown",
+    "body_to_earth_impedance": "not_measured",
+    "electrical_isolation": "not_verified",
+    "weather_context_file": "weather_context.json"
+  },
+  "next_trial_postures": {
+    "EB5": "seated_on_floor_through_trousers",
+    "EC5": "seated_on_floor_through_trousers",
+    "ED5": "standing",
+    "EE5": "standing",
+    "EF5": "standing"
+  },
+  "retrospective_trials": {
+    "B-EB5-black-only-01": {
+      "floor_material": "synthetic_grass",
+      "floor_moisture": "slightly_damp",
+      "moisture_source": "Direct operator observation; not a measured moisture value",
+      "footwear": "unknown",
+      "body_to_earth_impedance": "not_measured",
+      "electrical_isolation": "not_verified",
+      "weather_context_file": "weather_context.json",
+      "posture": "seated_on_floor_through_trousers",
+      "clothing_contact": "Trousers in contact with synthetic grass",
+      "source": "Operator retrospective report in chat",
+      "recorded_at_utc": "2026-10-14T18:53:06.869+00:00",
+      "onset_or_change_during_trial": "not_independently_instrumented"
+    },
+    "B-EB5-cross-EC5-black-first-01": {
+      "floor_material": "synthetic_grass",
+      "floor_moisture": "slightly_damp",
+      "moisture_source": "Direct operator observation; not a measured moisture value",
+      "footwear": "unknown",
+      "body_to_earth_impedance": "not_measured",
+      "electrical_isolation": "not_verified",
+      "weather_context_file": "weather_context.json",
+      "posture": "seated_on_floor_through_trousers",
+      "clothing_contact": "Trousers in contact with synthetic grass",
+      "source": "Operator retrospective report in chat",
+      "recorded_at_utc": "2026-10-14T18:53:06.869+00:00",
+      "onset_or_change_during_trial": "not_independently_instrumented"
+    },
+    "B-EB5-own-black-first-01": {
+      "floor_material": "synthetic_grass",
+      "floor_moisture": "slightly_damp",
+      "moisture_source": "Direct operator observation; not a measured moisture value",
+      "footwear": "unknown",
+      "body_to_earth_impedance": "not_measured",
+      "electrical_isolation": "not_verified",
+      "weather_context_file": "weather_context.json",
+      "posture": "seated_on_floor_through_trousers",
+      "clothing_contact": "Trousers in contact with synthetic grass",
+      "source": "Operator retrospective report in chat",
+      "recorded_at_utc": "2026-10-14T18:53:06.869+00:00",
+      "onset_or_change_during_trial": "not_independently_instrumented"
+    },
+    "B-EB5-own-plant-first-01": {
+      "floor_material": "synthetic_grass",
+      "floor_moisture": "slightly_damp",
+      "moisture_source": "Direct operator observation; not a measured moisture value",
+      "footwear": "unknown",
+      "body_to_earth_impedance": "not_measured",
+      "electrical_isolation": "not_verified",
+      "weather_context_file": "weather_context.json",
+      "posture": "seated_on_floor_through_trousers",
+      "clothing_contact": "Trousers in contact with synthetic grass",
+      "source": "Operator retrospective report in chat",
+      "recorded_at_utc": "2026-10-14T18:53:06.869+00:00",
+      "onset_or_change_during_trial": "not_independently_instrumented"
+    },
+    "B-EB5-plant-only-01": {
+      "floor_material": "synthetic_grass",
+      "floor_moisture": "slightly_damp",
+      "moisture_source": "Direct operator observation; not a measured moisture value",
+      "footwear": "unknown",
+      "body_to_earth_impedance": "not_measured",
+      "electrical_isolation": "not_verified",
+      "weather_context_file": "weather_context.json",
+      "posture": "seated_on_floor_through_trousers",
+      "clothing_contact": "Trousers in contact with synthetic grass",
+      "source": "Operator retrospective report in chat",
+      "recorded_at_utc": "2026-10-14T18:53:06.869+00:00",
+      "onset_or_change_during_trial": "not_independently_instrumented"
+    }
+  },
+  "scope": "Completed human contact trials only. Do not infer operator posture for initial untouched reference.",
+  "unknowns": [
+    "Footwear during completed trials",
+    "Actual skin/floor contact impedance",
+    "Earth bonding of underlying floor"
+  ],
+  "restriction": "Standing-only plants cannot serve as a posture control for seated EB5/EC5; compare posture within the same accessible plant."
+}

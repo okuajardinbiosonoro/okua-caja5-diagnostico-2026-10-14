@@ -1,0 +1,21 @@
+{
+  "kind": "maintenance_session_closed_by_operator",
+  "at_utc": "2026-10-14T21:05:41.959877+00:00",
+  "host_monotonic_ns": 111712993730500,
+  "reason": "User has no more time for physical tests; next session remote only and must use existing data.",
+  "final_physical_state": {
+    "black_EB5": "Still buried in substrate of EB5 pot, declared by operator",
+    "other_black_tips": "Last planned state free; not physically rechecked at session close"
+  },
+  "new_physical_tests_requested": false,
+  "firmware_or_Ableton_changed_today": false,
+  "collector_exit_code": 0,
+  "controller_exit_code": 0,
+  "stop_flags_present": {
+    "collector": true,
+    "controller": true
+  },
+  "evidence_handoff": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\firmware_remote_handoff.json",
+  "soil_interpretation": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\trials\\C-EB5-soil-four-plants-01\\interpretation.json",
+  "documentation_finished_at_utc": "2026-10-14T21:12:10.347080+00:00"
+}

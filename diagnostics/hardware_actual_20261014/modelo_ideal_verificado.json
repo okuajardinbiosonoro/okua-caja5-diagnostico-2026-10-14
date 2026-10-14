@@ -1,0 +1,69 @@
+{
+  "kind": "ideal_linear_filter_model_independent_calculation",
+  "derived_from": "R/C values and visually inspected topology of node PDF pages 1-4",
+  "not_a_physical_measurement": true,
+  "hp_gain": 1.0454545454545454,
+  "lp_gain": 1.005,
+  "transfer_numerator_s_squared": 0.10908493840909089,
+  "hp_denominator_ascending": [
+    1,
+    0.4204363636363636,
+    0.103823
+  ],
+  "lp_denominator_ascending": [
+    1,
+    0.0020570000000000002,
+    2.2748000000000002e-06
+  ],
+  "hp_natural_frequency_hz": 0.49393903023291935,
+  "lp_natural_frequency_hz": 105.52333827703275,
+  "hp_minus3db_relative_passband_hz": 0.45866858455367177,
+  "lp_minus3db_relative_dc_gain_hz": 109.27748250309301,
+  "amplitude_v_per_v": {
+    "0.1": 0.043293130826435045,
+    "10": 1.0516787501515295,
+    "60": 1.0208704148587617,
+    "100": 0.8104230994599741
+  },
+  "unit_step_first_extrema": [
+    {
+      "seconds": 0.006310796317428103,
+      "volts_for_unit_step": 1.0889520299749271
+    },
+    {
+      "seconds": 0.733364208786786,
+      "volts_for_unit_step": -0.23899975697677395
+    },
+    {
+      "seconds": 2.069055976984478,
+      "volts_for_unit_step": 0.01599038589028063
+    },
+    {
+      "seconds": 3.4047477451821706,
+      "volts_for_unit_step": -0.0010698439368912588
+    },
+    {
+      "seconds": 4.740439513379863,
+      "volts_for_unit_step": 7.157838823631413e-05
+    },
+    {
+      "seconds": 6.076131281577554,
+      "volts_for_unit_step": -4.788984155386467e-06
+    },
+    {
+      "seconds": 7.411823049775247,
+      "volts_for_unit_step": 3.204091319411302e-07
+    },
+    {
+      "seconds": 8.747514817972938,
+      "volts_for_unit_step": -2.143711662019143e-08
+    }
+  ],
+  "unit_step_max_v": 1.0889520299749271,
+  "unit_step_min_v": -0.23899975697677395,
+  "limitations": [
+    "Ideal opamps and component values; no saturation, tolerance or loading model.",
+    "No actual electrode impedance, physical waveforms, power rails or ADC calibration measured.",
+    "Output may have both signs relative to GND; this model is not an ADC transfer function."
+  ]
+}

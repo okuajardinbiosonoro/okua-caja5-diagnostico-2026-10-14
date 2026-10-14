@@ -1,0 +1,7 @@
+Capturas originales de caja 5 del 14 de octubre de 2026. Incluye todos los registros de la sesión, marcas, confirmaciones, pruebas anuladas, periodos entre ensayos y documentación de hardware.
+
+El ZIP contiene los archivos originales completos, incluido signals.jsonl sin dividir. La compresión es sin pérdida. El repositorio conserva la misma captura en 32 partes JSONL y un manifiesto SHA256.
+
+Configuración prevista para el próximo firmware: negro EB5 enterrado en el sustrato de su maceta, conforme a la última indicación del operador.
+
+SHA256 del ZIP: 4602f5ef7898b61456efd862ff9a20783140362c3df0f823648aac2c4fba7cca

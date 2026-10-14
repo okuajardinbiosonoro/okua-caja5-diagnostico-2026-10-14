@@ -1,0 +1,247 @@
+{
+  "date": "2026-10-14",
+  "method": "Exportación PDF nativa de Proteus; composición vectorial por recorte, escala y texto explicativo",
+  "circuits_redrawn": false,
+  "sources": [
+    {
+      "name": "Proteus integracion completa posterior.pdsprj",
+      "sha256": "3d4f62f9aebb0e374ee78429cb5ac24499e70585f44a502d52aacaa7a1ed6264",
+      "original_unchanged": true,
+      "working_copy_sha256": "3d4f62f9aebb0e374ee78429cb5ac24499e70585f44a502d52aacaa7a1ed6264"
+    },
+    {
+      "name": "Proteus fuente dual de nueve voltios.pdsprj",
+      "sha256": "2925f81f69a6329bb1c1faf9fe1e6b6822fd5dec8b41be3dab2d3e7085155797",
+      "original_unchanged": true,
+      "working_copy_sha256": "2925f81f69a6329bb1c1faf9fe1e6b6822fd5dec8b41be3dab2d3e7085155797"
+    }
+  ],
+  "native_exports": [
+    {
+      "name": "nodo_nativo.pdf",
+      "sha256": "2bbab9e896b8769309459301269307862c28542eec97fcccccb084e0a122dbc0",
+      "pages": 1
+    },
+    {
+      "name": "fuente_nativa.pdf",
+      "sha256": "704360491b2e2de0120a3721d59bf30a7b2e0dcee0ce7cbf30c2ae5f0b825063",
+      "pages": 1
+    }
+  ],
+  "deliverables": [
+    {
+      "name": "OKUA_HARDWARE_ACTUAL_PARA_AGENTE.txt",
+      "bytes": 26917,
+      "sha256": "0cf9a9c349d0f6e48538881f30e472b3a9cc2be2e9b2d47341357c208ce65167",
+      "pages": null
+    },
+    {
+      "name": "pdf/01_CIRCUITO_NODO_OKUA.pdf",
+      "bytes": 7438769,
+      "sha256": "0a8d5a383cba9e3bbea57ce8d677a38418eb4ce9ab3bd74aec79a2f48e972686",
+      "pages": 7
+    },
+    {
+      "name": "pdf/02_FUENTE_DUAL_CINCO_NODOS_OKUA.pdf",
+      "bytes": 599475,
+      "sha256": "918d4e640eca524a27d08e1c3b7baf9c810e7533aab664a24e9ee79146d31d0f",
+      "pages": 5
+    }
+  ],
+  "native_labels_verified": {
+    "node": [
+      "U4:A",
+      "U4:B",
+      "U4:C",
+      "U4:D",
+      "U3:A",
+      "U1",
+      "U5",
+      "J1",
+      "J2"
+    ],
+    "source": [
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D15",
+      "D16",
+      "D17",
+      "D18",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "Q1",
+      "Q2",
+      "U1",
+      "U2",
+      "J1",
+      "J2"
+    ]
+  },
+  "native_crops": {
+    "node": [
+      {
+        "bounds_top_left": [
+          0,
+          0,
+          1620,
+          468
+        ],
+        "destination": [
+          36,
+          330,
+          1118.5511811023623,
+          396.8897637795277
+        ],
+        "scale": 0.690464
+      },
+      {
+        "bounds_top_left": [
+          0,
+          0,
+          680,
+          468
+        ],
+        "destination": [
+          36,
+          145,
+          769.8897637795277,
+          335.27559055118115
+        ],
+        "scale": 0.716401
+      },
+      {
+        "bounds_top_left": [
+          625,
+          80,
+          1060,
+          455
+        ],
+        "destination": [
+          36,
+          145,
+          769.8897637795277,
+          335.27559055118115
+        ],
+        "scale": 0.894068
+      },
+      {
+        "bounds_top_left": [
+          1060,
+          10,
+          1620,
+          465
+        ],
+        "destination": [
+          36,
+          150,
+          769.8897637795277,
+          330.27559055118115
+        ],
+        "scale": 0.72588
+      }
+    ],
+    "source": [
+      {
+        "bounds_top_left": [
+          705,
+          445,
+          1465,
+          910
+        ],
+        "destination": [
+          36,
+          125,
+          1118.5511811023623,
+          601.8897637795277
+        ],
+        "scale": 1.294387
+      },
+      {
+        "bounds_top_left": [
+          705,
+          445,
+          1112,
+          910
+        ],
+        "destination": [
+          36,
+          70,
+          373,
+          412.27559055118115
+        ],
+        "scale": 0.886614
+      },
+      {
+        "bounds_top_left": [
+          1006,
+          465,
+          1455,
+          720
+        ],
+        "destination": [
+          36,
+          145,
+          769.8897637795277,
+          337.27559055118115
+        ],
+        "scale": 1.322649
+      },
+      {
+        "bounds_top_left": [
+          1000,
+          690,
+          1455,
+          910
+        ],
+        "destination": [
+          36,
+          145,
+          769.8897637795277,
+          337.27559055118115
+        ],
+        "scale": 1.533071
+      }
+    ]
+  },
+  "visual_review": {
+    "method": "Renderizado Poppler a PNG e inspección visual de todas las páginas; recorte de rama positiva ajustado y vuelto a revisar",
+    "node_pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "source_pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "result": "PASS",
+    "electrical_redrawing": false
+  }
+}

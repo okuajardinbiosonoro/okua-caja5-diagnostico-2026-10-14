@@ -1,0 +1,13 @@
+{
+  "trial_id": "B-EB5-own-black-first-01",
+  "status": "completed_and_operator_confirmed",
+  "finding": "Black-first contact activated EB5 in all three repetitions and elicited MIDI from all four other nodes despite no direct contact with them. Stable paired-contact windows remained active in EB5; raw ADC-derived signal was at or near its zero rail. This does not establish zero signed analogue voltage or isolate the cause.",
+  "operator_observation": "Al tocar el negro siempre empezó a sonar pero al tocar negro y planta no detecte un cambio bastante significativo qué diferenciará de solo negro",
+  "next_comparison": "EB5 own pair, plant first then add black, with unchanged firmware and physical setup",
+  "limitations": [
+    "Physical onset is operator-followed cue, not electronically instrumented.",
+    "Analogue scales are native firmware scales, not calibrated signed voltage.",
+    "MIDI note-duration estimate is not an audio recording.",
+    "Compare native sensor metrics within a node; installed firmware differs between nodes."
+  ]
+}

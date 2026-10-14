@@ -1,0 +1,40 @@
+{
+  "recorded_at_utc": "2026-10-14T20:01:50.044634+00:00",
+  "trial_ids": [
+    "B-EC5-plant-only-01",
+    "B-EC5-black-only-01"
+  ],
+  "condition_control": {
+    "plant": "EC5",
+    "posture": "seated_on_floor_through_trousers",
+    "footwear": "shoes",
+    "contact_s": 20,
+    "repetitions": 3,
+    "MIDI_channel": 7
+  },
+  "plant_only": {
+    "operator_audible_contacts": 2,
+    "first_contact_MIDI_note_ons": 0,
+    "second_release_MIDI_held_s": 29.168,
+    "first_rest_spontaneous_EC5_note_ons": 17,
+    "third_contact_EC5_MIDI_held_s": 12.642,
+    "interpretation": "Plant-only detection exists under some observed conditions but is inconsistent; lack of rest silence and prolonged release are recorded failures."
+  },
+  "black_only": {
+    "operator_audible_contacts": 3,
+    "all_five_nodes_emit_in_each_contact": true,
+    "EC5_contact_MIDI_held_s": [
+      18.083,
+      18.374,
+      17.939
+    ],
+    "EC5_release_MIDI_held_s": [
+      3.582,
+      3.154,
+      3.274
+    ],
+    "settled_contact_activation": "100 percent in all three repetitions",
+    "settled_release_activation": "0 percent in all three repetitions"
+  },
+  "limits": "Sequential trials and changing baseline do not establish causality or robustness across days. Shared activation cannot label which plant was touched."
+}

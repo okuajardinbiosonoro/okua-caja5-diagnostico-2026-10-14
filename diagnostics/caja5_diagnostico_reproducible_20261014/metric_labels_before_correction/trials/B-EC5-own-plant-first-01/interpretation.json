@@ -1,0 +1,250 @@
+{
+  "trial_id": "B-EC5-own-plant-first-01",
+  "recorded_at_utc": "2026-10-14T19:30:48.421231+00:00",
+  "validity": {
+    "operator_confirmed": true,
+    "valid_contact_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "complete_recovery_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+    "operator_incident_notes": "Sigue pasando igual solo planta no genera nada pero al tocar negro se escuchan claramente las notas.",
+    "assessment": "all_contact_phases_confirmed",
+    "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons"
+  },
+  "operator_environment": {
+    "floor_material": "synthetic_grass",
+    "floor_moisture": "slightly_damp",
+    "moisture_source": "Direct operator observation; not a measured moisture value",
+    "footwear": "shoes",
+    "body_to_earth_impedance": "not_measured",
+    "electrical_isolation": "not_verified",
+    "weather_context_file": "weather_context.json",
+    "posture": "seated_on_floor_through_trousers",
+    "metadata_source": "operator_environment.json",
+    "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+    "footwear_source": "Operator selection at trial start"
+  },
+  "initial_reference": {
+    "stable_window_s": 120.005,
+    "EC5_stable_activation": 0.0,
+    "EC5_note_ons": 0,
+    "EC5_metrics": {
+      "raw": {
+        "n": 2862,
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 1.0831,
+        "max": 1.1298
+      },
+      "filt": {
+        "n": 2862,
+        "min": 0.4393,
+        "median": 0.52375,
+        "p95": 0.5506,
+        "max": 0.5657
+      },
+      "base": {
+        "n": 2862,
+        "min": 0.5254,
+        "median": 0.5303,
+        "p95": 0.5327,
+        "max": 0.5327
+      },
+      "rms_mean": {
+        "n": 2862,
+        "min": 0.2468,
+        "median": 0.3164,
+        "p95": 0.3459,
+        "max": 0.3613
+      },
+      "occupancy": {
+        "n": 2862,
+        "min": 0.3462,
+        "median": 0.4615,
+        "p95": 0.48,
+        "max": 0.5385
+      },
+      "occupancy_base": {
+        "n": 2862,
+        "min": 0.4541,
+        "median": 0.4559,
+        "p95": 0.4569,
+        "max": 0.457
+      },
+      "adc_peak": {
+        "n": 2862,
+        "min": 1188.0,
+        "median": 1354.0,
+        "p95": 1371.0,
+        "max": 1435.0
+      },
+      "samples": {
+        "n": 2862,
+        "min": 24.0,
+        "median": 26.0,
+        "p95": 26.0,
+        "max": 27.0
+      },
+      "span_ms": {
+        "n": 2862,
+        "min": 71.0,
+        "median": 77.0,
+        "p95": 78.0,
+        "max": 80.0
+      },
+      "score": {
+        "n": 2862,
+        "min": 0.0,
+        "median": 0.147,
+        "p95": 0.355,
+        "max": 0.8
+      },
+      "threshold": {
+        "n": 2862,
+        "min": 0.0923,
+        "median": 0.1148,
+        "p95": 0.1309,
+        "max": 0.1348
+      },
+      "noise_p95": {
+        "n": 2862,
+        "min": 0.0308,
+        "median": 0.0383,
+        "p95": 0.0436,
+        "max": 0.0449
+      },
+      "transition_resets": {
+        "n": 2862,
+        "min": 11.0,
+        "median": 11.0,
+        "p95": 11.0,
+        "max": 11.0
+      }
+    }
+  },
+  "per_repetition": [
+    {
+      "repetition": 1,
+      "rest_RMS_median": 0.31645,
+      "plant_only_RMS_median": 0.3265,
+      "RMS_change_pct": 3.18,
+      "plant_only_EC5_note_ons": 0,
+      "paired_RMS_median": 0.0,
+      "paired_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "paired_EC5_MIDI_held_s": 18.081,
+      "release_EC5_MIDI_held_s": 11.898,
+      "settled_release_active_fraction": 0.0
+    },
+    {
+      "repetition": 2,
+      "rest_RMS_median": 0.4102,
+      "plant_only_RMS_median": 0.41525,
+      "RMS_change_pct": 1.23,
+      "plant_only_EC5_note_ons": 0,
+      "paired_RMS_median": 0.0,
+      "paired_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "paired_EC5_MIDI_held_s": 18.215,
+      "release_EC5_MIDI_held_s": 2.252,
+      "settled_release_active_fraction": 0.0
+    },
+    {
+      "repetition": 3,
+      "rest_RMS_median": 0.4228,
+      "plant_only_RMS_median": 0.4386,
+      "RMS_change_pct": 3.74,
+      "plant_only_EC5_note_ons": 0,
+      "paired_RMS_median": 0.0,
+      "paired_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "paired_EC5_MIDI_held_s": 18.457,
+      "release_EC5_MIDI_held_s": 1.934,
+      "settled_release_active_fraction": 0.0
+    }
+  ],
+  "operator_audio": "No sound in any plant-only phase; sound continuous in all three paired-contact phases, reported silence after release; no incidents reported.",
+  "data_quality": {
+    "coverage_gap_flag_s": 1.0,
+    "meaning": "Flags missing host-received telemetry, including phase boundaries; does not prove a node reboot or missing analogue response.",
+    "sensor_coverage_warnings": []
+  },
+  "runtime": {
+    "EB5": {
+      "samples": 352,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EC5": {
+      "samples": 352,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "ED5": {
+      "samples": 352,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EE5": {
+      "samples": 352,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EF5": {
+      "samples": 352,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    }
+  },
+  "findings": [
+    "Plant-only produces small changes in native RMS, but no EC5 activation or NoteOns in this trial. Do not equate no notes with no sensor change.",
+    "Adding own black EC5 produces zero settled native RMS/occupancy medians and NoteOns in all five nodes, consistent with shared reference effects.",
+    "EC5 settled rest RMS changes from 0.31645 to 0.4228 across repetitions, approximately 33.61 percent; adaptive detection must account for baseline drift.",
+    "First scheduled release window contains about 11.9 seconds of held MIDI in EC5, compared with about 2.25 and 1.93 in subsequent releases; this warrants checking recovery behavior."
+  ],
+  "interpretation_limits": [
+    "Host-recorded MIDI duration after release cue is not exact touch-release latency; actual physical onset/release not instrumented.",
+    "MIDI held duration is not measured audio duration.",
+    "ADC zero is an unsigned native observation, not proof of zero analogue voltage.",
+    "Same-session repetitions do not establish robustness across days."
+  ],
+  "next_trial": {
+    "trial_id": "B-EC5-own-black-first-01",
+    "plant_node": "EC5",
+    "black_node": "EC5",
+    "contact_order": "black_first"
+  },
+  "changes_to_nodes_or_Ableton": false
+}

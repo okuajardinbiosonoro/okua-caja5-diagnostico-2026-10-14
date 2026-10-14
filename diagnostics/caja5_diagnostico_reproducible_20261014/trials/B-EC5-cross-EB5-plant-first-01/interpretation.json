@@ -1,0 +1,193 @@
+{
+  "trial_id": "B-EC5-cross-EB5-plant-first-01",
+  "recorded_at_utc": "2026-10-14T20:23:33.025911+00:00",
+  "validity": {
+    "operator_confirmed": true,
+    "valid_contact_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "complete_recovery_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+    "operator_incident_notes": "En esta ocasión al tocar la planta en el intento uno y dos sonó y al tocar el negro se dispararon muchas más notas cosa que no pasó la tercera vez.",
+    "assessment": "all_contact_phases_confirmed",
+    "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons"
+  },
+  "operator_environment": {
+    "floor_material": "synthetic_grass",
+    "floor_moisture": "slightly_damp",
+    "moisture_source": "Direct operator observation; not a measured moisture value",
+    "footwear": "shoes",
+    "body_to_earth_impedance": "not_measured",
+    "electrical_isolation": "not_verified",
+    "weather_context_file": "weather_context.json",
+    "posture": "seated_on_floor_through_trousers",
+    "metadata_source": "operator_environment.json",
+    "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+    "footwear_source": "Direct operator confirmation in chat after trial",
+    "original_selector_footwear": "unknown",
+    "clarified_at_utc": "2026-10-14T20:23:33.025911+00:00"
+  },
+  "sensor_metric_semantics": {
+    "recorded_at_utc": "2026-10-14T19:53:36.524+00:00",
+    "verified_firmware": "1.1.13-box5-touch-pilot",
+    "applicable_nodes": [
+      "EB5",
+      "EC5"
+    ],
+    "source_files": [
+      "diagnostics/eb5_touch_pilot_20261012/pilot.patch",
+      "diagnostics/eb5_touch_pilot_20261012/adaptive_touch_pilot.h"
+    ],
+    "verified_assignments": {
+      "rms_mean": "g_pilotMean = g_pilotAcquisition.mean: arithmetic ADC-window mean",
+      "filt": "g_plantSmoothV = feature.rms: ADC-window RMS used by the detector",
+      "base": "g_plantBaselineV = g_pilotDetector.referenceRms: RMS reference",
+      "threshold": "g_pilotDetector.thresholdRms",
+      "score": "g_pilotDetector.amplitudeScore: absolute RMS-reference difference / RMS threshold",
+      "noise_p95": "g_pilotDetector.noiseRms",
+      "occupancy": "fraction of acquired ADC samples above zero",
+      "transition_resets": "Detector medium-transition recalibrations; not a board reboot counter"
+    },
+    "scale": "Nominal ADC conversion, not calibrated signed analogue voltage.",
+    "other_firmware": "Do not apply these assignments to EE5/EF5 without separately verifying their implementation.",
+    "historical_reports": "Earlier derived RMS labels referring to rms_mean describe arithmetic mean. Numerical raw readings are unchanged."
+  },
+  "per_repetition": [
+    {
+      "repetition": 1,
+      "plant_only_EC5_note_ons": 5,
+      "plant_only_EC5_MIDI_held_s": 1.403,
+      "plant_only_EC5_ADC_RMS_median": 0.33095,
+      "plant_only_other_nodes_note_ons": {
+        "EB5": 0,
+        "ED5": 5,
+        "EE5": 0,
+        "EF5": 0
+      },
+      "paired_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "paired_EC5_ADC_RMS_median": 0.0,
+      "release_EC5_MIDI_held_s": 17.037,
+      "settled_release_EC5_activation": 0.34097421203438394
+    },
+    {
+      "repetition": 2,
+      "plant_only_EC5_note_ons": 14,
+      "plant_only_EC5_MIDI_held_s": 3.876,
+      "plant_only_EC5_ADC_RMS_median": 0.35814999999999997,
+      "plant_only_other_nodes_note_ons": {
+        "EB5": 0,
+        "ED5": 8,
+        "EE5": 0,
+        "EF5": 0
+      },
+      "paired_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "paired_EC5_ADC_RMS_median": 0.0,
+      "release_EC5_MIDI_held_s": 10.477,
+      "settled_release_EC5_activation": 0.0
+    },
+    {
+      "repetition": 3,
+      "plant_only_EC5_note_ons": 0,
+      "plant_only_EC5_MIDI_held_s": 0,
+      "plant_only_EC5_ADC_RMS_median": 0.3637,
+      "plant_only_other_nodes_note_ons": {
+        "EB5": 0,
+        "ED5": 56,
+        "EE5": 0,
+        "EF5": 0
+      },
+      "paired_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "paired_EC5_ADC_RMS_median": 0.0,
+      "release_EC5_MIDI_held_s": 3.142,
+      "settled_release_EC5_activation": 0.0
+    }
+  ],
+  "operator_audio": "Plant EC5 alone audible in repetitions 1 and 2, silent in 3. Adding black EB5 audible in all three, reported more notes especially first two; silence after release marked yes.",
+  "runtime": {
+    "EB5": {
+      "samples": 239,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EC5": {
+      "samples": 239,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "ED5": {
+      "samples": 239,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EE5": {
+      "samples": 239,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EF5": {
+      "samples": 239,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    }
+  },
+  "data_quality": {
+    "coverage_gap_flag_s": 1.0,
+    "operator_ack_delay_flag_s": 1.0,
+    "meaning": "Flags missing host-received telemetry, including phase boundaries; does not prove a node reboot or missing analogue response.",
+    "sensor_coverage_warnings": [],
+    "operator_ack_delay_warnings": []
+  },
+  "findings": [
+    "EC5 produces 5 and 14 NoteOns during first two plant-only windows, zero in the third; planted contact is not consistently detected.",
+    "Adding black EB5 produces NoteOns in all five nodes in each repetition with EC5 settled ADC RMS median zero.",
+    "First two scheduled release windows contain approximately 17.04 and 10.48 seconds of held MIDI in EC5, third approximately 3.14; recovered silence is delayed or intermittent in the first two."
+  ],
+  "limits": [
+    "MIDI after release cue is not exact human release latency or measured audio duration.",
+    "Differences between sequential contact orders and black electrodes remain confounded by baseline drift.",
+    "EE5/EF5 will be measured standing; do not infer a posture effect by comparing different plants or firmware."
+  ],
+  "next_trial": {
+    "trial_id": "B-EE5-own-black-first-01",
+    "plant_node": "EE5",
+    "black_node": "EE5",
+    "contact_order": "black_first",
+    "reference_before_s": 120,
+    "posture": "standing"
+  },
+  "changes_to_nodes_or_Ableton": false
+}

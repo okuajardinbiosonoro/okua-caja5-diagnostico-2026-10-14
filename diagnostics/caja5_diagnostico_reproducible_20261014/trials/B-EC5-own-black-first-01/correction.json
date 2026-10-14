@@ -1,0 +1,18 @@
+{
+  "at_utc": "2026-10-14T19:40:49.398236+00:00",
+  "source": "Host cue receipt records and direct human clarification",
+  "user_statement": "Sí, lo percibí, la pantalla se congeló pero volvió y apenas vi el toque lo hice. Es totalmente válida la prueba, solo que con ese pequeño retraso documentado.",
+  "void_planned_trial": false,
+  "reason": "Third black-only cue received 4.347 seconds after scheduled phase start. Operator confirms contact began when delayed visible cue appeared.",
+  "timing_adjustments": [
+    {
+      "repetition": 3,
+      "phase": "first_contact",
+      "operator_followed_delayed_cue": true,
+      "cue_receipt_delay_s": 4.347,
+      "scope": "Preserve confirmed physical condition and raw full phase. Do not treat scheduled pre-cue interval as actual contact. Adjust settled window conservatively to three seconds after host cue receipt; its duration is shorter than the other repetitions.",
+      "physical_onset_instrumented": false
+    }
+  ],
+  "disposition": "All three contact repetitions remain operator-confirmed. Qualitative condition remains valid; third timing and settled-window comparisons are limited."
+}

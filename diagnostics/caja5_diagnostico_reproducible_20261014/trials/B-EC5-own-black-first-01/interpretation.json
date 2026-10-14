@@ -1,0 +1,178 @@
+{
+  "trial_id": "B-EC5-own-black-first-01",
+  "recorded_at_utc": "2026-10-14T19:41:58.919367+00:00",
+  "validity": {
+    "operator_confirmed": true,
+    "valid_contact_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "complete_recovery_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+    "operator_incident_notes": "Sucede lo mismo al tocar planta no se detecta cambio perceptible.",
+    "assessment": "contact_phases_confirmed_with_documented_delayed_cue",
+    "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons",
+    "timing_adjustments": [
+      {
+        "repetition": 3,
+        "phase": "first_contact",
+        "operator_followed_delayed_cue": true,
+        "cue_receipt_delay_s": 4.347,
+        "scope": "Preserve confirmed physical condition and raw full phase. Do not treat scheduled pre-cue interval as actual contact. Adjust settled window conservatively to three seconds after host cue receipt; its duration is shorter than the other repetitions.",
+        "physical_onset_instrumented": false
+      }
+    ],
+    "repetitions_without_recorded_cue_delay": [
+      1,
+      2
+    ]
+  },
+  "operator_environment": {
+    "floor_material": "synthetic_grass",
+    "floor_moisture": "slightly_damp",
+    "moisture_source": "Direct operator observation; not a measured moisture value",
+    "footwear": "shoes",
+    "body_to_earth_impedance": "not_measured",
+    "electrical_isolation": "not_verified",
+    "weather_context_file": "weather_context.json",
+    "posture": "seated_on_floor_through_trousers",
+    "metadata_source": "operator_environment.json",
+    "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+    "footwear_source": "Operator selection at trial start"
+  },
+  "per_repetition": [
+    {
+      "repetition": 1,
+      "timing_annotation": null,
+      "stable_black_only_window_s": 5.013,
+      "black_only_ADC_mean_median": 0.0002,
+      "black_only_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "black_only_EC5_MIDI_held_s": 8.444,
+      "paired_ADC_mean_median": 0.0,
+      "paired_EC5_MIDI_held_s": 20.013,
+      "release_EC5_MIDI_held_s": 1.525,
+      "recovered_activation": 0.0
+    },
+    {
+      "repetition": 2,
+      "timing_annotation": null,
+      "stable_black_only_window_s": 5.017,
+      "black_only_ADC_mean_median": 0.0,
+      "black_only_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "black_only_EC5_MIDI_held_s": 8.417,
+      "paired_ADC_mean_median": 0.0,
+      "paired_EC5_MIDI_held_s": 20.009,
+      "release_EC5_MIDI_held_s": 1.593,
+      "recovered_activation": 0.0
+    },
+    {
+      "repetition": 3,
+      "timing_annotation": {
+        "repetition": 3,
+        "phase": "first_contact",
+        "operator_followed_delayed_cue": true,
+        "cue_receipt_delay_s": 4.347,
+        "scope": "Preserve confirmed physical condition and raw full phase. Do not treat scheduled pre-cue interval as actual contact. Adjust settled window conservatively to three seconds after host cue receipt; its duration is shorter than the other repetitions.",
+        "physical_onset_instrumented": false
+      },
+      "stable_black_only_window_s": 0.69,
+      "black_only_ADC_mean_median": 0.0,
+      "black_only_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "black_only_EC5_MIDI_held_s": 4.232,
+      "paired_ADC_mean_median": 0.0,
+      "paired_EC5_MIDI_held_s": 20.03,
+      "release_EC5_MIDI_held_s": 2.003,
+      "recovered_activation": 0.0
+    }
+  ],
+  "operator_audio": "Black-only and paired audible in all three repetitions, sustained, no perceived change when plant was added; reported silence after release.",
+  "data_quality": {
+    "coverage_gap_flag_s": 1.0,
+    "operator_ack_delay_flag_s": 1.0,
+    "meaning": "Flags missing host-received telemetry, including phase boundaries; does not prove a node reboot or missing analogue response.",
+    "sensor_coverage_warnings": [],
+    "operator_ack_delay_warnings": [
+      {
+        "repetition": 3,
+        "phase": "first_contact",
+        "receipt_delay_s": 4.347,
+        "meaning": "Host receipt delay; not an instrumented physical touch onset or audio emission timestamp."
+      }
+    ]
+  },
+  "runtime": {
+    "EB5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EC5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "ED5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EE5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EF5": {
+      "samples": 238,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    }
+  },
+  "interpretation": "Shared activation occurs before plant contact. Adding plant does not create a clearly separate audible effect in this trial. Third contact remains valid with a documented delayed visible cue; its shorter settled window is not equivalent in duration to the first two.",
+  "limitations": [
+    "Actual physical onset/release not electronically instrumented.",
+    "MIDI held time is not measured audio duration.",
+    "Zero unsigned ADC summaries do not establish zero analogue voltage."
+  ],
+  "next_trial": "B-EC5-plant-only-01",
+  "changes_to_nodes_or_Ableton": false,
+  "metric_label_correction": {
+    "at_utc": "2026-10-14T19:53:36.524+00:00",
+    "schema": "telemetry_schema.json",
+    "arithmetic_mean_field": "rms_mean",
+    "true_RMS_field_for_EB5_EC5_pilot": "filt",
+    "original_before_correction": "metric_labels_before_correction\\trials\\B-EC5-own-black-first-01\\interpretation.json"
+  }
+}

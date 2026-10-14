@@ -1,0 +1,1149 @@
+{
+  "created_at_utc": "2026-10-14T21:24:21.635795+00:00",
+  "scope": "Todos los registros de captura de la sesión 2026-10-14, incluidos arranque inicial, periodos fuera de ensayos, ensayos anulados y marcas originales; más metodología, observaciones, análisis y hardware de referencia",
+  "record_policy": "Sin eliminar registros, modificar valores, normalizar finales de línea, reordenar ni volver a serializar los archivos crudos",
+  "storage": "signals.jsonl grande se divide por límites de línea en partes ordenadas menores de 32 MiB. Su concatenación reproduce exactamente el archivo original",
+  "excluded_files": [
+    {
+      "path": "diagnostics\\caja5_diagnostico_reproducible_20261014\\__pycache__\\controller.cpython-313.pyc",
+      "reason": "Caché de bytecode Python; no contiene registros de medición"
+    },
+    {
+      "path": "diagnostics\\caja5_diagnostico_reproducible_20261014\\__pycache__\\soil_sequence.cpython-313.pyc",
+      "reason": "Caché de bytecode Python; no contiene registros de medición"
+    }
+  ],
+  "credential_check": "Sin coincidencias con credenciales operativas conocidas ni con patrones comprobados; no se publican archivos de configuración de credenciales externos a la sesión",
+  "files": [
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/analyze_baseline.py",
+      "bytes": 4144,
+      "sha256": "bd8cd00da1ecbc08f292d702eeab3cac8abe6dd389d31a6a1d285856d2474390",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/analyze_baseline.py",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/analyze_trial.py",
+      "bytes": 17618,
+      "sha256": "6a1534f4feccaa4a35d7fed070fc02b775bc51828b6b688c75134728e7e0523b",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/analyze_trial.py",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/baseline_summary.json",
+      "bytes": 10422,
+      "sha256": "06af351499861959cf1fdf0cef61d9af4b7ae5d9137f984c15b7bc4e140932c9",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/baseline_summary.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_1700Z/signals.jsonl",
+      "bytes": 9271240,
+      "sha256": "da5f2780a060aad3a52f94df38f0a68b91a5738d667fec45e83b4c51658d2902",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_1700Z/signals.jsonl",
+      "raw_capture": true
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_1700Z/stop",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_1700Z/stop",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/markers.jsonl",
+      "bytes": 1809053,
+      "sha256": "80ece62e814ada93e01455201ee906dbcdb66cdc4b3ae06da26f4f20a0f32fa2",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/markers.jsonl",
+      "raw_capture": true
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl",
+      "bytes": 1049606441,
+      "sha256": "bb7107147df4c9d7e5c99d147e9bb7891c3bf000403ddc2c9cc5231a68d60a5c",
+      "storage": "ordered_parts",
+      "parts": [
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00001.jsonl",
+          "bytes": 33554087,
+          "sha256": "dc987b2015bf02ad57364e1bda14068fb1b15d22ce402e6d73cba518aa8e81bf"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00002.jsonl",
+          "bytes": 33554101,
+          "sha256": "cdd34d3768377298465462f719ac387ac034e468e992fe78bc000792b9e78b60"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00003.jsonl",
+          "bytes": 33554322,
+          "sha256": "a865f56590b3fa0eb2c836f814bbda0b3be35810790ca810fac32b0b8e312140"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00004.jsonl",
+          "bytes": 33553973,
+          "sha256": "958ab118167dc603f79186b1a5d3a659841d0b692c37d38db87c1482cb0f4d73"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00005.jsonl",
+          "bytes": 33554401,
+          "sha256": "4186296e608780e86c1e2f62616a44fcbd8342550b23b59ff7a989907448eded"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00006.jsonl",
+          "bytes": 33553972,
+          "sha256": "2e6432ae4447fd3eeecf0e732854e82e8e9a47c46c0b2a90c4677f6d0644b5a4"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00007.jsonl",
+          "bytes": 33554430,
+          "sha256": "cd159a74e9ea122b49b7dcbe288ba79d13bbf0c88d5a79593b3cd89c9a77a67c"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00008.jsonl",
+          "bytes": 33554012,
+          "sha256": "022c3e28ed39f342ca99cc213ee1536a96eb7285af6f11dc0fcf7defb3da9878"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00009.jsonl",
+          "bytes": 33553996,
+          "sha256": "8d90190ad4c73c181d0672bcbaa7ad77cc3c9421aac83bd6133347a77767cb80"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00010.jsonl",
+          "bytes": 33554136,
+          "sha256": "a777bdaf5971fd5f9a07e3b84b9ec3ae33475fbb1b568a68408fd674a5fd8138"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00011.jsonl",
+          "bytes": 33553607,
+          "sha256": "31e4d96536152dfb7a65ec01eaa797319bb80dceae79489286f1c7cb1fb8d21e"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00012.jsonl",
+          "bytes": 33553928,
+          "sha256": "a8e96a3f0ba094fa5114a1a5585046ca03f27973bbbe2a8091cbc470e37ffee9"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00013.jsonl",
+          "bytes": 33554159,
+          "sha256": "00973acffca16a220ff826326ea89e93e6e02223b3a50103b1f46d2d25a2e01f"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00014.jsonl",
+          "bytes": 33553706,
+          "sha256": "766fc7f419c777586bd193fafc4d395ba66f8b1b4e09b9ab357b2e398048ae5c"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00015.jsonl",
+          "bytes": 33553705,
+          "sha256": "b40e4a128902b68d6e58960406fa03f1338215047b353afacf136a8e50129880"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00016.jsonl",
+          "bytes": 33553950,
+          "sha256": "bb2a5e0f7e1ff93c25111c8bf32726f7667fe2cd0a4ce028cb46b0c4503f3176"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00017.jsonl",
+          "bytes": 33554341,
+          "sha256": "9bd53375623e5dd02657d10de2675d482f19e25812ffd6634a5fc859f106b345"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00018.jsonl",
+          "bytes": 33553895,
+          "sha256": "d0667deebea763173bb7299b6757c21a769bba8797aef234913b638df3124876"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00019.jsonl",
+          "bytes": 33554169,
+          "sha256": "85e025750c9e99a95fd4609863fbbb718cfd511f5b3aea78aede8f935e316ba4"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00020.jsonl",
+          "bytes": 33554340,
+          "sha256": "d1c5ad47ae2e09d5de1bb1074cfa1e78f0d117bead29ef05798bb48a036c8b93"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00021.jsonl",
+          "bytes": 33554087,
+          "sha256": "91b4d0c47fb502f249f5d0c4e338795a1b8b6e590e3cc5de45efebc656802253"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00022.jsonl",
+          "bytes": 33554194,
+          "sha256": "6c91796ea9f3ff995c086568cdaa5b6c331f868c33d3c097cb3091a4fb188357"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00023.jsonl",
+          "bytes": 33553673,
+          "sha256": "d3c2cbf652ad62eaf5ff4dccfea159e1a47bc5561566c081a42a5517bedf5b58"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00024.jsonl",
+          "bytes": 33553716,
+          "sha256": "ed50e9fd2e38c33936c128120cd58458b2a6b18973455d7a470c4364d56b7e0b"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00025.jsonl",
+          "bytes": 33554273,
+          "sha256": "02c58b97a45d6ea8e5b800a179f172c02b90bb346e214447049c27804ed6fa53"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00026.jsonl",
+          "bytes": 33554149,
+          "sha256": "907c1127e36e3a3632c0b5bcc455fe457a7dbcb040d4ce45470d9bc53b07a188"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00027.jsonl",
+          "bytes": 33554286,
+          "sha256": "1c100fb34a43cac9c260901ebf95bcb44bebd38f4d69bccf5179ef1f67a3dbfa"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00028.jsonl",
+          "bytes": 33553907,
+          "sha256": "63787a34ffce79af40583bcadbed04d2fb7f1c74579b53ec09f6a3997044a6af"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00029.jsonl",
+          "bytes": 33554187,
+          "sha256": "2e9bbcacfd9ce93e243ddc0e588366c8df76562172dbe86a9e4e4c88fa9c699a"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00030.jsonl",
+          "bytes": 33553786,
+          "sha256": "d5176e1c4e1079b3003e84fe8e201bdd240f8ff205543eb13767e6c6f6d4b40f"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00031.jsonl",
+          "bytes": 33554253,
+          "sha256": "78c4876343c44f32ff5eb40e16ff2d7a4e80d9d31d8c8e8e4ae2efc723a70ac2"
+        },
+        {
+          "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/signals.jsonl.parts/part-00032.jsonl",
+          "bytes": 9430700,
+          "sha256": "727488faa10134eb792de950f1e7ebd9bd398b20e7722e8d5f4430789d5e6488"
+        }
+      ],
+      "lines": 1618361,
+      "raw_capture": true
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/stop",
+      "bytes": 54,
+      "sha256": "c945f83b5032ea332eb9f2e084ceb07e11ca64bdfec8e8aa38866af1a3494718",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/captura_completa/stop",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/capture.py",
+      "bytes": 941,
+      "sha256": "451cbb61d498d4e5271fb710dc78c071ef98198fbf41563f4461b59465f4ddd2",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/capture.py",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/close_session.py",
+      "bytes": 19176,
+      "sha256": "f695f53726d465790902600f224c880d24c99ad977bc5b27231b35754b837bd1",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/close_session.py",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/controller.py",
+      "bytes": 27672,
+      "sha256": "ba07bf4ad0e67b3b420ac399d1e6c1316945cc11bd6337c7eec2706969cdc758",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/controller.py",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/correct_metric_labels.py",
+      "bytes": 3956,
+      "sha256": "b27d2d458895f2f13a6e21cb5ca17cb71b417adf53270470b5106600af526e65",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/correct_metric_labels.py",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/evidence_integrity.json",
+      "bytes": 744,
+      "sha256": "d4835d9091cfbc7f36bf75fb5ed2e735a1ed565545641e226217f169dcc39fa3",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/evidence_integrity.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/fetch_weather_context.py",
+      "bytes": 2979,
+      "sha256": "535a286e75003f5a80a3af4acb62ec637cf425ad3f6ce6c5d5d500cd1b23288d",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/fetch_weather_context.py",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/firmware_remote_handoff.json",
+      "bytes": 36196,
+      "sha256": "52568ee4f551a3c86d7c4dca82bf1208d6cd8678ec658e85505ed08f86c3c096",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/firmware_remote_handoff.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/firmware_remote_handoff_before_ground_preference.json",
+      "bytes": 34834,
+      "sha256": "78e595cc154a60834c3db1c6b9e9ddc17fc6bc8052b6dd23cac7c70a80bf7112",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/firmware_remote_handoff_before_ground_preference.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/methodology.json",
+      "bytes": 12206,
+      "sha256": "e02c37a126ec89922fb8d8ab6dcea202b28e6ec616a327b6bd2977a3d65f8183",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/methodology.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/methodology_v3_before_context.json",
+      "bytes": 9425,
+      "sha256": "f1d89e3f5440bf4d72dcb9d5614b6e414ac211683a8e9a7a9f9b37072fdc6a2b",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/methodology_v3_before_context.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/B-EB5-black-only-01/interpretation.json",
+      "bytes": 303,
+      "sha256": "4cade9878aef6d30373789fbe642c5d026853f7d807537ec18c2be5844274f31",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/B-EB5-black-only-01/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/B-EB5-cross-EC5-black-first-03/interpretation.json",
+      "bytes": 4688,
+      "sha256": "655c3a149eec166af3e129b9cb8ad64d2bb223bc52e062e786ac190629d5c329",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/B-EB5-cross-EC5-black-first-03/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/B-EB5-cross-EC5-plant-first-01/interpretation.json",
+      "bytes": 5135,
+      "sha256": "39053ceaae6026a608cc3208be72640a2c6f85359556b9c019c961d2877f6d94",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/B-EB5-cross-EC5-plant-first-01/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/B-EB5-own-black-first-01/interpretation.json",
+      "bytes": 1070,
+      "sha256": "3bd7a023c028af8b9f36be738f7caa942d7e49e440e42ccfa0714944c912a788",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/B-EB5-own-black-first-01/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/B-EB5-plant-only-01/interpretation.json",
+      "bytes": 1131,
+      "sha256": "ad868516fbf606da7b080d7e919aaa047d211fd7bba6397bffd6eb7416759ae2",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/B-EB5-plant-only-01/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/B-EC5-own-black-first-01/interpretation.json",
+      "bytes": 5760,
+      "sha256": "b173d83daa0df987347fd974b0bd9bd4b12001582dbf23d7e17d7cb4451ef969",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/B-EC5-own-black-first-01/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/B-EC5-own-plant-first-01/interpretation.json",
+      "bytes": 7090,
+      "sha256": "bfdf3cc4f79c5a5d69b642eec6dde0fc33e0b35ec5ffd7984e5398229c4b1988",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/B-EC5-own-plant-first-01/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/eb5_cross_order_comparison.json",
+      "bytes": 1731,
+      "sha256": "cdf296b5a28aff1bb52998cf4199a838bf13d2fbbac89657de6f6e38aade6ae4",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/eb5_cross_order_comparison.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/eb5_order_comparison.json",
+      "bytes": 3906,
+      "sha256": "5d94f5bfc16df5acc47a412e8510379cce3fc40127aeabfa21589be85c5e7680",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/eb5_order_comparison.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/eb5_single_contact_comparison.json",
+      "bytes": 2679,
+      "sha256": "7bd399d276d41438483eb382d218e8caca66ff02ee675bbb19d9f83baad070d6",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/eb5_single_contact_comparison.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/ec5_order_comparison.json",
+      "bytes": 1381,
+      "sha256": "15504213251ac7d82127009c13f43d4abdb860eed7fce576cd062f94aa39e964",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/metric_labels_before_correction/trials/ec5_order_comparison.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/operator_addendum_grounded_EB5.json",
+      "bytes": 955,
+      "sha256": "14f7d0510b455d18151c636376542bde12d0e48082008bb6583e2fd49abbf34e",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/operator_addendum_grounded_EB5.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/operator_environment.json",
+      "bytes": 4981,
+      "sha256": "d209600aa179ba03d9157a9422b1450d4ad70257c03032438435927a045f2027",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/operator_environment.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/phone_access.json",
+      "bytes": 640,
+      "sha256": "6a32f6b5f8cd3b6d754234d93f71a3c5e06e4af72e070a2be76f4d37e478334e",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/phone_access.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/preflight.json",
+      "bytes": 5189,
+      "sha256": "c36ce29dc42e4422df7dc3ef0a0eeeff79e9bd56c92676476d40201a9655d1f3",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/preflight.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/prepare_public_export.py",
+      "bytes": 9260,
+      "sha256": "6b4ac3fd72e2ee467cc5c494e018411c7aebb40ff1d9c061cf9d16e4921aead5",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/prepare_public_export.py",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/recording_sessions.json",
+      "bytes": 991,
+      "sha256": "24dee918f79c3ca4551a930243ad15a20e59e08efe908b2b2a06091f5bfc8c3c",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/recording_sessions.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/register_environment.py",
+      "bytes": 5159,
+      "sha256": "c9230f96f51fb135505682dc453302bafe687ce2c8733705c33f946fee423ba8",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/register_environment.py",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/session_closure.json",
+      "bytes": 1114,
+      "sha256": "4d15ab34448a3bbf2ecf0193fbe3e9163970c7451f9ef4502054d3c8fcdc0b27",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/session_closure.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/soil-sequence.js",
+      "bytes": 6295,
+      "sha256": "6fe561a4452cd08c1ee2363b1b602d01b864d7216649f93fa7767dcb7160e91a",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/soil-sequence.js",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/soil_sequence.py",
+      "bytes": 6036,
+      "sha256": "a8905e90f2a59e93dea90c7eca830432513d83ee5bb11bdd3eaf68450786937a",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/soil_sequence.py",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/soil_sequence_protocol.json",
+      "bytes": 18171,
+      "sha256": "37d6cbea7a2653a438ca4475b32b28ff71986c53df18645d2de3d853fd53fb1d",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/soil_sequence_protocol.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/stop_controller",
+      "bytes": 52,
+      "sha256": "2adaec1044c197d61e406eee14d7dc85c62645bcf2b89370a518d20072c9e3b6",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/stop_controller",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/telemetry_schema.json",
+      "bytes": 1291,
+      "sha256": "ad089dcecb8f32a19a3ba73f82285c1264fbe6d458e1d5cd87d0c93701e5bb5f",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/telemetry_schema.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/temporizador.html",
+      "bytes": 16948,
+      "sha256": "b1617f90395ef623e7746dbe9c9f63cf149a3f870d86870bcd7344ed12db48ff",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/temporizador.html",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/temporizador.syntax.js",
+      "bytes": 8972,
+      "sha256": "5cb956677f78e5a50ba037bd4435c601ccafc7470b57c9d1c4f982ad438b103c",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/temporizador.syntax.js",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/timer_startup_fix.json",
+      "bytes": 1184,
+      "sha256": "e709a95a3f03b6d418289f32cae72e7b938788c2fc06385feef4beee70feff52",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/timer_startup_fix.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-black-only-01/analysis.json",
+      "bytes": 117241,
+      "sha256": "d14173f72a91f47964c8a02e5b8ba9151c0b3d15350d302043c653e438038bee",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-black-only-01/analysis.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-black-only-01/interpretation.json",
+      "bytes": 639,
+      "sha256": "dfa5e9cb92f9868db885ede6bf14d23013fe907f223e81b8bcf94b30f177cc20",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-black-only-01/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-black-first-01/analysis.json",
+      "bytes": 153888,
+      "sha256": "8c9a67eea7bbfbca642daa00dd06a645098e7a6308cfdde7903d53a1412abb81",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-black-first-01/analysis.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-black-first-01/correction.json",
+      "bytes": 747,
+      "sha256": "257fcdb60fada689fce967dc2850235e9bf545a1427a0f3681d0733e38a41a48",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-black-first-01/correction.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-black-first-02/analysis.json",
+      "bytes": 13991,
+      "sha256": "dcf4020552eb72b408921dedfec893724482f68d71d0b35f857929ee2a9fb0ac",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-black-first-02/analysis.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-black-first-02/correction.json",
+      "bytes": 675,
+      "sha256": "702ad0b75e75a80df81fb3e8dda7e28f0ce7ad0a691dcb5bece70f203fe83f2d",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-black-first-02/correction.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-black-first-03/analysis.json",
+      "bytes": 197131,
+      "sha256": "36570ac637a1181d1c0dad5adb9c19597dcc8357fe7bcff2cbfd622772a81685",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-black-first-03/analysis.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-black-first-03/analysis_console.json",
+      "bytes": 8333,
+      "sha256": "38f1092437734c59bad3f65b259016a124ea65623c55f88277b8d117a732bc77",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-black-first-03/analysis_console.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-black-first-03/interpretation.json",
+      "bytes": 5096,
+      "sha256": "f1fa2b437474b7ef9e090466dc67e36232d3d7a242e54198db9ba5d8414d9f02",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-black-first-03/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-plant-first-01/analysis.json",
+      "bytes": 200502,
+      "sha256": "ce2c7d5d0c0720a93fbf45cc64a8216366acd1675c9f8945e17f2767b937e931",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-plant-first-01/analysis.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-plant-first-01/analysis_console.json",
+      "bytes": 8892,
+      "sha256": "55948ac978c3bb98cc4a2d05e1988442178e846730545d3148c75bc37a235053",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-plant-first-01/analysis_console.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-plant-first-01/correction.json",
+      "bytes": 931,
+      "sha256": "adc5f9154cf45e4fa9411493dd32d3b51f43b1d1bca54a5519259a03ac81fb8d",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-plant-first-01/correction.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-plant-first-01/interpretation.json",
+      "bytes": 5542,
+      "sha256": "cf947611adbc0448eb2896205bbad0bdd0c98feb9fba6481d1a88d54c0406606",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-cross-EC5-plant-first-01/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-own-black-first-01/analysis.json",
+      "bytes": 147769,
+      "sha256": "f65f92e173e35f304d9b4fdddc21896fcc0ffb9017441ca795aa42ac8c625618",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-own-black-first-01/analysis.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-own-black-first-01/interpretation.json",
+      "bytes": 1411,
+      "sha256": "2ba8a13b8cac1242907ffb4073650585360a036731617c21e26af3e6a4d80a40",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-own-black-first-01/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-own-plant-first-01/analysis.json",
+      "bytes": 147897,
+      "sha256": "3346264912f0673229aeb2287a0fb951bd7183fd0d33e60936264605107eadf1",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-own-plant-first-01/analysis.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-plant-only-01/analysis.json",
+      "bytes": 109144,
+      "sha256": "5730d623ea3d4ec4e3d05c007458172fa1034a38fdbcfab1242ea7ceae81e376",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-plant-only-01/analysis.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-plant-only-01/interpretation.json",
+      "bytes": 1467,
+      "sha256": "9fbf93cc35c599b9a02d146e08e788c879c157c13dbe8675fd62799924e22453",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EB5-plant-only-01/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-black-only-01/analysis.json",
+      "bytes": 157911,
+      "sha256": "88ac35986ab3613b39391bd5f650a01e64153096331453d42bbe5476796bc08e",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-black-only-01/analysis.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-black-only-01/interpretation.json",
+      "bytes": 5883,
+      "sha256": "b16149c9e039f261391d3da9ff0f407660bdc623df90afbd6452afe3cd476257",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-black-only-01/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-cross-EB5-black-first-01/analysis.json",
+      "bytes": 201717,
+      "sha256": "902a76633f63d261cce28efc05d689efea37c6aac3b1053d5da794dcfc13b35b",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-cross-EB5-black-first-01/analysis.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-cross-EB5-black-first-01/interpretation.json",
+      "bytes": 6339,
+      "sha256": "d18747160e6a98bf15d0f913ad7b2851199fb9704ea12811b197701a09680642",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-cross-EB5-black-first-01/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-cross-EB5-plant-first-01/analysis.json",
+      "bytes": 204718,
+      "sha256": "79a13b0e675a22772e528cf924f74262e7a3e9c2c419505925e48c51bd560c29",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-cross-EB5-plant-first-01/analysis.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-cross-EB5-plant-first-01/correction.json",
+      "bytes": 645,
+      "sha256": "3c126233dd42c3dc036fd02babb3519982a02e82bd13ebdad62bbef17381e1c9",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-cross-EB5-plant-first-01/correction.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-cross-EB5-plant-first-01/interpretation.json",
+      "bytes": 6789,
+      "sha256": "f7ad3b680ac7f52141612dcaa12c674ea64847f4c0d743948bbc9c617a109b29",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-cross-EB5-plant-first-01/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-own-black-first-01/analysis.json",
+      "bytes": 201475,
+      "sha256": "e541b1f0fa5dbabf4909bdb2211577054b15024f07dab3095b80378b421d6aaa",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-own-black-first-01/analysis.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-own-black-first-01/analysis_before_cue_adjustment.json",
+      "bytes": 197535,
+      "sha256": "e35e1aacd29baade2acb94b453430f7c10520f75872bafe8ff094c3cf650975e",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-own-black-first-01/analysis_before_cue_adjustment.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-own-black-first-01/analysis_console.json",
+      "bytes": 8802,
+      "sha256": "42cba0207a6feb018a1724a431a950e1b495ff36a2f62f45dd8030a718b8e61a",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-own-black-first-01/analysis_console.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-own-black-first-01/correction.json",
+      "bytes": 1170,
+      "sha256": "4cf797a5215a368d6edfe0b4107573c282dec382eadecc610480bbcf26877d1a",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-own-black-first-01/correction.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-own-black-first-01/interpretation.json",
+      "bytes": 6131,
+      "sha256": "06c2ec49810f9a0ee917a242c42126b268814545d1335fd582216378703b04e4",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-own-black-first-01/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-own-plant-first-01/analysis.json",
+      "bytes": 198938,
+      "sha256": "04297733c6852f632c82a692c538ca85f593b89787592a2d4c0b38c3f8d4baad",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-own-plant-first-01/analysis.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-own-plant-first-01/interpretation.json",
+      "bytes": 7539,
+      "sha256": "662780e916463db3bbc7a5007ac0b6c04f803ecf9b15b10c4f944b51074196ef",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-own-plant-first-01/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-plant-only-01/analysis.json",
+      "bytes": 150440,
+      "sha256": "871d8f8c59a752ad4eb5d14f1f4338e49c620560060778b737f1e6c02567bd6e",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-plant-only-01/analysis.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-plant-only-01/detector_state_transitions.json",
+      "bytes": 11203,
+      "sha256": "5bd0493f2ad28a4c3c1ee2991a0d0fcbb86f0e4784f59f5de262c37590511a9a",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-plant-only-01/detector_state_transitions.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-plant-only-01/interpretation.json",
+      "bytes": 10406,
+      "sha256": "c47f242fe1406df2664261c079953edbe26227b13a99d96e841ad087f53105e4",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/B-EC5-plant-only-01/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/C-EB5-soil-four-plants-01/analysis.json",
+      "bytes": 941326,
+      "sha256": "c3131a0e297f2387db8174294a03d0c70e374deaa953836a1bc5da9b0648cffd",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/C-EB5-soil-four-plants-01/analysis.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/C-EB5-soil-four-plants-01/correction.json",
+      "bytes": 2606,
+      "sha256": "7e4f9c7cd4a90407a1b3856684aaab148f72eff0405f44298b9742665c1ad0e6",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/C-EB5-soil-four-plants-01/correction.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/C-EB5-soil-four-plants-01/interpretation.json",
+      "bytes": 98656,
+      "sha256": "af48a20a5200908c245ebb0fac078165962e9651b181282d35609a9fbeefdb31",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/C-EB5-soil-four-plants-01/interpretation.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/eb5_cross_order_comparison.json",
+      "bytes": 2074,
+      "sha256": "d0eaca36be678631b2f37b90ffe528b63df790b1322c9790c289c3127f34c826",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/eb5_cross_order_comparison.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/eb5_order_comparison.json",
+      "bytes": 4227,
+      "sha256": "c08f4d6917c85165e6a0cc767cdb181ad5eede1df3a8a381aa7bf9e1ad468479",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/eb5_order_comparison.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/eb5_single_contact_comparison.json",
+      "bytes": 3009,
+      "sha256": "a163e07b13923d370f7ace65acb577e4906f8f75cc121db012401267080e8897",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/eb5_single_contact_comparison.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/ec5_cross_order_comparison.json",
+      "bytes": 848,
+      "sha256": "2601fd450cd6e366fcaa93ef4de0c9ece501bd4cbb7e45d243fe5474d460e645",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/ec5_cross_order_comparison.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/ec5_order_comparison.json",
+      "bytes": 1718,
+      "sha256": "c1b7e9ef5cb77b512f5f9746ceffaabd31b16b9feb3304e80122f2752183ab96",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/ec5_order_comparison.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/ec5_own_vs_cross_black_first_comparison.json",
+      "bytes": 767,
+      "sha256": "027da7f4d00a77e5183e513e2797ce7067bd541f856a089e54ed0ad83d0ae241",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/ec5_own_vs_cross_black_first_comparison.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/ec5_single_contact_comparison.json",
+      "bytes": 1342,
+      "sha256": "94d21e72019ee2d445cb4b736218aa043a754b156403af68f2a238fe3354e9ec",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/trials/ec5_single_contact_comparison.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/verify_soil_page.js",
+      "bytes": 3417,
+      "sha256": "f5da43848433892ddde69d6f5d4e94984d318e6ed030e5f8264cecca6a859c66",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/verify_soil_page.js",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/verify_soil_sequence.py",
+      "bytes": 4599,
+      "sha256": "edcfd778561713f3ee6e5a4985cd124f2d0019ff6b0909ce5c1eafbac4a83654",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/verify_soil_sequence.py",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/verify_timer_startup.js",
+      "bytes": 2654,
+      "sha256": "b0e413a9fbaced0ecefd92ec50ed46a1284614dda8f1af2f7dd37c9cab202217",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/verify_timer_startup.js",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/verify_timer_startup.py",
+      "bytes": 2424,
+      "sha256": "4882c34dc05cd1e30eaada3eb73b7c83ac5ddec8098febcd30ea650bf49282b9",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/verify_timer_startup.py",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/weather_context.json",
+      "bytes": 10276,
+      "sha256": "ce22dede3619f2922da0a05c56a227648118d89f9f2135cc0bb76390e222b690",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/weather_context.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/weather_iem_history_raw.txt",
+      "bytes": 1482,
+      "sha256": "0e05e9af3d12a0d516463a7d237f316dde1a33dc9a33e43532afdabcc0e90623",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/weather_iem_history_raw.txt",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_diagnostico_reproducible_20261014/weather_noaa_awc_raw.txt",
+      "bytes": 10839,
+      "sha256": "d093a3eb00ece59774545e33a05c4728aea92f39da23c96f56fbb5cac0714421",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_diagnostico_reproducible_20261014/weather_noaa_awc_raw.txt",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/01_CIRCUITO_NODO_OKUA_extracted.txt",
+      "bytes": 7937,
+      "sha256": "bda8bc5a228e563554cf52b6868b0ce67c547b2333cda3de14bf5e7f1143104c",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/01_CIRCUITO_NODO_OKUA_extracted.txt",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/02_FUENTE_DUAL_CINCO_NODOS_OKUA_extracted.txt",
+      "bytes": 7621,
+      "sha256": "1fe9758df232ccb02fa85c011d3e24c47fdcfa83d9edaf862f5aab475fef59bf",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/02_FUENTE_DUAL_CINCO_NODOS_OKUA_extracted.txt",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/MANIFIESTO_VERIFICACION.json",
+      "bytes": 5113,
+      "sha256": "18167c5442fcb6318d26f7804e1e68f7597a63cf6cd958f129377f4b0a3e0bbb",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/MANIFIESTO_VERIFICACION.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/modelo_ideal_verificado.json",
+      "bytes": 2134,
+      "sha256": "0abb29c199c14396d9fe9a093536f3750f1ba1fc89a7cdcf0ac585ba04f6d6b5",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/modelo_ideal_verificado.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/OKUA_HARDWARE_ACTUAL_PARA_AGENTE.txt",
+      "bytes": 26917,
+      "sha256": "0cf9a9c349d0f6e48538881f30e472b3a9cc2be2e9b2d47341357c208ce65167",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/OKUA_HARDWARE_ACTUAL_PARA_AGENTE.txt",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/pdf/01_CIRCUITO_NODO_OKUA.pdf",
+      "bytes": 7438769,
+      "sha256": "0a8d5a383cba9e3bbea57ce8d677a38418eb4ce9ab3bd74aec79a2f48e972686",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/pdf/01_CIRCUITO_NODO_OKUA.pdf",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/pdf/02_FUENTE_DUAL_CINCO_NODOS_OKUA.pdf",
+      "bytes": 599475,
+      "sha256": "918d4e640eca524a27d08e1c3b7baf9c810e7533aab664a24e9ee79146d31d0f",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/pdf/02_FUENTE_DUAL_CINCO_NODOS_OKUA.pdf",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/render/01_CIRCUITO_NODO_OKUA-1.png",
+      "bytes": 143289,
+      "sha256": "00fa42f696c9bc87d45c330ecb9030437ed23aa9d8f7e8a75148ddbe3c85deec",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/render/01_CIRCUITO_NODO_OKUA-1.png",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/render/01_CIRCUITO_NODO_OKUA-2.png",
+      "bytes": 94238,
+      "sha256": "852011e3b2e9c2c0497285541b9f102b3905764f613bb087824caed6176dd951",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/render/01_CIRCUITO_NODO_OKUA-2.png",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/render/01_CIRCUITO_NODO_OKUA-3.png",
+      "bytes": 92607,
+      "sha256": "706cae4d2d1c9a30e6735e9ff8b8c210ac743403cc4b4f07168c5790915ce34b",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/render/01_CIRCUITO_NODO_OKUA-3.png",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/render/01_CIRCUITO_NODO_OKUA-4.png",
+      "bytes": 103389,
+      "sha256": "27c854729134b96f4e4bbc2b005881cf13b3cd645e6bd17791929072bbb9f513",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/render/01_CIRCUITO_NODO_OKUA-4.png",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/render/01_CIRCUITO_NODO_OKUA-5.png",
+      "bytes": 152021,
+      "sha256": "10a7c0a44d0d4a86647fcb7dd368901f8f2f3d90676101f2853d3b010a970ee2",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/render/01_CIRCUITO_NODO_OKUA-5.png",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/render/01_CIRCUITO_NODO_OKUA-6.png",
+      "bytes": 1135869,
+      "sha256": "6ea0ed4e9a992ea28d7d619fbfa14d98bf36e73140693c3fb74fa08eef69f3e0",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/render/01_CIRCUITO_NODO_OKUA-6.png",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/render/01_CIRCUITO_NODO_OKUA-7.png",
+      "bytes": 860108,
+      "sha256": "90f004fa2b6b2122356f6b1a8c55c887be698ad1322f04bfa338c522cc38e30c",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/render/01_CIRCUITO_NODO_OKUA-7.png",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/render/02_FUENTE_DUAL_CINCO_NODOS_OKUA-1.png",
+      "bytes": 150853,
+      "sha256": "eaedee821ef795d16fd31ecd1a676965e668e6e0f5a65c196ad2be157fc52dc3",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/render/02_FUENTE_DUAL_CINCO_NODOS_OKUA-1.png",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/render/02_FUENTE_DUAL_CINCO_NODOS_OKUA-2.png",
+      "bytes": 150284,
+      "sha256": "c2daed939de495851c7145a3aeeda1baf2536f3184fcf117d0fc82714958d8fe",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/render/02_FUENTE_DUAL_CINCO_NODOS_OKUA-2.png",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/render/02_FUENTE_DUAL_CINCO_NODOS_OKUA-3.png",
+      "bytes": 106847,
+      "sha256": "b0a8c8da7566aefecae7e509ceaf5b28d49cd11a5acd89c8394f8964afe7f690",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/render/02_FUENTE_DUAL_CINCO_NODOS_OKUA-3.png",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/render/02_FUENTE_DUAL_CINCO_NODOS_OKUA-4.png",
+      "bytes": 98807,
+      "sha256": "f8352abcd5cc88d487d34a1e07779716e192ba58726ce23e7c2877e2efb68e1a",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/render/02_FUENTE_DUAL_CINCO_NODOS_OKUA-4.png",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/render/02_FUENTE_DUAL_CINCO_NODOS_OKUA-5.png",
+      "bytes": 169367,
+      "sha256": "61f9581bba2491c8c9a3bbe87b0a6f7350b91c043df925960bd2d547a80624cf",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/render/02_FUENTE_DUAL_CINCO_NODOS_OKUA-5.png",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/revision_hardware.json",
+      "bytes": 9083,
+      "sha256": "188da0978e3aea98aa0c01b6a27648afa3b1b19a589d029e7ec93c4d104ee545",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/revision_hardware.json",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/hardware_actual_20261014/verificar_modelo.py",
+      "bytes": 3477,
+      "sha256": "121a1d9b028c3dd2b2bab47ed60058da556ec011c42dcf633277389b5829c5b9",
+      "storage": "exact_file",
+      "path": "diagnostics/hardware_actual_20261014/verificar_modelo.py",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_signal_check_20261010.py",
+      "bytes": 3550,
+      "sha256": "664900a86e09871e03be4a62ee0783c586cb78b5ca68da5463d18530bb4a8673",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_signal_check_20261010.py",
+      "raw_capture": false
+    },
+    {
+      "original_path": "diagnostics/caja5_ota_probe.py",
+      "bytes": 7419,
+      "sha256": "e2856d80930cce06d9926c389453efa4eff67b94a8c48b172112bb3a18287350",
+      "storage": "exact_file",
+      "path": "diagnostics/caja5_ota_probe.py",
+      "raw_capture": false
+    },
+    {
+      "original_path": "hardware_original/OKUA_HARDWARE_ACTUAL_PARA_AGENTE.zip",
+      "bytes": 6414364,
+      "sha256": "17c7c86962a384419078ebbecf255f4b6aa49cb9ab662bce1c816bf761ab5d8d",
+      "storage": "exact_file",
+      "path": "hardware_original/OKUA_HARDWARE_ACTUAL_PARA_AGENTE.zip",
+      "raw_capture": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "at_utc": "2026-10-14T18:59:01.082971+00:00",
+  "source": "Direct human report in current chat",
+  "user_statement": "Apareció TEMPORIZADOR INTERRUMPIDO al intentar iniciar no hice nada más",
+  "void_planned_trial": true,
+  "reason": "Timer interrupted in preparation, approximately 16 ms after start. Operator confirms no physical contacts.",
+  "actual_reported_contacts": {
+    "plant_node": null,
+    "black_node": null,
+    "completed_repetitions": 0
+  },
+  "disposition": "Preserve original recording and failed-start log; exclude from contact comparisons. Repeat using a new identifier.",
+  "assessment": "excluded_no_contact_timer_startup_failure"
+}

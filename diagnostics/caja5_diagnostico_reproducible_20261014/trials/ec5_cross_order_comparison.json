@@ -1,0 +1,17 @@
+{
+  "recorded_at_utc": "2026-10-14T20:23:33.025911+00:00",
+  "plant": "EC5",
+  "black": "EB5",
+  "trial_ids": [
+    "B-EC5-cross-EB5-black-first-01",
+    "B-EC5-cross-EB5-plant-first-01"
+  ],
+  "operator_environment": {
+    "posture": "seated_on_floor_through_trousers",
+    "footwear": "shoes"
+  },
+  "black_first": "Shared NoteOns in all five nodes before plant contact; no added plant effect perceived.",
+  "plant_first": "EC5 produces NoteOns before black in 2 of 3 repetitions; adding black produces shared NoteOns in all three.",
+  "rest_or_recovery_failure": "EC5 first two plant-first release windows retain MIDI activity; inspect baseline freeze, return-to-rest and detector reset handling before firmware design.",
+  "causal_limit": "Sequential trials with baseline drift do not isolate contact order as the sole cause."
+}

@@ -1,0 +1,123 @@
+{
+  "trials": [
+    "B-EB5-own-black-first-01",
+    "B-EB5-own-plant-first-01"
+  ],
+  "operator_observations": {
+    "B-EB5-own-black-first-01": {
+      "followed_cues": true,
+      "completed_repetitions": 3,
+      "audible_repetitions": "3",
+      "notes": "Al tocar el negro siempre empezó a sonar pero al tocar negro y planta no detecte un cambio bastante significativo qué diferenciará de solo negro",
+      "operator_id": "1791998878186-xipnlmvfei",
+      "ui_revision": 3
+    },
+    "B-EB5-own-plant-first-01": {
+      "followed_cues": true,
+      "completed_repetitions": 3,
+      "audible_repetitions": "3",
+      "notes": "En este caso escuché en los tres nuevamente al tocar el negro, pero sonido o cambios perceptibles solo detecté en intento 1 y 3 al tocar la planta sin el negro en el 2 no logré detectar algo con solo planta.",
+      "operator_id": "1791998878186-xipnlmvfei",
+      "ui_revision": 3
+    }
+  },
+  "first_contact_comparison": [
+    {
+      "order": "black_first",
+      "rep": 1,
+      "rms_rest_native": 0.1174,
+      "rms_first_contact_native": 0.0033,
+      "relative_change_pct": -97.19,
+      "eb5_note_ons": 13,
+      "other_note_ons": {
+        "EC5": 6,
+        "ED5": 850,
+        "EE5": 23,
+        "EF5": 24
+      }
+    },
+    {
+      "order": "black_first",
+      "rep": 2,
+      "rms_rest_native": 0.1298,
+      "rms_first_contact_native": 0.0,
+      "relative_change_pct": -100.0,
+      "eb5_note_ons": 4,
+      "other_note_ons": {
+        "EC5": 4,
+        "ED5": 48,
+        "EE5": 17,
+        "EF5": 18
+      }
+    },
+    {
+      "order": "black_first",
+      "rep": 3,
+      "rms_rest_native": 0.1634,
+      "rms_first_contact_native": 0.0,
+      "relative_change_pct": -100.0,
+      "eb5_note_ons": 4,
+      "other_note_ons": {
+        "EC5": 4,
+        "ED5": 33,
+        "EE5": 10,
+        "EF5": 10
+      }
+    },
+    {
+      "order": "plant_first",
+      "rep": 1,
+      "rms_rest_native": 0.3039,
+      "rms_first_contact_native": 0.3388,
+      "relative_change_pct": 11.48,
+      "eb5_note_ons": 21,
+      "other_note_ons": {
+        "EC5": 0,
+        "ED5": 0,
+        "EE5": 0,
+        "EF5": 0
+      }
+    },
+    {
+      "order": "plant_first",
+      "rep": 2,
+      "rms_rest_native": 0.284,
+      "rms_first_contact_native": 0.3013,
+      "relative_change_pct": 6.09,
+      "eb5_note_ons": 0,
+      "other_note_ons": {
+        "EC5": 0,
+        "ED5": 0,
+        "EE5": 0,
+        "EF5": 0
+      }
+    },
+    {
+      "order": "plant_first",
+      "rep": 3,
+      "rms_rest_native": 0.2891,
+      "rms_first_contact_native": 0.2976,
+      "relative_change_pct": 2.94,
+      "eb5_note_ons": 0,
+      "other_note_ons": {
+        "EC5": 0,
+        "ED5": 12,
+        "EE5": 0,
+        "EF5": 0
+      }
+    }
+  ],
+  "findings": [
+    "Black first: EB5 activated in 3/3 and all other box-5 nodes emitted MIDI during that phase.",
+    "Plant first: EB5 emitted MIDI only in first plant-only repetition; no EB5 MIDI in repetitions 2 and 3. ED5 emitted 12 NoteOns during plant-only repetition 3; operator perception in that repetition cannot be attributed to EB5 from these records.",
+    "Adding black after plant activated all five nodes in all three repetitions.",
+    "EB5 remained active for about 11.6 s into the third scheduled release phase, then returned to rest; physical release instant is not instrumented.",
+    "No node uptime decrease or offline state in either trial."
+  ],
+  "next_trial": "EB5 plant only, 20 s contact x3, no contact with any black.",
+  "limitations": [
+    "No calibrated signed analogue voltage measurement.",
+    "Operator audible observations are separate from raw-channel MIDI.",
+    "Baseline changed between sequential trials; contact order is not isolated from all time effects."
+  ]
+}

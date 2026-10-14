@@ -1,0 +1,110 @@
+{
+  "fecha_revision": "2026-10-14",
+  "alcance": "Revision documental del hardware declarado como actual, con inspeccion de todas las paginas y comprobacion independiente del modelo ideal. No constituye inspeccion electrica de la unidad fisica.",
+  "paquete": {
+    "ruta_original": "C:/Users/jogoa/Downloads/OKUA_HARDWARE_ACTUAL_PARA_AGENTE.zip",
+    "sha256": "17c7c86962a384419078ebbecf255f4b6aa49cb9ab662bce1c816bf761ab5d8d",
+    "manifiesto": "MANIFIESTO_VERIFICACION.json",
+    "entregables_verificados_contra_manifiesto": true,
+    "proyectos_proteus_originales_incluidos": false,
+    "hashes_de_proyectos_originales": "Declarados en el TXT; no comprobados contra los archivos originales en esta revision."
+  },
+  "fuentes_revisadas": [
+    {"archivo": "OKUA_HARDWARE_ACTUAL_PARA_AGENTE.txt", "lectura": "Completa", "sha256": "0cf9a9c349d0f6e48538881f30e472b3a9cc2be2e9b2d47341357c208ce65167"},
+    {"archivo": "pdf/01_CIRCUITO_NODO_OKUA.pdf", "paginas": 7, "inspeccion_visual": "Todas las paginas", "sha256": "0a8d5a383cba9e3bbea57ce8d677a38418eb4ce9ab3bd74aec79a2f48e972686"},
+    {"archivo": "pdf/02_FUENTE_DUAL_CINCO_NODOS_OKUA.pdf", "paginas": 5, "inspeccion_visual": "Todas las paginas", "sha256": "918d4e640eca524a27d08e1c3b7baf9c810e7533aab664a24e9ee79146d31d0f"}
+  ],
+  "arquitectura_declarada": {
+    "red": {"nominal_v_ac": 120},
+    "transformador": {"secundario_v_ac": "12-0-12", "corriente_nominal_a_declarada": 5, "toma_central": "GND comun"},
+    "fuente": {
+      "nodos_por_fuente": 5,
+      "salidas_nominales_v_dc": [9, 0, -9],
+      "entrada_J1": {"1": "extremo secundario", "2": "toma central/GND", "3": "otro extremo secundario"},
+      "salida_J2": {"1": "+9 V", "2": "GND", "3": "-9 V"},
+      "rectificacion": "D1-D4 1N4004 en puente, con referencia a toma central",
+      "cadenas_serie": {"positiva": "D9-D13, cinco 1N5408", "negativa": "D14-D18, cinco 1N5408", "posicion": "Despues de rectificacion y antes de condensadores de reserva"},
+      "reserva": "C1 y C2 de 2200 uF, uno por rama hacia GND",
+      "rama_positiva": "U1 7809; Q2 TIP32 PNP; R3 1 ohm; C3 330 nF entrada; C5 1 uF salida",
+      "rama_negativa": "U2 7909; Q1 TIP31 NPN; R4 1 ohm; C4 330 nF entrada; C6 1 uF salida",
+      "derivaciones": "R1/R2 820 ohm con D5/D6 1N4004 hacia GND",
+      "D8": "Anodo conectado a salida positiva; catodo a entrada de potencia positiva",
+      "D7": "Anodo conectado a entrada de potencia negativa; catodo a salida negativa",
+      "carga": "ESP32 alimentadas desde el riel positivo por cada 7805; no se presupone igual consumo en ambos rieles"
+    },
+    "nodo": {
+      "alimentacion_J1": {"1": "+9 V, rojo de alimentacion", "2": "GND, verde", "3": "-9 V, negro de alimentacion"},
+      "electrodos_J2": {"1": "Rojo de medicion, senal de planta", "2": "Negro de medicion, conexion directa a GND/J1.2"},
+      "cinco_negros_medicion": "Mismo GND electrico compartido; rotulos identifican cables fisicos, no referencias aisladas",
+      "contacto_habitual": "Una mano planta y otra negro; persona incluida en el circuito",
+      "entrada": "Voltaje J2.1 respecto a GND; no dos entradas diferenciales ni fuente de excitacion dedicada",
+      "ruta_senal": ["J2.1", "TL074 U4:B seguidor", "U4:A pasaaltos", "U4:C pasabajos", "U4:D seguidor", "ESP32 GPIO32"],
+      "pasaaltos": "C3=C4 4.7 uF; R5 47k, R6=R7 100k, R8 2.2M; R5 realimenta desde salida A",
+      "pasabajos": "R9=R10 220 ohm, C5 10 uF entre punto M y salida C, C6 4.7 uF a GND, R11 10k, R12 2M",
+      "conexion_ADC": "Salida U4:D pin14 directamente a GPIO32; no se dibujan offset, divisor ni limitador de entrada ADC",
+      "rama_TL072": "U3:A seguidor desde salida D a GPIO2; R1 220 ohm deriva salida U3:A a GND. U3:B no conectado",
+      "alimentacion_analogica": "TL074 y TL072 con +9 V/-9 V",
+      "alimentacion_ESP32": "U1 7805 desde +9 V a 5 V nominales en VIN; C1 0.33 uF y C2 0.1 uF. Regulador fisico 3V3 no identificado"
+    },
+    "montaje_fisico_declarado": "Cubo de vidrio 50x50x50 cm abierto abajo, base metalica de 15 cm de altura y 50 cm de largo, fuente en caja de madera dentro de base, quince conductores de alimentacion hacia cinco nodos"
+  },
+  "contraste_firmware_piloto": {
+    "referencia": "C:/Users/jogoa/AppData/Local/OKUA/maintenance/eb5_pilot_20261012/project/firmware/okua_node_udp_v1/okua_node_udp_v1.ino",
+    "configuracion": "Fuente local del piloto 1.1.13: PIN_SIGNAL=32, resolucion 12 bits, atenuacion ADC_11db, LED_PROFILE=LED_DISABLED",
+    "GPIO2": "No se encontro configuracion o escritura explicita a GPIO2 en las fuentes del piloto inspeccionadas. La rama analogica sigue existiendo fisicamente",
+    "limitacion": "Inspeccion del codigo, sin lectura nueva de firmware o estado GPIO de los dispositivos"
+  },
+  "modelo_ideal": {"calculo_independiente": "verificar_modelo.py", "resultado": "modelo_ideal_verificado.json", "coincide_con_paquete": true, "medicion_fisica": false},
+  "hallazgos_e_interpretacion": [
+    {
+      "id": "ADC_BIPOLAR",
+      "evidencia": "TL074 con alimentacion dual, filtros referidos a GND y conexion directa de salida a GPIO32",
+      "interpretacion": "Forma de onda analogica puede tener signo negativo. ADC unipolar no representa esa parte como una tension negativa; el efecto concreto requiere medicion",
+      "correccion_de_diagnostico": "Codigo ADC cero no demuestra exactamente 0 V en la salida analogica ni ausencia de respuesta al contacto. La escala code*3.3/4095 no es medicion calibrada",
+      "no_demostrado": "Clipping real, amplitud fuera de especificacion, dano de GPIO o causa de falla en EB5/EC5"
+    },
+    {
+      "id": "GND_COMPARTIDO",
+      "evidencia": "J2.2 unido directamente a J1.2 en todos los nodos",
+      "interpretacion": "Los negros de medicion comparten referencia. Idealmente un negro sano de la misma caja aporta la misma referencia; resistencia/contacto/caida real pueden diferenciarlos",
+      "no_demostrado": "Ausencia de diferencias de potencial fisicas ni estado de las conexiones con chasis/tierra"
+    },
+    {
+      "id": "PASAALTOS_Y_RED",
+      "evidencia": "Modelo recalculado: cortes ideales 0.4587 y 109.2775 Hz; ganancia de amplitud a 60 Hz 1.02087",
+      "interpretacion": "Componente continua de un contacto estable se atenua con el tiempo; movimientos/conexiones pueden generar transitorios; 60 Hz no se rechaza de forma especifica",
+      "no_demostrado": "Origen fisiologico, electromagnetico o de fuente de cada fluctuacion observada"
+    },
+    {
+      "id": "FUENTE_COMUN_Y_ESTADO_ANALOGICO",
+      "evidencia": "Cinco cargas, rieles comunes y cinco diodos antes de reserva por rama",
+      "interpretacion": "Margen de regulacion, rizado y temperatura deben contrastarse con las fallas. ESP32 en linea no demuestra funcionamiento correcto del riel negativo o toda la cadena analogica",
+      "no_demostrado": "Corriente insuficiente, sobretemperatura, caida de rieles o capacidad de 5 A por riel"
+    },
+    {
+      "id": "Q2_TIP32_CONEXION_FISICA_CONFIRMADA",
+      "estado": "Conexion fisica confirmada por el usuario; funcionamiento reportado. No es una averia demostrada ni causa establecida de las fallas de deteccion",
+      "evidencia": "El usuario confirma pata 1 a un extremo de R3 de 1 ohm; pata 2 al nodo de C1 y final de la cadena 1N5408; pata 3 al anodo de D8 1N4004. Declara que el montaje funciona tal como aparece en el esquema",
+      "conexion_fisica_aportada": {"pata_1": "Extremo de R3, 1 ohm", "pata_2": "Nodo de C1 y final de diodos 1N5408 en serie", "pata_3": "Anodo de D8, 1N4004"},
+      "interpretacion": "Con el pinout usual TIP32 (1 base, 2 colector, 3 emisor), el colector queda en la entrada de potencia y el emisor en la salida. La aclaracion confirma la orientacion observada en el dibujo; conserva su diferencia respecto al PNP de apoyo convencional, sin demostrar una falla",
+      "correccion_revision": "Se retira la incertidumbre sobre la correspondencia del cableado fisico con el dibujo segun la confirmacion del usuario. Se registra su funcionamiento sin atribuirle las fallas intermitentes",
+      "no_demostrado": "Corriente real que aporta Q2, modo de operacion, dano o relacion causal con las fallas de deteccion",
+      "referencias": ["https://www.onsemi.com/pdf/datasheet/mc7800-d.pdf (figura 11)", "https://www.onsemi.com/pdf/datasheet/tip31a-d.pdf (TIP31/TIP32, pinout)"]
+    }
+  ],
+  "datos_aun_no_medidos": [
+    "Rieles nominales frente a reales, rizado y tensiones minimas bajo carga",
+    "Senal firmada simultanea en J2.1, U4:D/GPIO32 y codigo ADC",
+    "Corrientes, picos Wi-Fi y temperaturas de fuente/nodos",
+    "Fabricante/variante exacta de integrados y placa ESP32",
+    "GND electronico respecto a chasis y tierra de proteccion",
+    "Impedancia real de contactos y estado de componentes bajo condiciones de falla"
+  ],
+  "estado_del_trabajo": {
+    "nodos_modificados": [],
+    "consultas_a_nodos_en_esta_revision": 0,
+    "cambios_Ableton": 0,
+    "reversiones_ejecutadas": 0,
+    "siguiente_etapa": "Usar este mapa electrico como base de las pruebas que el usuario proponga"
+  }
+}

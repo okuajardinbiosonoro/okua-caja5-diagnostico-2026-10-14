@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pruebas de contacto — caja 5</title>
+<style>
+:root{color-scheme:light dark;font-family:system-ui,sans-serif}body{max-width:850px;margin:30px auto;padding:0 20px}h1{font-size:1.4rem}.phase{font-size:clamp(2.1rem,8vw,4rem);font-weight:700;margin:20px 0 0}.seconds{font-size:clamp(3.5rem,15vw,7rem);font-variant-numeric:tabular-nums;margin:0}.instruction{font-size:1.35rem;line-height:1.5;min-height:90px}button{font:inherit;padding:12px 20px;margin:6px 10px 6px 0}button:disabled{opacity:.5}#problem{color:light-dark(#a41414,#ffb5b5)}.secondary{opacity:.85}progress{width:100%;height:18px}label{display:block;margin:15px 0}#report{border-top:1px solid gray;margin-top:24px;padding-top:15px}textarea{width:100%;box-sizing:border-box;font:inherit;min-height:75px}select{font:inherit;padding:7px}a{color:inherit}
+</style>
+<style>table{width:100%;border-collapse:collapse;margin:18px 0}th,td{text-align:left;padding:10px 6px;vertical-align:top;border-bottom:1px solid gray}th:first-child,td:first-child{width:25%}th:nth-child(2),td:nth-child(2){white-space:nowrap}</style>
+<h1>Caja 5 · prueba coordinada</h1>
+<p id="identity">Comprobando captura…</p>
+<p id="condition" class="secondary"></p>
+<section id="targets" hidden style="border:2px solid currentColor;padding:14px;margin:18px 0">
+<div id="plant-target" style="font-size:1.5rem;font-weight:700"></div>
+<div id="black-target" style="font-size:1.5rem;font-weight:700"></div>
+<p id="untouched-target"></p>
+<p id="environment"></p>
+</section>
+<label id="footwear-control">Calzado para este ensayo (mantén el mismo durante las tres repeticiones)
+<select id="footwear"><option value="unknown">Sin confirmar</option><option value="shoes">Zapatos</option><option value="socks">Solo medias</option><option value="barefoot">Descalzo</option></select></label>
+<label id="soil-start-check" hidden><input type="checkbox" id="all-black-free"> Estoy de pie con zapatos; todos los negros están al aire antes de iniciar y nadie toca plantas ni puntas negras.</label>
+<div id="phase" class="phase" aria-live="polite">Reposo</div>
+<div id="seconds" class="seconds">—</div>
+<p id="instruction" class="instruction">No toques plantas ni electrodos.</p>
+<progress id="progress" value="0" max="1"></progress>
+<p id="repetition" class="secondary"></p>
+<button id="start" disabled>Iniciar ensayo</button>
+<button id="sound">Probar voz (sin tocar)</button>
+<button id="abort" disabled>Anular ensayo</button>
+<section id="ground-control" hidden>
+<label>Humedad del sustrato de EB5 <select id="soil-moisture"><option value="unknown">Sin confirmar</option><option value="dry">Seco</option><option value="slightly_damp">Ligeramente húmedo</option><option value="damp">Húmedo</option><option value="very_wet">Muy húmedo</option></select></label>
+<label>Profundidad aproximada de la parte metálica, si la conoces (cm) <input id="soil-depth" type="number" min="0" max="20" step="0.5"></label>
+<button id="ground-placed">EB5 enterrado; manos libres</button>
+</section>
+<p id="problem" role="alert"></p>
+<table id="actions" hidden><thead><tr><th>Fase</th><th>Tiempo</th><th>Acción exacta</th></tr></thead><tbody id="action-rows"></tbody></table>
+<p class="secondary">Vidrio puesto. La pinza roja queda fijada; la mano toca la planta. Sigue la acción exacta de cada fase. Mantén la pantalla encendida y no escribas durante el ensayo.</p>
+<section id="report" hidden>
+<h2>Confirmación del ensayo</h2>
+<label id="followed-label"><input type="checkbox" id="followed"> Seguí las indicaciones sin mover conexiones y sin tocar otros nodos.</label>
+<div id="legacy-report">
+<label>Repeticiones realizadas <select id="completed"><option>3</option><option>2</option><option>1</option><option>0</option></select></label>
+<label>Repeticiones en las que escuché respuesta <select id="heard"><option value="unknown">No puedo distinguir el audio de este nodo</option><option value="3">3</option><option value="2">2</option><option value="1">1</option><option value="0">0</option></select></label>
+<label><span id="first-label">Sonó durante el primer contacto</span> <select id="heard-first"><option value="unknown">No pude distinguirlo</option><option value="3">En las 3 repeticiones</option><option value="2">En 2</option><option value="1">En 1</option><option value="0">En ninguna</option></select></label>
+<label id="report-both">Sonó durante planta + negro <select id="heard-both"><option value="unknown">No pude distinguirlo / no aplica</option><option value="3">En las 3 repeticiones</option><option value="2">En 2</option><option value="1">En 1</option><option value="0">En ninguna</option></select></label>
+<label id="report-change">Cambio al agregar el segundo contacto <select id="change"><option value="unknown">No pude distinguirlo / no aplica</option><option value="clear">Cambio claro</option><option value="slight">Cambio leve</option><option value="none">Sin cambio perceptible</option></select></label>
+<label><span id="sustain-label">Mientras mantuve el contacto</span> <select id="sustain"><option value="unknown">No pude distinguirlo / no aplica</option><option value="continuous">Sonido continuo</option><option value="pulsed">Sonido intermitente</option><option value="stopped">Sonó y se apagó sin soltar</option><option value="silent">No sonó</option></select></label>
+<label>Después de soltar el contacto <select id="silence"><option value="unknown">No pude distinguirlo</option><option value="yes">Volvió al silencio</option><option value="no">Siguió sonando</option></select></label>
+</div>
+<div id="sequence-report" hidden></div>
+<label>Observaciones o incidentes <textarea id="notes" placeholder="Indica si el sonido se sostuvo, cambió y paró; retrasos, toques adicionales o cualquier movimiento."></textarea></label>
+<button id="save">Guardar confirmación</button>
+</section>
+<script src="/soil-sequence.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+let operatorId=sessionStorage.getItem('okua-timer-operator');
+if(!operatorId){
+  operatorId=window.crypto&&typeof crypto.randomUUID==='function'?crypto.randomUUID():`${Date.now()}-${Math.random().toString(36).slice(2)}`;
+  sessionStorage.setItem('okua-timer-operator',operatorId);
+}
+let seq=-1,lastMode='',context=null,busy=false,ownsTrial=false,currentActions=null,sequenceMode=false;
+async function post(route,data={}){
+  const r=await fetch(route,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...data,operator_id:operatorId,ui_revision:8})});
+  const v=await r.json();if(!r.ok)throw Error(v.error);return v;
+}
+function speak(text){
+  try{if('speechSynthesis' in window){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='es-CO';u.rate=.9;speechSynthesis.speak(u);}}
+  catch(e){$('problem').textContent='La voz no está disponible; sigue las indicaciones visuales.';}
+}
+function tone(count=1){
+  try{
+    const Audio=window.AudioContext||window.webkitAudioContext;
+    context=context||new Audio();context.resume();
+    for(let i=0;i<count;i++){
+      const o=context.createOscillator(),g=context.createGain();o.frequency.value=880;o.connect(g);g.connect(context.destination);
+      const t=context.currentTime+i*.24;g.gain.setValueAtTime(.12,t);g.gain.exponentialRampToValueAtTime(.001,t+.15);o.start(t);o.stop(t+.17);
+    }
+  }catch(e){$('problem').textContent='Usa las indicaciones visuales: no se pudo emitir la señal sonora.';}
+}
+$('sound').onclick=()=>{
+  tone(1);
+  const sample=sequenceMode?'La prueba usa negro e be cinco enterrado. Planta e be cinco sola. Después e ce cinco, e e cinco y e efe cinco: planta primero, luego su propio negro sin soltar la planta.':currentActions?[currentActions.rest,currentActions.first_contact,currentActions.contact,currentActions.release].filter(Boolean).map(a=>a.spoken).join(' '):'Ambas manos libres, sin tocar plantas ni puntas negras.';
+  speak('Prueba de voz. No realices contactos todavia. '+sample);
+  post('/display_ack',{phase_seq:seq,client_utc:new Date().toISOString(),visibility:document.visibilityState,client_note:'cue_check_no_physical_contact'}).catch(()=>{});
+};
+$('start').onclick=async()=>{
+  try{tone(1);const s=await post('/start',{footwear:$('footwear').value,all_black_free:$('all-black-free').checked});ownsTrial=s.operator_id===operatorId;$('problem').textContent='';$('phase').scrollIntoView({behavior:'smooth',block:'start'});}
+  catch(e){$('problem').textContent=e.message;}
+};
+$('abort').onclick=async()=>{
+  try{await post('/abort',{reason:'Operator button'});speak('Ensayo anulado. Suelta todo.');}
+  catch(e){$('problem').textContent=e.message;}
+};
+$('ground-placed').onclick=async()=>{
+  try{const depth=$('soil-depth').value;await post('/ground_placed',{soil_moisture:$('soil-moisture').value,depth_cm:depth===''?null:Number(depth)});$('ground-placed').disabled=true;}
+  catch(e){$('problem').textContent=e.message;}
+};
+$('save').onclick=async()=>{
+  try{
+    await post('/report',sequenceMode?readSoilReport():{form_revision:2,followed_cues:$('followed').checked,completed_repetitions:Number($('completed').value),audible_repetitions:$('heard').value,first_contact_audible_repetitions:$('heard-first').value,paired_contact_audible_repetitions:currentActions?.first_contact?$('heard-both').value:'not_applicable',second_contact_audible_change:currentActions?.first_contact?$('change').value:'not_applicable',contact_sound:$('sustain').value,paired_contact_sound:currentActions?.first_contact?$('sustain').value:'not_applicable',after_release_silence:$('silence').value,notes:$('notes').value});
+    $('problem').textContent='Confirmación guardada. Espera el siguiente ensayo.';$('notes').value='';$('followed').checked=false;
+    for(const id of ['heard','heard-first','heard-both','change','sustain','silence'])$(id).value='unknown';
+    $('completed').value='3';
+  }catch(e){$('problem').textContent=e.message;}
+};
+document.addEventListener('visibilitychange',()=>{
+  if(document.hidden&&lastMode==='running'&&ownsTrial)post('/abort',{reason:'Operator timer tab hidden during trial'}).catch(()=>{});
+});
+async function poll(){
+  if(busy)return;busy=true;
+  let stage='status_request';
+  try{
+    const r=await fetch('/status',{cache:'no-store'});if(!r.ok)throw Error('Sin conexión con el temporizador');
+    const s=await r.json();lastMode=s.mode;ownsTrial=s.operator_id===operatorId;
+    stage='render';
+    const c=s.trial||s.armed;
+    const actions=s.phase_instructions;currentActions=actions;
+    sequenceMode=c?.condition==='soil_sequence';
+    if(sequenceMode){renderSoilSequence(s,c);return;}
+    $('soil-start-check').hidden=true;$('ground-control').hidden=true;
+    $('footwear').disabled=false;
+    $('legacy-report').hidden=false;$('sequence-report').hidden=true;
+    $('followed-label').lastChild.textContent=' Seguí las indicaciones sin mover conexiones y sin tocar otros nodos.';
+    const paired=c&&['own_pair','cross_pair'].includes(c.condition);
+    $('targets').hidden=!c;
+    $('plant-target').textContent=c?(c.condition==='black_only'?'PLANTA: NINGUNA':`PLANTA: etiqueta ROJA ${c.plant_node}`):'';
+    $('black-target').textContent=c?(c.condition==='plant_only'||c.condition==='sham'?'PUNTA NEGRA: NINGUNA':`PUNTA NEGRA: etiqueta ${c.black_node}`):'';
+    $('untouched-target').textContent=c?.condition==='cross_pair'?`La planta de etiqueta roja ${c.black_node} queda SIN TOCAR.`:'';
+    const env=c?.operator_environment;
+    const posture=env?.posture==='seated_on_floor_through_trousers'?'Sentado en el piso, pantalón en contacto con él':env?.posture==='standing'?'De pie':'Postura sin confirmar';
+    $('environment').textContent=env?`${posture}. Piso: pasto sintético ligeramente húmedo. Mantén la posición y el calzado; registra cualquier cambio.`:'';
+    $('footwear-control').hidden=s.mode!=='armed';
+    $('identity').textContent=c?`${c.trial_id} · ${paired?`planta ${c.plant_node} + negro ${c.black_node}`:c.condition==='plant_only'?`SOLO planta ${c.plant_node} · ninguna punta negra`:c.condition==='black_only'?`SOLO negro ${c.black_node} · ninguna planta`:`Acercar sin tocar la planta ${c.plant_node}`}`:'Esperando ensayo coordinado';
+    $('report-both').hidden=!paired;$('report-change').hidden=!paired;
+    $('first-label').textContent=c?paired?`Sonó al tocar solo ${c.contact_order==='black_first'?'el negro':'la planta'}`:c.condition==='plant_only'?'Sonó al tocar solo la planta':c.condition==='black_only'?'Sonó al tocar solo el negro':'Sonó al acercar la mano sin tocar':'Sonó durante el contacto';
+    $('sustain-label').textContent=paired?'Mientras mantuve planta + negro':'Mientras mantuve el contacto indicado';
+    $('condition').textContent=c?paired?`Orden: ${c.contact_order==='black_first'?'NEGRO PRIMERO → PLANTA DESPUÉS':'PLANTA PRIMERO → NEGRO DESPUÉS'} · ${s.duration_s} s en total`:`Condición: ${c.condition==='plant_only'?'SOLO PLANTA':c.condition==='black_only'?'SOLO NEGRO':'ACERCAR SIN TOCAR'}`:'';
+    $('actions').hidden=!actions||s.mode==='awaiting_report';
+    if(actions){
+      const signature=JSON.stringify(c);
+      if($('action-rows').dataset.signature!==signature){
+        $('action-rows').replaceChildren();
+        const phases=s.schedule.filter(p=>p.repetition===1);
+        for(const p of phases){
+          const row=document.createElement('tr');
+          for(const text of [actions[p.phase].title,`${p.duration_s} s`,actions[p.phase].instruction]){const cell=document.createElement('td');cell.textContent=text;row.appendChild(cell);}
+          $('action-rows').appendChild(row);
+        }
+        $('action-rows').dataset.signature=signature;
+      }
+    }
+    $('start').disabled=!(s.baseline_done&&s.mode==='armed');
+    $('abort').disabled=s.mode!=='running'||!ownsTrial;
+    $('report').hidden=s.mode!=='awaiting_report'||!ownsTrial;
+    let phase='ESPERA',remaining=s.remaining_s,text=s.instruction,maximum=30;
+    if(!s.baseline_done){phase='REPOSO INICIAL';remaining=s.baseline_remaining_s;maximum=300;text='Ambas manos libres. No toques ninguna planta ni ninguna punta negra.';}
+    else if(s.mode==='running'){
+      const action=actions?.[s.phase];
+      const scheduled=s.schedule.find(p=>p.phase===s.phase);
+      if(!action||!scheduled){
+        $('phase').textContent='PREPARANDO';$('seconds').textContent='—';
+        $('instruction').textContent='Ambas manos libres. Espera las indicaciones; todavía no toques nada.';
+        return;
+      }
+      phase=action.title;text=action.instruction;maximum=scheduled.duration_s;
+    }else if(s.mode==='awaiting_report'){
+      phase=s.phase==='aborted'?'TEMPORIZADOR INTERRUMPIDO':'TERMINADO';
+      text=s.phase==='aborted'?'Los datos anteriores siguen guardados. Deja ambas manos libres, sin tocar plantas ni puntas negras. Guarda la confirmación e indica en observaciones qué contactos completaste y cuándo ocurrió la interrupción.':'Ambas manos libres, sin tocar plantas ni puntas negras. Ahora puedes escribir y guardar la confirmación.';
+    }else if(s.mode==='armed'){phase='LISTO PARA INICIAR';text=paired?`Primero: ${actions.first_contact.instruction} Después: ${actions.contact.instruction}`:s.instruction;}
+    $('phase').textContent=phase;$('seconds').textContent=s.mode==='running'||!s.baseline_done?remaining:'—';$('instruction').textContent=text;
+    $('repetition').textContent=s.mode==='running'&&s.repetition?`Repetición ${s.repetition} de 3`:'';
+    $('progress').max=maximum;$('progress').value=maximum-remaining;
+    if(seq!==s.phase_seq){
+      seq=s.phase_seq;
+      const renderedAt=new Date().toISOString();
+      let cueDispatchedAt=null;
+      stage='cue';
+      if(s.mode==='running'&&ownsTrial&&!document.hidden){
+        tone(s.phase==='contact'||s.phase==='first_contact'?2:s.phase==='release'?3:1);
+        speak(actions[s.phase].spoken);
+        cueDispatchedAt=new Date().toISOString();
+      }
+      // A slow acknowledgement must not block speech or the next status poll.
+      post('/display_ack',{phase_seq:seq,client_utc:new Date().toISOString(),client_render_utc:renderedAt,cue_dispatch_utc:cueDispatchedAt,visibility:document.visibilityState}).catch(()=>{
+        $('problem').textContent='No se confirmó la recepción de esta indicación. Sigue la pantalla y registra el incidente al terminar.';
+      });
+    }
+  }catch(e){
+    $('problem').textContent=stage==='status_request'?'Se perdió la conexión. Suelta todo; el ensayo debe revisarse.':`Error del temporizador: ${e.message}. Suelta todo; el ensayo debe revisarse.`;
+    if(lastMode==='running'&&ownsTrial)post('/abort',{reason:stage==='status_request'?'Operator timer status request failed':'Operator timer page error',client_stage:stage,client_error:String(e.message).slice(0,300)}).catch(()=>{});
+  }finally{busy=false;}
+}
+setInterval(poll,250);poll();
+</script>
+</html>

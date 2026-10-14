@@ -1,0 +1,18 @@
+{
+  "valid_contacts": [
+    1,
+    2,
+    3
+  ],
+  "operator_sound": "continuous in 3/3; silence after release",
+  "midi_note_duration_during_60s_scheduled_contact": 55.344887,
+  "observed_shared_effect": "All five nodes emitted MIDI during each black-only EB5 contact",
+  "no_reboots": true,
+  "metric_label_correction": {
+    "at_utc": "2026-10-14T19:53:36.524+00:00",
+    "schema": "telemetry_schema.json",
+    "arithmetic_mean_field": "rms_mean",
+    "true_RMS_field_for_EB5_EC5_pilot": "filt",
+    "original_before_correction": "metric_labels_before_correction\\trials\\B-EB5-black-only-01\\interpretation.json"
+  }
+}

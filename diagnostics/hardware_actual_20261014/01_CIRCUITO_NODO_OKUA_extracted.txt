@@ -1,0 +1,689 @@
+--- PAGE 1 ---
+OKÚA  /  HARDWARE ACTUAL
+14 de octubre de 2026
+Circuito completo de un nodo
+Vista general del esquema original. Exportación nativa de Proteus, sin redibujar símbolos ni conexiones.
+NODO | Esquemas nativos y material explicativo identificado
+1 / 7
+Recorrido principal: J2.1 - U4:B - U4:A - U4:C - U4:D - GPIO32
+Bloque del nodo
+Función / conexión
+U4:B, TL074
+Seguidor de entrada desde J2.1; pines 5, 6 y 7.
+U4:A y U4:C, TL074
+Pasaaltos y pasabajos activos de segundo orden; ampliados en páginas 2 y 3.
+U4:D, TL074
+Seguidor de salida hacia D32/GPIO32; ramificación hacia U3:A.
+U3:A, TL072 / U1, 7805
+Rama adicional a GPIO2 y alimentación local de 5 V a VIN; página 4.
+EN
+EN
+VP
+VP
+VN
+VN
+D34
+D34
+D35
+D35
+D32
+D32
+D33
+D33
+D25
+D25
+D26
+D26
+D27
+D27
+D14
+D14
+D12
+D12
+D13
+D13
+GND
+GND
+VIN
+VIN
+D23
+D23
+D22
+D22
+TX0
+TXD
+RX0
+RXD
+D21
+D21
+D19
+D19
+D18
+D18
+D5
+D5
+TX2
+TX2
+RX2
+RX2
+D4
+D4
+D2
+D2
+D15
+D15
+3V3
+3V3
+U5
+ESP32
+VI
+1
+VO
+3
+GND
+2
+U1
+7805
+C1
+0.33uF
+C2
+0.1uF
+3
+2
+1
+8
+4
+U3:A
+TL072
+R1
+220
+3
+2
+1
+4
+11
+U4:A
+TL074
+5
+6
+7
+4
+11
+U4:B
+TL074
+10
+9
+8
+4
+11
+U4:C
+TL074
+12
+13
+14
+4
+11
+U4:D
+TL074
+1
+2
+3
+J1
+TBLOCK-I3
+C3
+4.7uF
+C4
+4.7uF
+R5
+47k
+R6
+100k
+R7
+100k
+R8
+2.2M
+1
+2
+J2
+TBLOCK-I2
+R9
+220
+R10
+220
+C5
+10uF
+C6
+4.7uF
+R11
+10k
+R12
+2M
+--- PAGE 2 ---
+OKÚA  /  HARDWARE ACTUAL
+14 de octubre de 2026
+Entrada y filtro pasaaltos
+Ampliación del mismo PDF nativo. Los conductores que salen del recorte continúan en la vista completa de la página 1.
+NODO | Esquemas nativos y material explicativo identificado
+2 / 7
+J2.1 llega al pin 5 de U4:B. Su salida 7 se realimenta al pin 6 y conduce C3. C3/C4 y R5-R8 forman el pasaaltos con U4:A. R5 vuelve a la salida A; R6, R8 y
+la referencia del filtro llegan a GND.
+C3=C4: 4,7 µF. R5: 47 kΩ. R6=R7: 100 kΩ. R8: 2,2 MΩ. Corte propio calculado: aproximadamente 0,46 Hz, bajo el modelo ideal.
+EN
+EN
+VP
+VP
+VN
+VN
+D34
+D34
+D35
+D35
+D32
+D32
+D33
+D33
+D25
+D25
+D26
+D26
+D27
+D27
+D14
+D14
+D12
+D12
+D13
+D13
+GND
+GND
+VIN
+VIN
+D23
+D23
+D22
+D22
+TX0
+TXD
+RX0
+RXD
+D21
+D21
+D19
+D19
+D18
+D18
+D5
+D5
+TX2
+TX2
+RX2
+RX2
+D4
+D4
+D2
+D2
+D15
+D15
+3V3
+3V3
+U5
+ESP32
+VI
+1
+VO
+3
+GND
+2
+U1
+7805
+C1
+0.33uF
+C2
+0.1uF
+3
+2
+1
+8
+4
+U3:A
+TL072
+R1
+220
+3
+2
+1
+4
+11
+U4:A
+TL074
+5
+6
+7
+4
+11
+U4:B
+TL074
+10
+9
+8
+4
+11
+U4:C
+TL074
+12
+13
+14
+4
+11
+U4:D
+TL074
+1
+2
+3
+J1
+TBLOCK-I3
+C3
+4.7uF
+C4
+4.7uF
+R5
+47k
+R6
+100k
+R7
+100k
+R8
+2.2M
+1
+2
+J2
+TBLOCK-I2
+R9
+220
+R10
+220
+C5
+10uF
+C6
+4.7uF
+R11
+10k
+R12
+2M
+--- PAGE 3 ---
+OKÚA  /  HARDWARE ACTUAL
+14 de octubre de 2026
+Pasabajos y seguidor de salida
+Ampliación nativa de U4:C y U4:D. Una línea cortada por el borde de esta vista no indica una conexión abierta.
+NODO | Esquemas nativos y material explicativo identificado
+3 / 7
+C5 conecta el nodo entre R9/R10 con la salida de U4:C, no con GND. C6 sí vuelve a GND. R11 y R12 fijan la ganancia no inversora. U4:D recibe la salida
+C y entrega la señal a GPIO32.
+R9=R10: 220 Ω. C5: 10 µF. C6: 4,7 µF. R11: 10 kΩ. R12: 2 MΩ. Corte propio calculado: aproximadamente 109 Hz, bajo el modelo ideal.
+EN
+EN
+VP
+VP
+VN
+VN
+D34
+D34
+D35
+D35
+D32
+D32
+D33
+D33
+D25
+D25
+D26
+D26
+D27
+D27
+D14
+D14
+D12
+D12
+D13
+D13
+GND
+GND
+VIN
+VIN
+D23
+D23
+D22
+D22
+TX0
+TXD
+RX0
+RXD
+D21
+D21
+D19
+D19
+D18
+D18
+D5
+D5
+TX2
+TX2
+RX2
+RX2
+D4
+D4
+D2
+D2
+D15
+D15
+3V3
+3V3
+U5
+ESP32
+VI
+1
+VO
+3
+GND
+2
+U1
+7805
+C1
+0.33uF
+C2
+0.1uF
+3
+2
+1
+8
+4
+U3:A
+TL072
+R1
+220
+3
+2
+1
+4
+11
+U4:A
+TL074
+5
+6
+7
+4
+11
+U4:B
+TL074
+10
+9
+8
+4
+11
+U4:C
+TL074
+12
+13
+14
+4
+11
+U4:D
+TL074
+1
+2
+3
+J1
+TBLOCK-I3
+C3
+4.7uF
+C4
+4.7uF
+R5
+47k
+R6
+100k
+R7
+100k
+R8
+2.2M
+1
+2
+J2
+TBLOCK-I2
+R9
+220
+R10
+220
+C5
+10uF
+C6
+4.7uF
+R11
+10k
+R12
+2M
+--- PAGE 4 ---
+OKÚA  /  HARDWARE ACTUAL
+14 de octubre de 2026
+ESP32, TL072 y alimentación local
+Ampliación nativa del extremo de salida. U1 en este proyecto es un 7805; U1 en la fuente es un 7809.
+NODO | Esquemas nativos y material explicativo identificado
+4 / 7
+GPIO32/D32 recibe la salida del TL074. La rama U3:A llega a GPIO2/D2 y a R1 de 220 Ω hacia GND. R1 es una carga derivada, no una resistencia serie
+protectora.
+El 7805 recibe +9 V y entrega 5 V a VIN. C1: 0,33 µF; C2: 0,1 µF. La regulación interna de 3,3 V y el firmware de la placa física no están detallados en este símbolo.
+EN
+EN
+VP
+VP
+VN
+VN
+D34
+D34
+D35
+D35
+D32
+D32
+D33
+D33
+D25
+D25
+D26
+D26
+D27
+D27
+D14
+D14
+D12
+D12
+D13
+D13
+GND
+GND
+VIN
+VIN
+D23
+D23
+D22
+D22
+TX0
+TXD
+RX0
+RXD
+D21
+D21
+D19
+D19
+D18
+D18
+D5
+D5
+TX2
+TX2
+RX2
+RX2
+D4
+D4
+D2
+D2
+D15
+D15
+3V3
+3V3
+U5
+ESP32
+VI
+1
+VO
+3
+GND
+2
+U1
+7805
+C1
+0.33uF
+C2
+0.1uF
+3
+2
+1
+8
+4
+U3:A
+TL072
+R1
+220
+3
+2
+1
+4
+11
+U4:A
+TL074
+5
+6
+7
+4
+11
+U4:B
+TL074
+10
+9
+8
+4
+11
+U4:C
+TL074
+12
+13
+14
+4
+11
+U4:D
+TL074
+1
+2
+3
+J1
+TBLOCK-I3
+C3
+4.7uF
+C4
+4.7uF
+R5
+47k
+R6
+100k
+R7
+100k
+R8
+2.2M
+1
+2
+J2
+TBLOCK-I2
+R9
+220
+R10
+220
+C5
+10uF
+C6
+4.7uF
+R11
+10k
+R12
+2M
+--- PAGE 5 ---
+OKÚA  /  HARDWARE ACTUAL
+14 de octubre de 2026
+Conectores y referencia común
+Guía de lectura basada en la explicación directa de José David y las conexiones del esquema.
+NODO | Esquemas nativos y material explicativo identificado
+5 / 7
+Alimentación: J1 del nodo
+Pin
+Cable de alimentación
+Referencia
+J1.1
+Rojo
++9 V
+J1.2
+Verde
+GND, 0 V
+J1.3
+Negro
+-9 V
+Medición: J2 del nodo
+Pin
+Cable de medición
+Contacto habitual
+J2.1
+Rojo
+Pinza sobre una hoja de la planta
+J2.2
+Negro
+Extremo que toca la persona; unido a GND
+El negro de medición es GND. El negro de alimentación es -9 V. La función debe identificarse por
+conector y pin, además del color.
+J2.2 está unido a J1.2. Los cinco negros de medición de una caja, los cinco nodos y la fuente comparten el
+mismo nodo GND. No hay cinco referencias eléctricas aisladas.
+En el uso descrito, una mano toca la planta y la otra el extremo negro. La pinza roja permanece en la hoja.
+La persona forma parte del circuito de contacto y la tensión se mide entre J2.1 y GND.
+Las frecuencias de corte y ganancias del TXT son cálculos ideales. No describen por sí solas la forma de onda real, la
+calibración ADC ni un fenómeno fisiológico específico.
+
+--- PAGE 6 ---
+OKÚA  /  HARDWARE ACTUAL
+14 de octubre de 2026
+Contacto con la planta
+Fotografía original aportada por José David. Se conserva completa, sin modificar su contenido.
+NODO | Esquemas nativos y material explicativo identificado
+6 / 7
+La imagen muestra la pinza fijada a una hoja y una mano tocando la punta del otro conductor. La
+designación funcional rojo/negro proviene de la explicación de José David; el color visible de una pinza o
+adaptador no cambia su conexión eléctrica.
+Modo habitual descrito: una mano toca la planta y la otra el extremo negro conectado a GND.
+
+--- PAGE 7 ---
+OKÚA  /  HARDWARE ACTUAL
+14 de octubre de 2026
+Construcción de la caja
+Fotografía original con cotas aportadas por José David. Esta página describe el montaje físico.
+NODO | Esquemas nativos y material explicativo identificado
+7 / 7
+Vidrio
+Cubo de 50 x 50 x 50 cm, abierto por abajo.
+Base metálica
+15 cm de altura y 50 cm de largo, según la descripción.
+Fuente
+Se aloja dentro de la base, en una pequeña caja de
+madera que evita el contacto directo con el metal.
+Quince conductores
+Salen por orificios de la tapa: cinco rojos +9 V, cinco verdes
+GND y cinco negros -9 V.
+Referencia electrónica
+La unión de GND con el chasis o con tierra de protección
+no fue especificada.
+Las cotas y la separación mediante madera son datos del montaje aportados por José David. La fotografía no constituye
+una medición de aislamiento eléctrico.

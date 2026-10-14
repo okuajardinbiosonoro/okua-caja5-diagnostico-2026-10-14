@@ -1,0 +1,660 @@
+{
+  "title": "Caja 5: cierre de diagnóstico y trabajo remoto sobre firmware",
+  "recorded_at_utc": "2026-10-14T21:12:10.347080+00:00",
+  "decision": "Hay material suficiente para desarrollar y evaluar una versión candidata usando los registros. No demuestra detección definitiva en todos los días, plantas y posturas",
+  "operator_constraint": "No habrá operador presencial en la próxima sesión. No solicitar nuevas pruebas manuales; usar las grabaciones y sus limitaciones",
+  "session_state": {
+    "physical_tests_finished": true,
+    "collector_and_timer_stopped": true,
+    "firmware_and_Ableton_changed_during_20261014": false,
+    "glass": "Instalado según condición de preparación",
+    "black_EB5": "Permanece enterrado en maceta EB5 según última confirmación",
+    "other_black_tips": "Último estado previsto libres; no inspeccionados de nuevo al cerrar",
+    "last_test_posture": "De pie con zapatos"
+  },
+  "hardware_basis": {
+    "review": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\hardware_actual_20261014\\revision_hardware.json",
+    "model": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\hardware_actual_20261014\\modelo_ideal_verificado.json",
+    "power": "Fuente compartida ±9 V y GND; cada baquela regula alimentación del ESP32",
+    "electrodes": "J2 azul: rojo señal de planta; negro GND común entre los cinco nodos. Negro de alimentación J1 es -9 V y no es el electrodo negro",
+    "analogue": "TL074, seguidor y filtros pasan banda aproximadamente 0.459–109.28 Hz; sin notch 60 Hz en el modelo ideal",
+    "ADC": "GPIO32, lectura unipolar. Esquema no dibuja offset ni protección del ADC frente a la salida bipolar; no interpretar códigos cero como ausencia demostrada de señal analógica",
+    "TIP32": "Conexión física aclarada y confirmada por el usuario; no reabrir esa duda sin evidencia nueva",
+    "uncertain": "No medidos: tensiones reales de riel, impedancia cuerpo/suelo, unión chasis/tierra, señal bipolar antes del ADC"
+  },
+  "current_nodes": [
+    {
+      "node": "EB5",
+      "id": 21,
+      "last_IP": "192.168.88.217",
+      "MIDI_channel": 6,
+      "version": "1.1.13-box5-touch-pilot",
+      "diagnostics": "PLANTDIAG",
+      "OTA": "Disponible en pruebas previas"
+    },
+    {
+      "node": "EC5",
+      "id": 22,
+      "last_IP": "192.168.88.254",
+      "MIDI_channel": 7,
+      "version": "1.1.13-box5-touch-pilot",
+      "diagnostics": "PLANTDIAG",
+      "OTA": "Disponible en pruebas previas"
+    },
+    {
+      "node": "ED5",
+      "id": 23,
+      "last_IP": "192.168.88.253",
+      "MIDI_channel": 8,
+      "version": "1.0",
+      "diagnostics": "Solo estado CKv2 y MIDI, sin PLANTDIAG",
+      "OTA": "No verificado; no asumir que tiene OTA"
+    },
+    {
+      "node": "EE5",
+      "id": 24,
+      "last_IP": "192.168.88.249",
+      "MIDI_channel": 9,
+      "version": "1.1.7-box5-touch-two-tier",
+      "diagnostics": "PLANTDIAG",
+      "OTA": "Disponible en pruebas previas"
+    },
+    {
+      "node": "EF5",
+      "id": 25,
+      "last_IP": "192.168.88.250",
+      "MIDI_channel": 10,
+      "version": "1.1.11-box5-touch-two-tier",
+      "diagnostics": "PLANTDIAG",
+      "OTA": "Disponible en pruebas previas"
+    }
+  ],
+  "recording": {
+    "signals": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\captura_completa\\signals.jsonl",
+    "markers": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\captura_completa\\markers.jsonl",
+    "sensor_frames_from_collector_counters": 1390319,
+    "ckv2_samples_from_collector_counters": 68440,
+    "MIDI_messages_from_collector_counters": 159600,
+    "meaning": "Contadores de las dos ejecuciones del colector principal; no son número de toques independientes",
+    "contents": "Resumen de adquisición, parámetros del detector, activación, MIDI, estado CKv2, indicaciones temporizadas y observaciones del operador",
+    "not_recorded": "Audio continuo ni forma de onda ADC completa; los tiempos de toque siguen indicaciones, no un sensor físico externo",
+    "metric_schema": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\telemetry_schema.json",
+    "metric_warning": "EB5/EC5: rms_mean es media aritmética; filt es RMS. No aplicar esa equivalencia a EE5/EF5 sin revisar sus fuentes",
+    "cross_day_limit": "La sesión controlada es de un solo día; historias previas no equivalen a validación etiquetada entre días"
+  },
+  "main_findings": [
+    {
+      "finding": "Tocar solo un negro, propio o cruzado EB5/EC5, puede activar los cinco nodos antes de tocar una planta",
+      "evidence": "Comparaciones EB5/EC5 de negro solo y orden de contacto",
+      "firmware_implication": "La respuesta compartida de GND no identifica por sí sola la planta tocada. Un detector local puede carecer de información para separar contacto propio de cambio común"
+    },
+    {
+      "finding": "La respuesta a planta sola existe en algunas repeticiones y falta en otras",
+      "evidence": "EB5 planta sola: NoteOn 2/0/18 en tres contactos. EC5 planta sola: operador oye 2/3; una recuperación conserva MIDI 29.168 s de una ventana de 30 s",
+      "firmware_implication": "Evaluar sensibilidad, referencia aprendida, falsos positivos y recuperación juntos; bajar un umbral no resuelve todos los fallos"
+    },
+    {
+      "finding": "La referencia congelada y el reinicio del detector a los 30 s merecen corrección",
+      "evidence": "Fuente del piloto y transiciones de B-EC5-plant-only-01: una activación continúa aproximadamente 30.009 s; no coincide con reinicio de la placa",
+      "firmware_implication": "Evitar aprender una referencia durante un transitorio o mantener actividad por una referencia antigua. Es un mecanismo observado, no explicación única de todo el sistema"
+    },
+    {
+      "finding": "Con negro EB5 en sustrato, la referencia registrada cae a cero en los cuatro nodos observados y ED5 deja de emitir MIDI; los contactos siguientes son mayormente breves",
+      "evidence": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\trials\\C-EB5-soil-four-plants-01\\interpretation.json",
+      "firmware_implication": "Distinguir estado de adquisición sin información de contacto real. No fabricar sostenimiento de contacto si reposo y contacto producen las mismas características observadas"
+    }
+  ],
+  "data_use_rules": [
+    "Conservar y leer las correcciones de cada ensayo; excluir las pruebas de planta equivocada y el arranque interrumpido sin contacto",
+    "Conservar contactos terminados antes de una anulación final; excluir únicamente los intervalos contaminados documentados",
+    "La tercera indicación de EC5 negro primero llegó 4.347 s tarde; la ventana estable ajustada es corta. No equipararla sin ponderación a las otras dos",
+    "La corrida en tierra sirve como evidencia exploratoria y de cambio de referencia; EC5/EF5 tuvieron recontactos sin tiempos exactos y EE5 es ambiguo. No etiquetar 20 s completos como contacto físico sostenido",
+    "ED5 fue tocado adicionalmente fuera del protocolo final; su momento es desconocido. No clasificar sus notas coincidentes como falsos positivos sin esa salvedad",
+    "No hay serie sistemática de EE5/EF5 con todos los negros libres equivalente a la de EB5/EC5; tampoco ADC detallado de ED5",
+    "No llamar audio a la duración MIDI; una nota puede permanecer sostenida sin nuevos NoteOn"
+  ],
+  "trial_inventory": [
+    {
+      "trial_id": "B-EB5-black-only-01",
+      "analysis_path": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\trials\\B-EB5-black-only-01\\analysis.json",
+      "start_utc": "2026-10-14T18:21:32.158000+00:00",
+      "end_utc": "2026-10-14T18:25:12.310000+00:00",
+      "validity": {
+        "operator_confirmed": true,
+        "valid_contact_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "complete_recovery_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+        "operator_incident_notes": "No tengo observaciones al respecto.",
+        "assessment": "all_contact_phases_confirmed",
+        "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons"
+      },
+      "correction": null
+    },
+    {
+      "trial_id": "B-EB5-cross-EC5-black-first-01",
+      "analysis_path": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\trials\\B-EB5-cross-EC5-black-first-01\\analysis.json",
+      "start_utc": "2026-10-14T18:33:40.679000+00:00",
+      "end_utc": "2026-10-14T18:37:50.973000+00:00",
+      "validity": {
+        "operator_confirmed": false,
+        "valid_contact_repetitions": [],
+        "complete_recovery_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+        "operator_incident_notes": "Funcionó muy similar a EB5 suena al tocar negro pero al tocar rojo no percibo algo diferencial al sonido previo",
+        "assessment": "excluded_wrong_plant_or_contact_condition",
+        "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons",
+        "operator_original_confirmation": true,
+        "excluded_from_planned_comparisons": true,
+        "actual_reported_contacts": {
+          "plant_node": "EC5",
+          "black_node": "EC5"
+        },
+        "correction_reason": "Wrong plant: operator touched plant EC5 instead of scheduled plant EB5."
+      },
+      "correction": {
+        "at_utc": "2026-10-14T18:44:33.095204+00:00",
+        "source": "Direct human correction in current chat",
+        "user_statement": "Me acabo de hacer la prueba mal, anula, hice toque de negro EC5 y planta EC5.",
+        "void_planned_trial": true,
+        "reason": "Wrong plant: operator touched plant EC5 instead of scheduled plant EB5.",
+        "intended_contacts": {
+          "plant_node": "EB5",
+          "black_node": "EC5"
+        },
+        "actual_reported_contacts": {
+          "plant_node": "EC5",
+          "black_node": "EC5"
+        },
+        "actual_phase_sequence_independently_verified": false,
+        "disposition": "Preserve raw recordings and original report; exclude this identifier from formal EB5 and EC5 trial comparisons. Repeat correct EB5/EC5 pairing with a new identifier."
+      }
+    },
+    {
+      "trial_id": "B-EB5-cross-EC5-black-first-02",
+      "analysis_path": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\trials\\B-EB5-cross-EC5-black-first-02\\analysis.json",
+      "start_utc": "2026-10-14T18:56:21.931000+00:00",
+      "end_utc": "2026-10-14T18:56:21.947000+00:00",
+      "validity": {
+        "operator_confirmed": false,
+        "valid_contact_repetitions": [],
+        "complete_recovery_repetitions": [],
+        "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+        "operator_incident_notes": "Declaración directa del operador en el chat: apareció TEMPORIZADOR INTERRUMPIDO al intentar iniciar; no realizó contactos ni ninguna otra acción. Informe registrado por coordinador a partir de esa declaración.",
+        "assessment": "excluded_no_contact_timer_startup_failure",
+        "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons",
+        "operator_original_confirmation": false,
+        "excluded_from_planned_comparisons": true,
+        "actual_reported_contacts": {
+          "plant_node": null,
+          "black_node": null,
+          "completed_repetitions": 0
+        },
+        "correction_reason": "Timer interrupted in preparation, approximately 16 ms after start. Operator confirms no physical contacts."
+      },
+      "correction": {
+        "at_utc": "2026-10-14T18:59:01.082971+00:00",
+        "source": "Direct human report in current chat",
+        "user_statement": "Apareció TEMPORIZADOR INTERRUMPIDO al intentar iniciar no hice nada más",
+        "void_planned_trial": true,
+        "reason": "Timer interrupted in preparation, approximately 16 ms after start. Operator confirms no physical contacts.",
+        "actual_reported_contacts": {
+          "plant_node": null,
+          "black_node": null,
+          "completed_repetitions": 0
+        },
+        "disposition": "Preserve original recording and failed-start log; exclude from contact comparisons. Repeat using a new identifier.",
+        "assessment": "excluded_no_contact_timer_startup_failure"
+      }
+    },
+    {
+      "trial_id": "B-EB5-cross-EC5-black-first-03",
+      "analysis_path": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\trials\\B-EB5-cross-EC5-black-first-03\\analysis.json",
+      "start_utc": "2026-10-14T19:02:08.892000+00:00",
+      "end_utc": "2026-10-14T19:06:19.135000+00:00",
+      "validity": {
+        "operator_confirmed": true,
+        "valid_contact_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "complete_recovery_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+        "operator_incident_notes": "Sucedió al igual que el los ensayos de primero negro después rojo, suena al tocar negro pero no percibo un cambio al manipular planta diferente al previo",
+        "assessment": "all_contact_phases_confirmed",
+        "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons"
+      },
+      "correction": null
+    },
+    {
+      "trial_id": "B-EB5-cross-EC5-plant-first-01",
+      "analysis_path": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\trials\\B-EB5-cross-EC5-plant-first-01\\analysis.json",
+      "start_utc": "2026-10-14T19:11:14.280000+00:00",
+      "end_utc": "2026-10-14T19:15:24.563000+00:00",
+      "validity": {
+        "operator_confirmed": true,
+        "valid_contact_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "complete_recovery_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+        "operator_incident_notes": "Sucede lo mismo, no hay sonido durante toque de EB5 pero si con negro de EC5, además cometí un leve error que en el primer reposo toqué EB5 pero solté rápidamente no es algo grave, solo te lo dejo en observación por si ves un leve cambio en el inicio ",
+        "assessment": "contact_phases_confirmed_with_reference_phase_exclusions",
+        "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons",
+        "phase_exclusions": [
+          {
+            "repetition": 1,
+            "phase": "rest",
+            "reason": "Accidental plant EB5 contact, exact timing unknown; exclude the complete first-rest window from clean baseline comparisons."
+          }
+        ],
+        "clean_rest_contact_comparison_repetitions": [
+          2,
+          3
+        ],
+        "exclusion_scope": "Excluded reference phases are preserved; do not use them as uncontaminated baseline for quantitative comparisons."
+      },
+      "correction": {
+        "at_utc": "2026-10-14T19:19:37.911202+00:00",
+        "source": "Operator saved report",
+        "void_planned_trial": false,
+        "reason": "Operator reports a brief accidental touch to plant EB5 during first rest; exact onset/duration not instrumented.",
+        "original_operator_notes": "Sucede lo mismo, no hay sonido durante toque de EB5 pero si con negro de EC5, además cometí un leve error que en el primer reposo toqué EB5 pero solté rápidamente no es algo grave, solo te lo dejo en observación por si ves un leve cambio en el inicio ",
+        "phase_exclusions": [
+          {
+            "repetition": 1,
+            "phase": "rest",
+            "reason": "Accidental plant EB5 contact, exact timing unknown; exclude the complete first-rest window from clean baseline comparisons."
+          }
+        ],
+        "disposition": "Preserve all raw data. Retain observed contact phases; use repetitions 2 and 3 for clean within-trial baseline/contact comparisons."
+      }
+    },
+    {
+      "trial_id": "B-EB5-own-black-first-01",
+      "analysis_path": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\trials\\B-EB5-own-black-first-01\\analysis.json",
+      "start_utc": "2026-10-14T17:40:47.790000+00:00",
+      "end_utc": "2026-10-14T17:44:58.012000+00:00",
+      "validity": null,
+      "correction": null
+    },
+    {
+      "trial_id": "B-EB5-own-plant-first-01",
+      "analysis_path": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\trials\\B-EB5-own-plant-first-01\\analysis.json",
+      "start_utc": "2026-10-14T17:54:15.541000+00:00",
+      "end_utc": "2026-10-14T17:58:25.770000+00:00",
+      "validity": null,
+      "correction": null
+    },
+    {
+      "trial_id": "B-EB5-plant-only-01",
+      "analysis_path": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\trials\\B-EB5-plant-only-01\\analysis.json",
+      "start_utc": "2026-10-14T18:10:35.062000+00:00",
+      "end_utc": "2026-10-14T18:14:10.723000+00:00",
+      "validity": {
+        "operator_confirmed": true,
+        "valid_contact_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "complete_recovery_repetitions": [
+          1,
+          2
+        ],
+        "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+        "operator_incident_notes": "Esta prueba sirve se anuló al final porque se me cayó el celular y se cambió de pestaña en los último 5 segundos de finalización, con respecto a la prueba escuche sonido en la primera e última interacción nuevamente en la segunda no. Aclaro fue solo planta sin negro.",
+        "assessment": "all_contact_phases_confirmed_final_recovery_truncated",
+        "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons"
+      },
+      "correction": null
+    },
+    {
+      "trial_id": "B-EC5-black-only-01",
+      "analysis_path": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\trials\\B-EC5-black-only-01\\analysis.json",
+      "start_utc": "2026-10-14T19:55:26.781000+00:00",
+      "end_utc": "2026-10-14T19:59:06.931000+00:00",
+      "validity": {
+        "operator_confirmed": true,
+        "valid_contact_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "complete_recovery_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+        "operator_incident_notes": "Sin observaciones.",
+        "assessment": "all_contact_phases_confirmed",
+        "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons"
+      },
+      "correction": null
+    },
+    {
+      "trial_id": "B-EC5-cross-EB5-black-first-01",
+      "analysis_path": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\trials\\B-EC5-cross-EB5-black-first-01\\analysis.json",
+      "start_utc": "2026-10-14T20:03:23.492000+00:00",
+      "end_utc": "2026-10-14T20:07:33.711000+00:00",
+      "validity": {
+        "operator_confirmed": true,
+        "valid_contact_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "complete_recovery_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+        "operator_incident_notes": "Lo mismo que en ocasiones pasadas al tocar planta no se detecta cambio perceptible ",
+        "assessment": "all_contact_phases_confirmed",
+        "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons"
+      },
+      "correction": null
+    },
+    {
+      "trial_id": "B-EC5-cross-EB5-plant-first-01",
+      "analysis_path": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\trials\\B-EC5-cross-EB5-plant-first-01\\analysis.json",
+      "start_utc": "2026-10-14T20:15:01.522000+00:00",
+      "end_utc": "2026-10-14T20:19:11.757000+00:00",
+      "validity": {
+        "operator_confirmed": true,
+        "valid_contact_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "complete_recovery_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+        "operator_incident_notes": "En esta ocasión al tocar la planta en el intento uno y dos sonó y al tocar el negro se dispararon muchas más notas cosa que no pasó la tercera vez.",
+        "assessment": "all_contact_phases_confirmed",
+        "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons"
+      },
+      "correction": {
+        "at_utc": "2026-10-14T20:23:33.025911+00:00",
+        "source": "Direct operator clarification in current chat",
+        "user_statement": "Sí, sentado y con los mismos zapatos",
+        "void_planned_trial": false,
+        "reason": "Footwear selection was left unknown in the timer. Operator retrospectively confirms same shoes and seated posture.",
+        "operator_environment_correction": {
+          "footwear": "shoes",
+          "posture": "seated_on_floor_through_trousers",
+          "original_selector_footwear": "unknown",
+          "footwear_source": "Direct operator confirmation in chat after trial",
+          "clarified_at_utc": "2026-10-14T20:23:33.025911+00:00"
+        }
+      }
+    },
+    {
+      "trial_id": "B-EC5-own-black-first-01",
+      "analysis_path": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\trials\\B-EC5-own-black-first-01\\analysis.json",
+      "start_utc": "2026-10-14T19:31:35.828000+00:00",
+      "end_utc": "2026-10-14T19:35:46.124000+00:00",
+      "validity": {
+        "operator_confirmed": true,
+        "valid_contact_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "complete_recovery_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+        "operator_incident_notes": "Sucede lo mismo al tocar planta no se detecta cambio perceptible.",
+        "assessment": "contact_phases_confirmed_with_documented_delayed_cue",
+        "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons",
+        "timing_adjustments": [
+          {
+            "repetition": 3,
+            "phase": "first_contact",
+            "operator_followed_delayed_cue": true,
+            "cue_receipt_delay_s": 4.347,
+            "scope": "Preserve confirmed physical condition and raw full phase. Do not treat scheduled pre-cue interval as actual contact. Adjust settled window conservatively to three seconds after host cue receipt; its duration is shorter than the other repetitions.",
+            "physical_onset_instrumented": false
+          }
+        ],
+        "repetitions_without_recorded_cue_delay": [
+          1,
+          2
+        ]
+      },
+      "correction": {
+        "at_utc": "2026-10-14T19:40:49.398236+00:00",
+        "source": "Host cue receipt records and direct human clarification",
+        "user_statement": "Sí, lo percibí, la pantalla se congeló pero volvió y apenas vi el toque lo hice. Es totalmente válida la prueba, solo que con ese pequeño retraso documentado.",
+        "void_planned_trial": false,
+        "reason": "Third black-only cue received 4.347 seconds after scheduled phase start. Operator confirms contact began when delayed visible cue appeared.",
+        "timing_adjustments": [
+          {
+            "repetition": 3,
+            "phase": "first_contact",
+            "operator_followed_delayed_cue": true,
+            "cue_receipt_delay_s": 4.347,
+            "scope": "Preserve confirmed physical condition and raw full phase. Do not treat scheduled pre-cue interval as actual contact. Adjust settled window conservatively to three seconds after host cue receipt; its duration is shorter than the other repetitions.",
+            "physical_onset_instrumented": false
+          }
+        ],
+        "disposition": "All three contact repetitions remain operator-confirmed. Qualitative condition remains valid; third timing and settled-window comparisons are limited."
+      }
+    },
+    {
+      "trial_id": "B-EC5-own-plant-first-01",
+      "analysis_path": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\trials\\B-EC5-own-plant-first-01\\analysis.json",
+      "start_utc": "2026-10-14T19:22:10.328000+00:00",
+      "end_utc": "2026-10-14T19:28:20.522000+00:00",
+      "validity": {
+        "operator_confirmed": true,
+        "valid_contact_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "complete_recovery_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+        "operator_incident_notes": "Sigue pasando igual solo planta no genera nada pero al tocar negro se escuchan claramente las notas.",
+        "assessment": "all_contact_phases_confirmed",
+        "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons"
+      },
+      "correction": null
+    },
+    {
+      "trial_id": "B-EC5-plant-only-01",
+      "analysis_path": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\trials\\B-EC5-plant-only-01\\analysis.json",
+      "start_utc": "2026-10-14T19:43:59.396000+00:00",
+      "end_utc": "2026-10-14T19:47:39.602000+00:00",
+      "validity": {
+        "operator_confirmed": true,
+        "valid_contact_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "complete_recovery_repetitions": [
+          1,
+          2,
+          3
+        ],
+        "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+        "operator_incident_notes": "En este caso hay tres comportamientos primero, al iniciar percibí sonido sin haber tocado EC5, al tocar la primera vez no detecte sonido, al tocar por segunda vez detecte sonido pero siguió aunque deje de tocar y después sonó al volver a tocar y dejó de sonar al dejar de tocar. ",
+        "assessment": "all_contact_phases_confirmed",
+        "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons"
+      },
+      "correction": null
+    },
+    {
+      "trial_id": "C-EB5-soil-four-plants-01",
+      "analysis_path": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\trials\\C-EB5-soil-four-plants-01\\analysis.json",
+      "start_utc": "2026-10-14T20:44:29.429000+00:00",
+      "end_utc": "2026-10-14T20:59:29.368000+00:00",
+      "validity": {
+        "operator_confirmed": false,
+        "valid_contact_repetitions": [],
+        "complete_recovery_repetitions": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+        "operator_incident_notes": "Además realice la misma prueba para ED sonó con la planta pero mucho mejor tocando el negro, además pasa lo mismo no sostiene el toque solo al inicio.",
+        "assessment": "partial_or_unconfirmed_sequence_blocks",
+        "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons",
+        "count_meaning": "plant blocks, one pass per plant",
+        "operator_confirmed_ground_kept_fixed": false,
+        "ground_placement_confirmed": true,
+        "valid_plant_blocks": []
+      },
+      "correction": {
+        "recorded_at_utc": "2026-10-14T21:12:10.347080+00:00",
+        "void_planned_trial": false,
+        "scientific_qualifications": {
+          "recorded_at_utc": "2026-10-14T21:12:10.347080+00:00",
+          "raw_reports_and_recording_preserved": true,
+          "complete_planned_continuous_contact_labels": false,
+          "original_global_fields": {
+            "followed_cues": false,
+            "grounded_black_kept_fixed": false
+          },
+          "individual_contact_blocks_confirmed": [
+            "EB5",
+            "EC5",
+            "EE5",
+            "EF5"
+          ],
+          "ground_state": {
+            "placement_confirmed": true,
+            "reported_soil": "Sustrato de maceta EB5, levemente húmedo, profundidad 3 cm",
+            "end_state_confirmed_in_chat": "El negro EB5 sigue enterrado",
+            "unchanged_throughout_run": "No confirmado por el campo global del formulario; no inferirlo del estado final"
+          },
+          "per_node": {
+            "EB5": {
+              "use": "Contacto individual confirmado; sin respuesta audible ni MIDI en la ventana prevista",
+              "release_label": "El no en silencio al soltar es ambiguo: tampoco hubo sonido inicial. No clasificarlo como nota atascada"
+            },
+            "EC5": {
+              "use": "Respuesta exploratoria a planta y planta+negro",
+              "continuous_hold": false,
+              "reason": "El operador soltó y volvió a tocar repetidamente para generar notas; instantes exactos no registrados"
+            },
+            "EE5": {
+              "use": "Respuesta exploratoria a planta y planta+negro",
+              "continuous_hold": "No demostrado",
+              "reason": "Notas describen respuesta al inicio, similar al caso anterior; no inventar tiempos de recontacto"
+            },
+            "EF5": {
+              "use": "Respuesta exploratoria, principalmente con negro+planta",
+              "continuous_hold": false,
+              "reason": "El operador informa soltar y apretar; no usar los 20 s como contacto físico continuo"
+            },
+            "ED5": {
+              "use": "Observación exploratoria del operador fuera de protocolo",
+              "exact_contact_timing": "Desconocido",
+              "reason": "No atribuir automáticamente sus notas durante bloques EE5/EF5 a activación espontánea o interferencia"
+            }
+          },
+          "comparison_limit": "Ensayos previos EB5/EC5 mayormente sentado; corrida en tierra de pie con zapatos. Las comparaciones de contacto entre ambas condiciones también cambian postura. La referencia aire/tierra dentro de esta corrida mantiene la postura prevista"
+        },
+        "processing_note": "Estas anotaciones requieren lectura explícita al usar los datos; no sustituyen el clasificador global conservador de analysis.json"
+      }
+    }
+  ],
+  "next_remote_session": [
+    {
+      "step": 1,
+      "work": "Leer este cierre, esquema y correcciones; resolver IP e identidad actuales, registrar versión y configuración sin cambiar Ableton ni cableado. Tomar negro EB5 enterrado como configuración prevista; el usuario reporta que fue la de mejor funcionamiento en pruebas adicionales"
+    },
+    {
+      "step": 2,
+      "work": "Reproducir cronológicamente las características registradas de EB5 y EC5. Usar intervalos completos para conservar adaptación y estado; respetar huecos. No simular muestras ADC de 2 ms que no fueron grabadas"
+    },
+    {
+      "step": 3,
+      "work": "Comparar el detector instalado con candidatos adaptativos. Separar bloques completos para ajuste y evaluación, incluyendo ambos órdenes y negros cruzados; no dividir aleatoriamente muestras contiguas",
+      "metrics": [
+        "Activaciones en reposos confirmados por unidad de tiempo",
+        "Contactos confirmados con y sin respuesta",
+        "Sostenimiento durante contactos limpios",
+        "Tiempo de recuperación al soltar",
+        "Recalibraciones y sensibilidad a referencias colapsadas"
+      ]
+    },
+    {
+      "step": 4,
+      "work": "Diseñar aprendizaje de referencia/ruido con calidad de adquisición, estados de candidato/contacto/recuperación y revisión del corte de 30 s. Mantener variación musical mientras la evidencia permita contacto; evitar umbrales absolutos ajustados a una planta concreta",
+      "limit": "La telemetría disponible permite probar decisiones sobre características, no validar nuevos filtros de forma de onda completa. Si dos situaciones entregan los mismos datos locales, el firmware no puede distinguirlas con certeza"
+    },
+    {
+      "step": 5,
+      "work": "Si se propone usar simultaneidad entre nodos, definir explícitamente un coordinador o intercambio de datos. No asumir que cada ESP32 ya recibe la señal de los demás"
+    },
+    {
+      "step": 6,
+      "work": "Antes de OTA, conservar binarios y configuración exactos actualmente instalados, hashes y procedimiento de reversión. Resolver IP en cada operación y confirmar identidad. Probar compilación y reproducción de registros antes de desplegar candidatos por etapas en EB5/EC5",
+      "rollback_warning": "Las reversiones previas apuntan a 1.1.12; no son la reversión exacta de los pilotos 1.1.13 actuales. El destino antiguo EB5 .252 está obsoleto"
+    },
+    {
+      "step": 7,
+      "work": "Mantener estructura de red/MIDI/OTA. Verificar versión, arranque y comunicación remotamente tras cualquier despliegue futuro. Dejar explícitamente pendiente la confirmación física/audible y estabilidad entre días, porque no habrá operador presencial"
+    },
+    {
+      "step": 8,
+      "work": "Tratar ED5 como objetivo independiente de base musical y eventual modulación al tocar. No alterar Ableton ni prometer OTA/ADC detallado en ED5 hasta verificar que ese nodo lo permita"
+    }
+  ],
+  "outcome_now": "Evidencia cerrada y organizada; no se instaló un firmware nuevo ni se efectuaron nuevas pruebas físicas al cerrar",
+  "planned_operating_condition": {
+    "black_EB5": "Enterrado en sustrato de maceta EB5",
+    "firmware_requirement": "Diseñar y evaluar la próxima versión para funcionar con esta configuración física"
+  },
+  "latest_operator_observation": {
+    "recorded_at_utc": "2026-10-14T21:24:21.635795+00:00",
+    "source": "Direct user message after the coordinated tests ended",
+    "operator_statement": "En las pruebas que hice mientras tú cargabas o hacías demás procesos aparte de las pruebas que registraste, el mejor funcionamiento obtenido fue con EB5 negro enterrado",
+    "planned_operating_condition": {
+      "black_EB5": "Enterrado en sustrato de maceta EB5",
+      "firmware_requirement": "Diseñar y evaluar la próxima versión para funcionar con esta configuración física"
+    },
+    "classification": "Observación del operador en pruebas adicionales sin marcas temporales coordinadas",
+    "use": "Requisito de funcionamiento y evidencia cualitativa. Las grabaciones pueden contener eventos de esas pruebas, pero sus modalidades e instantes exactos no están etiquetados",
+    "preserve": "No sustituye ni borra la confirmación y las observaciones de la corrida coordinada en tierra"
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "retrieved_at_utc": "2026-10-14T18:53:08.543699+00:00",
+  "study_date": "2026-10-14",
+  "study_timezone": "America/Bogota",
+  "station": "SKPE / Aeropuerto Matecaña, Pereira",
+  "local_site": "Bioparque Ukumarí, Caja 5",
+  "spatial_limit": "Airport observation is regional context, not a measured rainfall record at Caja 5.",
+  "trials_so_far_local": "12:40 through 13:38; UTC = local + 5 h",
+  "operator_observation": {
+    "surface": "synthetic_grass",
+    "moisture": "slightly_damp"
+  },
+  "rain_before_during_after_trials": "See assessment; regional observations are time-stamped and local rainfall remains unverified",
+  "sources": [
+    {
+      "source": "noaa_awc",
+      "url": "https://aviationweather.gov/api/data/metar?ids=SKPE&hours=24&format=json",
+      "fetch_status": "success",
+      "date_matched_rows": 19,
+      "observations": [
+        {
+          "reportTime": "2026-10-14T18:00:00.000Z",
+          "rawOb": "METAR SKPE 141800Z VRB05KT 9999 FEW020 SCT060 26/19 Q1017",
+          "temp": 26,
+          "dewp": 19,
+          "wxString": null,
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T17:00:00.000Z",
+          "rawOb": "METAR SKPE 141700Z VRB03KT 9999 SCT015 25/18 Q1018",
+          "temp": 25,
+          "dewp": 18,
+          "wxString": null,
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T16:00:00.000Z",
+          "rawOb": "METAR SKPE 141600Z 32007KT 290V360 9999 BKN015 25/19 Q1019",
+          "temp": 25,
+          "dewp": 19,
+          "wxString": null,
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T15:00:00.000Z",
+          "rawOb": "METAR SKPE 141500Z 29003KT 240V360 9999 VCFG BKN015 23/18 Q1020",
+          "temp": 23,
+          "dewp": 18,
+          "wxString": "VCFG",
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T14:00:00.000Z",
+          "rawOb": "METAR SKPE 141400Z 00000KT 8000 VCFG SCT007 BKN040 21/18 Q1020",
+          "temp": 21,
+          "dewp": 18,
+          "wxString": "VCFG",
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T13:00:00.000Z",
+          "rawOb": "METAR SKPE 141300Z 31002KT 5000 BCFG FEW007 BKN035 19/17 Q1020",
+          "temp": 19,
+          "dewp": 17,
+          "wxString": "BCFG",
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T12:00:00.000Z",
+          "rawOb": "METAR SKPE 141200Z 14003KT 090V170 9999 VCFG SCT040 18/16 Q1019",
+          "temp": 18,
+          "dewp": 16,
+          "wxString": "VCFG",
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T11:00:00.000Z",
+          "rawOb": "METAR SKPE 141100Z 10007KT 9999 SCT040 18/16 Q1018",
+          "temp": 18,
+          "dewp": 16,
+          "wxString": null,
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T10:00:00.000Z",
+          "rawOb": "METAR SKPE 141000Z 00000KT 9999 SCT040 18/17 Q1018",
+          "temp": 18,
+          "dewp": 17,
+          "wxString": null,
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T09:00:00.000Z",
+          "rawOb": "METAR SKPE 140900Z AUTO 31003KT 250V350 CAVOK 18/17 Q1018",
+          "temp": 18,
+          "dewp": 17,
+          "wxString": null,
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T08:00:00.000Z",
+          "rawOb": "METAR SKPE 140800Z AUTO 10008KT CAVOK 19/16 Q1018",
+          "temp": 19,
+          "dewp": 16,
+          "wxString": null,
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T07:00:00.000Z",
+          "rawOb": "METAR SKPE 140700Z AUTO 16004KT 120V180 9999NDV // OVC015/// 18/16 Q1018",
+          "temp": 18,
+          "dewp": 16,
+          "wxString": null,
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T06:00:00.000Z",
+          "rawOb": "METAR SKPE 140600Z AUTO 11006KT CAVOK 19/17 Q1018",
+          "temp": 19,
+          "dewp": 17,
+          "wxString": null,
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T05:00:00.000Z",
+          "rawOb": "METAR SKPE 140500Z 10004KT 020V150 9999 SCT040 19/18 Q1019",
+          "temp": 19,
+          "dewp": 18,
+          "wxString": null,
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T04:00:00.000Z",
+          "rawOb": "METAR SKPE 140400Z 00000KT 9999 SCT020 SCT040 19/18 Q1019",
+          "temp": 19,
+          "dewp": 18,
+          "wxString": null,
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T03:00:00.000Z",
+          "rawOb": "METAR SKPE 140300Z 00000KT 9999 SCT020 SCT040 20/19 Q1020",
+          "temp": 20,
+          "dewp": 19,
+          "wxString": null,
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T02:00:00.000Z",
+          "rawOb": "METAR SKPE 140200Z VRB03KT 9999 SCT020 SCT040 20/18 Q1020",
+          "temp": 20,
+          "dewp": 18,
+          "wxString": null,
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T01:00:00.000Z",
+          "rawOb": "METAR SKPE 140100Z 13005KT 9999 -DZ SCT025TCU SCT060 21/18 Q1019 RMK TCU/W",
+          "temp": 21,
+          "dewp": 18,
+          "wxString": "-DZ",
+          "lat": 4.814,
+          "lon": -75.735
+        },
+        {
+          "reportTime": "2026-10-14T00:00:00.000Z",
+          "rawOb": "METAR SKPE 140000Z 12005KT 9999 SCT025TCU SCT060 21/18 Q1019 RMK TCU/W",
+          "temp": 21,
+          "dewp": 18,
+          "wxString": null,
+          "lat": 4.814,
+          "lon": -75.735
+        }
+      ],
+      "raw_file": "weather_noaa_awc_raw.txt"
+    },
+    {
+      "source": "iem_history",
+      "url": "https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py?station=SKPE&data=metar&year1=2026&month1=10&day1=14&year2=2026&month2=10&day2=15&tz=Etc%2FUTC&format=onlycomma&latlon=no&elev=no&missing=M&trace=T&direct=no&report_type=3&report_type=4",
+      "fetch_status": "success",
+      "date_matched_rows": 19,
+      "observations": [
+        "SKPE,2026-10-14 00:00,COR SKPE 140000Z 12005KT 9999 SCT025TCU SCT060 21/18 Q1019 RMK TCU/W",
+        "SKPE,2026-10-14 01:00,SKPE 140100Z 13005KT 9999 -DZ SCT025TCU SCT060 21/18 Q1019 RMK TCU/W",
+        "SKPE,2026-10-14 02:00,SKPE 140200Z VRB03KT 9999 SCT020 SCT040 20/18 Q1020",
+        "SKPE,2026-10-14 03:00,SKPE 140300Z 00000KT 9999 SCT020 SCT040 20/19 Q1020",
+        "SKPE,2026-10-14 04:00,SKPE 140400Z 00000KT 9999 SCT020 SCT040 19/18 Q1019",
+        "SKPE,2026-10-14 05:00,SKPE 140500Z 10004KT 020V150 9999 SCT040 19/18 Q1019",
+        "SKPE,2026-10-14 06:00,SKPE 140600Z AUTO 11006KT CAVOK 19/17 Q1018",
+        "SKPE,2026-10-14 07:00,SKPE 140700Z AUTO 16004KT 120V180 9999NDV // OVC015/// 18/16 Q1018",
+        "SKPE,2026-10-14 08:00,SKPE 140800Z AUTO 10008KT CAVOK 19/16 Q1018",
+        "SKPE,2026-10-14 09:00,SKPE 140900Z AUTO 31003KT 250V350 CAVOK 18/17 Q1018",
+        "SKPE,2026-10-14 10:00,SKPE 141000Z 00000KT 9999 SCT040 18/17 Q1018",
+        "SKPE,2026-10-14 11:00,SKPE 141100Z 10007KT 9999 SCT040 18/16 Q1018",
+        "SKPE,2026-10-14 12:00,SKPE 141200Z 14003KT 090V170 9999 VCFG SCT040 18/16 Q1019",
+        "SKPE,2026-10-14 13:00,SKPE 141300Z 31002KT 5000 BCFG FEW007 BKN035 19/17 Q1020",
+        "SKPE,2026-10-14 14:00,SKPE 141400Z 00000KT 8000 VCFG SCT007 BKN040 21/18 Q1020",
+        "SKPE,2026-10-14 15:00,SKPE 141500Z 29003KT 240V360 9999 VCFG BKN015 23/18 Q1020",
+        "SKPE,2026-10-14 16:00,SKPE 141600Z 32007KT 290V360 9999 BKN015 25/19 Q1019",
+        "SKPE,2026-10-14 17:00,SKPE 141700Z VRB03KT 9999 SCT015 25/18 Q1018",
+        "SKPE,2026-10-14 18:00,SKPE 141800Z VRB05KT 9999 FEW020 SCT060 26/19 Q1017"
+      ],
+      "raw_file": "weather_iem_history_raw.txt"
+    }
+  ],
+  "forecast_search_result": {
+    "url": "https://www.theweathernetwork.com/en/airport/co/risaralda/pereira-matecana/14-days",
+    "date": "2026-10-14",
+    "type": "forecast_only",
+    "rain_probability_day_pct": 60,
+    "forecast_rain_mm": "1-3",
+    "restriction": "Not evidence that rain actually occurred before, during or after trials."
+  },
+  "assessment": {
+    "reviewed_at_local": "2026-10-14 13:53 America/Bogota",
+    "observed_drizzle_before_today": {
+      "utc": "2026-10-14T01:00:00Z",
+      "local": "2026-10-13 20:00",
+      "station": "SKPE",
+      "code": "-DZ",
+      "meaning": "Light drizzle reported at Matecana, previous evening; not a rainfall observation at Ukumari"
+    },
+    "observations_near_trials": [
+      {
+        "local": "2026-10-14 12:00",
+        "utc": "2026-10-14T17:00:00Z",
+        "temperature_c": 25,
+        "dewpoint_c": 18,
+        "reported_rain": false
+      },
+      {
+        "local": "2026-10-14 13:00",
+        "utc": "2026-10-14T18:00:00Z",
+        "temperature_c": 26,
+        "dewpoint_c": 19,
+        "reported_rain": false
+      }
+    ],
+    "last_available_observation_utc": "2026-10-14T18:00:00Z",
+    "rain_after_completed_trials": "No subsequent observation available at retrieval. Cannot establish rainfall after the trials.",
+    "rain_during_local_trials": "Not independently measured at Caja 5; airport reports at 12:00 and 13:00 do not report rain. No inference of dry ground.",
+    "missing_or_unknown_weather_codes": "Some automatic reports contain //, meaning present weather not reported; do not treat missing weather as proof of no precipitation.",
+    "local_surface_evidence": "Operator reports synthetic grass slightly damp; this is the direct local observation."
+  }
+}

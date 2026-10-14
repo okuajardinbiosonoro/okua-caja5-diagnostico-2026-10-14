@@ -1,0 +1,168 @@
+{
+  "trial_id": "B-EC5-black-only-01",
+  "recorded_at_utc": "2026-10-14T20:01:50.044634+00:00",
+  "validity": {
+    "operator_confirmed": true,
+    "valid_contact_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "complete_recovery_repetitions": [
+      1,
+      2,
+      3
+    ],
+    "timer_abort_does_not_discard_prior_finished_contact_phases": true,
+    "operator_incident_notes": "Sin observaciones.",
+    "assessment": "all_contact_phases_confirmed",
+    "data_after_timer_end": "Retained in source recording, excluded from labelled phase comparisons"
+  },
+  "operator_environment": {
+    "floor_material": "synthetic_grass",
+    "floor_moisture": "slightly_damp",
+    "moisture_source": "Direct operator observation; not a measured moisture value",
+    "footwear": "shoes",
+    "body_to_earth_impedance": "not_measured",
+    "electrical_isolation": "not_verified",
+    "weather_context_file": "weather_context.json",
+    "posture": "seated_on_floor_through_trousers",
+    "metadata_source": "operator_environment.json",
+    "reported_at_utc": "2026-10-14T18:53:06.869+00:00",
+    "footwear_source": "Operator selection at trial start"
+  },
+  "sensor_metric_semantics": {
+    "recorded_at_utc": "2026-10-14T19:53:36.524+00:00",
+    "verified_firmware": "1.1.13-box5-touch-pilot",
+    "applicable_nodes": [
+      "EB5",
+      "EC5"
+    ],
+    "source_files": [
+      "diagnostics/eb5_touch_pilot_20261012/pilot.patch",
+      "diagnostics/eb5_touch_pilot_20261012/adaptive_touch_pilot.h"
+    ],
+    "verified_assignments": {
+      "rms_mean": "g_pilotMean = g_pilotAcquisition.mean: arithmetic ADC-window mean",
+      "filt": "g_plantSmoothV = feature.rms: ADC-window RMS used by the detector",
+      "base": "g_plantBaselineV = g_pilotDetector.referenceRms: RMS reference",
+      "threshold": "g_pilotDetector.thresholdRms",
+      "score": "g_pilotDetector.amplitudeScore: absolute RMS-reference difference / RMS threshold",
+      "noise_p95": "g_pilotDetector.noiseRms",
+      "occupancy": "fraction of acquired ADC samples above zero",
+      "transition_resets": "Detector medium-transition recalibrations; not a board reboot counter"
+    },
+    "scale": "Nominal ADC conversion, not calibrated signed analogue voltage.",
+    "other_firmware": "Do not apply these assignments to EE5/EF5 without separately verifying their implementation.",
+    "historical_reports": "Earlier derived RMS labels referring to rms_mean describe arithmetic mean. Numerical raw readings are unchanged."
+  },
+  "per_repetition": [
+    {
+      "repetition": 1,
+      "rest_ADC_RMS_median": 0.31495,
+      "black_only_ADC_RMS_median": 0.0142,
+      "black_only_EC5_stable_activation_fraction": 1.0,
+      "black_only_EC5_MIDI_held_s": 18.083,
+      "black_only_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "release_EC5_MIDI_held_s": 3.582,
+      "settled_release_EC5_activation": 0.0
+    },
+    {
+      "repetition": 2,
+      "rest_ADC_RMS_median": 0.2893,
+      "black_only_ADC_RMS_median": 0.0,
+      "black_only_EC5_stable_activation_fraction": 1.0,
+      "black_only_EC5_MIDI_held_s": 18.374,
+      "black_only_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "release_EC5_MIDI_held_s": 3.154,
+      "settled_release_EC5_activation": 0.0
+    },
+    {
+      "repetition": 3,
+      "rest_ADC_RMS_median": 0.281,
+      "black_only_ADC_RMS_median": 0.0,
+      "black_only_EC5_stable_activation_fraction": 1.0,
+      "black_only_EC5_MIDI_held_s": 17.939,
+      "black_only_nodes_with_note_ons": [
+        "EB5",
+        "EC5",
+        "ED5",
+        "EE5",
+        "EF5"
+      ],
+      "release_EC5_MIDI_held_s": 3.274,
+      "settled_release_EC5_activation": 0.0
+    }
+  ],
+  "operator_audio": "Three of three black-only contacts audible and continuous; silence after releasing; no incidents.",
+  "runtime": {
+    "EB5": {
+      "samples": 210,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EC5": {
+      "samples": 210,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "ED5": {
+      "samples": 210,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EE5": {
+      "samples": 210,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    },
+    "EF5": {
+      "samples": 210,
+      "statuses": [
+        "online"
+      ],
+      "uptime_decreased": false
+    }
+  },
+  "data_quality": {
+    "coverage_gap_flag_s": 1.0,
+    "operator_ack_delay_flag_s": 1.0,
+    "meaning": "Flags missing host-received telemetry, including phase boundaries; does not prove a node reboot or missing analogue response.",
+    "sensor_coverage_warnings": [],
+    "operator_ack_delay_warnings": []
+  },
+  "interpretation": "EC5 black-only contact causes NoteOns in all five nodes in all three repetitions. In EC5, settled detector activation is 100 percent in contact and zero in recovered release, while ADC RMS drops substantially. This is a shared-reference contact response; no plant contact occurs.",
+  "limitations": [
+    "Scheduled release-window MIDI duration is not exact physical release latency.",
+    "MIDI is not a continuous audio measurement.",
+    "Native ADC scales are nominal and unsigned; near-zero RMS does not prove zero signed analogue voltage."
+  ],
+  "next_trial": {
+    "trial_id": "B-EC5-cross-EB5-black-first-01",
+    "plant_node": "EC5",
+    "black_node": "EB5",
+    "contact_order": "black_first",
+    "rationale": "Reciprocal cross with the already reachable EB5/EC5 pair preserves seated posture."
+  },
+  "changes_to_nodes_or_Ableton": false
+}

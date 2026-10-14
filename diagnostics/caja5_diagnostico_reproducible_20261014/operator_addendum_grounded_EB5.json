@@ -1,0 +1,12 @@
+{
+  "recorded_at_utc": "2026-10-14T21:24:21.635795+00:00",
+  "source": "Direct user message after the coordinated tests ended",
+  "operator_statement": "En las pruebas que hice mientras tú cargabas o hacías demás procesos aparte de las pruebas que registraste, el mejor funcionamiento obtenido fue con EB5 negro enterrado",
+  "planned_operating_condition": {
+    "black_EB5": "Enterrado en sustrato de maceta EB5",
+    "firmware_requirement": "Diseñar y evaluar la próxima versión para funcionar con esta configuración física"
+  },
+  "classification": "Observación del operador en pruebas adicionales sin marcas temporales coordinadas",
+  "use": "Requisito de funcionamiento y evidencia cualitativa. Las grabaciones pueden contener eventos de esas pruebas, pero sus modalidades e instantes exactos no están etiquetados",
+  "preserve": "No sustituye ni borra la confirmación y las observaciones de la corrida coordinada en tierra"
+}

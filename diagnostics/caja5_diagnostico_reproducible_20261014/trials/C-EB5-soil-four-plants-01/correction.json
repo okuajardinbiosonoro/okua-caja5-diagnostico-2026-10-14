@@ -1,0 +1,53 @@
+{
+  "recorded_at_utc": "2026-10-14T21:12:10.347080+00:00",
+  "void_planned_trial": false,
+  "scientific_qualifications": {
+    "recorded_at_utc": "2026-10-14T21:12:10.347080+00:00",
+    "raw_reports_and_recording_preserved": true,
+    "complete_planned_continuous_contact_labels": false,
+    "original_global_fields": {
+      "followed_cues": false,
+      "grounded_black_kept_fixed": false
+    },
+    "individual_contact_blocks_confirmed": [
+      "EB5",
+      "EC5",
+      "EE5",
+      "EF5"
+    ],
+    "ground_state": {
+      "placement_confirmed": true,
+      "reported_soil": "Sustrato de maceta EB5, levemente húmedo, profundidad 3 cm",
+      "end_state_confirmed_in_chat": "El negro EB5 sigue enterrado",
+      "unchanged_throughout_run": "No confirmado por el campo global del formulario; no inferirlo del estado final"
+    },
+    "per_node": {
+      "EB5": {
+        "use": "Contacto individual confirmado; sin respuesta audible ni MIDI en la ventana prevista",
+        "release_label": "El no en silencio al soltar es ambiguo: tampoco hubo sonido inicial. No clasificarlo como nota atascada"
+      },
+      "EC5": {
+        "use": "Respuesta exploratoria a planta y planta+negro",
+        "continuous_hold": false,
+        "reason": "El operador soltó y volvió a tocar repetidamente para generar notas; instantes exactos no registrados"
+      },
+      "EE5": {
+        "use": "Respuesta exploratoria a planta y planta+negro",
+        "continuous_hold": "No demostrado",
+        "reason": "Notas describen respuesta al inicio, similar al caso anterior; no inventar tiempos de recontacto"
+      },
+      "EF5": {
+        "use": "Respuesta exploratoria, principalmente con negro+planta",
+        "continuous_hold": false,
+        "reason": "El operador informa soltar y apretar; no usar los 20 s como contacto físico continuo"
+      },
+      "ED5": {
+        "use": "Observación exploratoria del operador fuera de protocolo",
+        "exact_contact_timing": "Desconocido",
+        "reason": "No atribuir automáticamente sus notas durante bloques EE5/EF5 a activación espontánea o interferencia"
+      }
+    },
+    "comparison_limit": "Ensayos previos EB5/EC5 mayormente sentado; corrida en tierra de pie con zapatos. Las comparaciones de contacto entre ambas condiciones también cambian postura. La referencia aire/tierra dentro de esta corrida mantiene la postura prevista"
+  },
+  "processing_note": "Estas anotaciones requieren lectura explícita al usar los datos; no sustituyen el clasificador global conservador de analysis.json"
+}

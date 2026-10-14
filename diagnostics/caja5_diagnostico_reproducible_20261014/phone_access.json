@@ -1,0 +1,28 @@
+{
+  "network": "192.168.1.0/24",
+  "phone_ip_current_reported": "192.168.1.58",
+  "phone_address_not_pinned": true,
+  "url": "http://192.168.1.143:8986",
+  "checks_from_pc": [
+    {
+      "address": "127.0.0.1",
+      "http": 200,
+      "html_ok": true
+    },
+    {
+      "address": "192.168.1.143",
+      "http": 200,
+      "html_ok": true
+    },
+    {
+      "lan_post_status": 200
+    }
+  ],
+  "phone_connectivity_confirmed": false,
+  "existing_python_firewall_rule": "Allow TCP on Private and Public; not modified",
+  "bindings": [
+    "127.0.0.1",
+    "192.168.1.143"
+  ],
+  "timer_operator_ownership": true
+}

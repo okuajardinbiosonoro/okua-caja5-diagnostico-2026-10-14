@@ -1,0 +1,434 @@
+{
+  "trial_id": "C-EB5-soil-four-plants-01",
+  "condition": "soil_sequence",
+  "plant_node": "EB5",
+  "black_node": "EB5",
+  "grounded_black_node": "EB5",
+  "soil_location": "substrate_of_EB5_pot",
+  "contact_order": "plant_first",
+  "block_count": 4,
+  "repetitions_per_plant": 1,
+  "fixed_posture": "standing",
+  "fixed_footwear": "shoes",
+  "sequence_steps": [
+    {
+      "step_index": 0,
+      "phase": "preparation",
+      "duration_s": 10,
+      "repetition": 0,
+      "block_node": null,
+      "plant_node": null,
+      "black_node": null,
+      "condition": "no_contact",
+      "posture": "standing",
+      "ground_state": "all_black_free",
+      "instruction": {
+        "title": "PREPARATE: NEGROS AL AIRE",
+        "instruction": "Ponte de pie con zapatos para toda la corrida. Todos los negros, incluido EB5, estan al aire. Ambas manos libres. No entierres nada hasta el aviso.",
+        "spoken": "Preparate de pie con zapatos. Todos los negros al aire. No toques nada."
+      }
+    },
+    {
+      "step_index": 1,
+      "phase": "air_reference",
+      "duration_s": 120,
+      "repetition": 0,
+      "block_node": null,
+      "plant_node": null,
+      "black_node": null,
+      "condition": "no_contact",
+      "posture": "standing",
+      "ground_state": "all_black_free",
+      "instruction": {
+        "title": "REFERENCIA: TODOS AL AIRE",
+        "instruction": "Ambas manos libres, sin tocar plantas ni negros. Todos los negros siguen al aire durante dos minutos.",
+        "spoken": "Referencia con todos los negros al aire. No toques nada durante dos minutos."
+      }
+    },
+    {
+      "step_index": 2,
+      "phase": "ground_placement",
+      "duration_s": 60,
+      "repetition": 0,
+      "block_node": null,
+      "plant_node": null,
+      "black_node": "EB5",
+      "condition": "placement_transient",
+      "posture": "standing",
+      "ground_state": "placement_in_progress",
+      "instruction": {
+        "title": "ENTIERRA SOLO NEGRO EB5",
+        "instruction": "Coloca solo la parte metalica de la punta negra marcada EB5 en el sustrato de la maceta EB5, sin abrir el vidrio ni cambiar conexiones. No toques ninguna planta. Deja el negro fijo, suelta todo y pulsa «EB5 enterrado; manos libres». Hay hasta 60 segundos; la siguiente fase empieza al confirmar.",
+        "spoken": "Ahora entierra solo el negro e be cinco en la maceta e be cinco. Dejalo fijo, suelta todo y pulsa el boton de confirmacion."
+      }
+    },
+    {
+      "step_index": 3,
+      "phase": "soil_settle",
+      "duration_s": 120,
+      "repetition": 0,
+      "block_node": null,
+      "plant_node": null,
+      "black_node": null,
+      "condition": "no_contact",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "ESTABILIZACION: EB5 ENTERRADO",
+        "instruction": "Ambas manos libres: no toques ninguna planta, punta negra ni el sustrato. El negro EB5 permanece enterrado y fijo; los otros negros quedan libres salvo cuando la indicacion pida tocarlos. Espera dos minutos.",
+        "spoken": "Negro e be cinco enterrado. Estabilizacion durante dos minutos. Manos libres."
+      }
+    },
+    {
+      "step_index": 4,
+      "phase": "soil_reference",
+      "duration_s": 120,
+      "repetition": 0,
+      "block_node": null,
+      "plant_node": null,
+      "black_node": null,
+      "condition": "no_contact",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "REFERENCIA: EB5 ENTERRADO",
+        "instruction": "Ambas manos libres: no toques ninguna planta, punta negra ni el sustrato. El negro EB5 permanece enterrado y fijo; los otros negros quedan libres salvo cuando la indicacion pida tocarlos. Referencia durante dos minutos.",
+        "spoken": "Referencia con negro e be cinco enterrado. No toques nada durante dos minutos."
+      }
+    },
+    {
+      "step_index": 5,
+      "phase": "rest",
+      "duration_s": 20,
+      "repetition": 1,
+      "block_node": "EB5",
+      "plant_node": "EB5",
+      "black_node": null,
+      "condition": "no_contact",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "REPOSO ANTES DE EB5",
+        "instruction": "Ambas manos libres: no toques ninguna planta, punta negra ni el sustrato. El negro EB5 permanece enterrado y fijo; los otros negros quedan libres salvo cuando la indicacion pida tocarlos.",
+        "spoken": "Reposo para e be cinco. Ambas manos libres."
+      }
+    },
+    {
+      "step_index": 6,
+      "phase": "contact",
+      "duration_s": 20,
+      "repetition": 1,
+      "block_node": "EB5",
+      "plant_node": "EB5",
+      "black_node": null,
+      "condition": "plant_only_with_black_in_soil",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "SOLO PLANTA EB5",
+        "instruction": "Toca SOLO la planta identificada por rojo EB5 con una mano durante 20 segundos. La otra mano queda libre. No toques ningun negro. El negro EB5 sigue enterrado, sin moverlo.",
+        "spoken": "Toca solo la planta e be cinco. La otra mano libre. No toques ningun negro."
+      }
+    },
+    {
+      "step_index": 7,
+      "phase": "release",
+      "duration_s": 30,
+      "repetition": 1,
+      "block_node": "EB5",
+      "plant_node": "EB5",
+      "black_node": null,
+      "condition": "release_recovery",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "SUELTA EB5",
+        "instruction": "Suelta la planta EB5. Ambas manos libres: no toques ninguna planta, punta negra ni el sustrato. El negro EB5 permanece enterrado y fijo; los otros negros quedan libres salvo cuando la indicacion pida tocarlos.",
+        "spoken": "Suelta la planta e be cinco. Ambas manos libres."
+      }
+    },
+    {
+      "step_index": 8,
+      "phase": "change_node",
+      "duration_s": 30,
+      "repetition": 2,
+      "block_node": "EC5",
+      "plant_node": "EC5",
+      "black_node": null,
+      "condition": "posture_or_position_transition",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "PREPARA EC5",
+        "instruction": "Suelta todo y acomodate de pie con los mismos zapatos junto a la planta de etiqueta roja EC5. No toques plantas ni negros. No muevas el negro EB5 enterrado. La siguiente indicacion es reposo.",
+        "spoken": "Suelta todo y prepara la planta e ce cinco, de pie con los mismos zapatos. Todavia no toques nada."
+      }
+    },
+    {
+      "step_index": 9,
+      "phase": "rest",
+      "duration_s": 20,
+      "repetition": 2,
+      "block_node": "EC5",
+      "plant_node": "EC5",
+      "black_node": null,
+      "condition": "no_contact",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "REPOSO ANTES DE EC5",
+        "instruction": "Ambas manos libres: no toques ninguna planta, punta negra ni el sustrato. El negro EB5 permanece enterrado y fijo; los otros negros quedan libres salvo cuando la indicacion pida tocarlos.",
+        "spoken": "Reposo para e ce cinco. Ambas manos libres."
+      }
+    },
+    {
+      "step_index": 10,
+      "phase": "first_contact",
+      "duration_s": 20,
+      "repetition": 2,
+      "block_node": "EC5",
+      "plant_node": "EC5",
+      "black_node": null,
+      "condition": "plant_only_with_EB5_black_in_soil",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "1. SOLO PLANTA EC5",
+        "instruction": "Toca SOLO la planta identificada por rojo EC5 con una mano durante 20 segundos. La otra mano queda libre; no toca ningun negro. Manten la planta hasta la siguiente fase.",
+        "spoken": "Primero toca solo la planta e ce cinco. La otra mano libre, sin tocar negros."
+      }
+    },
+    {
+      "step_index": 11,
+      "phase": "contact",
+      "duration_s": 20,
+      "repetition": 2,
+      "block_node": "EC5",
+      "plant_node": "EC5",
+      "black_node": "EC5",
+      "condition": "own_pair_with_EB5_black_in_soil",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "2. AGREGA NEGRO EC5",
+        "instruction": "SIN SOLTAR la planta de rojo EC5, toca la punta negra marcada EC5 con la otra mano. Manten ambos contactos durante 20 segundos. El negro EB5 sigue enterrado; no lo toques ni lo muevas.",
+        "spoken": "Sin soltar la planta e ce cinco, agrega su negro e ce cinco con la otra mano. Manten ambos contactos."
+      }
+    },
+    {
+      "step_index": 12,
+      "phase": "release",
+      "duration_s": 30,
+      "repetition": 2,
+      "block_node": "EC5",
+      "plant_node": "EC5",
+      "black_node": null,
+      "condition": "release_recovery",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "SUELTA EC5",
+        "instruction": "Suelta AMBOS: planta EC5 y negro EC5. Ambas manos libres: no toques ninguna planta, punta negra ni el sustrato. El negro EB5 permanece enterrado y fijo; los otros negros quedan libres salvo cuando la indicacion pida tocarlos.",
+        "spoken": "Suelta planta y negro e ce cinco. Ambas manos libres."
+      }
+    },
+    {
+      "step_index": 13,
+      "phase": "change_node",
+      "duration_s": 30,
+      "repetition": 3,
+      "block_node": "EE5",
+      "plant_node": "EE5",
+      "black_node": null,
+      "condition": "posture_or_position_transition",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "PREPARA EE5",
+        "instruction": "Suelta todo y acomodate de pie con los mismos zapatos junto a la planta de etiqueta roja EE5. No toques plantas ni negros. No muevas el negro EB5 enterrado. La siguiente indicacion es reposo.",
+        "spoken": "Suelta todo y prepara la planta e e cinco, de pie con los mismos zapatos. Todavia no toques nada."
+      }
+    },
+    {
+      "step_index": 14,
+      "phase": "rest",
+      "duration_s": 20,
+      "repetition": 3,
+      "block_node": "EE5",
+      "plant_node": "EE5",
+      "black_node": null,
+      "condition": "no_contact",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "REPOSO ANTES DE EE5",
+        "instruction": "Ambas manos libres: no toques ninguna planta, punta negra ni el sustrato. El negro EB5 permanece enterrado y fijo; los otros negros quedan libres salvo cuando la indicacion pida tocarlos.",
+        "spoken": "Reposo para e e cinco. Ambas manos libres."
+      }
+    },
+    {
+      "step_index": 15,
+      "phase": "first_contact",
+      "duration_s": 20,
+      "repetition": 3,
+      "block_node": "EE5",
+      "plant_node": "EE5",
+      "black_node": null,
+      "condition": "plant_only_with_EB5_black_in_soil",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "1. SOLO PLANTA EE5",
+        "instruction": "Toca SOLO la planta identificada por rojo EE5 con una mano durante 20 segundos. La otra mano queda libre; no toca ningun negro. Manten la planta hasta la siguiente fase.",
+        "spoken": "Primero toca solo la planta e e cinco. La otra mano libre, sin tocar negros."
+      }
+    },
+    {
+      "step_index": 16,
+      "phase": "contact",
+      "duration_s": 20,
+      "repetition": 3,
+      "block_node": "EE5",
+      "plant_node": "EE5",
+      "black_node": "EE5",
+      "condition": "own_pair_with_EB5_black_in_soil",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "2. AGREGA NEGRO EE5",
+        "instruction": "SIN SOLTAR la planta de rojo EE5, toca la punta negra marcada EE5 con la otra mano. Manten ambos contactos durante 20 segundos. El negro EB5 sigue enterrado; no lo toques ni lo muevas.",
+        "spoken": "Sin soltar la planta e e cinco, agrega su negro e e cinco con la otra mano. Manten ambos contactos."
+      }
+    },
+    {
+      "step_index": 17,
+      "phase": "release",
+      "duration_s": 30,
+      "repetition": 3,
+      "block_node": "EE5",
+      "plant_node": "EE5",
+      "black_node": null,
+      "condition": "release_recovery",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "SUELTA EE5",
+        "instruction": "Suelta AMBOS: planta EE5 y negro EE5. Ambas manos libres: no toques ninguna planta, punta negra ni el sustrato. El negro EB5 permanece enterrado y fijo; los otros negros quedan libres salvo cuando la indicacion pida tocarlos.",
+        "spoken": "Suelta planta y negro e e cinco. Ambas manos libres."
+      }
+    },
+    {
+      "step_index": 18,
+      "phase": "change_node",
+      "duration_s": 30,
+      "repetition": 4,
+      "block_node": "EF5",
+      "plant_node": "EF5",
+      "black_node": null,
+      "condition": "posture_or_position_transition",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "PREPARA EF5",
+        "instruction": "Suelta todo y acomodate de pie con los mismos zapatos junto a la planta de etiqueta roja EF5. No toques plantas ni negros. No muevas el negro EB5 enterrado. La siguiente indicacion es reposo.",
+        "spoken": "Suelta todo y prepara la planta e efe cinco, de pie con los mismos zapatos. Todavia no toques nada."
+      }
+    },
+    {
+      "step_index": 19,
+      "phase": "rest",
+      "duration_s": 20,
+      "repetition": 4,
+      "block_node": "EF5",
+      "plant_node": "EF5",
+      "black_node": null,
+      "condition": "no_contact",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "REPOSO ANTES DE EF5",
+        "instruction": "Ambas manos libres: no toques ninguna planta, punta negra ni el sustrato. El negro EB5 permanece enterrado y fijo; los otros negros quedan libres salvo cuando la indicacion pida tocarlos.",
+        "spoken": "Reposo para e efe cinco. Ambas manos libres."
+      }
+    },
+    {
+      "step_index": 20,
+      "phase": "first_contact",
+      "duration_s": 20,
+      "repetition": 4,
+      "block_node": "EF5",
+      "plant_node": "EF5",
+      "black_node": null,
+      "condition": "plant_only_with_EB5_black_in_soil",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "1. SOLO PLANTA EF5",
+        "instruction": "Toca SOLO la planta identificada por rojo EF5 con una mano durante 20 segundos. La otra mano queda libre; no toca ningun negro. Manten la planta hasta la siguiente fase.",
+        "spoken": "Primero toca solo la planta e efe cinco. La otra mano libre, sin tocar negros."
+      }
+    },
+    {
+      "step_index": 21,
+      "phase": "contact",
+      "duration_s": 20,
+      "repetition": 4,
+      "block_node": "EF5",
+      "plant_node": "EF5",
+      "black_node": "EF5",
+      "condition": "own_pair_with_EB5_black_in_soil",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "2. AGREGA NEGRO EF5",
+        "instruction": "SIN SOLTAR la planta de rojo EF5, toca la punta negra marcada EF5 con la otra mano. Manten ambos contactos durante 20 segundos. El negro EB5 sigue enterrado; no lo toques ni lo muevas.",
+        "spoken": "Sin soltar la planta e efe cinco, agrega su negro e efe cinco con la otra mano. Manten ambos contactos."
+      }
+    },
+    {
+      "step_index": 22,
+      "phase": "release",
+      "duration_s": 30,
+      "repetition": 4,
+      "block_node": "EF5",
+      "plant_node": "EF5",
+      "black_node": null,
+      "condition": "release_recovery",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "SUELTA EF5",
+        "instruction": "Suelta AMBOS: planta EF5 y negro EF5. Ambas manos libres: no toques ninguna planta, punta negra ni el sustrato. El negro EB5 permanece enterrado y fijo; los otros negros quedan libres salvo cuando la indicacion pida tocarlos.",
+        "spoken": "Suelta planta y negro e efe cinco. Ambas manos libres."
+      }
+    },
+    {
+      "step_index": 23,
+      "phase": "final_reference",
+      "duration_s": 60,
+      "repetition": 0,
+      "block_node": null,
+      "plant_node": null,
+      "black_node": null,
+      "condition": "no_contact",
+      "posture": "standing",
+      "ground_state": "soil_EB5_pot",
+      "instruction": {
+        "title": "REFERENCIA FINAL: EB5 ENTERRADO",
+        "instruction": "Ambas manos libres: no toques ninguna planta, punta negra ni el sustrato. El negro EB5 permanece enterrado y fijo; los otros negros quedan libres salvo cuando la indicacion pida tocarlos. Deja todo quieto durante un minuto. Al terminar, EB5 permanece enterrado para analizar los resultados.",
+        "spoken": "Referencia final. Deja todo quieto durante un minuto. El negro e be cinco sigue enterrado."
+      }
+    }
+  ],
+  "ground_is_protective_earth": "not_verified",
+  "end_condition": "Leave black EB5 fixed in soil pending analysis",
+  "protocol": "caja5-soil-one-pass-v1",
+  "created_at_utc": "2026-10-14T20:40:20.959421+00:00",
+  "source": "Direct user request: black EB5 fixed in soil; EB5 plant alone; other plants first plant then own black; all standing with shoes",
+  "analysis_limits": [
+    "One pass per plant is screening, not a complete reliability estimate.",
+    "Pre/post untouched reference uses standing posture in both conditions; comparison of contacts to earlier seated trials is confounded by posture and time.",
+    "Pot soil contact is not a verified protective-earth bond.",
+    "ED5 remains observed as base via CKv2/MIDI, without a scheduled manual contact in this run."
+  ]
+}

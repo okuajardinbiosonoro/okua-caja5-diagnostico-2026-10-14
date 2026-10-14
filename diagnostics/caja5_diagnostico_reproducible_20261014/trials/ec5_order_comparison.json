@@ -1,0 +1,35 @@
+{
+  "recorded_at_utc": "2026-10-14T19:41:58.919367+00:00",
+  "trial_ids": [
+    "B-EC5-own-plant-first-01",
+    "B-EC5-own-black-first-01"
+  ],
+  "plant": "EC5",
+  "black": "EC5",
+  "posture": "seated_on_floor_through_trousers",
+  "footwear": "shoes",
+  "plant_first": {
+    "sole_plant": "No EC5 NoteOns or audible response in all three phases. Small within-node ADC arithmetic mean changes remain recorded.",
+    "black_added": "NoteOns in all five nodes and operator audible response in all three paired phases.",
+    "first_release": "EC5 MIDI held approximately 11.9 seconds in first scheduled release window; subsequent release windows approximately 2.25 and 1.93 seconds."
+  },
+  "black_first": {
+    "sole_black": "NoteOns in all five nodes before any plant contact in all three repetitions.",
+    "plant_added": "Operator heard no clear extra change; EC5 settled medians remained near zero.",
+    "third_cue": "Operator confirms delayed contact due temporarily frozen phone screen; repetition retained, timing limited.",
+    "release_MIDI_held_s": [
+      1.525,
+      1.593,
+      2.003
+    ]
+  },
+  "interpretation": "In both sequential orders, black reference contact dominates activation. Baseline drift and third-cue delay prevent attributing timing differences solely to contact order.",
+  "next": "Longer plant-only windows, all black electrodes free.",
+  "metric_label_correction": {
+    "at_utc": "2026-10-14T19:53:36.524+00:00",
+    "schema": "telemetry_schema.json",
+    "arithmetic_mean_field": "rms_mean",
+    "true_RMS_field_for_EB5_EC5_pilot": "filt",
+    "original_before_correction": "metric_labels_before_correction\\trials\\ec5_order_comparison.json"
+  }
+}

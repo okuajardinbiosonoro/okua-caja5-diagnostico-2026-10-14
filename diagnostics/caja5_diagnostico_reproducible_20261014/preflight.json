@@ -1,0 +1,205 @@
+{
+  "at_utc": "2026-10-14T17:00:02.927458+00:00",
+  "nodes": [
+    {
+      "node_id": 21,
+      "keys": [
+        "node_id",
+        "label",
+        "box_label",
+        "runtime",
+        "ota",
+        "control_plane"
+      ],
+      "runtime": {
+        "status": "online",
+        "health_summary": "healthy traffic",
+        "status_reason": "healthy traffic",
+        "last_seen_age_s": 0.7864122999890242,
+        "last_stat_age_s": 0.7864122999890242,
+        "status_age_s": 9017.3556923,
+        "pps_evt": 0.0,
+        "pps_stat": 1.0,
+        "loss_evt_pct": 0.0,
+        "loss_stat_pct": 0.0,
+        "rssi_dbm": -62,
+        "vbat_mv": 0,
+        "free_heap": 232084,
+        "last_uptime_s": 9038,
+        "reset_reason": 3,
+        "fw_major": 1,
+        "fw_minor": 1
+      },
+      "ota_keys": [
+        "state_key",
+        "error_key",
+        "check_pending",
+        "pending_reboot",
+        "pending_verify",
+        "health_confirmed"
+      ],
+      "ota_state": "idle",
+      "ota_error": "none"
+    },
+    {
+      "node_id": 22,
+      "keys": [
+        "node_id",
+        "label",
+        "box_label",
+        "runtime",
+        "ota",
+        "control_plane"
+      ],
+      "runtime": {
+        "status": "online",
+        "health_summary": "healthy traffic",
+        "status_reason": "healthy traffic",
+        "last_seen_age_s": 0.7631134999974165,
+        "last_stat_age_s": 0.7631134999974165,
+        "status_age_s": 9016.352864,
+        "pps_evt": 0.0,
+        "pps_stat": 1.0,
+        "loss_evt_pct": 0.0,
+        "loss_stat_pct": 0.7152288732394366,
+        "rssi_dbm": -61,
+        "vbat_mv": 0,
+        "free_heap": 231392,
+        "last_uptime_s": 9037,
+        "reset_reason": 3,
+        "fw_major": 1,
+        "fw_minor": 1
+      },
+      "ota_keys": [
+        "state_key",
+        "error_key",
+        "check_pending",
+        "pending_reboot",
+        "pending_verify",
+        "health_confirmed"
+      ],
+      "ota_state": "idle",
+      "ota_error": "none"
+    },
+    {
+      "node_id": 23,
+      "keys": [
+        "node_id",
+        "label",
+        "box_label",
+        "runtime",
+        "ota",
+        "control_plane"
+      ],
+      "runtime": {
+        "status": "online",
+        "health_summary": "healthy traffic",
+        "status_reason": "healthy traffic",
+        "last_seen_age_s": 0.693565800000215,
+        "last_stat_age_s": 0.693565800000215,
+        "status_age_s": 9013.656395999991,
+        "pps_evt": 0.0,
+        "pps_stat": 1.0,
+        "loss_evt_pct": 0.833537708856063,
+        "loss_stat_pct": 0.011025358324145534,
+        "rssi_dbm": -73,
+        "vbat_mv": 0,
+        "free_heap": 245452,
+        "last_uptime_s": 9036,
+        "reset_reason": 3,
+        "fw_major": 1,
+        "fw_minor": 0
+      },
+      "ota_keys": [
+        "state_key",
+        "error_key",
+        "check_pending",
+        "pending_reboot",
+        "pending_verify",
+        "health_confirmed"
+      ],
+      "ota_state": "idle",
+      "ota_error": "none"
+    },
+    {
+      "node_id": 24,
+      "keys": [
+        "node_id",
+        "label",
+        "box_label",
+        "runtime",
+        "ota",
+        "control_plane"
+      ],
+      "runtime": {
+        "status": "online",
+        "health_summary": "healthy traffic",
+        "status_reason": "healthy traffic",
+        "last_seen_age_s": 0.1602757000073325,
+        "last_stat_age_s": 0.1602757000073325,
+        "status_age_s": 9014.266373100007,
+        "pps_evt": 0.0,
+        "pps_stat": 1.0,
+        "loss_evt_pct": 0.0,
+        "loss_stat_pct": 1.5819332315077461,
+        "rssi_dbm": -62,
+        "vbat_mv": 0,
+        "free_heap": 231096,
+        "last_uptime_s": 9035,
+        "reset_reason": 3,
+        "fw_major": 1,
+        "fw_minor": 1
+      },
+      "ota_keys": [
+        "state_key",
+        "error_key",
+        "check_pending",
+        "pending_reboot",
+        "pending_verify",
+        "health_confirmed"
+      ],
+      "ota_state": "idle",
+      "ota_error": "none"
+    },
+    {
+      "node_id": 25,
+      "keys": [
+        "node_id",
+        "label",
+        "box_label",
+        "runtime",
+        "ota",
+        "control_plane"
+      ],
+      "runtime": {
+        "status": "online",
+        "health_summary": "healthy traffic",
+        "status_reason": "healthy traffic",
+        "last_seen_age_s": 0.7710431000014069,
+        "last_stat_age_s": 0.7710431000014069,
+        "status_age_s": 9012.862284400006,
+        "pps_evt": 0.0,
+        "pps_stat": 1.0,
+        "loss_evt_pct": 0.0,
+        "loss_stat_pct": 0.3314917127071823,
+        "rssi_dbm": -63,
+        "vbat_mv": 0,
+        "free_heap": 231596,
+        "last_uptime_s": 9033,
+        "reset_reason": 3,
+        "fw_major": 1,
+        "fw_minor": 1
+      },
+      "ota_keys": [
+        "state_key",
+        "error_key",
+        "check_pending",
+        "pending_reboot",
+        "pending_verify",
+        "health_confirmed"
+      ],
+      "ota_state": "idle",
+      "ota_error": "none"
+    }
+  ]
+}

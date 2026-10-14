@@ -1,0 +1,16 @@
+{
+  "recorded_at_utc": "2026-10-14T21:12:39.857048+00:00",
+  "purpose": "Integrity of closed raw evidence, after closure annotation. No signal samples modified.",
+  "files": [
+    {
+      "path": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\captura_completa\\signals.jsonl",
+      "bytes": 1049606441,
+      "sha256": "bb7107147df4c9d7e5c99d147e9bb7891c3bf000403ddc2c9cc5231a68d60a5c"
+    },
+    {
+      "path": "C:\\Users\\jogoa\\OneDrive\\Documentos\\Soporte\\diagnostics\\caja5_diagnostico_reproducible_20261014\\captura_completa\\markers.jsonl",
+      "bytes": 1809053,
+      "sha256": "80ece62e814ada93e01455201ee906dbcdb66cdc4b3ae06da26f4f20a0f32fa2"
+    }
+  ]
+}

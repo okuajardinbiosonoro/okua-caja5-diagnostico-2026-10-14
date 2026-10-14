@@ -1,0 +1,20 @@
+{
+  "recorded_at_utc": "2026-10-14T20:10:04.001959+00:00",
+  "plant": "EC5",
+  "trial_ids": [
+    "B-EC5-own-black-first-01",
+    "B-EC5-cross-EB5-black-first-01"
+  ],
+  "black_nodes": [
+    "EC5",
+    "EB5"
+  ],
+  "same_qualitative_findings": [
+    "All five nodes emit at black-only contact before plant contact.",
+    "No operator-perceived added plant effect when black is already held.",
+    "EC5 recovered rest is inactive after paired contact."
+  ],
+  "timing_limit": "Own-black trial repetition 3 has a documented delayed visual cue and a shorter valid settled window.",
+  "baseline_limit": "Sequential baseline and environmental drift prevent causal numerical comparison.",
+  "next": "Reverse contact order for EC5 plant with black EB5."
+}

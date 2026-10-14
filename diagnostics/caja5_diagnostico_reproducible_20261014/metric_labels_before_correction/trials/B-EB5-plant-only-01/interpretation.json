@@ -1,0 +1,30 @@
+{
+  "valid_contact_repetitions": [
+    1,
+    2,
+    3
+  ],
+  "reason": "All three instructed contact phases finished before phone fell and operator timer tab became hidden. Operator explicitly confirms plant only, no black contact. Timer interruption occurred in final recovery, not in contact.",
+  "final_recovery_duration_s": 25.477,
+  "missing_final_recovery_s": 4.523,
+  "operator_audible_repetitions": 2,
+  "target_MIDI_during_contact": [
+    {
+      "repetition": 1,
+      "note_ons": 2,
+      "estimated_note_duration_s": 0.541234
+    },
+    {
+      "repetition": 2,
+      "note_ons": 0,
+      "estimated_note_duration_s": 0
+    },
+    {
+      "repetition": 3,
+      "note_ons": 18,
+      "estimated_note_duration_s": 5.067114
+    }
+  ],
+  "interpretation": "Intermittent plant-only detection in this trial: MIDI during repetitions 1 and 3, no MIDI during repetition 2; gate did not sustain the entire 20-second contacts. This is not evidence that the input signal contains no touch information.",
+  "next_trial": "Black EB5 only, no plants or other black electrodes touched, 3 x 20 seconds."
+}

@@ -1,0 +1,35 @@
+{
+  "recorded_at_utc": "2026-10-14T19:20:44.960173+00:00",
+  "valid_trial_ids": [
+    "B-EB5-cross-EC5-black-first-03",
+    "B-EB5-cross-EC5-plant-first-01"
+  ],
+  "excluded_trial_ids": [
+    "B-EB5-cross-EC5-black-first-01",
+    "B-EB5-cross-EC5-black-first-02"
+  ],
+  "conditions": {
+    "plant": "EB5",
+    "black": "EC5",
+    "posture": "seated_on_floor_through_trousers",
+    "footwear": "shoes",
+    "floor": "synthetic_grass_slightly_damp"
+  },
+  "black_first": {
+    "sole_black_contact": "All five nodes emitted NoteOns in 3 of 3 repetitions.",
+    "plant_added": "EB5 settled RMS and occupancy medians remained zero; operator heard no clear extra change.",
+    "data_quality": "EC5 preparation/first rest incomplete due missing telemetry; EB5 references and contact phases covered."
+  },
+  "plant_first": {
+    "sole_plant_contact": "Zero NoteOns in all nodes across all three plant-only phases.",
+    "black_added": "All five nodes emitted NoteOns in all three paired-contact phases.",
+    "data_quality": "First rest excluded due operator accidental plant touch; repetitions 2 and 3 usable for clean baseline comparisons."
+  },
+  "conclusion": "Contact with the black reference dominates the observed activation in these trials; notes alone cannot label local plant touch.",
+  "limitations": [
+    "Trials are sequential and baseline drifted; do not infer that order alone causes numerical differences.",
+    "Zero unsigned ADC summaries are not proof of zero analogue voltage or identical full waveforms.",
+    "No continuous audio measurement; operator report and MIDI remain separate."
+  ],
+  "next_block": "EC5 own pair, plant first; 120-second untouched reference before block."
+}
