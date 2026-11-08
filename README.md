@@ -1,3 +1,16 @@
+<!-- CONTINUIDAD_DOCUMENTAL_20261107 -->
+### Documentación verificada · 7 de noviembre de 2026
+
+Referencia documental de Caja 5. Se conserva la separación entre documentación, hardware de cinco nodos y validación física pendiente.
+
+Base de código conservada al publicar esta revisión: `9d85528e04191a4beed222dc1e558628e8b57c70`.
+Los informes IEEE editables y sus PDF están en la biblioteca privada del responsable; el acceso requiere su cuenta autorizada.
+
+- [P32: informe, fuente LaTeX y trazabilidad](https://github.com/okuajardinbiosonoro/okua-memoria-tecnica/tree/main/proyectos/P32)
+
+Esta sección es un índice de navegación. La actualización documental no publica cambios de producto pendientes, no reanuda trabajos pausados ni modifica aprobaciones. El contenido anterior se conserva debajo como antecedente fechado.
+<!-- /CONTINUIDAD_DOCUMENTAL_20261107 -->
+
 # Datos crudos del diagnóstico de caja 5
 
 Capturas de OKUA del 14 de octubre de 2026, con telemetría simultánea, MIDI, indicaciones temporizadas, confirmaciones del operador y documentación del hardware. Los registros incluyen el arranque inicial, los periodos entre ensayos y las pruebas anuladas. Los archivos originales conservan sus valores, orden y finales de línea.
